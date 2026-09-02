@@ -1,0 +1,28 @@
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+
+# WordPress runtime content
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/debug.log
+wp-content/*.log
+
+# Local database/runtime state and backup artifacts
+.runtime/
+.backups/
+*.sql
+*.sql.gz
+*.dump
+
+# Local tool environments and editor/OS files
+.pixi/
+.tools/
+pixi.lock
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
