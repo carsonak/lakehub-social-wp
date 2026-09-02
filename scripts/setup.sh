@@ -47,7 +47,11 @@ install_runtime_if_needed() {
     [[ "${need_php}" == true ]] && packages+=("php=8.4.*")
     [[ "${need_mysql}" == true ]] && packages+=("mysql=8.4.2")
     log "Installing missing runtime packages without sudo."
-    pixi global install --environment lakehub-wordpress "${packages[@]}"
+    if [[ -d "${HOME}/.pixi/envs/lakehub-wordpress" ]]; then
+      pixi global add --environment lakehub-wordpress "${packages[@]}"
+    else
+      pixi global install --environment lakehub-wordpress "${packages[@]}"
+    fi
     export PATH="${HOME}/.pixi/envs/lakehub-wordpress/bin:${HOME}/.pixi/bin:${PATH}"
   fi
 
@@ -114,10 +118,10 @@ main() {
   check_r2
   ensure_database
 
-  local temp_dir archive
-  temp_dir="$(mktemp -d)"
-  trap 'rm -rf "${temp_dir}"' EXIT
-  archive="${temp_dir}/latest.sql.gz"
+  local archive
+  LAKEHUB_TEMP_DIR="$(mktemp -d)"
+  trap 'rm -rf -- "${LAKEHUB_TEMP_DIR}"' EXIT
+  archive="${LAKEHUB_TEMP_DIR}/latest.sql.gz"
   download_latest_database "${archive}"
   log "Importing the latest R2 database backup."
   import_database "${archive}"

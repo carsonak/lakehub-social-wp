@@ -31,10 +31,10 @@ main() {
   ensure_database
   check_r2
 
-  local temp_dir archive
-  temp_dir="$(mktemp -d)"
-  trap 'rm -rf "${temp_dir}"' EXIT
-  archive="${temp_dir}/latest.sql.gz"
+  local archive
+  LAKEHUB_TEMP_DIR="$(mktemp -d)"
+  trap 'rm -rf -- "${LAKEHUB_TEMP_DIR}"' EXIT
+  archive="${LAKEHUB_TEMP_DIR}/latest.sql.gz"
   download_latest_database "${archive}"
 
   log "Pulling Git changes with fast-forward-only policy."

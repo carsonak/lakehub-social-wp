@@ -30,11 +30,11 @@ main() {
     git_repo commit -m "${commit_message}"
   fi
 
-  local temp_dir timestamp archive
-  temp_dir="$(mktemp -d)"
-  trap 'rm -rf "${temp_dir}"' EXIT
+  local timestamp archive
+  LAKEHUB_TEMP_DIR="$(mktemp -d)"
+  trap 'rm -rf -- "${LAKEHUB_TEMP_DIR}"' EXIT
   timestamp="$(date -u +'%Y-%m-%dT%H%M%SZ')"
-  archive="${temp_dir}/lakehub-social-${timestamp}.sql.gz"
+  archive="${LAKEHUB_TEMP_DIR}/lakehub-social-${timestamp}.sql.gz"
 
   log "Exporting and validating the database."
   export_database_archive "${archive}"
