@@ -8,7 +8,7 @@ This repository stores the WordPress source in GitHub. The untracked `wp-content
 2. Copy `.env.example` to `.env`, fill every required value, and run `chmod 600 .env`.
 3. Run `./scripts/setup.sh`.
 
-The setup script uses installed PHP and MySQL tools when compatible. Missing tools are installed under the current user through Pixi; WP-CLI and rclone are installed in `~/.local/bin`. No `sudo` command is used. When no configured MySQL server is reachable and `DB_HOST` is `127.0.0.1:PORT`, an isolated instance is created under `.runtime/mysql/`.
+The setup script uses installed PHP and MySQL tools when compatible. If PHP is missing, too old, or lacks `mysqli`, a checksum-verified portable PHP build is installed in `~/.local/bin`. Missing MySQL tools are installed under the current user through Pixi; WP-CLI and rclone are also installed in `~/.local/bin`. No `sudo` command is used. When no configured MySQL server is reachable and `DB_HOST` is `127.0.0.1:PORT`, an isolated instance is created under `.runtime/mysql/`.
 
 The initial `.env` must be transferred separately through a password manager or another secure channel. It is deliberately never committed.
 

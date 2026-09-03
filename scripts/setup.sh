@@ -7,6 +7,10 @@ source "${SCRIPT_DIR}/lib/common.sh"
 
 WP_CLI_VERSION=2.12.0
 RCLONE_VERSION=1.71.2
+PHP_VERSION=8.4.23
+PHP_ARCHIVE="php-${PHP_VERSION}-cli-linux-x86_64.tar.gz"
+PHP_URL="https://dl.static-php.dev/static-php-cli/bulk/${PHP_ARCHIVE}"
+PHP_SHA256=5fa2b5f1cc9d7f79b19718926b4f4f0bb6949db52073b2fabf8ae52de3993af5
 
 install_profile_path() {
   local profile="${HOME}/.profile"
@@ -31,31 +35,62 @@ install_pixi() {
   require_command pixi
 }
 
-install_runtime_if_needed() {
-  local need_php=false need_mysql=false
-  if ! command -v php >/dev/null 2>&1 || ! php -r 'exit(version_compare(PHP_VERSION, "7.4", ">=") && extension_loaded("mysqli") ? 0 : 1);'; then
-    need_php=true
+php_is_compatible() {
+  command -v php >/dev/null 2>&1 && php -r 'exit(version_compare(PHP_VERSION, "7.4", ">=") && extension_loaded("mysqli") ? 0 : 1);' >/dev/null 2>&1
+}
+
+install_php() {
+  # php_is_compatible is a predicate and intentionally controls this branch.
+  # shellcheck disable=SC2310
+  if php_is_compatible; then
+    return
   fi
+
+  mkdir -p "${LOCAL_BIN}"
+  local temp_dir archive actual
+  temp_dir="$(mktemp -d)"
+  archive="${temp_dir}/${PHP_ARCHIVE}"
+  log "Installing PHP ${PHP_VERSION} in ${LOCAL_BIN}."
+  curl -fsSL "${PHP_URL}" -o "${archive}" || die "Failed to download PHP ${PHP_VERSION}."
+  actual="$(sha256sum "${archive}" | awk '{print $1}')"
+  [[ "${actual}" == "${PHP_SHA256}" ]] || die "PHP ${PHP_VERSION} checksum verification failed."
+  gzip -t "${archive}" || die "The downloaded PHP archive is corrupt."
+  tar -xzf "${archive}" -C "${temp_dir}" || die "Failed to extract PHP ${PHP_VERSION}."
+  [[ -f "${temp_dir}/php" ]] || die "The PHP archive does not contain the expected executable."
+  install -m 0755 "${temp_dir}/php" "${LOCAL_BIN}/php"
+  rm -rf "${temp_dir}"
+  hash -r
+  # shellcheck disable=SC2310
+  if ! php_is_compatible; then
+    die "Installed PHP ${PHP_VERSION} is not compatible or does not provide mysqli."
+  fi
+}
+
+install_runtime_if_needed() {
+  install_php
+
+  local need_mysql=false
   local tool
   for tool in mysql mysqld mysqldump mysqladmin; do
     command -v "${tool}" >/dev/null 2>&1 || need_mysql=true
   done
 
-  if [[ "${need_php}" == true || "${need_mysql}" == true ]]; then
+  if [[ "${need_mysql}" == true ]]; then
     install_pixi
-    local packages=()
-    [[ "${need_php}" == true ]] && packages+=("php=8.4.*")
-    [[ "${need_mysql}" == true ]] && packages+=("mysql=8.4.2")
-    log "Installing missing runtime packages without sudo."
+    log "Installing missing MySQL runtime packages without sudo."
     if [[ -d "${HOME}/.pixi/envs/lakehub-wordpress" ]]; then
-      pixi global add --environment lakehub-wordpress "${packages[@]}"
+      pixi global add --environment lakehub-wordpress "mysql=8.4.2"
     else
-      pixi global install --environment lakehub-wordpress "${packages[@]}"
+      pixi global install --environment lakehub-wordpress "mysql=8.4.2"
     fi
     export PATH="${HOME}/.pixi/envs/lakehub-wordpress/bin:${HOME}/.pixi/bin:${PATH}"
   fi
 
   require_command php
+  # shellcheck disable=SC2310
+  if ! php_is_compatible; then
+    die "PHP 7.4 or newer with mysqli is required."
+  fi
   require_command mysql
   require_command mysqld
   require_command mysqldump
