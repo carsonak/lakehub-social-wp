@@ -1,6 +1,4 @@
 (() => {
-  document.documentElement.classList.add('motion-ready');
-
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
 
@@ -24,20 +22,30 @@
     });
   }
 
-  const reveals = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) {
-    reveals.forEach((element) => element.classList.add('is-visible'));
-    return;
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
+  const insightTrack = document.querySelector('.insight-cards');
+  document.querySelectorAll('.insights-nav').forEach((button) => {
+    button.addEventListener('click', () => {
+      if (!insightTrack) return;
+      const card = insightTrack.querySelector('.insight-card');
+      const distance = card ? card.getBoundingClientRect().width + 20 : insightTrack.clientWidth;
+      insightTrack.scrollBy({
+        left: button.classList.contains('insights-nav--previous') ? -distance : distance,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      });
     });
-  }, { threshold: 0.12 });
+  });
 
-  reveals.forEach((element) => observer.observe(element));
+  document.querySelectorAll('.program-card').forEach((card) => {
+    const sweep = () => {
+      card.classList.remove('is-sweeping');
+      void card.offsetWidth;
+      card.classList.add('is-sweeping');
+    };
+
+    card.addEventListener('pointerenter', sweep);
+    card.addEventListener('focusin', sweep);
+    card.addEventListener('animationend', (event) => {
+      if (event.animationName === 'glass-sweep') card.classList.remove('is-sweeping');
+    });
+  });
 })();

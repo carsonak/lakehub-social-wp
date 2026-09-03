@@ -26,8 +26,9 @@ function lakehub_social_setup() {
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Primary navigation', 'lakehub-social' ),
-			'footer'  => __( 'Footer navigation', 'lakehub-social' ),
+			'primary'     => __( 'Primary navigation', 'lakehub-social' ),
+			'footer'      => __( 'Footer quick links', 'lakehub-social' ),
+			'footer_help' => __( 'Footer help links', 'lakehub-social' ),
 		)
 	);
 }
@@ -42,11 +43,13 @@ add_action( 'wp_enqueue_scripts', 'lakehub_social_assets' );
 
 function lakehub_social_resource_hints( $urls, $relation_type ) {
 	if ( 'preload' === $relation_type ) {
-		$urls[] = array(
-			'href'        => get_theme_file_uri( 'assets/fonts/manrope.woff2' ),
-			'as'          => 'font',
-			'crossorigin' => 'anonymous',
-		);
+		foreach ( array( 'hanken-grotesk.woff2', 'montserrat.woff2', 'jetbrains-mono.woff2', 'inter.woff2' ) as $font ) {
+			$urls[] = array(
+				'href'        => get_theme_file_uri( 'assets/fonts/' . $font ),
+				'as'          => 'font',
+				'crossorigin' => 'anonymous',
+			);
+		}
 	}
 	return $urls;
 }
@@ -54,3 +57,4 @@ add_filter( 'wp_resource_hints', 'lakehub_social_resource_hints', 10, 2 );
 
 require_once get_theme_file_path( 'inc/homepage-content.php' );
 require_once get_theme_file_path( 'inc/homepage-admin.php' );
+require_once get_theme_file_path( 'inc/programs.php' );
