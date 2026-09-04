@@ -1,6 +1,8 @@
 # Backup and restore workflow
 
-This repository stores the WordPress source in GitHub. The untracked `wp-content/uploads/` directory and compressed database dumps are stored in the Cloudflare R2 bucket `lakehub-social`.
+This repository stores the WordPress source in GitHub, including core, themes, plugins, project-owned Codex skills under `.codex/skills/`, and `AGENTS.md`. The untracked `wp-content/uploads/` directory and compressed MySQL dumps are stored in the Cloudflare R2 bucket `lakehub-social`.
+
+Machine-local credentials and runtime files stay local. In particular, do not commit `.env`, `.runtime/`, `.backups/`, caches, logs, or WordPress upgrade working directories. The repository `.gitignore` also overrides common global ignores so required Codex skill files and distributable WordPress/plugin `build/` assets remain trackable.
 
 ## First-time setup
 
@@ -20,7 +22,9 @@ Stage the source changes you want to commit, then run:
 ./scripts/push.sh "Describe the staged changes"
 ```
 
-The script commits staged files, exports and uploads a dated database dump plus `database/latest.sql.gz`, copies uploads to R2 without deletions, and finally pushes Git. Unstaged tracked files are reported and left alone.
+The script automatically stages `.codex/skills/` and `AGENTS.md`, then commits all staged files. It exports and uploads a dated MySQL dump plus `database/latest.sql.gz`, copies uploads to R2 without deletions, and finally pushes Git. Other unstaged tracked files are reported and left alone.
+
+Before pushing, review both `git status --short` and `git diff --cached`. `git add .` respects the project ignore rules for R2-managed and runtime data, but it still stages every modification to files Git already tracks.
 
 ## Pull and restore
 

@@ -7,6 +7,7 @@
 wp-content/uploads/
 wp-content/cache/
 wp-content/upgrade/
+wp-content/upgrade-temp-backup/
 wp-content/debug.log
 wp-content/*.log
 
@@ -21,8 +22,25 @@ wp-content/*.log
 .pixi/
 .tools/
 pixi.lock
+node_modules/
+.cache/
+.phpunit.cache/
+.phpunit.result.cache
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
 
+# Project-owned Codex skills are source. Override a possible global `.codex/` ignore.
+!.codex/
+!.codex/skills/
+!.codex/skills/**
+
+# These downloaded distributions require their compiled runtime files. Override a
+# possible global `build/` ignore without allowing arbitrary build directories.
+!wp-includes/build/
+!wp-includes/build/**
+!wp-content/plugins/advanced-custom-fields/assets/build/
+!wp-content/plugins/advanced-custom-fields/assets/build/**
+!wp-content/plugins/astra-sites/**/build/
+!wp-content/plugins/astra-sites/**/build/**

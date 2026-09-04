@@ -6,6 +6,11 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 # shellcheck source=scripts/lib/common.sh
 source "${SCRIPT_DIR}/lib/common.sh"
 
+stage_agent_assets() {
+  log "Staging project-owned Codex skills and AGENTS.md."
+  git_repo add -A -- .codex/skills AGENTS.md
+}
+
 main() {
   [[ $# -eq 1 && -n "$1" ]] || die 'Usage: ./scripts/push.sh "commit message"'
   local commit_message="$1"
@@ -18,6 +23,7 @@ main() {
   require_git_repository
   ensure_database
   check_r2
+  stage_agent_assets
 
   if ! git_repo diff --quiet; then
     warn "Unstaged tracked changes will not be committed."
