@@ -20,7 +20,6 @@
 
 ## Figma is the design source of truth
 
-- Golden reference: https://www.figma.com/design/w9CKeLbqHoTXQczTCfsyyi/LakeHub-production?node-id=134-3&t=AVlCQfTd5xzAoiHq-1
 - Before implementing a Figma-derived page or component, use the Figma design-context workflow on the exact target node. Inspect smaller child nodes when the parent response lacks responsive, asset, or component detail.
 - Treat generated React/Tailwind output as design reference, not code to paste. Adapt structure and behavior to WordPress blocks, templates, patterns, and the project styling system.
 - Translate Figma color, typography, spacing, layout, and responsive values into reusable `theme.json` presets and block styles. Avoid one-off values when a shared token applies.
