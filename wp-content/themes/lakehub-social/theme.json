@@ -1,0 +1,417 @@
+{
+  "$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1152px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "custom": false,
+      "palette": [
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#ffffff"
+        },
+        {
+          "slug": "ink",
+          "name": "Ink",
+          "color": "#1b1c1c"
+        },
+        {
+          "slug": "body",
+          "name": "Body",
+          "color": "#3d494a"
+        },
+        {
+          "slug": "teal",
+          "name": "Teal",
+          "color": "#00676b"
+        },
+        {
+          "slug": "aqua",
+          "name": "Aqua",
+          "color": "#81f4fa"
+        },
+        {
+          "slug": "paper",
+          "name": "Paper",
+          "color": "#fbf9f8"
+        },
+        {
+          "slug": "mist",
+          "name": "Mist",
+          "color": "#f5f3f3"
+        },
+        {
+          "slug": "programs",
+          "name": "Programs",
+          "color": "#f9fafb"
+        },
+        {
+          "slug": "footer",
+          "name": "Footer",
+          "color": "#002021"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#98c1c3"
+        },
+        {
+          "slug": "glass",
+          "name": "Glass",
+          "color": "#acabab94"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "hero",
+          "name": "Hero",
+          "gradient": "linear-gradient(154.2deg,#fff 44.215%,#81f4fa 101.63%)"
+        },
+        {
+          "slug": "impact",
+          "name": "Impact",
+          "gradient": "linear-gradient(151.5deg,#fff 96.692%,#cfffff57 103.41%)"
+        },
+        {
+          "slug": "feature",
+          "name": "Feature",
+          "gradient": "linear-gradient(214.32deg,#fbf9f8 38.857%,#81f4fa 104.05%)"
+        },
+        {
+          "slug": "impact-wide",
+          "name": "Impact Wide",
+          "gradient": "linear-gradient(153.405deg,#fbf9f8 52.683%,#81f4fa 97.212%)"
+        },
+        {
+          "slug": "insights",
+          "name": "Insights",
+          "gradient": "linear-gradient(159.875deg,#fbf9f8 35.453%,#81f4fa 105.77%)"
+        },
+        {
+          "slug": "cta",
+          "name": "Cta",
+          "gradient": "linear-gradient(99.503deg,#006064 9.1408%,#00b9c1 95.507%)"
+        },
+        {
+          "slug": "program-card",
+          "name": "Program Card",
+          "gradient": "radial-gradient(ellipse at bottom right,#81f4fa 0%,#c0f9fc 15%,#ffffff 50%)"
+        },
+        {
+          "slug": "program-reverse",
+          "name": "Program Reverse",
+          "gradient": "radial-gradient(ellipse at bottom left,#81f4fa 0%,#c0fafd 15%,#ffffff 50%)"
+        }
+      ]
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "units": [
+        "px",
+        "rem",
+        "%",
+        "vw"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "tiny",
+          "name": "Tiny",
+          "size": "8px"
+        },
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "16px"
+        },
+        {
+          "slug": "medium",
+          "name": "Medium",
+          "size": "24px"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "32px"
+        },
+        {
+          "slug": "x-large",
+          "name": "X-Large",
+          "size": "48px"
+        },
+        {
+          "slug": "section",
+          "name": "Section",
+          "size": "64px"
+        },
+        {
+          "slug": "gutter",
+          "name": "Gutter",
+          "size": "clamp(22px,5vw,64px)"
+        }
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fluid": {
+        "minViewportWidth": "320px",
+        "maxViewportWidth": "1280px"
+      },
+      "fontFamilies": [
+        {
+          "slug": "body",
+          "name": "Hanken Grotesk",
+          "fontFamily": "\"Hanken Grotesk\", sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Hanken Grotesk",
+              "fontStyle": "normal",
+              "fontWeight": "300 800",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/hanken-grotesk.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "inter",
+          "name": "Inter",
+          "fontFamily": "\"Inter\", sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontStyle": "normal",
+              "fontWeight": "400 700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/inter.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "mono",
+          "name": "JetBrains Mono",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontFace": [
+            {
+              "fontFamily": "JetBrains Mono",
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/jetbrains-mono.woff2"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "navigation",
+          "name": "Montserrat",
+          "fontFamily": "\"Montserrat\", sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Montserrat",
+              "fontStyle": "normal",
+              "fontWeight": "400 500",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/montserrat.woff2"
+              ]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "caption",
+          "name": "Caption",
+          "size": "12px",
+          "fluid": false
+        },
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "14px",
+          "fluid": false
+        },
+        {
+          "slug": "body",
+          "name": "Body",
+          "size": "16px",
+          "fluid": false
+        },
+        {
+          "slug": "lead",
+          "name": "Lead",
+          "size": "18px",
+          "fluid": false
+        },
+        {
+          "slug": "section",
+          "name": "Section heading",
+          "size": "32px",
+          "fluid": {
+            "min": "28px",
+            "max": "32px"
+          }
+        },
+        {
+          "slug": "program",
+          "name": "Program heading",
+          "size": "36px",
+          "fluid": {
+            "min": "28px",
+            "max": "36px"
+          }
+        },
+        {
+          "slug": "display",
+          "name": "Display",
+          "size": "56px",
+          "fluid": {
+            "min": "36px",
+            "max": "56px"
+          }
+        },
+        {
+          "slug": "cta",
+          "name": "Call to action",
+          "size": "48px",
+          "fluid": {
+            "min": "32px",
+            "max": "48px"
+          }
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|white",
+      "text": "var:preset|color|ink"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|body",
+      "lineHeight": "1.5"
+    },
+    "spacing": {
+      "blockGap": "0",
+      "padding": {
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|teal"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontWeight": "700",
+          "lineHeight": "1.25"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|teal",
+          "text": "var:preset|color|white"
+        },
+        "border": {
+          "radius": "2px"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|mono",
+          "fontSize": "var:preset|font-size|caption",
+          "fontWeight": "500",
+          "lineHeight": "16px",
+          "letterSpacing": "0.6px"
+        },
+        "spacing": {
+          "padding": {
+            "top": "13px",
+            "bottom": "13px",
+            "left": "32px",
+            "right": "32px"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/heading": {
+        "spacing": {
+          "margin": {
+            "top": "0",
+            "bottom": "0"
+          }
+        }
+      },
+      "core/paragraph": {
+        "spacing": {
+          "margin": {
+            "top": "0",
+            "bottom": "0"
+          }
+        }
+      },
+      "core/image": {
+        "spacing": {
+          "margin": {
+            "top": "0",
+            "bottom": "0",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|navigation",
+          "fontSize": "var:preset|font-size|caption",
+          "textTransform": "uppercase",
+          "letterSpacing": "0.6px"
+        },
+        "spacing": {
+          "blockGap": "32px"
+        }
+      },
+      "core/post-content": {
+        "spacing": {
+          "blockGap": "0"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "LakeHub Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "LakeHub Footer",
+      "area": "footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "programs",
+      "title": "Programs",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
+}

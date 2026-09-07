@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lakehub/programs",
+  "version": "1.0.0",
+  "title": "LakeHub Programs",
+  "category": "widgets",
+  "icon": "screenoptions",
+  "description": "Published programs in display order. Edit each program under Programs.",
+  "textdomain": "lakehub-site",
+  "supports": { "html": false, "align": ["wide", "full"] },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

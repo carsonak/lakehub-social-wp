@@ -1,51 +1,29 @@
+/* Progressive enhancement: native Navigation owns the mobile menu. */
 (() => {
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.site-nav');
-
-  if (toggle && nav) {
-    const closeMenu = () => {
-      document.body.classList.remove('menu-open');
-      nav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-    };
-
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') !== 'true';
-      toggle.setAttribute('aria-expanded', String(open));
-      nav.classList.toggle('is-open', open);
-      document.body.classList.toggle('menu-open', open);
-    });
-
-    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 900) closeMenu();
-    });
-  }
-
-  const insightTrack = document.querySelector('.insight-cards');
-  document.querySelectorAll('.insights-nav').forEach((button) => {
-    button.addEventListener('click', () => {
-      if (!insightTrack) return;
-      const card = insightTrack.querySelector('.insight-card');
-      const distance = card ? card.getBoundingClientRect().width + 20 : insightTrack.clientWidth;
-      insightTrack.scrollBy({
-        left: button.classList.contains('insights-nav--previous') ? -distance : distance,
-        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+  document.querySelectorAll('.wp-block-query.is-style-lakehub-insights').forEach((query) => {
+    const track = query.querySelector('.wp-block-post-template');
+    if (!track) return;
+    const controls = document.createElement('div');
+    controls.className = 'lakehub-insights-controls';
+    const buttons = [-1, 1].map((direction) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = direction < 0 ? '←' : '→';
+      button.setAttribute('aria-label', direction < 0 ? 'Previous insights' : 'Next insights');
+      button.addEventListener('click', () => {
+        const card = track.querySelector('li');
+        track.scrollBy({left: direction * (card ? card.getBoundingClientRect().width + 24 : track.clientWidth), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
       });
+      controls.append(button);
+      return button;
     });
-  });
-
-  document.querySelectorAll('.program-card').forEach((card) => {
-    const sweep = () => {
-      card.classList.remove('is-sweeping');
-      void card.offsetWidth;
-      card.classList.add('is-sweeping');
+    const update = () => {
+      buttons[0].disabled = track.scrollLeft <= 1;
+      buttons[1].disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 1;
     };
-
-    card.addEventListener('pointerenter', sweep);
-    card.addEventListener('focusin', sweep);
-    card.addEventListener('animationend', (event) => {
-      if (event.animationName === 'glass-sweep') card.classList.remove('is-sweeping');
-    });
+    query.append(controls);
+    track.addEventListener('scroll', update, {passive:true});
+    new ResizeObserver(update).observe(track);
+    update();
   });
 })();

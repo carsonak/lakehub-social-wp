@@ -1,60 +1,61 @@
 <?php
-/**
- * LakeHub Social theme setup.
- *
- * @package LakeHub_Social
- */
+/** LakeHub block theme. @package LakeHub_Social */
+if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
-function lakehub_social_setup() {
-	add_theme_support( 'title-tag' );
+add_action( 'after_setup_theme', static function () {
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'editor-styles' );
 	add_theme_support( 'post-thumbnails' );
-	add_theme_support( 'responsive-embeds' );
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height'      => 120,
-			'width'       => 360,
-			'flex-height' => true,
-			'flex-width'  => true,
-		)
+	add_editor_style( 'style.css' );
+} );
+
+add_action( 'wp_enqueue_scripts', static function () {
+	wp_enqueue_style( 'lakehub-social', get_stylesheet_uri(), array(), filemtime( get_theme_file_path( 'style.css' ) ) );
+	wp_enqueue_script( 'lakehub-social', get_theme_file_uri( 'assets/js/main.js' ), array(), filemtime( get_theme_file_path( 'assets/js/main.js' ) ), true );
+} );
+
+add_action( 'init', static function () {
+	register_block_pattern_category( 'lakehub', array( 'label' => __( 'LakeHub sections', 'lakehub-social' ) ) );
+	$styles = array(
+		'core/group' => array( 'hero', 'hero-grid', 'hero-copy', 'impact', 'impact-heading', 'impact-grid', 'impact-feature', 'impact-wide', 'journey', 'timeline', 'milestone', 'partners', 'partner-logos', 'insights', 'insight-card', 'insight-copy', 'cta', 'header', 'header-row', 'footer', 'footer-grid', 'footer-brand', 'footer-links', 'footer-bottom', 'newsletter', 'flagship-heading', 'benefits', 'benefit', 'program-section', 'page-shell' ),
+		'core/cover' => array( 'flagship' ),
+		'core/image' => array( 'hero-image', 'impact-photo', 'partner-logo', 'benefit-icon', 'header-logo', 'footer-logo', 'social-icon' ),
+		'core/button' => array( 'text-link' ),
+		'core/paragraph' => array( 'year', 'newsletter-label' ),
+		'core/query' => array( 'insights' ),
 	);
-	add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
-
-	register_nav_menus(
-		array(
-			'primary'     => __( 'Primary navigation', 'lakehub-social' ),
-			'footer'      => __( 'Footer quick links', 'lakehub-social' ),
-			'footer_help' => __( 'Footer help links', 'lakehub-social' ),
-		)
-	);
-}
-add_action( 'after_setup_theme', 'lakehub_social_setup' );
-
-function lakehub_social_assets() {
-	$version = wp_get_theme()->get( 'Version' );
-	wp_enqueue_style( 'lakehub-social', get_stylesheet_uri(), array(), $version );
-	wp_enqueue_script( 'lakehub-social', get_theme_file_uri( 'assets/js/main.js' ), array(), $version, true );
-}
-add_action( 'wp_enqueue_scripts', 'lakehub_social_assets' );
-
-function lakehub_social_resource_hints( $urls, $relation_type ) {
-	if ( 'preload' === $relation_type ) {
-		foreach ( array( 'hanken-grotesk.woff2', 'montserrat.woff2', 'jetbrains-mono.woff2', 'inter.woff2' ) as $font ) {
-			$urls[] = array(
-				'href'        => get_theme_file_uri( 'assets/fonts/' . $font ),
-				'as'          => 'font',
-				'crossorigin' => 'anonymous',
-			);
+	foreach ( $styles as $block => $names ) {
+		foreach ( $names as $name ) {
+			register_block_style( $block, array( 'name' => 'lakehub-' . $name, 'label' => 'LakeHub ' . ucwords( str_replace( '-', ' ', $name ) ) ) );
 		}
 	}
-	return $urls;
-}
-add_filter( 'wp_resource_hints', 'lakehub_social_resource_hints', 10, 2 );
+} );
 
-require_once get_theme_file_path( 'inc/homepage-content.php' );
-require_once get_theme_file_path( 'inc/homepage-admin.php' );
-require_once get_theme_file_path( 'inc/programs.php' );
+// Header/footer sources stay in Git; patterns resolve local asset URLs when registered.
+add_filter( 'should_load_remote_block_patterns', '__return_false' );
+
+/** Native menu references imported from the classic theme, when present. */
+function lakehub_social_navigation_attributes( $location, $attributes ) {
+	$references = get_option( 'lakehub_block_navigation', array() );
+	if ( ! empty( $references[ $location ] ) ) { $attributes['ref'] = (int) $references[ $location ]; }
+	return wp_json_encode( $attributes );
+}
+
+// Custom URL links also need the Figma active-page indicator and accessible current state.
+add_filter( 'render_block_core/navigation-link', static function ( $html, $block ) {
+	$url = $block['attrs']['url'] ?? '';
+	$current = is_front_page() ? home_url( '/' ) : ( is_singular() ? get_permalink() : '' );
+	if ( $current && $url && untrailingslashit( $url ) === untrailingslashit( $current ) ) {
+		$tags = new WP_HTML_Tag_Processor( $html );
+		if ( $tags->next_tag( 'LI' ) ) { $tags->add_class( 'current-menu-item' ); }
+		if ( $tags->next_tag( 'A' ) ) { $tags->set_attribute( 'aria-current', 'page' ); }
+		return $tags->get_updated_html();
+	}
+	return $html;
+}, 10, 2 );
+
+add_filter( 'block_editor_settings_all', static function ( $settings ) {
+	$settings['codeEditingEnabled'] = current_user_can( 'manage_options' );
+	$settings['canLockBlocks'] = current_user_can( 'manage_options' );
+	return $settings;
+} );

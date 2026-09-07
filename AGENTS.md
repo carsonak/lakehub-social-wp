@@ -3,13 +3,14 @@
 ## Project baseline
 
 - This repository is a complete WordPress 7.1 site backed by MySQL. Run WP-CLI from the repository root with `wp --path="$PWD" ...`.
-- The active theme is `wp-content/themes/lakehub-social` 2.0.0. It is currently a classic PHP theme.
-- Active plugins at this baseline are Advanced Custom Fields 6.8.9, MCP Adapter 0.6.1, Starter Templates 4.7.5, and WSP MCP - AI Agents Connector 2.7.1.
+- The active theme is `wp-content/themes/lakehub-social` 3.0.0, a native block theme. Home and Programs contain editable section blocks.
+- Active plugins at this baseline are Advanced Custom Fields 6.8.9, MCP Adapter 0.6.1, Starter Templates 4.7.5, WSP MCP - AI Agents Connector 2.7.1, and project-owned LakeHub Site 1.0.0.
 - Treat WordPress core and third-party plugins as vendor code. Do not edit them unless the task explicitly targets them. Preserve unrelated worktree changes.
 
 ## Architecture direction
 
-- Migration to a block theme is decided future work, not an open design choice. Move toward `theme.json`, `templates/*.html`, `parts/*.html`, native blocks, and filesystem patterns under `patterns/*.php`.
+- Maintain the block theme using `theme.json`, `templates/*.html`, `parts/*.html`, native blocks, and filesystem patterns under `patterns/*.php`. See `docs/editing-guide.md` and `docs/block-migration.md`.
+- LakeHub Site owns the existing `program` content type and `lakehub/programs` block. Content migrations are explicit WP-CLI commands (`wp --path="$PWD" lakehub blocks migrate --dry-run`); never seed or overwrite content on admin visits.
 - Keep canonical templates, parts, patterns, tokens, and shipped defaults in Git. If a layout is prototyped in the Site Editor, export it to theme files; do not leave the only canonical copy as a database override.
 - Keep presentation in the theme. Put new custom post types, taxonomies, data migrations, scheduled tasks, and other site functionality in a project-owned plugin.
 - Prefer native blocks before custom blocks. Use an unsynced pattern for a reusable layout whose copies need independent content, such as cards. Use a synced pattern only when every occurrence should share content.
@@ -51,7 +52,7 @@
 
 ## Verification baseline
 
-- Project PHP syntax: `find wp-content/themes/lakehub-social -type f -name '*.php' -print0 | xargs -0 -n1 php -l`.
+- Project PHP syntax: `find wp-content/themes/lakehub-social wp-content/plugins/lakehub-site -type f -name '*.php' -print0 | xargs -0 -n1 php -l`.
 - Backup scripts: `bash -n scripts/setup.sh scripts/push.sh scripts/pull.sh scripts/lib/common.sh` and `shellcheck scripts/setup.sh scripts/push.sh scripts/pull.sh scripts/lib/common.sh`.
 - Runtime health: `wp --path="$PWD" db check`, `wp --path="$PWD" theme list`, and `wp --path="$PWD" plugin list`.
 - For block work, insert in the editor, save, reload, and confirm there is no validation/recovery warning. Verify frontend/editor parity, content editability, responsive layouts, keyboard access, and the relevant Figma screenshot before completion.
