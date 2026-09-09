@@ -3,8 +3,8 @@
 ## Project baseline
 
 - This repository is a complete WordPress 7.1 site backed by MySQL. Run WP-CLI from the repository root with `wp --path="$PWD" ...`.
-- The active theme is `wp-content/themes/lakehub-social` 3.0.0, a native block theme. Home and Programs contain editable section blocks.
-- Active plugins at this baseline are Advanced Custom Fields 6.8.9, MCP Adapter 0.6.1, Starter Templates 4.7.5, WSP MCP - AI Agents Connector 2.7.1, and project-owned LakeHub Site 1.0.0.
+- The active theme is `wp-content/themes/lakehub-social` 3.1.0, a native block theme. Home and Programs contain editable section blocks.
+- Active plugins at this baseline are Advanced Custom Fields 6.8.9, MCP Adapter 0.6.1, Starter Templates 4.7.5, WSP MCP - AI Agents Connector 2.7.1, and project-owned LakeHub Site 1.1.0.
 - Treat WordPress core and third-party plugins as vendor code. Do not edit them unless the task explicitly targets them. Preserve unrelated worktree changes.
 
 ## Architecture direction
@@ -21,6 +21,7 @@
 ## Figma is the design source of truth
 
 - Before implementing a Figma-derived page or component, use the Figma design-context workflow on the exact target node. Inspect smaller child nodes when the parent response lacks responsive, asset, or component detail.
+- If Figma MCP access is unavailable, use current exports of the exact approved frames as the design reference: PNG for visual comparison, SVG with text preserved for inspection, and separate original assets where needed. Record export provenance and unresolved measurements in project documentation. Cached context is supporting evidence; do not treat it as confirmation that an updated frame is unchanged. Resume MCP inspection when available without making quota restoration a prerequisite for an adequately documented export-based implementation.
 - Treat generated React/Tailwind output as design reference, not code to paste. Adapt structure and behavior to WordPress blocks, templates, patterns, and the project styling system.
 - Translate Figma color, typography, spacing, layout, and responsive values into reusable `theme.json` presets and block styles. Avoid one-off values when a shared token applies.
 - Download exact images and SVGs promptly into project-owned assets or the Media Library as appropriate. Figma asset URLs expire and must never be committed as durable sources.
@@ -34,6 +35,10 @@
 - Keep bundled design assets local. Do not introduce placeholder URLs, remote hotlinks, or hand-drawn replacements for supplied Figma assets.
 
 ## Git and backup workflow
+
+- Use WordPress Studio to manage the existing repository as the local site, retaining its MySQL database and environment-based configuration. Studio does not replace the Git/R2 source and backup workflow.
+- Before registering or starting the site in Studio, verify the repository path, database connectivity, and local URL. Preserve the existing `wp-config.php`; do not convert this project to SQLite or create a second canonical site.
+- Keep changing design frame links and implementation status in project documentation, not in this file. See `docs/design-refresh.md` for the design references and refresh requirements.
 
 - Git stores source: WordPress core, themes, plugins, `.codex/skills/`, and this file.
 - Cloudflare R2 stores MySQL dumps and `wp-content/uploads/`. `.env`, `.runtime/`, `.backups/`, caches, logs, and WordPress upgrade work directories remain local and ignored.

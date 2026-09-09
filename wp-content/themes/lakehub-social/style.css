@@ -3,7 +3,7 @@ Theme Name: LakeHub Social
 Theme URI: https://www.lakehub.co.ke/
 Author: LakeHub
 Description: A native block theme based on the LakeHub production Figma design.
-Version: 3.0.0
+Version: 3.1.0
 Requires at least: 7.1
 Requires PHP: 8.0
 Text Domain: lakehub-social
@@ -142,14 +142,14 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
 .lakehub-program:hover { box-shadow: 0 12px 26px #00414520; }
 .lakehub-program-image img { display: block; width: 100%; height: 100%; min-height: 423px; object-fit: cover; }
 .lakehub-program-copy { padding: 70px 20px 30px 24px; display: flex; flex-direction: column; }
-.lakehub-program-copy h2 { margin: 0 0 52px; color: var(--lakehub-teal); font-size: var(--wp--preset--font-size--program); font-weight: 600; line-height: 42px; }
+.lakehub-program-copy :is(h2,h3) { margin: 0 0 52px; color: var(--lakehub-teal); font-size: var(--wp--preset--font-size--program); font-weight: 600; line-height: 42px; }
 .lakehub-program-description { color: #000; font-size: 18px; line-height: 25px; }
 .lakehub-program-description > * { margin-block: 0 12px; }
 .lakehub-program-link { margin-top: auto; padding-top: 12px; color: var(--lakehub-teal); font-size: 16px; line-height: 25px; font-weight: 600; text-decoration: none; }
-.lakehub-program:nth-child(even) { grid-template-columns: 55% 45%; background: var(--wp--preset--gradient--program-reverse); }
+.lakehub-program:nth-child(even) { grid-template-columns: 55% 45%; background-image: var(--wp--preset--gradient--program-reverse); }
 .lakehub-program:nth-child(even) .lakehub-program-image { grid-column: 2; grid-row: 1; }
 .lakehub-program:nth-child(even) .lakehub-program-copy { grid-column: 1; grid-row: 1; padding-left: 50px; padding-right: 40px; }
-.lakehub-program:nth-child(even) h2 { max-width: 360px; margin-bottom: 46px; }
+.lakehub-program:nth-child(even) :is(h2,h3) { max-width: 360px; margin-bottom: 46px; }
 .lakehub-program:last-child .lakehub-program-copy { padding-top: 24px; }
 .is-style-lakehub-page-shell { padding: 64px var(--lakehub-gutter); min-height: 60vh; }
 .is-style-lakehub-page-shell > * + * { margin-top: 32px; }
@@ -171,7 +171,7 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
   .is-style-lakehub-benefits { gap: 20px; }
   .is-style-lakehub-benefit { padding-inline: 16px; }
   .lakehub-program-copy { padding: 36px 24px; }
-  .lakehub-program-copy h2 { margin-bottom: 24px; }
+  .lakehub-program-copy :is(h2,h3) { margin-bottom: 24px; }
 }
 @media (max-width:900px) {
   .is-style-lakehub-hero-grid { grid-template-columns: 1fr; padding-block: 48px; gap: 40px; }
@@ -202,7 +202,7 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
   .lakehub-program-image, .lakehub-program:nth-child(even) .lakehub-program-image { grid-column: 1; grid-row: 1; }
   .lakehub-program-image img { height: 360px; min-height: 0; }
   .lakehub-program-copy, .lakehub-program:nth-child(even) .lakehub-program-copy { grid-column: 1; grid-row: 2; padding: 36px; }
-  .lakehub-program-copy h2, .lakehub-program:nth-child(even) h2 { max-width: none; margin-bottom: 24px; }
+  .lakehub-program-copy :is(h2,h3), .lakehub-program:nth-child(even) :is(h2,h3) { max-width: none; margin-bottom: 24px; }
 }
 @media (max-width:600px) {
   .is-style-lakehub-header-row { padding-inline: 22px; }
@@ -244,7 +244,7 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
   .is-style-lakehub-benefit-icon img { width: 44px; height: 44px; }
   .is-style-lakehub-benefit p { font-size: 16px; line-height: 22px; letter-spacing: 0; }
   .lakehub-program-copy, .lakehub-program:nth-child(even) .lakehub-program-copy { padding: 28px 24px; }
-  .lakehub-program-copy h2 { line-height: 1.2; }
+  .lakehub-program-copy :is(h2,h3) { line-height: 1.2; }
   .lakehub-program-description { font-size: 16px; line-height: 24px; }
   .lakehub-program-image img { height: 260px; }
 }
@@ -283,11 +283,11 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
  .is-style-lakehub-benefits { margin-top: 108px; }
  .lakehub-program { height: 423px; }
  .lakehub-program:nth-child(4) { height: 430px; grid-template-columns: 60% 40%; }
- .lakehub-program-copy h2 { margin-bottom: 65px; }
+ .lakehub-program-copy :is(h2,h3) { margin-bottom: 65px; }
  .lakehub-program:nth-child(2) .lakehub-program-copy { padding-top: 86px; }
- .lakehub-program:nth-child(2) h2 { margin-bottom: 45px; }
+ .lakehub-program:nth-child(2) :is(h2,h3) { margin-bottom: 45px; }
  .lakehub-program:nth-child(3) .lakehub-program-copy { padding-top: 100px; }
- .lakehub-program:nth-child(4) h2 { margin-bottom: 44px; }
+ .lakehub-program:nth-child(4) :is(h2,h3) { margin-bottom: 44px; }
 }
 @media(max-width:600px) {
  .wp-block-group.is-style-lakehub-impact { padding-bottom: 40px; }
@@ -300,9 +300,9 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
 /* Cards grow with edited descriptions; initial Figma content retains its minimum height. */
 @media(min-width:1200px) {
  .lakehub-program, .lakehub-program:nth-child(4) { height: auto; }
- .lakehub-program-copy h2 { margin-bottom: 52px; }
+ .lakehub-program-copy :is(h2,h3) { margin-bottom: 52px; }
  .lakehub-program:nth-child(2) .lakehub-program-copy { padding-top: 72px; }
- .lakehub-program:nth-child(2) h2 { margin-bottom: 36px; }
+ .lakehub-program:nth-child(2) :is(h2,h3) { margin-bottom: 36px; }
  .lakehub-program:nth-child(3) .lakehub-program-copy { padding-top: 98px; }
 }
 .is-style-lakehub-footer-links .wp-block-navigation { font: 400 16px/24px var(--wp--preset--font-family--body); text-transform: none; letter-spacing: 0; color: #e4e2e2cc; }
@@ -317,7 +317,191 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
  .is-style-lakehub-flagship-heading h1 { font-size: 34px !important; }
 }
 /* Exact gradient geometry exported in the Programs Figma design context. */
-.lakehub-program { background-image: url('assets/gradients/program-1.svg'); background-size: 100% 100%; }
+.lakehub-program { background-image: url('assets/gradients/program-1.svg'); background-size: 100% 100%; background-position: center bottom; background-repeat: no-repeat; }
 .lakehub-program:nth-child(even) { background-image: url('assets/gradients/program-2.svg'); }
 .lakehub-program:nth-child(3) { background-image: url('assets/gradients/program-3.svg'); }
 .lakehub-program:nth-child(4) { background-image: url('assets/gradients/program-4.svg'); }
+
+/* Approved photo heroes and editable impact figures. Old styles remain for saved patterns. */
+.wp-block-cover.is-style-lakehub-home-photo,
+.wp-block-cover.is-style-lakehub-programs-photo { margin: 0; padding: 56px var(--lakehub-gutter); color: white; }
+.is-style-lakehub-home-photo .wp-block-cover__inner-container,
+.is-style-lakehub-programs-photo .wp-block-cover__inner-container { max-width: 1152px; margin-inline: auto; }
+.is-style-lakehub-photo-hero-copy { text-align: center; padding-top: 60px; }
+.is-style-lakehub-photo-hero-copy h1 { max-width: 780px; margin: 0 auto; font-size: var(--wp--preset--font-size--hero-photo); font-weight: 800; line-height: .93; letter-spacing: -1.12px; text-shadow: 0 3px 18px #00202160; }
+.is-style-lakehub-photo-hero-copy .wp-block-buttons { margin-top: 78px; gap: 16px; }
+.is-style-lakehub-photo-hero-copy .wp-block-button__link { font-family: var(--wp--preset--font-family--body); font-weight: 800; padding: 13px 28px; }
+.is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link { color: white; }
+.wp-block-group.is-style-lakehub-impact-stats { padding: 53px var(--lakehub-gutter) 0; background: white; }
+.is-style-lakehub-impact-stats > h2 { max-width: 1142px; margin: 0 auto 40px; font-size: 30px; line-height: 52px; letter-spacing: -1.1px; }
+.is-style-lakehub-metrics { max-width: 976px; margin-inline: auto; }
+.is-style-lakehub-metric-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; min-height: 214px; border-bottom: 1px solid #ccc; }
+.is-style-lakehub-metric-row:last-child { border-bottom: 0; }
+.is-style-lakehub-metric-copy { max-width: 268px; justify-self: center; }
+.is-style-lakehub-metric-copy h3 { margin: 0 0 28px; color: var(--lakehub-teal); font-size: 24px; line-height: 26px; font-weight: 700; }
+.is-style-lakehub-metric-copy p { color: #1e1e1e; font-size: 14px; line-height: 20px; margin: 0; }
+.wp-block-group.is-style-lakehub-metric-photo { justify-self: end; padding: 0; width: max-content; max-width: 100%; background-image: none; background-size: 0; color: var(--lakehub-teal); }
+.is-style-lakehub-metric-photo p { margin: 0; font-family: var(--wp--preset--font-family--inter); font-size: var(--wp--preset--font-size--metric); font-weight: 800; line-height: 1.15; letter-spacing: -5px; }
+.is-style-lakehub-metric-row:first-child .is-style-lakehub-metric-photo p { font-family: var(--wp--preset--font-family--body); }
+.is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-photo { grid-column: 2; grid-row: 1; justify-self: start; }
+.is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy { grid-column: 1; grid-row: 1; justify-self: end; }
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+ .wp-block-group.is-style-lakehub-metric-photo { background-color: var(--lakehub-teal); background-size: cover; background-clip: text; -webkit-background-clip: text; color: transparent; }
+ .is-style-lakehub-metric-photo p { color: inherit; }
+}
+.is-style-lakehub-flagship-centred { text-align: center; }
+.is-style-lakehub-flagship-centred h1 { margin: 0; font-size: clamp(34px,4.375vw,56px); font-weight: 800; line-height: 1.25; letter-spacing: -1.12px; }
+.is-style-lakehub-zone-brand { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 0 auto 20px; }
+.is-style-lakehub-zone-brand p { font-size: clamp(36px,4.375vw,56px); font-weight: 800; line-height: 1.25; letter-spacing: -1.12px; margin: 0; }
+.is-style-lakehub-zone-word { color: transparent; -webkit-text-stroke: 1px white; }
+.is-style-lakehub-zone-mark img { width: 50px; height: 51px; display: block; }
+.is-style-lakehub-flagship-centred .wp-block-button__link { font: 800 16px/20px var(--wp--preset--font-family--body); letter-spacing: .6px; padding: 10px 32px; }
+.is-style-lakehub-program-section { padding-top: 80px; padding-bottom: 47px; }
+.is-style-lakehub-program-section > h2 { max-width: 1176px; margin: 0 auto 47px; font-size: 32px; line-height: 40px; letter-spacing: -.32px; color: black; }
+.wp-block-lakehub-programs { gap: 47px; }
+.lakehub-program-copy :is(h2,h3) { color: black; }
+.is-style-lakehub-partner-logos { gap: 47px; }
+.is-style-lakehub-footer-grid { grid-template-columns: 330px 184px 158px minmax(0,1fr); gap: 36px; }
+@media(min-width:1200px) {
+ .is-style-lakehub-impact-stats { min-height: 1002px; }
+ .lakehub-program-copy { padding: 76px 20px 30px 18px; }
+ .lakehub-program-copy :is(h2,h3) { margin-bottom: 40px; }
+ .lakehub-program:nth-child(2) .lakehub-program-copy { padding-top: 80px; }
+ .lakehub-program:nth-child(3) .lakehub-program-copy { padding-top: 108px; }
+ .lakehub-program:nth-child(3) :is(h2,h3) { margin-bottom: 50px; }
+ .lakehub-program:nth-child(4) :is(h2,h3) { margin-bottom: 22px; }
+}
+@media(max-width:1199px) {
+ .is-style-lakehub-footer-grid { grid-template-columns: 1.3fr .8fr .6fr 1.5fr; gap: 24px; }
+ .is-style-lakehub-metric-row { gap: 24px; }
+ .is-style-lakehub-metric-photo p { font-size: clamp(96px,13vw,170px); }
+}
+@media(max-width:900px) {
+ .is-style-lakehub-footer-grid { grid-template-columns: 1fr 1fr; }
+ .is-style-lakehub-photo-hero-copy h1 { font-size: clamp(36px,6vw,64px); }
+ .wp-block-cover.is-style-lakehub-home-photo,.wp-block-cover.is-style-lakehub-programs-photo { min-height: 480px !important; }
+}
+@media(max-width:600px) {
+ .wp-block-cover.is-style-lakehub-home-photo,.wp-block-cover.is-style-lakehub-programs-photo { padding: 48px 20px; min-height: 440px !important; }
+ .is-style-lakehub-photo-hero-copy { padding-top: 0; }
+ .is-style-lakehub-photo-hero-copy h1 { line-height: 1.06; letter-spacing: -.6px; }
+ .is-style-lakehub-photo-hero-copy .wp-block-buttons { margin-top: 40px; }
+ .wp-block-group.is-style-lakehub-impact-stats { padding-top: 40px; padding-bottom: 16px; }
+ .is-style-lakehub-impact-stats > h2 { font-size: 26px; line-height: 1.3; margin-bottom: 16px; }
+ .is-style-lakehub-metric-row { grid-template-columns: 1fr; gap: 16px; padding-block: 28px; }
+ .is-style-lakehub-metric-row:nth-child(n) .is-style-lakehub-metric-photo,.is-style-lakehub-metric-row:nth-child(n) .is-style-lakehub-metric-copy { grid-column: 1; grid-row: auto; justify-self: center; }
+ .is-style-lakehub-metric-copy { text-align: center; }
+ .is-style-lakehub-metric-copy h3 { margin-bottom: 12px; }
+ .is-style-lakehub-metric-photo p { font-size: 110px; }
+ .is-style-lakehub-zone-brand { gap: 8px; }
+ .is-style-lakehub-zone-mark img { width: 34px; height: 35px; }
+ .is-style-lakehub-program-section { padding-block: 48px; }
+ .is-style-lakehub-program-section > h2 { font-size: 28px; margin-bottom: 28px; }
+}
+@media(forced-colors:active) {
+ .wp-block-group.is-style-lakehub-metric-photo { background: none !important; color: CanvasText; }
+ .is-style-lakehub-zone-word { color: CanvasText; -webkit-text-stroke: 0; }
+}
+/* Fine alignment from the supplied 1280px frames. */
+section.is-style-lakehub-insights { min-height: 687px; }
+.is-style-lakehub-cta h2 { line-height: 48px; }
+.is-style-lakehub-cta .wp-block-button__link { padding: 16px 32px; }
+.is-style-lakehub-metric-photo p { letter-spacing: 0; }
+.is-style-lakehub-programs-photo > .wp-block-cover__image-background { object-position: 50% 16.7%; }
+@media(min-width:1200px) {
+ .is-style-lakehub-metric-row:nth-child(odd) .is-style-lakehub-metric-photo { transform: translateX(50px); }
+ .is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy { transform: translateX(-28px); }
+ .is-style-lakehub-metric-row:nth-child(2) .is-style-lakehub-metric-photo { transform: translateX(-38px); }
+ .is-style-lakehub-metric-row:nth-child(4) .is-style-lakehub-metric-photo { transform: translateX(12px); }
+}
+.is-style-lakehub-metric-photo p { caret-color: var(--lakehub-teal); }
+.lakehub-program-copy :is(h2,h3), .lakehub-program-description p { font-family: var(--wp--preset--font-family--inter); }
+@supports not ((background-clip: text) or (-webkit-background-clip: text)) {
+ .wp-block-group.is-style-lakehub-metric-photo { background-image: none !important; background-color: transparent; color: var(--lakehub-teal); }
+}
+
+/* Frontend enhancements leave native blocks and editor controls unchanged. */
+.wp-site-blocks .is-style-lakehub-partner-logos {
+ --lakehub-partner-columns: 4;
+ display: flex; flex-wrap: nowrap; justify-content: flex-start; gap: 32px;
+ overflow-x: auto; padding: 16px 10px; scroll-behavior: auto;
+ scrollbar-width: thin; scrollbar-color: #ffffff70 transparent;
+}
+.wp-site-blocks .is-style-lakehub-partner-logos[role="region"] { scrollbar-width: none; }
+.wp-site-blocks .is-style-lakehub-partner-logos.is-scrollable { cursor: grab; touch-action: pan-y pinch-zoom; }
+.wp-site-blocks .is-style-lakehub-partner-logos[role="region"]::-webkit-scrollbar { display: none; }
+.wp-site-blocks .is-style-lakehub-partner-logos.is-dragging { cursor: grabbing; user-select: none; }
+.wp-site-blocks .is-style-lakehub-partner-logos.is-dragging a { cursor: grabbing; }
+.wp-site-blocks .is-style-lakehub-partner-logos > .is-style-lakehub-partner-logo {
+ flex: 0 0 calc((100% - (var(--lakehub-partner-columns) - 1) * 32px) / var(--lakehub-partner-columns));
+}
+.wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img {
+ filter: grayscale(1) brightness(0) invert(1); opacity: .8;
+ transition: filter 200ms ease, opacity 200ms ease, transform 200ms ease;
+}
+.wp-site-blocks .is-style-lakehub-partner-logo a { display: block; border-radius: 4px; }
+.wp-site-blocks .is-style-lakehub-partner-logos:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+.lakehub-partners-toggle {
+ display: block; margin: 8px auto 0; min-width: 72px; min-height: 44px; padding: 8px 16px;
+ border: 1px solid #ffffff80; border-radius: 24px; background: transparent; color: white;
+ font: inherit; font-size: 13px; cursor: pointer;
+ transition: background-color 200ms ease, color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+.lakehub-partners-toggle[hidden] { display: none; }
+.wp-site-blocks .is-style-lakehub-partner-logo a:focus-visible { outline-color: white; }
+.wp-site-blocks .is-style-lakehub-partner-logo:focus-within img {
+ filter: drop-shadow(0 4px 5px #002e3280); opacity: 1; transform: scale(1.08);
+}
+.wp-site-blocks .is-style-lakehub-milestone > :is(h3,p),
+.wp-site-blocks .is-style-lakehub-milestone::after { transition: transform 200ms ease; }
+.wp-site-blocks .is-style-lakehub-milestone:focus-within > :is(h3,p) { transform: scale(1.05); }
+.wp-site-blocks .is-style-lakehub-milestone:focus-within::after { transform: scale(1.2); }
+.wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link,
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a {
+ transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+.wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible,
+.lakehub-partners-toggle:focus-visible { transform: translateY(-3px) scale(1.03); box-shadow: 0 7px 18px #003d4133; }
+.wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible,
+.wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible,
+.lakehub-partners-toggle:focus-visible { background-color: white; color: var(--lakehub-teal); border-color: white; }
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a { display: inline-block; }
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible {
+ color: var(--lakehub-teal); border-bottom-color: currentColor; font-weight: 500; transform: translateY(-2px);
+}
+.wp-site-blocks .lakehub-program { position: relative; isolation: isolate; }
+.wp-site-blocks .lakehub-program::after {
+ content: ''; position: absolute; inset: 0; border-radius: inherit; z-index: 1; pointer-events: none;
+ background: radial-gradient(ellipse at var(--lakehub-glare-x, 50%) var(--lakehub-glare-y, 50%), #ffffff30 0%, transparent 60%),
+  linear-gradient(115deg, transparent calc(var(--lakehub-glare-x, 50%) - 20%), #ffffff26 var(--lakehub-glare-x, 50%), transparent calc(var(--lakehub-glare-x, 50%) + 20%));
+ opacity: 0; transition: opacity 220ms ease;
+}
+.wp-site-blocks .lakehub-program.has-glare::after { opacity: 1; }
+.wp-site-blocks .lakehub-program:focus-within { box-shadow: 0 12px 26px #00414520; }
+@media (hover: hover) and (pointer: fine) {
+ .wp-site-blocks .is-style-lakehub-partner-logo:hover img { filter: drop-shadow(0 4px 5px #002e3280); opacity: 1; transform: scale(1.08); }
+ .wp-site-blocks .is-style-lakehub-milestone:hover > :is(h3,p) { transform: scale(1.05); }
+ .wp-site-blocks .is-style-lakehub-milestone:hover::after { transform: scale(1.2); }
+ .wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover,
+ .lakehub-partners-toggle:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 7px 18px #003d4133; }
+ .wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover,
+ .wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover,
+ .lakehub-partners-toggle:hover { background-color: white; color: var(--lakehub-teal); border-color: white; }
+ .wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover { font-weight: 500; transform: translateY(-2px); }
+}
+@media (max-width: 900px) {
+ .wp-site-blocks .is-style-lakehub-partner-logos { --lakehub-partner-columns: 3; }
+}
+@media (max-width: 600px) {
+ .wp-site-blocks .is-style-lakehub-partner-logos { --lakehub-partner-columns: 2; }
+ .wp-site-blocks .is-style-lakehub-milestone > :is(h3,p) { transform-origin: left center; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .wp-site-blocks .is-style-lakehub-partner-logo img,
+ .wp-site-blocks .is-style-lakehub-milestone > :is(h3,p),
+ .wp-site-blocks .is-style-lakehub-milestone::after,
+ .wp-site-blocks .wp-block-button .wp-block-button__link,
+ .wp-site-blocks .is-style-lakehub-header .wp-block-navigation a,
+ .lakehub-partners-toggle { transition: none !important; transform: none !important; }
+ .wp-site-blocks .lakehub-program::after { display: none; }
+}

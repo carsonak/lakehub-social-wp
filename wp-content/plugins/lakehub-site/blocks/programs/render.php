@@ -13,7 +13,7 @@ $programs = get_posts( array( 'post_type' => 'program', 'post_status' => 'publis
 		<article class="lakehub-program">
 			<div class="lakehub-program-image"><?php echo get_the_post_thumbnail( $program->ID, 'full', array( 'loading' => 'lazy' ) ); ?></div>
 			<div class="lakehub-program-copy">
-				<h2><?php echo esc_html( get_the_title( $program ) ); ?></h2>
+				<h3><?php echo esc_html( get_the_title( $program ) ); ?></h3>
 				<div class="lakehub-program-description"><?php
 					// Program content is canonical; excerpts remain for backwards compatibility.
 					$content = $program->post_content ?: $program->post_excerpt;

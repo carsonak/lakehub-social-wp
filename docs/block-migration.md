@@ -1,5 +1,7 @@
 # Block-theme implementation and operations
 
+This document describes the original migration. The subsequent exported-design refresh, its separate commands and snapshot, and current source references are documented in [design-refresh.md](design-refresh.md).
+
 LakeHub Social 3.0.0 is a WordPress 7.1 block theme. LakeHub Site 1.0.0 owns the existing `program` post type, the `lakehub/programs` dynamic block, and the explicit migration. No content is seeded on activation or ordinary administrator requests.
 
 ## Design sources

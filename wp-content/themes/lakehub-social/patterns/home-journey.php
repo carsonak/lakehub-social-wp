@@ -38,7 +38,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"body","fontSize":"small"} -->
-<p class="has-body-color has-text-color has-small-font-size">Opened the first dedicated co-working space for creatives.</p>
+<p class="has-body-color has-text-color has-small-font-size">LakeHub officially established its physical footprint along Okore Road in the Milimani neighborhood of Kisumu, Kenya.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-lakehub-year","textColor":"teal","fontSize":"caption","fontFamily":"mono"} -->
@@ -52,7 +52,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"body","fontSize":"small"} -->
-<p class="has-body-color has-text-color has-small-font-size">Launched dedicated coding bootcamps and incubators.</p>
+<p class="has-body-color has-text-color has-small-font-size">LakeHub launches their core flagships, the LakeHub Academy and their formalized business incubation program.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-lakehub-year","textColor":"teal","fontSize":"caption","fontFamily":"mono"} -->
@@ -66,7 +66,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"body","fontSize":"small"} -->
-<p class="has-body-color has-text-color has-small-font-size">Partnering internationally to drive sustainable tech solutions.</p>
+<p class="has-body-color has-text-color has-small-font-size">LakeHub has grown from a local community into Western Kenya’s major regional center for software, agritech, and digital jobs.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-lakehub-year","textColor":"teal","fontSize":"caption","fontFamily":"mono"} -->

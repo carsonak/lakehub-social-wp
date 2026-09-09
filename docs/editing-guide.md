@@ -13,13 +13,25 @@ The Home and Programs pages use WordPress blocks. You do not need HTML, PHP, or 
 
 The page title shown above the editor canvas is an administrative title. The designed hero contains the visible page heading.
 
+## Photo heroes and impact figures
+
+The Home and Programs heroes are **Cover** blocks. Select the hero in List View and use **Replace** to choose its background photograph. Edit the heading and buttons directly. Programs also has a **Zone brand** row with editable text and the supplied 01 image; select the image to replace it if the branding changes.
+
+Home's **Impact** section contains four named rows. Edit a figure (for example, `350+`), heading, or description directly. To change the photograph inside a figure, select its named **Figure image** Group in List View, open the block's **Styles → Background** controls, and replace the background image. The value remains text; do not upload an image of the number itself.
+
+Duplicate, move, or remove an entire impact row through List View to change the collection. Its internal blocks are locked to protect the layout while keeping the text and background image controls available. Keep figures short so they remain readable on narrow screens.
+
 ## Journey and partners
 
 Open the section in List View. Under **Timeline**, duplicate a milestone or insert the **Journey milestone** pattern; edit its year, title, and description. Move or remove individual milestones as needed. Under **Partner logos**, add, replace, reorder, or remove Image blocks. Use the image link control to set a partner's website.
 
+Partner logos stay static in the editor. On the website they scroll automatically; visitors can drag either way, focus the carousel and use Left/Right arrow keys, or stop movement with **Pause**. Hovering or keyboard focus pauses scrolling, and reduced-motion preferences disable autoplay. Short collections that fit do not scroll. Upload the original full-colour logo with a transparent background and descriptive alternative text: the theme applies the white appearance and restores the original colours on hover or keyboard focus. The looping copies exist only on the website; do not duplicate logos in the editor to create the loop.
+
+Journey milestones enlarge gently on hover. Program cards receive a cursor-following glare, and buttons and navigation links provide hover/focus feedback automatically; no animation settings or code editing are required.
+
 ## Programs
 
-The **Programs · All programs** section displays published entries from the **Programs** menu. Its preview includes a **Manage programs** link.
+The **Programs · All programs** section contains the editable **Our Other Programs** heading and displays published entries from the **Programs** menu. Its preview includes a **Manage programs** link.
 
 - Choose **Programs → Add New Program**, or edit an existing entry.
 - Use the title for the program name, the block editor for its description, and **Featured image** for its photo.

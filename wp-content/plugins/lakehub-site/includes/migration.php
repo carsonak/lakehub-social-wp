@@ -7,7 +7,7 @@ class LakeHub_Block_Migration {
 	const VERSION = 1;
 	const MARKER = 'lakehub_block_migration_version';
 	const SNAPSHOT = 'lakehub_block_migration_snapshot';
-	private $media = array();
+	protected $media = array();
 
 	/**
 	 * Populate the existing LakeHub pages with native blocks.
@@ -98,7 +98,7 @@ class LakeHub_Block_Migration {
 		WP_CLI::success( 'Original page/program fields restored. Imported media and snapshot retained. Restore the matching classic theme source for the original frontend.' );
 	}
 
-	private function update( $post ) {
+	protected function update( $post ) {
 		// The old PHP template no longer exists; avoid WordPress rejecting an otherwise valid update.
 		if ( 'page' === get_post_type( $post['ID'] ) ) {
 			$post['page_template'] = 'default';
@@ -107,13 +107,13 @@ class LakeHub_Block_Migration {
 		if ( is_wp_error( $result ) ) { WP_CLI::error( $result->get_error_message() ); }
 	}
 
-	private function pattern( $slug ) {
+	protected function pattern( $slug ) {
 		$pattern = WP_Block_Patterns_Registry::get_instance()->get_registered( 'lakehub-social/' . $slug );
 		if ( ! $pattern ) { WP_CLI::error( 'Missing pattern: ' . $slug ); }
 		return $pattern['content'];
 	}
 
-	private function image( $asset, $alt ) {
+	protected function image( $asset, $alt ) {
 		if ( isset( $this->media[ $asset ] ) && wp_attachment_is_image( $this->media[ $asset ] ) ) { return $this->media[ $asset ]; }
 		$file = get_theme_file_path( 'assets/' . $asset );
 		$mime = wp_get_image_mime( $file );
@@ -131,10 +131,16 @@ class LakeHub_Block_Migration {
 		return $id;
 	}
 
-	private function with_media( $content ) {
+	protected function with_media( $content ) {
 		$base = get_theme_file_uri( 'assets/' );
 		$walk = function ( $blocks ) use ( &$walk, $base ) {
 			foreach ( $blocks as &$block ) {
+				// Native Group backgrounds keep the figure photograph replaceable in the editor.
+				$background = $block['attrs']['style']['background']['backgroundImage'] ?? array();
+				if ( ! empty( $background['url'] ) && str_starts_with( $background['url'], $base ) ) {
+					$id = $this->image( substr( $background['url'], strlen( $base ) ), '' );
+					$block['attrs']['style']['background']['backgroundImage'] = array( 'url' => wp_get_attachment_url( $id ), 'id' => $id, 'source' => 'file' );
+				}
 				if ( in_array( $block['blockName'], array( 'core/image', 'core/cover' ), true ) ) {
 					$tags = new WP_HTML_Tag_Processor( $block['innerHTML'] );
 					if ( $tags->next_tag( 'IMG' ) ) {

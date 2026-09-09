@@ -290,6 +290,24 @@
             "min": "32px",
             "max": "48px"
           }
+        },
+        {
+          "slug": "hero-photo",
+          "name": "Photo hero",
+          "size": "76px",
+          "fluid": {
+            "min": "36px",
+            "max": "76px"
+          }
+        },
+        {
+          "slug": "metric",
+          "name": "Impact figure",
+          "size": "170px",
+          "fluid": {
+            "min": "96px",
+            "max": "170px"
+          }
         }
       ]
     }

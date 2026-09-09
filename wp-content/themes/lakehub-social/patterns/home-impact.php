@@ -3,51 +3,61 @@
  * Title: Home · Impact
  * Slug: lakehub-social/home-impact
  * Categories: lakehub
- * Description: Editable Figma-based LakeHub layout.
+ * Description: Editable layout from the approved Figma export.
  */
 ?>
-<!-- wp:group {"tagName":"section","templateLock":"contentOnly","metadata":{"name":"Home · Impact"},"align":"full","className":"is-style-lakehub-impact","gradient":"impact","layout":{"type":"default"},"anchor":"about"} -->
-<section class="wp-block-group alignfull is-style-lakehub-impact has-impact-gradient-background has-background" id="about"><!-- wp:group {"className":"is-style-lakehub-impact-heading","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-impact-heading"><!-- wp:heading {"fontSize":"section"} -->
-<h2 class="wp-block-heading has-section-font-size">Impact through Precision</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"textColor":"body","fontSize":"lead"} -->
-<p class="has-body-color has-text-color has-lead-font-size">We focus on measurable outcomes, leveraging data and community-driven initiatives to build sustainable tech ecosystems.</p>
+<!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-impact-stats","tagName":"section","align":"full","metadata":{"name":"Home · Impact"},"templateLock":false,"anchor":"about"} -->
+<section class="wp-block-group alignfull is-style-lakehub-impact-stats" id="about"><!-- wp:heading -->
+<h2 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-teal-color">Impact</mark> Through Precision</h2>
+<!-- /wp:heading --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metrics"} -->
+<div class="wp-block-group is-style-lakehub-metrics"><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-row","metadata":{"name":"Software Engineers"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-row"><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-photo","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/refresh/engineers.jpg' ) ); ?>","source":"file"},"backgroundSize":"cover","backgroundPosition":"50% 50%"}},"metadata":{"name":"Software Engineers · Figure image"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-photo"><!-- wp:paragraph -->
+<p>350+</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"is-style-lakehub-impact-grid","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-impact-grid"><!-- wp:group {"className":"is-style-lakehub-impact-feature","gradient":"feature","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-impact-feature has-feature-gradient-background has-background"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/impact-incubator.png' ) ); ?>" alt="Entrepreneurs collaborating at LakeHub."/></figure>
-<!-- /wp:image -->
-
-<!-- wp:group {"className":"is-style-lakehub-hero-copy","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-hero-copy"><!-- wp:paragraph -->
-<p>Incubating the next wave of tech startups in Western Kenya.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-lakehub-text-link"} -->
-<div class="wp-block-button is-style-lakehub-text-link"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/programs/">LEARN MORE ↗</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-copy","templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-copy"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Software Engineers</h3>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>Rigorous full-stack and systems architects graduated through peer-driven production pipelines.</p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-impact-photo"} -->
-<figure class="wp-block-image size-full is-style-lakehub-impact-photo"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/impact-community.png' ) ); ?>" alt="Participants at a LakeHub community gathering."/></figure>
-<!-- /wp:image -->
-
-<!-- wp:group {"className":"is-style-lakehub-impact-wide","gradient":"impact-wide","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-impact-wide has-impact-wide-gradient-background has-background"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/impact-programs.png' ) ); ?>" alt="Young people learning technology skills together."/></figure>
-<!-- /wp:image -->
-
-<!-- wp:paragraph -->
-<p>Whether it's through offering training in cutting-edge technologies, providing access to mentors and role models, or creating opportunities for young people to connect and collaborate with their peers, Lake Hub is committed to helping Africa's youth reach their full potential and contribute to the growth and progress of the continent.</p>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-row","metadata":{"name":"Tech Hiring Partners"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-row"><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-photo","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/refresh/partners.jpg' ) ); ?>","source":"file"},"backgroundSize":"cover","backgroundPosition":"50% 50%"}},"metadata":{"name":"Tech Hiring Partners · Figure image"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-photo"><!-- wp:paragraph -->
+<p>45+</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-copy","templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-copy"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Tech Hiring Partners</h3>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>Active tech companies, regional unicorns, and European scaleups employing LakeHub engineers.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-row","metadata":{"name":"Placement Rate"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-row"><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-photo","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/refresh/placement.jpg' ) ); ?>","source":"file"},"backgroundSize":"cover","backgroundPosition":"50% 50%"}},"metadata":{"name":"Placement Rate · Figure image"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-photo"><!-- wp:paragraph -->
+<p>88%</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-copy","templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-copy"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Placement Rate</h3>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>Sustained high-income technical roles secured within 6 months post-cohort graduation.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-row","metadata":{"name":"Startups Incubated"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-row"><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-photo","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/refresh/startups.jpg' ) ); ?>","source":"file"},"backgroundSize":"cover","backgroundPosition":"50% 50%"}},"metadata":{"name":"Startups Incubated · Figure image"},"templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-photo"><!-- wp:paragraph -->
+<p>14</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --><!-- wp:group {"layout":{"type":"default"},"className":"is-style-lakehub-metric-copy","templateLock":"all"} -->
+<div class="wp-block-group is-style-lakehub-metric-copy"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Startups Incubated</h3>
+<!-- /wp:heading --><!-- wp:paragraph -->
+<p>Locally founded fintech, agritech, and health solutions created by alumni founders in Western Kenya.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->

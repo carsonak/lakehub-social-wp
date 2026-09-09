@@ -49,6 +49,16 @@ const state = process.env.LAKEHUB_TEST_STATE || '.runtime/browser-state.json';
     const draft = await request('/wp/v2/pages', 'POST', {title:'LakeHub temporary editor test',status:'draft',content:home.content.raw});
     temporary.push(['/wp/v2/pages',draft.id]);
     await openEditor(draft.id);
+    // Offscreen Groups mount lazily; select the figure before checking its live controls/locks.
+    await page.evaluate(() => {
+      const flat = []; const walk = bs => bs.forEach(b => { flat.push(b); walk(b.innerBlocks); });
+      walk(wp.data.select('core/block-editor').getBlocks());
+      wp.data.dispatch('core/block-editor').selectBlock(flat.find(b => b.attributes.className === 'is-style-lakehub-metric-photo').clientId);
+    });
+    await page.waitForFunction(() => {
+      const s = wp.data.select('core/block-editor');
+      return s.getTemplateLock(s.getSelectedBlockClientId()) === 'all';
+    });
     const edits = await page.evaluate(() => {
       const select = wp.data.select('core/block-editor'), dispatch = wp.data.dispatch('core/block-editor');
       const blocks = select.getBlocks(); const flat = [];
@@ -57,15 +67,21 @@ const state = process.env.LAKEHUB_TEST_STATE || '.runtime/browser-state.json';
       const image = flat.find(b => b.name === 'core/image');
       const replacement = flat.filter(b => b.name === 'core/image')[1];
       const button = flat.find(b => b.name === 'core/button');
+      const metric = flat.find(b => b.attributes.className === 'is-style-lakehub-metric-photo');
+      const metricEditable = select.getBlockEditingMode(metric.clientId) === 'default';
+      const metricLocked = !select.canRemoveBlocks([metric.innerBlocks[0].clientId]);
+      dispatch.updateBlockAttributes(metric.innerBlocks[0].clientId,{content:'999+'});
+      dispatch.updateBlockAttributes(metric.clientId,{style:{...metric.attributes.style,background:{backgroundImage:{url:replacement.attributes.url,id:replacement.attributes.id,source:'file'},backgroundSize:'cover'}}});
       const canMove = select.canMoveBlocks([blocks[0].clientId]);
       const canRemove = select.canRemoveBlocks([blocks.at(-1).clientId]);
       dispatch.updateBlockAttributes(heading.clientId,{content:'A client can edit this heading'});
       dispatch.updateBlockAttributes(image.clientId,{url:replacement.attributes.url,id:replacement.attributes.id,alt:'Replacement image test'});
       dispatch.updateBlockAttributes(button.clientId,{url:'/programs/',text:'Explore our programs'});
       dispatch.moveBlocksDown([blocks[0].clientId]);
-      return {canMove,canRemove};
+      return {canMove,canRemove,metricEditable,metricLocked,replacementId:replacement.attributes.id};
     });
     assert.equal(edits.canMove,true); assert.equal(edits.canRemove,true);
+    assert.equal(edits.metricEditable,true); assert.equal(edits.metricLocked,true);
     const pattern = own.find(p => p.name === 'lakehub-social/home-cta');
     await page.evaluate(content => {
       const dispatch = wp.data.dispatch('core/block-editor');
@@ -78,6 +94,10 @@ const state = process.env.LAKEHUB_TEST_STATE || '.runtime/browser-state.json';
     assert.ok(saved.content.raw.includes('A client can edit this heading'));
     assert.ok(saved.content.raw.includes('Replacement image test'));
     assert.ok(saved.content.raw.includes('Explore our programs'));
+    assert.ok(saved.content.raw.includes('999+'));
+    const savedMetric = await page.evaluate(()=>{const flat=[];const walk=bs=>bs.forEach(b=>{flat.push(b);walk(b.innerBlocks);});walk(wp.data.select('core/block-editor').getBlocks());return flat.find(b=>b.attributes.className==='is-style-lakehub-metric-photo').attributes.style.background.backgroundImage;});
+    assert.equal(savedMetric.id,edits.replacementId);
+    report.push('Impact figure: native background controls available, internal structure locked, value and photo changes survive reload');
     assert.equal(await page.evaluate(()=>wp.data.select('core/block-editor').getBlockCount()),7);
     assert.equal(await page.evaluate(()=>wp.data.select('core/block-editor').getBlocks()[1].attributes.metadata.name),'Home · Hero');
     report.push('Draft: edited heading, replaced image, changed button link, moved section, inserted pattern, saved and reloaded');

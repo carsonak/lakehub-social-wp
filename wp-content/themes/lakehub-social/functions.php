@@ -17,11 +17,11 @@ add_action( 'wp_enqueue_scripts', static function () {
 add_action( 'init', static function () {
 	register_block_pattern_category( 'lakehub', array( 'label' => __( 'LakeHub sections', 'lakehub-social' ) ) );
 	$styles = array(
-		'core/group' => array( 'hero', 'hero-grid', 'hero-copy', 'impact', 'impact-heading', 'impact-grid', 'impact-feature', 'impact-wide', 'journey', 'timeline', 'milestone', 'partners', 'partner-logos', 'insights', 'insight-card', 'insight-copy', 'cta', 'header', 'header-row', 'footer', 'footer-grid', 'footer-brand', 'footer-links', 'footer-bottom', 'newsletter', 'flagship-heading', 'benefits', 'benefit', 'program-section', 'page-shell' ),
-		'core/cover' => array( 'flagship' ),
-		'core/image' => array( 'hero-image', 'impact-photo', 'partner-logo', 'benefit-icon', 'header-logo', 'footer-logo', 'social-icon' ),
+		'core/group' => array( 'hero', 'hero-grid', 'hero-copy', 'impact', 'impact-heading', 'impact-grid', 'impact-feature', 'impact-wide', 'journey', 'timeline', 'milestone', 'partners', 'partner-logos', 'insights', 'insight-card', 'insight-copy', 'cta', 'header', 'header-row', 'footer', 'footer-grid', 'footer-brand', 'footer-links', 'footer-bottom', 'newsletter', 'flagship-heading', 'benefits', 'benefit', 'program-section', 'page-shell', 'photo-hero-copy', 'impact-stats', 'metrics', 'metric-row', 'metric-photo', 'metric-copy', 'flagship-centred', 'zone-brand' ),
+		'core/cover' => array( 'flagship', 'home-photo', 'programs-photo' ),
+		'core/image' => array( 'hero-image', 'impact-photo', 'partner-logo', 'benefit-icon', 'header-logo', 'footer-logo', 'social-icon', 'zone-mark' ),
 		'core/button' => array( 'text-link' ),
-		'core/paragraph' => array( 'year', 'newsletter-label' ),
+		'core/paragraph' => array( 'year', 'newsletter-label', 'zone-word' ),
 		'core/query' => array( 'insights' ),
 	);
 	foreach ( $styles as $block => $names ) {
