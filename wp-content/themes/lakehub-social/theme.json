@@ -5,8 +5,8 @@
     "appearanceTools": true,
     "useRootPaddingAwareAlignments": true,
     "layout": {
-      "contentSize": "1152px",
-      "wideSize": "1280px"
+      "contentSize": "72rem",
+      "wideSize": "80rem"
     },
     "color": {
       "defaultPalette": false,
@@ -124,45 +124,45 @@
         {
           "slug": "tiny",
           "name": "Tiny",
-          "size": "8px"
+          "size": "0.5rem"
         },
         {
           "slug": "small",
           "name": "Small",
-          "size": "16px"
+          "size": "1rem"
         },
         {
           "slug": "medium",
           "name": "Medium",
-          "size": "24px"
+          "size": "1.5rem"
         },
         {
           "slug": "large",
           "name": "Large",
-          "size": "32px"
+          "size": "2rem"
         },
         {
           "slug": "x-large",
           "name": "X-Large",
-          "size": "48px"
+          "size": "3rem"
         },
         {
           "slug": "section",
           "name": "Section",
-          "size": "64px"
+          "size": "4rem"
         },
         {
           "slug": "gutter",
           "name": "Gutter",
-          "size": "clamp(22px,5vw,64px)"
+          "size": "clamp(1.375rem,5vw,4rem)"
         }
       ]
     },
     "typography": {
       "defaultFontSizes": false,
       "fluid": {
-        "minViewportWidth": "320px",
-        "maxViewportWidth": "1280px"
+        "minViewportWidth": "20rem",
+        "maxViewportWidth": "80rem"
       },
       "fontFamilies": [
         {
@@ -189,7 +189,7 @@
             {
               "fontFamily": "Inter",
               "fontStyle": "normal",
-              "fontWeight": "400 700",
+              "fontWeight": "100 900",
               "fontDisplay": "swap",
               "src": [
                 "file:./assets/fonts/inter.woff2"
@@ -234,79 +234,79 @@
         {
           "slug": "caption",
           "name": "Caption",
-          "size": "12px",
+          "size": "0.75rem",
           "fluid": false
         },
         {
           "slug": "small",
           "name": "Small",
-          "size": "14px",
+          "size": "0.875rem",
           "fluid": false
         },
         {
           "slug": "body",
           "name": "Body",
-          "size": "16px",
+          "size": "1rem",
           "fluid": false
         },
         {
           "slug": "lead",
           "name": "Lead",
-          "size": "18px",
+          "size": "1.125rem",
           "fluid": false
         },
         {
           "slug": "section",
           "name": "Section heading",
-          "size": "32px",
+          "size": "2rem",
           "fluid": {
-            "min": "28px",
-            "max": "32px"
+            "min": "1.75rem",
+            "max": "2rem"
           }
         },
         {
           "slug": "program",
           "name": "Program heading",
-          "size": "36px",
+          "size": "2.25rem",
           "fluid": {
-            "min": "28px",
-            "max": "36px"
+            "min": "1.75rem",
+            "max": "2.25rem"
           }
         },
         {
           "slug": "display",
           "name": "Display",
-          "size": "56px",
+          "size": "3.5rem",
           "fluid": {
-            "min": "36px",
-            "max": "56px"
+            "min": "2.25rem",
+            "max": "3.5rem"
           }
         },
         {
           "slug": "cta",
           "name": "Call to action",
-          "size": "48px",
+          "size": "3rem",
           "fluid": {
-            "min": "32px",
-            "max": "48px"
+            "min": "2rem",
+            "max": "3rem"
           }
         },
         {
           "slug": "hero-photo",
           "name": "Photo hero",
-          "size": "76px",
+          "size": "4.75rem",
           "fluid": {
-            "min": "36px",
-            "max": "76px"
+            "min": "2.25rem",
+            "max": "4.75rem"
           }
         },
         {
           "slug": "metric",
           "name": "Impact figure",
-          "size": "170px",
+          "size": "10.625rem",
           "fluid": {
-            "min": "96px",
-            "max": "170px"
+            "min": "6rem",
+            "max": "10.625rem"
           }
         }
       ]
@@ -347,21 +347,21 @@
           "text": "var:preset|color|white"
         },
         "border": {
-          "radius": "2px"
+          "radius": "0.125rem"
         },
         "typography": {
           "fontFamily": "var:preset|font-family|mono",
           "fontSize": "var:preset|font-size|caption",
           "fontWeight": "500",
-          "lineHeight": "16px",
-          "letterSpacing": "0.6px"
+          "lineHeight": "1rem",
+          "letterSpacing": "0.0375rem"
         },
         "spacing": {
           "padding": {
-            "top": "13px",
-            "bottom": "13px",
-            "left": "32px",
-            "right": "32px"
+            "top": "0.8125rem",
+            "bottom": "0.8125rem",
+            "left": "2rem",
+            "right": "2rem"
           }
         }
       }
@@ -398,10 +398,10 @@
           "fontFamily": "var:preset|font-family|navigation",
           "fontSize": "var:preset|font-size|caption",
           "textTransform": "uppercase",
-          "letterSpacing": "0.6px"
+          "letterSpacing": "0.0375rem"
         },
         "spacing": {
-          "blockGap": "32px"
+          "blockGap": "2rem"
         }
       },
       "core/post-content": {
@@ -427,6 +427,27 @@
     {
       "name": "programs",
       "title": "Programs",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "about",
+      "title": "About",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "impact",
+      "title": "Impact",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "team",
+      "title": "Team",
       "postTypes": [
         "page"
       ]

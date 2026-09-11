@@ -17,7 +17,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"ignore","inherit":false},"className":"is-style-lakehub-insights"} -->
+<!-- wp:query {"queryId":1,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[1],"sticky":"ignore","inherit":false},"className":"is-style-lakehub-insights"} -->
 <div class="wp-block-query is-style-lakehub-insights"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:group {"className":"is-style-lakehub-insight-card","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-insight-card"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"1.888"} /-->

@@ -1,0 +1,134 @@
+{
+  "about-hero": {
+    "file": "about-hero.png",
+    "source": "About.svg",
+    "image": "image1_380_71",
+    "sha256": "81684f6feed0b5586c6c043f093ba1c9668b2b107b021f93b7d79d3c67f473e4"
+  },
+  "our-story": {
+    "file": "our-story.jpg",
+    "source": "About.svg",
+    "image": "image2_380_71",
+    "sha256": "3d833f44f337c59abdb6f32e98f85be94872bc542a2bd64d57edd0b8d7d8e8c3"
+  },
+  "caleb": {
+    "file": "caleb.jpg",
+    "source": "About.svg",
+    "image": "image3_380_71",
+    "sha256": "dc54ea6a2554ce9e97f7f0167f3cffe7754d078f81bbb19185c90189a13b960e"
+  },
+  "daisy": {
+    "file": "daisy.jpg",
+    "source": "About.svg",
+    "image": "image4_380_71",
+    "sha256": "c521d48342acbdc06a18ef5e57a4a0242668a49aa7c5b252d2dd43c392eaad78"
+  },
+  "deril": {
+    "file": "deril.jpg",
+    "source": "About.svg",
+    "image": "image5_380_71",
+    "sha256": "0765e09b90a13da7648155ea8bfeee658fbcc3d1638bc95307d74bef4a036804"
+  },
+  "stacy": {
+    "file": "stacy.jpg",
+    "source": "About.svg",
+    "image": "image6_380_71",
+    "sha256": "9bfa7f1042882d5553ec5db63765a494e1b313e4c09fad2b76f0a8092eff735a"
+  },
+  "james": {
+    "file": "james.jpg",
+    "source": "About.svg",
+    "image": "image7_380_71",
+    "sha256": "a70be8486fac61d5dcfceb3a51e50e98e4d7ea71d98f046ad43be4b2efcd584a"
+  },
+  "david": {
+    "file": "david.jpg",
+    "source": "About.svg",
+    "image": "image8_380_71",
+    "sha256": "06fbd90a31cb6acc3e6579ef7dcc0edfd7fee631ac27bad6350ab6d0c94872e2"
+  },
+  "paul": {
+    "file": "paul.png",
+    "source": "About.svg",
+    "image": "image9_380_71",
+    "sha256": "a94c5f0414f6d806e5b48df98924e1603d8e6fca3ab39365540d40d88a2ecec6"
+  },
+  "dorcas": {
+    "file": "dorcas.jpg",
+    "source": "About.svg",
+    "image": "image10_380_71",
+    "sha256": "583b6ff7b60772d5487e7059151dd3053a4bb58e276cf391e15910c376a7354c"
+  },
+  "lydiah": {
+    "file": "lydiah.jpg",
+    "source": "About.svg",
+    "image": "image11_380_71",
+    "sha256": "35e89bff5806a1451d861465406112195f80abcd112657908ea49b80ace41252"
+  },
+  "torsten": {
+    "file": "torsten.jpg",
+    "source": "About.svg",
+    "image": "image12_380_71",
+    "sha256": "cc2764281b0a8efcc0428121c79eedf2c9be288547f188eb68709d25d84a284c"
+  },
+  "mission-main": {
+    "file": "mission-main.jpg",
+    "source": "About.svg",
+    "image": "image13_380_71",
+    "sha256": "cf8f10a5b64f5987aca2d591a2a2add3b8d421bbdf846364a33c1450936f9095"
+  },
+  "bellah": {
+    "file": "bellah.jpg",
+    "source": "About.svg",
+    "image": "image15_380_71",
+    "sha256": "c7617e5fa2e47c47d1701676416dbab02978b22c857c3ab837443b2893dc022b"
+  },
+  "alpha": {
+    "file": "alpha.png",
+    "source": "About.svg",
+    "image": "image16_380_71",
+    "sha256": "d8a988893fe519da45e0968e575748d10ddc0ea84dbcfb457ebf41483dc79f34"
+  },
+  "mission-speaker": {
+    "file": "mission-speaker.jpg",
+    "source": "About.svg",
+    "image": "image17_380_71",
+    "sha256": "e3749d345b44156b738c77df94805ca097d42e8018a2e19e6567d2bb20d69ae2"
+  },
+  "mission-group": {
+    "file": "mission-group.jpg",
+    "source": "About.svg",
+    "image": "image18_380_71",
+    "sha256": "9e3a2bf5591ae500e94b59ff5537bf3835d05278c443727bab6c0580715c0287"
+  },
+  "mission-event": {
+    "file": "mission-event.jpg",
+    "source": "About.svg",
+    "image": "image19_380_71",
+    "sha256": "a9965bd69bae4c398533a41d42734b28666f760e11f1c81655f20e5a946a259c"
+  },
+  "impact-hero": {
+    "file": "impact-hero.jpg",
+    "source": "Impact.svg",
+    "image": "image1_409_150",
+    "sha256": "36220c4ef838c737b878a162f8666a71ed8ae157fa3734c97dc27f58e92b188c"
+  },
+  "chichwa": {
+    "file": "chichwa.jpg",
+    "source": "Impact.svg",
+    "image": "image2_409_150",
+    "sha256": "5cd3ca218e46e9ee8118e427d9d8e0dd4ca5886f7f4c5b38d1edfa6922284e54"
+  },
+  "malika": {
+    "file": "malika.jpg",
+    "source": "Impact.svg",
+    "image": "image4_409_150",
+    "sha256": "76f7cdce85de6ab57b8035324475bce6dfc311d86a8946eeb4a07020eb2b8c39"
+  },
+  "exports": {
+    "Impact.svg": "11c3bc6f1ee31e49494767d3bedd20c71b30a3e8a24ddb13b2ddff3041e28e72",
+    "Our Programs.svg": "77a27aafb5191d59802995fd46005fa47c47afec88875a97371bd3f798539af9",
+    "Home.svg": "1157c92f803037f25083f86e932e9906ad6b9a3f0e04d76338c98a4305d94bdc",
+    "About.svg": "491cd25741fb9ca7acdd1da069d40f6205cd2d3c6dade76de6550462c61f27cf"
+  }
+}

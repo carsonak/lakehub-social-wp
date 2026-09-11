@@ -16,11 +16,11 @@
 <!-- wp:navigation <?php echo lakehub_social_navigation_attributes( 'primary', json_decode( '{"layout":{"type":"flex","justifyContent":"right"},"ariaLabel":"Primary navigation"}', true ) ); ?> -->
 <!-- wp:navigation-link {"label":"Home","url":"<?php echo esc_url( home_url() ); ?>/","kind":"custom"} /-->
 
-<!-- wp:navigation-link {"label":"About","url":"<?php echo esc_url( home_url() ); ?>/#about","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"About","url":"<?php echo esc_url( home_url() ); ?>/about/","kind":"custom"} /-->
 
 <!-- wp:navigation-link {"label":"Programs","url":"<?php echo esc_url( home_url() ); ?>/programs/","kind":"custom"} /-->
 
-<!-- wp:navigation-link {"label":"Impact","url":"<?php echo esc_url( home_url() ); ?>/#impact","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Impact","url":"<?php echo esc_url( home_url() ); ?>/impact/","kind":"custom"} /-->
 <!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

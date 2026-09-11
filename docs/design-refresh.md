@@ -31,7 +31,7 @@ References: [Figma export settings](https://help.figma.com/hc/en-us/articles/134
 - Keep reusable tokens in `theme.json`, shared structure in template parts, and editable page sections in filesystem patterns inserted as native blocks. Keep named sections and structural/content-only locks, with direct controls for text, images, and destinations.
 - The inspected Home reference uses a photo-backed hero, four alternating photo-filled impact numbers, a journey timeline, partners, post-driven insights, a call to action, and shared navigation/footer. Numbers must remain editable text, with an accessible solid-colour fallback. Exact image assets must remain local.
 - Retain the Programs content type and `lakehub/programs` block. Determine page-specific changes from fresh design context rather than assuming the existing frame contents are unchanged.
-- Retain independently editable milestones and logos, and post-driven Insights. Partners automatically scroll with drag and keyboard navigation and a pause/play control; Insights retain user-triggered scrolling. Use short hover/focus transitions, respect reduced motion, and keep content accessible without JavaScript.
+- Retain independently editable milestones and logos, and post-driven Insights. Partners automatically scroll with drag and keyboard navigation; hover, focus, and reduced-motion preferences pause movement. Insights retain user-triggered scrolling. Use short hover/focus transitions and keep content accessible without JavaScript.
 - Keep newsletter signup a non-submitting visual preview. No subscription service integration is included.
 - Implement an explicit, versioned refresh migration with dry-run output and a fresh rollback snapshot. Do not simply increase the old migration version and rerun its original overwrite logic. Pattern edits alone do not update saved pages. Inspect Site Editor overrides before changing shared parts.
 
@@ -102,7 +102,7 @@ The following files were extracted from embedded image data without resampling; 
 - Rollback, reapplication, repeat-run idempotence, attachment reuse, original/refresh snapshot preservation, program links/thumbnails, and article-body preservation passed on an isolated table-prefix copy. The database user cannot create separate databases, so verification used disposable tables in the same database, then removed those tables.
 - Project PHP and JavaScript syntax, Theme JSON schema, and Git whitespace checks passed. The database health check passed; LakeHub Social 3.1.0 and LakeHub Site 1.1.0 are active.
 
-The current local preview is served by the existing ignored router at `http://127.0.0.1:8080/` and `/programs/`. The router maps stored canonical URLs only in preview responses; the database URLs and `wp-config.php` remain unchanged. Studio native startup remains subject to the compatibility issue documented above.
+The design-refresh verification preview used an ignored response router at `http://127.0.0.1:8080/`. That disposable router has been removed; the database URLs and `wp-config.php` remain unchanged. Studio native startup remains subject to the compatibility issue documented above.
 
 ### Interaction refresh
 
@@ -117,4 +117,46 @@ The public-page regression suite requires Playwright and an available Chromium b
 LAKEHUB_TEST_URL=http://127.0.0.1:8080 node scripts/tests/interactions.cjs
 ```
 
-Set `CHROMIUM_PATH` if using a separately installed Chromium. The suite covers autoplay, drag/click separation, touch and vertical scrolling, both loop boundaries, keyboard navigation, explicit pause/play, reduced motion, responsive gradients, shorter logo collections, and the JavaScript-disabled fallback. Editor save/reload remains covered by `scripts/tests/block-editor.cjs` using an authenticated local browser state.
+Set `CHROMIUM_PATH` if using a separately installed Chromium. The suite covers autoplay, hover/focus pausing, drag/click separation, touch and vertical scrolling, both loop boundaries, keyboard navigation, the absence of a pause/play control, reduced motion, responsive gradients, shorter logo collections, and the JavaScript-disabled fallback. Editor save/reload remains covered by `scripts/tests/block-editor.cjs` using an authenticated local browser state.
+
+## September 10 completion
+
+The approved completion adds About (`380:71`), Impact (`409:150`) and a Team page derived from the About cards. Home remains `615:348`; Programs remains `299:174`. Current exports are retained locally in the ignored `.runtime/design-refresh/completion/figma-exports/` handoff, with supporting measurements in `.runtime/design-refresh/completion/design-spec-10092026.txt`. Live Home context succeeded on September 10; subsequent exact-frame requests hit the connector quota, so the supplied PNG/SVG references govern the remaining pages. No mobile frames were supplied.
+
+`assets/images/completion/provenance.json` records original image IDs and SHA-256 hashes. Photographs are extracted without resampling. Decorative SVGs preserve exported paths, with a viewBox selecting the relevant decoration. Off-canvas team cards are included on the separate Team page, not used to determine About's width. Original placeholder biographies are omitted. The About headline corrects “Desicions” to “Decisions”.
+
+Desktop dimensions scale proportionally from the 1280px artwork using rem-based design values and a viewport-derived frontend root size above 1280px. Below the reference width, sections reflow; type is not proportionally shrunk. The editor retains its own UI root size. The existing Inter file contains variable weights through 900; its declaration now includes ExtraBold.
+
+Home uses aqua `#81F4FA` for the highlighted hero word and a 60% dark teal overlay. Filled teal actions adopt aqua with dark text on hover/focus. Insights starts with the second card selected on desktop and the first on small screens, browses the latest twelve posts, and does not loop. Partner autoplay no longer includes a pause/play button; hover, focus and reduced motion still stop movement. The timeline stays horizontal and supports additional editable milestones. These choices supersede the older interaction descriptions above.
+
+The newsletter remains a visual preview. Chichwa and “View More People” use optional native buttons: a blank URL hides the action on the frontend, while the editor keeps it available. Malika's supplied Zone01 destination is retained. No new people-story or individual team-member routes are introduced.
+
+### Local application and recovery
+
+After a MySQL backup and target confirmation:
+
+```bash
+wp --path="$PWD" lakehub completion-20260910 apply --dry-run
+wp --path="$PWD" lakehub completion-20260910 apply
+```
+
+This separate migration preserves the original block/design-refresh snapshots. It patches the existing Home hero and Insights query, updates referenced menu destinations, and creates the three pages and twelve team records. It does not replace Programs or article content. Its own marker makes repeat runs inert. Content writes are grouped in an InnoDB transaction; an independent journal supports recovery after an interrupted run.
+
+After taking a fresh backup, `wp --path="$PWD" lakehub completion-20260910 rollback` restores the changed content and removes completion-created page/team records. Recovery refuses to overwrite records edited since completion. Media is retained for safe reuse; restore matching theme source to restore the old presentation.
+
+This PHP 8.5 environment lacks DOM and image-processing extensions. The completion importer therefore records original image dimensions, file size and alt text without generating resized derivatives. On a fully equipped PHP runtime it uses normal WordPress media metadata generation. Originals remain selectable in the Media Library. XML/image extensions are needed for full image-processing support; the completion does not install system packages or alter vendor code.
+
+### Completion verification
+
+- LakeHub Social **3.2.0** and LakeHub Site **1.2.0** are active locally. MySQL health, project PHP/JavaScript syntax, official Theme JSON schema validation and Git whitespace checks pass.
+- All fourteen registered LakeHub patterns parse without invalid blocks. Home and Programs save/reload and their existing editing tests pass. About, Impact and Team load cleanly; temporary drafts verify heading/image/link edits, collection settings, team roles, featured flags, biographies and portraits across reloads.
+- All five pages were checked at 320, 390, 768, 1024, 1280, 1440 and 1920px, with one primary heading, local images and no document overflow. Desktop and mobile captures were compared with the exports; visible viewport checks confirm portrait rendering where Chromium's full-page captures omit offscreen raster layers.
+- The original interaction suite passes: logo autoplay/hover pause, dragging, keyboard controls, loop boundaries, reduced motion, responsive program gradients and JavaScript-disabled fallback.
+- Isolated InnoDB-table tests verify apply, repeat-run idempotence, rollback and reapplication, including the final portrait crop metadata. Programs and article content remained unchanged. Test tables and their unreferenced uploads were removed afterward.
+- The pre-application database dump is `.backups/before-completion-20260910.sql`. Verification used `http://127.0.0.1:8080/` with process-only URL overrides and a disposable response router. The router has since been removed; stored URLs and `wp-config.php` are unchanged.
+
+Team default crops preserve the exported image-fill geometry. Replacing a featured image automatically uses normal cover framing rather than applying the previous photograph's crop. The original WordPress “Hello world!” sample post remains published but is excluded from the Home query; it is not deleted.
+
+Public completion checks are in `scripts/tests/completion.cjs`; new-page editing checks are in `scripts/tests/completion-editor.cjs`. They use the same Playwright/Chromium and authenticated-state conventions as the existing suites. `LAKEHUB_INTERACTIONS_ONLY=1` runs the collection and behavior checks without repeating the responsive page matrix. `LAKEHUB_SCREENSHOTS` optionally selects a directory for captures.
+
+The final combined completion suite passes, including zero/one/two/three/twelve-card fixtures, centered boundary navigation, the hero overlay/color, and filled-button hover colors. A separate computed-style check confirms the Figma font families, sizes and weights on all five pages, allowing normal fractional rounding from WordPress fluid typography. Temporary editor drafts and the test login session were removed before the repository backup.

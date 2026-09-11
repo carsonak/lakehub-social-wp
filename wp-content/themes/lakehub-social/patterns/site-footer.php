@@ -35,10 +35,10 @@
 <!-- /wp:heading -->
 
 <!-- wp:navigation <?php echo lakehub_social_navigation_attributes( 'footer', json_decode( '{"overlayMenu":"never","ariaLabel":"Quick Links","layout":{"type":"flex","orientation":"vertical"}}', true ) ); ?> -->
-<!-- wp:navigation-link {"label":"About Us","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/#about"} /-->
-<!-- wp:navigation-link {"label":"Our Mission","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/#about"} /-->
-<!-- wp:navigation-link {"label":"Impact Stories","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/#stories"} /-->
-<!-- wp:navigation-link {"label":"History","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/#impact"} /-->
+<!-- wp:navigation-link {"label":"About Us","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/about/"} /-->
+<!-- wp:navigation-link {"label":"Our Mission","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/about/#mission"} /-->
+<!-- wp:navigation-link {"label":"Impact Stories","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/impact/"} /-->
+<!-- wp:navigation-link {"label":"History","kind":"custom","url":"<?php echo esc_url( home_url() ); ?>/about/#history"} /-->
 <!-- /wp:navigation --></div>
 <!-- /wp:group -->
 

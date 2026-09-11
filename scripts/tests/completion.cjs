@@ -1,0 +1,83 @@
+/** Public checks for the September completion. No WordPress records are changed. */
+const assert = require('node:assert/strict');
+const {chromium} = require('playwright');
+const base = process.env.LAKEHUB_TEST_URL || 'http://127.0.0.1:8080';
+(async () => {
+ const browser = await chromium.launch({headless:true, ...(process.env.CHROMIUM_PATH ? {executablePath:process.env.CHROMIUM_PATH} : {}), args:['--no-sandbox']});
+ const page = await browser.newPage();
+ page.setDefaultTimeout(120000);
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ try {
+  for (const width of (process.env.LAKEHUB_INTERACTIONS_ONLY ? [] : [320,390,768,1024,1280,1440,1920])) {
+   await page.setViewportSize({width,height:900});
+   for (const path of ['/','/programs/','/about/','/impact/','/team/']) {
+    const response=await page.goto(base+path,{waitUntil:'networkidle'});
+    assert.equal(response.status(),200,`${path} responds`);
+    await page.evaluate(()=>{document.querySelectorAll('img').forEach(i=>i.loading='eager');return document.fonts.ready;});
+    await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=700){scrollTo({top:y,behavior:'instant'});await new Promise(r=>setTimeout(r,35));}scrollTo({top:0,behavior:'instant'});});
+    await page.waitForFunction(()=>[...document.images].every(i=>i.complete));
+    await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))));
+    await page.waitForTimeout(150);
+    const result=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth-innerWidth,headings:document.querySelectorAll('main h1').length,missing:[...document.querySelectorAll('img')].filter(i=>i.complete&&!i.naturalWidth).map(i=>i.src)}));
+    const rootSize=await page.evaluate(()=>parseFloat(getComputedStyle(document.documentElement).fontSize));
+    assert.ok(Math.abs(rootSize-(width>=1280?width/80:16))<.02,'Proportional desktop scale');
+    assert.ok(result.overflow<=1,`${path} at ${width}: overflow ${result.overflow}`);
+    assert.equal(result.headings,1,`${path}: one primary heading`);
+    assert.deepEqual(result.missing,[],`${path}: images load`);
+    if (process.env.LAKEHUB_SCREENSHOTS && [390,1280,1920].includes(width)) await page.screenshot({path:`${process.env.LAKEHUB_SCREENSHOTS}/${path.replaceAll('/','')||'home'}-${width}.png`,fullPage:true});
+   }
+  }
+  await page.setViewportSize({width:1280,height:900});
+  await page.goto(base+'/',{waitUntil:'networkidle'});
+  assert.equal(await page.locator('.is-style-lakehub-home-photo mark').evaluate(e=>getComputedStyle(e).color),'rgb(129, 244, 250)');
+  assert.equal(await page.locator('.is-style-lakehub-home-photo .wp-block-cover__background').evaluate(e=>getComputedStyle(e).opacity),'0.6');
+  const cta=page.locator('.is-style-lakehub-home-photo .wp-block-button:not(.is-style-outline) a');await cta.hover();await page.waitForTimeout(250);
+  assert.deepEqual(await cta.evaluate(e=>[getComputedStyle(e).backgroundColor,getComputedStyle(e).color]),['rgb(129, 244, 250)','rgb(0, 32, 33)']);
+  const query=page.locator('.wp-block-query.is-style-lakehub-insights');
+  await query.scrollIntoViewIfNeeded();
+  const cards=query.locator('.wp-block-post-template > li');
+  const actualCount=await cards.count();
+  assert.ok(actualCount>=3 && actualCount<=12);
+  assert.equal(await cards.nth(1).getAttribute('class').then(c=>c.includes('is-current')),true);
+  const waitCentered=async index=>page.waitForFunction(index=>{const t=document.querySelector('.wp-block-query.is-style-lakehub-insights .wp-block-post-template');const c=t.children[index];return c?.classList.contains('is-current')&&Math.abs(c.offsetLeft+c.offsetWidth/2-t.scrollLeft-t.clientWidth/2)<3;},index,{timeout:10000});
+  await waitCentered(1);
+  const centered=async()=>query.locator('.wp-block-post-template').evaluate(t=>{const c=t.querySelector('.is-current');return Math.abs(c.offsetLeft+c.offsetWidth/2-t.scrollLeft-t.clientWidth/2)<3;});
+  assert.ok(await centered(),'Second card centered initially');
+  for(let i=1;i<actualCount-1;i++){await query.getByRole('button',{name:'Next insight',exact:true}).click();await waitCentered(i+1);}
+  assert.ok(await centered());
+  assert.equal(await query.getByRole('button',{name:'Next insight',exact:true}).count(),0);
+  for(let i=actualCount-1;i>0;i--){await query.getByRole('button',{name:'Previous insight',exact:true}).click();await waitCentered(i-1);}
+  assert.ok(await centered());
+  assert.equal(await query.getByRole('button',{name:'Previous insight',exact:true}).count(),0);
+  assert.equal(await page.locator('.lakehub-partners-toggle').count(),0);
+  const track=page.locator('.is-style-lakehub-timeline');
+  await track.evaluate(t=>{for(let i=0;i<4;i++)t.append(t.firstElementChild.cloneNode(true));});
+  assert.ok(await track.evaluate(t=>t.scrollWidth>t.clientWidth),'Additional years overflow their track');
+  await track.focus();const start=await track.evaluate(t=>t.scrollLeft);await page.keyboard.press('ArrowRight');await page.waitForTimeout(400);assert.ok(await track.evaluate(t=>t.scrollLeft)>start);
+  // Exercise future collection sizes without publishing synthetic WordPress posts.
+  const source=require('node:fs').readFileSync('wp-content/themes/lakehub-social/assets/js/main.js','utf8');
+  let count=0;
+  await page.route('**/assets/js/main.js*', route=>route.fulfill({contentType:'application/javascript',body:source.replace("  document.querySelectorAll('.wp-block-query.is-style-lakehub-insights').forEach", `  document.querySelectorAll('.wp-block-query.is-style-lakehub-insights').forEach(q=>{const t=q.querySelector('.wp-block-post-template');if(t){const c=t.firstElementChild.cloneNode(true);t.replaceChildren(...Array.from({length:${count}},()=>c.cloneNode(true)));}});\n  document.querySelectorAll('.wp-block-query.is-style-lakehub-insights').forEach`)}));
+  for(count of [0,1,2,3,12]) {
+   await page.goto(base+'/',{waitUntil:'networkidle'});
+   const q=page.locator('.wp-block-query.is-style-lakehub-insights');
+   await q.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(700);
+   assert.equal(await q.locator('.wp-block-post-template > li').count(),count);
+   if(count<2) {assert.equal(await q.getByRole('button').count(),0,`Collection ${count}: ${await q.locator('button').evaluateAll(bs=>JSON.stringify(bs.map(b=>({text:b.textContent,hidden:b.hidden}))))}`);continue;}
+   await q.locator('.wp-block-post-template').focus();
+   await page.keyboard.press('End');await waitCentered(count-1);
+   assert.equal(await q.getByRole('button',{name:'Next insight',exact:true}).count(),0);
+   assert.equal(await q.locator('li.is-current').evaluate(c=>[...c.parentElement.children].indexOf(c)),count-1);
+   await page.keyboard.press('Home');await waitCentered(0);
+   assert.equal(await q.getByRole('button',{name:'Previous insight',exact:true}).count(),0);
+  }
+  await page.unroute('**/assets/js/main.js*');
+  await page.goto(base+'/about/',{waitUntil:'networkidle'});assert.equal(await page.locator('.lakehub-team-card').count(),6);
+  await page.goto(base+'/team/',{waitUntil:'networkidle'});assert.equal(await page.locator('.lakehub-team-card').count(),12);
+  assert.equal(await page.getByText('Brief biographical placeholder',{exact:false}).count(),0);
+  await page.goto(base+'/impact/',{waitUntil:'networkidle'});assert.equal(await page.locator('.is-style-lakehub-optional-action').count(),0);assert.equal(await page.locator('a[href="https://www.zone01kisumu.ke/"]').count(),1);
+  assert.deepEqual(errors,[]);
+  console.log(process.env.LAKEHUB_INTERACTIONS_ONLY ? 'PASS: Insights boundaries and collection sizes, extra milestones, colors, team collections and optional actions.' : 'PASS: five pages, seven widths, image loading, headings, Insights boundaries and collection sizes, extra milestones, colors, team collections and optional actions.');
+ } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

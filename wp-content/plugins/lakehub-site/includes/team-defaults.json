@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Dorcas Owinoh",
+    "role": "CO-EXECUTIVE DIRECTOR",
+    "bio": "Leads LakeHub’s strategy, programs, and organizational direction.",
+    "image": "dorcas.jpg",
+    "featured": true,
+    "crop": {
+      "width": 100.0,
+      "height": 123.3644,
+      "left": 0,
+      "top": 0
+    }
+  },
+  {
+    "name": "Paul Oguda",
+    "role": "HEAD OF TECH",
+    "bio": "Leads LakeHub’s technical programs and technology initiatives.",
+    "image": "paul.png",
+    "featured": true,
+    "crop": {
+      "width": 100.0963,
+      "height": 164.0128,
+      "left": -0.0481,
+      "top": -34.0314
+    }
+  },
+  {
+    "name": "Caleb Nyoiro",
+    "role": "CO-EXECUTIVE DIRECTOR",
+    "bio": "Provides executive leadership and drives partnerships and ecosystem engagement.",
+    "image": "caleb.jpg",
+    "featured": true,
+    "crop": {
+      "width": 151.0574,
+      "height": 125.463,
+      "left": -27.719,
+      "top": 0.0
+    }
+  },
+  {
+    "name": "Deril Okoth",
+    "role": "COMMUNICATIONS LEAD",
+    "bio": "Leads LakeHub’s communications, storytelling, and public engagement.",
+    "image": "deril.jpg",
+    "featured": true,
+    "crop": {
+      "width": 100.3901,
+      "height": 100.9346,
+      "left": -0.1394,
+      "top": -0.955
+    }
+  },
+  {
+    "name": "Torsten Kremser",
+    "role": "DIRECTOR PARTNERSHIPS",
+    "bio": "Builds and manages partnerships that expand LakeHub’s opportunities and impact.",
+    "image": "torsten.jpg",
+    "featured": true,
+    "crop": {
+      "width": 100.0221,
+      "height": 164.7883,
+      "left": 0,
+      "top": 0
+    }
+  },
+  {
+    "name": "Lydiah Ojowi",
+    "role": "FINANCE MANAGER",
+    "bio": "Oversees financial management and accountability across LakeHub.",
+    "image": "lydiah.jpg",
+    "featured": true,
+    "crop": {
+      "width": 100.046,
+      "height": 132.2902,
+      "left": 0.1538,
+      "top": -10.3912
+    }
+  },
+  {
+    "name": "Daisy Achieng'",
+    "role": "COMMUNICATIONS ASSOCIATE",
+    "bio": "",
+    "image": "daisy.jpg",
+    "featured": false,
+    "crop": {
+      "width": 100.1806,
+      "height": 122.5408,
+      "left": -0.0904,
+      "top": 0.0
+    }
+  },
+  {
+    "name": "Alpha Omondi",
+    "role": "BOCAL TEAM (TECH)",
+    "bio": "Supports LakeHub’s technical operations and technology initiatives.",
+    "image": "alpha.png",
+    "featured": false,
+    "crop": {
+      "width": 100.0253,
+      "height": 148.0243,
+      "left": -0.0127,
+      "top": -35.233
+    }
+  },
+  {
+    "name": "Bellah Oyucho",
+    "role": "BOCAL TEAM (TECH)",
+    "bio": "Contributes to LakeHub’s technical work and technology initiatives.",
+    "image": "bellah.jpg",
+    "featured": false,
+    "crop": {
+      "width": 100.1288,
+      "height": 105.3278,
+      "left": -0.0643,
+      "top": 0.0
+    }
+  },
+  {
+    "name": "Stacy Dina",
+    "role": "TECH ASSOCIATE",
+    "bio": "",
+    "image": "stacy.jpg",
+    "featured": false,
+    "crop": {
+      "width": 100.003,
+      "height": 160.4347,
+      "left": -0.0015,
+      "top": -21.3043
+    }
+  },
+  {
+    "name": "James Odede",
+    "role": "ADVISOR",
+    "bio": "Provides strategic guidance for LakeHub’s growth and impact.",
+    "image": "james.jpg",
+    "featured": false,
+    "crop": {
+      "width": 100.2094,
+      "height": 139.5653,
+      "left": -0.1047,
+      "top": -26.087
+    }
+  },
+  {
+    "name": "David Sultan",
+    "role": "ADVISOR",
+    "bio": "Supports LakeHub with strategic and ecosystem guidance.",
+    "image": "david.jpg",
+    "featured": false,
+    "crop": {
+      "width": 100.0,
+      "height": 114.3478,
+      "left": 0,
+      "top": 0
+    }
+  }
+]

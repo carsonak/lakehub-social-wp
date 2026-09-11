@@ -1,6 +1,6 @@
 # Editing the LakeHub website
 
-The Home and Programs pages use WordPress blocks. You do not need HTML, PHP, or CSS.
+The Home, Programs, About, Impact, and Team pages use WordPress blocks. You do not need HTML, PHP, or CSS.
 
 ## Home and Programs
 
@@ -25,7 +25,7 @@ Duplicate, move, or remove an entire impact row through List View to change the 
 
 Open the section in List View. Under **Timeline**, duplicate a milestone or insert the **Journey milestone** pattern; edit its year, title, and description. Move or remove individual milestones as needed. Under **Partner logos**, add, replace, reorder, or remove Image blocks. Use the image link control to set a partner's website.
 
-Partner logos stay static in the editor. On the website they scroll automatically; visitors can drag either way, focus the carousel and use Left/Right arrow keys, or stop movement with **Pause**. Hovering or keyboard focus pauses scrolling, and reduced-motion preferences disable autoplay. Short collections that fit do not scroll. Upload the original full-colour logo with a transparent background and descriptive alternative text: the theme applies the white appearance and restores the original colours on hover or keyboard focus. The looping copies exist only on the website; do not duplicate logos in the editor to create the loop.
+Partner logos stay static in the editor. On the website they scroll automatically; visitors can drag either way, focus the carousel and use Left/Right arrow keys. Hovering or keyboard focus pauses scrolling, and reduced-motion preferences disable autoplay. Short collections that fit do not scroll. Upload the original full-colour logo with a transparent background and descriptive alternative text: the theme applies the white appearance and restores the original colours on hover or keyboard focus. The looping copies exist only on the website; do not duplicate logos in the editor to create the loop.
 
 Journey milestones enlarge gently on hover. Program cards receive a cursor-following glare, and buttons and navigation links provide hover/focus feedback automatically; no animation settings or code editing are required.
 
@@ -43,7 +43,7 @@ The program description in the block editor is authoritative; the legacy Excerpt
 
 ## Latest Insights
 
-Use **Posts → Add New** or edit an existing post. Set a title, featured image, and excerpt. The Home page displays the three newest published posts, linking to their full articles. Publishing a new post updates the list automatically.
+Use **Posts → Add New** or edit an existing post. Set a title, featured image, and excerpt. The Home page displays the twelve newest published posts, linking to their full articles. Publishing a new post updates the list automatically.
 
 ## Header, footer, and navigation
 
@@ -56,3 +56,17 @@ Administrators can change structure and global styles. Routine editors should us
 ## Image tips
 
 Choose a landscape image for heroes and program cards. Keep faces and important subjects near the center because images crop differently on smaller screens. Prefer appropriately sized uploads rather than very large originals. The supplied Figma assets remain bundled with the theme; page images also have editable Media Library copies.
+
+## About, Impact, and Team
+
+Edit About and Impact through **Pages**. Their named sections contain direct text and image controls, with protected internal structure. Hero photos use Cover blocks; the mission collage contains individually replaceable Image blocks. The text in the transformation panels is editable.
+
+Use **Team Members → Add Team Member** for each person. Set the name in the title, the biography in the editor, the portrait in **Featured image**, and the role in **Team card options**. Check **Featured on About** to include a person in About's six-member preview. **Page Attributes → Order** controls ordering, with lower numbers first. The Team page displays all published members. Drafts are hidden; changing a shared record updates both pages. No individual profile page is published.
+
+In the LakeHub Team block settings, use **Featured members only** and **Member limit**; zero means all members. The default About limit is six. Team defaults to all members.
+
+Impact's Chichwa and “View More People” buttons remain visible for editing but hidden on the website until a destination is entered. Select the button and add its URL using the native link control. Removing the URL hides it again.
+
+Latest Insights now defaults to the twelve newest published posts. Change the Query Loop's items-per-page setting to adjust that limit. The three visible desktop cards are a viewport onto that collection; arrow controls move adjacent cards into the center. Cards do not loop, and the unavailable arrow disappears at either end.
+
+The journey remains horizontal on mobile and desktop. Add independent milestone pattern copies inside the timeline; they extend the scrollable track. Partner logos no longer have a pause/play button: pointer hover, keyboard focus, and reduced-motion preferences suspend automatic scrolling.

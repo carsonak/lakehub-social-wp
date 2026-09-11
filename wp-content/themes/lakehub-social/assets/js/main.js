@@ -7,10 +7,6 @@
     const logos = Array.from(track.children);
     if (!logos.length) return;
     const section = track.closest('.is-style-lakehub-partners');
-    const toggle = document.createElement('button');
-    toggle.type = 'button';
-    toggle.className = 'lakehub-partners-toggle';
-    section.append(toggle);
     track.tabIndex = 0;
     track.setAttribute('role', 'region');
     track.setAttribute('aria-roledescription', 'carousel');
@@ -19,7 +15,6 @@
     let cycle = 0;
     let step = 0;
     let position = 0;
-    let paused = false;
     let hovered = false;
     let focused = false;
     let visible = false;
@@ -36,7 +31,7 @@
         track.scrollLeft = cycle + ((left % cycle) + cycle) % cycle;
       }
     };
-    const canRun = () => cycle && !paused && !hovered && !focused && !pointer && visible && !document.hidden && !reducedMotion.matches;
+    const canRun = () => cycle && !hovered && !focused && !pointer && visible && !document.hidden && !reducedMotion.matches;
     const tick = (time) => {
       frame = 0;
       if (!canRun()) return;
@@ -50,9 +45,6 @@
       cancelAnimationFrame(frame);
       frame = 0;
       previousTime = 0;
-      toggle.hidden = !cycle || reducedMotion.matches;
-      toggle.textContent = paused ? 'Play' : 'Pause';
-      toggle.setAttribute('aria-label', paused ? 'Play partner logo scrolling' : 'Pause partner logo scrolling');
       if (canRun()) {
         position = track.scrollLeft;
         frame = requestAnimationFrame(tick);
@@ -85,7 +77,6 @@
       }
       update();
     };
-    toggle.addEventListener('click', () => { paused = !paused; update(); });
     section.addEventListener('pointerenter', (event) => {
       if (event.pointerType !== 'touch') { hovered = true; update(); }
     });
@@ -179,30 +170,91 @@
     hoverPointer.addEventListener('change', reset);
   });
 
+  document.querySelectorAll('.is-style-lakehub-timeline').forEach((track) => {
+    track.tabIndex = 0;
+    track.setAttribute('role', 'region');
+    track.setAttribute('aria-label', 'Our journey. Use Left and Right arrow keys to explore milestones.');
+    track.addEventListener('keydown', (event) => {
+      if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault();
+      track.scrollBy({left: (event.key === 'ArrowLeft' ? -1 : 1) * (track.firstElementChild.getBoundingClientRect().width + 32), behavior: reducedMotion.matches ? 'instant' : 'smooth'});
+    });
+  });
+
   document.querySelectorAll('.wp-block-query.is-style-lakehub-insights').forEach((query) => {
     const track = query.querySelector('.wp-block-post-template');
-    if (!track) return;
+    const cards = track ? Array.from(track.children) : [];
+    if (!cards.length) return;
+    query.classList.add('is-enhanced');
+    track.tabIndex = 0;
+    track.setAttribute('role', 'region');
+    track.setAttribute('aria-label', 'Latest Insights. Use Left and Right arrow keys to browse.');
+    let selected = innerWidth > 600 && cards.length > 1 ? 1 : 0;
+    let target = null;
+    let settleTimer;
     const controls = document.createElement('div');
     controls.className = 'lakehub-insights-controls';
+    const status = document.createElement('p');
+    status.className = 'screen-reader-text';
+    status.setAttribute('aria-live', 'polite');
     const buttons = [-1, 1].map((direction) => {
       const button = document.createElement('button');
       button.type = 'button';
-      button.textContent = direction < 0 ? '←' : '→';
-      button.setAttribute('aria-label', direction < 0 ? 'Previous insights' : 'Next insights');
-      button.addEventListener('click', () => {
-        const card = track.querySelector('li');
-        track.scrollBy({left: direction * (card ? card.getBoundingClientRect().width + 24 : track.clientWidth), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
-      });
+      button.textContent = direction < 0 ? '‹' : '›';
+      button.setAttribute('aria-label', direction < 0 ? 'Previous insight' : 'Next insight');
+      button.addEventListener('click', () => go((target ?? selected) + direction));
       controls.append(button);
       return button;
     });
     const update = () => {
-      buttons[0].disabled = track.scrollLeft <= 1;
-      buttons[1].disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 1;
+      cards.forEach((card, index) => card.classList.toggle('is-current', index === selected));
+      buttons.forEach((button, index) => {
+        const hidden = index === 0 ? selected === 0 : selected === cards.length - 1;
+        if (hidden && document.activeElement === button) track.focus({preventScroll: true});
+        button.hidden = hidden;
+      });
+      status.textContent = `Insight ${selected + 1} of ${cards.length}`;
     };
-    query.append(controls);
-    track.addEventListener('scroll', update, {passive:true});
-    new ResizeObserver(update).observe(track);
+    const center = (index, behavior) => {
+      const card = cards[index];
+      track.scrollTo({left: card.offsetLeft + card.offsetWidth / 2 - track.clientWidth / 2, behavior});
+    };
+    const go = (index) => {
+      target = Math.max(0, Math.min(cards.length - 1, index));
+      selected = target;
+      update();
+      center(selected, reducedMotion.matches ? 'instant' : 'smooth');
+    };
+    track.addEventListener('keydown', (event) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key) || event.altKey || event.ctrlKey || event.metaKey) return;
+      event.preventDefault();
+      go(event.key === 'Home' ? 0 : event.key === 'End' ? cards.length - 1 : (target ?? selected) + (event.key === 'ArrowLeft' ? -1 : 1));
+    });
+    const settle = () => {
+      // A delayed animation frame must not turn an intermediate position into the selection.
+      if (target !== null) {
+        const destination = cards[target].offsetLeft + cards[target].offsetWidth / 2 - track.clientWidth / 2;
+        if (Math.abs(track.scrollLeft - destination) > 2) return;
+      }
+      target = null;
+      const middle = track.scrollLeft + track.clientWidth / 2;
+      selected = cards.reduce((best, card, index) => Math.abs(card.offsetLeft + card.offsetWidth / 2 - middle) < Math.abs(cards[best].offsetLeft + cards[best].offsetWidth / 2 - middle) ? index : best, 0);
+      update();
+    };
+    track.addEventListener('scroll', () => {
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(settle, 160);
+    }, {passive: true});
+    track.addEventListener('scrollend', settle);
+    track.addEventListener('pointerdown', () => { target = null; }, {passive: true});
+    track.addEventListener('wheel', () => { target = null; }, {passive: true});
+    track.addEventListener('focusin', (event) => {
+      const index = cards.findIndex(card => card.contains(event.target));
+      if (index >= 0 && index !== selected) go(index);
+    });
+    query.append(controls, status);
+    new ResizeObserver(() => { center(selected, 'instant'); update(); }).observe(track);
     update();
+    requestAnimationFrame(() => center(selected, 'instant'));
   });
 })();
