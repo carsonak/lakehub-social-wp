@@ -20,8 +20,8 @@ $programs = get_posts( array( 'post_type' => 'program', 'post_status' => 'publis
 					echo wp_kses_post( has_blocks( $content ) ? do_blocks( $content ) : wpautop( $content ) );
 				?></div>
 				<?php if ( $url ) : ?>
-					<a class="lakehub-program-link" href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( sprintf( __( 'Learn more about %s', 'lakehub-site' ), get_the_title( $program ) ) ); ?>"><?php esc_html_e( 'Learn More →', 'lakehub-site' ); ?></a>
-				<?php else : ?><span class="lakehub-program-link"><?php esc_html_e( 'Learn More →', 'lakehub-site' ); ?></span><?php endif; ?>
+					<a class="lakehub-program-link" href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( sprintf( __( 'Learn more about %s', 'lakehub-site' ), get_the_title( $program ) ) ); ?>"><?php esc_html_e( 'Learn More ➜', 'lakehub-site' ); ?></a>
+				<?php else : ?><span class="lakehub-program-link"><?php esc_html_e( 'Learn More ➜', 'lakehub-site' ); ?></span><?php endif; ?>
 			</div>
 		</article>
 	<?php endforeach; ?>
