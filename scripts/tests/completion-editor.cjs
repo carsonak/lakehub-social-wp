@@ -7,7 +7,7 @@ const base=process.env.LAKEHUB_TEST_URL||'http://127.0.0.1:8080';
  const context=await browser.newContext({storageState:process.env.LAKEHUB_TEST_STATE||'.runtime/browser-state.json',viewport:{width:1280,height:900}});
  await context.route('http://lakehub-social.com/**',r=>r.continue({url:r.request().url().replace('http://lakehub-social.com',base)}));
  const page=await context.newPage();page.setDefaultTimeout(120000);const drafts=[];
- const open=async id=>{await page.goto(`${base}/wp-admin/post.php?post=${id}&action=edit`,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.wp?.data?.select('core/block-editor')?.getBlockCount()>0);};
+ const open=async id=>{await page.goto(`${base}/wp-admin/post.php?post=${id}&action=edit`,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>window.wp?.data?.select('core/block-editor')?.getBlockCount()>0);const modal=page.locator('.components-modal__screen-overlay');if(await modal.isVisible().catch(()=>false))await page.keyboard.press('Escape');};
  const request=(path,method='GET',data)=>page.evaluate(x=>wp.apiFetch(x),{path,method,data});
  const valid=()=>page.evaluate(()=>{const bad=[];const walk=bs=>bs.forEach(b=>{if(!b.isValid)bad.push(b.name);walk(b.innerBlocks);});walk(wp.data.select('core/block-editor').getBlocks());return bad;});
  try{

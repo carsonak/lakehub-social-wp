@@ -144,7 +144,25 @@
     }).observe(track);
   });
 
-  document.querySelectorAll('.lakehub-program').forEach((card) => {
+  const programCards = Array.from(document.querySelectorAll('.lakehub-program'));
+  if (programCards.length && !reducedMotion.matches && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-revealed');
+        revealObserver.unobserve(entry.target);
+      });
+    }, {threshold: 0.15, rootMargin: '0px 0px -10% 0px'});
+    programCards.forEach((card) => card.classList.add('is-reveal-ready'));
+    requestAnimationFrame(() => programCards.forEach((card) => revealObserver.observe(card)));
+    reducedMotion.addEventListener('change', (event) => {
+      if (!event.matches) return;
+      revealObserver.disconnect();
+      programCards.forEach((card) => card.classList.add('is-revealed'));
+    }, {once: true});
+  }
+
+  programCards.forEach((card) => {
     let frame = 0;
     let point;
     const reset = () => {

@@ -121,13 +121,13 @@ Set `CHROMIUM_PATH` if using a separately installed Chromium. The suite covers a
 
 ## September 10 completion
 
-The approved completion adds About (`380:71`), Impact (`409:150`) and a Team page derived from the About cards. Home remains `615:348`; Programs remains `299:174`. Current exports are retained locally in the ignored `.runtime/design-refresh/completion/figma-exports/` handoff, with supporting measurements in `.runtime/design-refresh/completion/design-spec-10092026.txt`. Live Home context succeeded on September 10; subsequent exact-frame requests hit the connector quota, so the supplied PNG/SVG references govern the remaining pages. No mobile frames were supplied.
+The approved completion adds About (`380:71`), Impact (`409:150`) and a Team page derived from the About cards. Home remains `615:348`; Programs remains `299:174`. Current exports are retained locally in the ignored `.runtime/design/figma-exports/` handoff, with supporting measurements in `.runtime/design/design-spec-10092026.txt`. Live Home context succeeded on September 10; subsequent exact-frame requests hit the connector quota, so the supplied PNG/SVG references govern the remaining pages. No mobile frames were supplied.
 
 `assets/images/completion/provenance.json` records original image IDs and SHA-256 hashes. Photographs are extracted without resampling. Decorative SVGs preserve exported paths, with a viewBox selecting the relevant decoration. Off-canvas team cards are included on the separate Team page, not used to determine About's width. Original placeholder biographies are omitted. The About headline corrects “Desicions” to “Decisions”.
 
 Desktop dimensions scale proportionally from the 1280px artwork using rem-based design values and a viewport-derived frontend root size above 1280px. Below the reference width, sections reflow; type is not proportionally shrunk. The editor retains its own UI root size. The existing Inter file contains variable weights through 900; its declaration now includes ExtraBold.
 
-Home uses aqua `#81F4FA` for the highlighted hero word and a 60% dark teal overlay. Filled teal actions adopt aqua with dark text on hover/focus. Insights starts with the second card selected on desktop and the first on small screens, browses the latest twelve posts, and does not loop. Partner autoplay no longer includes a pause/play button; hover, focus and reduced motion still stop movement. The timeline stays horizontal and supports additional editable milestones. These choices supersede the older interaction descriptions above.
+Home uses aqua `#81F4FA` for the highlighted hero word and a 60% dark teal overlay. Insights starts with the second card selected on desktop and the first on small screens, browses the latest twelve posts, and does not loop. Partner autoplay no longer includes a pause/play button; hover, focus and reduced motion still stop movement. The timeline stays horizontal and supports additional editable milestones. These choices supersede the older interaction descriptions above.
 
 The newsletter remains a visual preview. Chichwa and “View More People” use optional native buttons: a blank URL hides the action on the frontend, while the editor keeps it available. Malika's supplied Zone01 destination is retained. No new people-story or individual team-member routes are introduced.
 
@@ -160,3 +160,22 @@ Team default crops preserve the exported image-fill geometry. Replacing a featur
 Public completion checks are in `scripts/tests/completion.cjs`; new-page editing checks are in `scripts/tests/completion-editor.cjs`. They use the same Playwright/Chromium and authenticated-state conventions as the existing suites. `LAKEHUB_INTERACTIONS_ONLY=1` runs the collection and behavior checks without repeating the responsive page matrix. `LAKEHUB_SCREENSHOTS` optionally selects a directory for captures.
 
 The final combined completion suite passes, including zero/one/two/three/twelve-card fixtures, centered boundary navigation, the hero overlay/color, and filled-button hover colors. A separate computed-style check confirms the Figma font families, sizes and weights on all five pages, allowing normal fractional rounding from WordPress fluid typography. Temporary editor drafts and the test login session were removed before the repository backup.
+
+## September 11 refinements
+
+The current ignored handoff uses `.runtime/design/page-images/`, grouped by page. The About and Impact photographs in that handoff are byte-identical to their shipped theme sources and existing Media Library attachments, so the existing attachment IDs remain in use rather than creating duplicates. Their saved image sources are site-relative so they load on both the local preview and deployed host.
+
+Vivid Teal (`#00908F`) is an editor palette preset used by the Home hero's “innovators” accent and solid teal button hover/focus states, where button text remains white. Journey and Insights retain horizontal overflow and accessible controls while hiding native scrollbars. Team cards gain a short hover/focus shadow. Program cards reveal once on first viewport entry with a slight diagonal rise matching the image side on desktop; stacked layouts rise vertically, and reduced-motion or unsupported-browser fallbacks remain immediately visible. The Mission and Vision collage aligns the large image's left vertex with the smaller-image junction; each photograph zooms within its clipped diamond on pointer hover while reduced motion remains static.
+
+The footer newsletter preview's Subscribe label also changes to Vivid Teal on pointer hover. The Programs hero's View Program control uses the same lift and shadow as the site's other square buttons; its destination remains unset for the client to supply in the editor.
+
+The About page's Full Team button now stores a site-relative permalink, so it works on local and deployed hosts. Apply the saved-content refinements after a database backup:
+
+```bash
+wp --path="$PWD" lakehub refinements-20260911 apply --dry-run
+wp --path="$PWD" lakehub refinements-20260911 apply
+```
+
+The command snapshots only Home, About, and Impact content and refuses ambiguous targets. A repeat apply is inert. After preserving later editor work, `wp --path="$PWD" lakehub refinements-20260911 rollback` restores only those three page contents and refuses to overwrite pages changed since application.
+
+LakeHub Social **3.2.3** and LakeHub Site **1.2.1** are active locally. The five-page responsive suite passes at seven viewport widths with all images loaded, and the interaction and authenticated editor suites pass with their temporary records removed.

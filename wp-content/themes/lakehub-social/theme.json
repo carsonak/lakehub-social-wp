@@ -34,6 +34,11 @@
           "color": "#00676b"
         },
         {
+          "slug": "vivid-teal",
+          "name": "Vivid Teal",
+          "color": "#00908f"
+        },
+        {
           "slug": "aqua",
           "name": "Aqua",
           "color": "#81f4fa"

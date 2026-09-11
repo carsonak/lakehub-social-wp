@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:group {"className":"is-style-lakehub-about-page","layout":{"type":"default"},"metadata":{"name":"About · Page"}} -->
-<div class="wp-block-group is-style-lakehub-about-page"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/about-hero.png' ) ); ?>","alt":"","dimRatio":50,"overlayColor":"footer","isUserOverlayColor":true,"minHeight":429,"tagName":"section","align":"full","className":"is-style-lakehub-about-hero","metadata":{"name":"About Hero"},"templateLock":"contentOnly"} -->
-<section class="wp-block-cover alignfull is-style-lakehub-about-hero" style="min-height:429px"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/about-hero.png' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-footer-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1} -->
+<div class="wp-block-group is-style-lakehub-about-page"><!-- wp:cover {"url":"<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/about-hero.png' ) ) ); ?>","alt":"","dimRatio":50,"overlayColor":"footer","isUserOverlayColor":true,"minHeight":429,"tagName":"section","align":"full","className":"is-style-lakehub-about-hero","metadata":{"name":"About Hero"},"templateLock":"contentOnly"} -->
+<section class="wp-block-cover alignfull is-style-lakehub-about-hero" style="min-height:429px"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/about-hero.png' ) ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-footer-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">From humble beginnings to <span>Bold Decisions</span></h1>
 <!-- /wp:heading -->
 </div></section>
@@ -44,16 +44,16 @@
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-lakehub-mission-collage","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-mission-collage"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-mission-main"} -->
-<figure class="wp-block-image size-full is-style-lakehub-mission-main"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/mission-main.jpg' ) ); ?>" alt="LakeHub partnership event"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-mission-main"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/mission-main.jpg' ) ) ); ?>" alt="LakeHub partnership event"/></figure>
 <!-- /wp:image -->
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-mission-speaker"} -->
-<figure class="wp-block-image size-full is-style-lakehub-mission-speaker"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/mission-speaker.jpg' ) ); ?>" alt="A speaker at a LakeHub event"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-mission-speaker"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/mission-speaker.jpg' ) ) ); ?>" alt="A speaker at a LakeHub event"/></figure>
 <!-- /wp:image -->
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-mission-group"} -->
-<figure class="wp-block-image size-full is-style-lakehub-mission-group"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/mission-group.jpg' ) ); ?>" alt="LakeHub community gathering"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-mission-group"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/mission-group.jpg' ) ) ); ?>" alt="LakeHub community gathering"/></figure>
 <!-- /wp:image -->
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-mission-event"} -->
-<figure class="wp-block-image size-full is-style-lakehub-mission-event"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/mission-event.jpg' ) ); ?>" alt="A presentation at LakeHub"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-mission-event"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/mission-event.jpg' ) ) ); ?>" alt="A presentation at LakeHub"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
@@ -67,7 +67,7 @@
 <!-- /wp:heading -->
 <!-- wp:group {"className":"is-style-lakehub-story-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-story-grid"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-story-photo"} -->
-<figure class="wp-block-image size-full is-style-lakehub-story-photo"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/our-story.jpg' ) ); ?>" alt="Early LakeHub community members working together"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-story-photo"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/our-story.jpg' ) ) ); ?>" alt="Early LakeHub community members working together"/></figure>
 <!-- /wp:image -->
 <!-- wp:paragraph -->
 <p>Founded in May 2013 by co-founder James Odede and a group of students and young professionals, LakeHub emerged to empower tech talent in Western Kenya. By 2014, it opened its first physical space in Kisumu, making it the first tech innovation hub in Kenya located outside Nairobi. In 2017, the organization formalised its impact by registering as the non-profit LakeHub Foundation, shifting focus heavily toward digital literacy, tech hackathons, and structured incubation programs. A major milestone arrived in 2020 when they graduated 200 female developers through their FemiDev program in partnership with UNDP Kenya. This success eventually paved the way for a partnership with 01Talent to establish a world-class, tuition-free software engineering apprenticeship in Kisumu</p>
@@ -82,7 +82,7 @@
 <!-- /wp:heading -->
 <!-- wp:lakehub/team {"featuredOnly":true,"limit":6} /--><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/team/' ) ); ?>">Meet The Full Team</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( wp_make_link_relative( home_url( '/team/' ) ) ); ?>">Meet The Full Team</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

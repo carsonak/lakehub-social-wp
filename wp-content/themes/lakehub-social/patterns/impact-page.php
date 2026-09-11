@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:group {"className":"is-style-lakehub-impact-page","layout":{"type":"default"},"metadata":{"name":"Impact · Page"}} -->
-<div class="wp-block-group is-style-lakehub-impact-page"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/impact-hero.jpg' ) ); ?>","alt":"","dimRatio":50,"overlayColor":"footer","isUserOverlayColor":true,"minHeight":480,"tagName":"section","align":"full","className":"is-style-lakehub-impact-hero","metadata":{"name":"Impact Hero"},"templateLock":"contentOnly"} -->
-<section class="wp-block-cover alignfull is-style-lakehub-impact-hero" style="min-height:480px"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/impact-hero.jpg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-footer-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1} -->
+<div class="wp-block-group is-style-lakehub-impact-page"><!-- wp:cover {"url":"<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/impact-hero.jpg' ) ) ); ?>","alt":"","dimRatio":50,"overlayColor":"footer","isUserOverlayColor":true,"minHeight":480,"tagName":"section","align":"full","className":"is-style-lakehub-impact-hero","metadata":{"name":"Impact Hero"},"templateLock":"contentOnly"} -->
+<section class="wp-block-cover alignfull is-style-lakehub-impact-hero" style="min-height:480px"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/impact-hero.jpg' ) ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-footer-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">Decentralizing tech training in Kenya and positioning youth for leading tech roles</h1>
 <!-- /wp:heading -->
 </div></section>
@@ -19,7 +19,7 @@
 <!-- /wp:heading -->
 <!-- wp:group {"className":"is-style-lakehub-community-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-community-grid"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-community-photo"} -->
-<figure class="wp-block-image size-full is-style-lakehub-community-photo"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/chichwa.jpg' ) ); ?>" alt="Chichwa e-commerce platform connecting women market vendors"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-community-photo"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/chichwa.jpg' ) ) ); ?>" alt="Chichwa e-commerce platform connecting women market vendors"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"className":"is-style-lakehub-community-copy","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-community-copy"><!-- wp:paragraph -->
@@ -64,7 +64,7 @@
 </div>
 <!-- /wp:group -->
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-portfolio-photo"} -->
-<figure class="wp-block-image size-full is-style-lakehub-portfolio-photo"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/completion/malika.jpg' ) ); ?>" alt="Malika Asman, Zone01 Kisumu graduate and software engineer"/></figure>
+<figure class="wp-block-image size-full is-style-lakehub-portfolio-photo"><img src="<?php echo esc_url( wp_make_link_relative( get_theme_file_uri( 'assets/images/completion/malika.jpg' ) ) ); ?>" alt="Malika Asman, Zone01 Kisumu graduate and software engineer"/></figure>
 <!-- /wp:image -->
 </div>
 <!-- /wp:group -->
