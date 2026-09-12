@@ -37,11 +37,11 @@ References: [Figma export settings](https://help.figma.com/hc/en-us/articles/134
 
 ## Local workflow and acceptance
 
-Use Studio with this existing repository and MySQL. Verify database connectivity, Studio initialization, site registration, and PHP compatibility before changing local URL configuration. Preserve the existing environment loader and Git/R2 backup scripts. Back up the database before content migration; dry-run any required URL replacement.
+Use Studio with this existing repository and its Studio-managed SQLite database. Verify Studio initialization, site registration, and PHP compatibility before changing local URL configuration. Make a full Studio export before content migration; dry-run any required URL replacement.
 
 Verify both pages against the exact Figma references at desktop size, then check 320, 390, 768, 1024, and 1440px for overflow, cropping, readable text, and usable navigation. Verify editor/frontend parity, save/reload without block recovery, text/image/link editing, collection ordering, keyboard operation, and reduced motion. Run project PHP syntax checks and the existing block editor tests against the confirmed local site. Test refresh idempotence and rollback on a disposable database copy.
 
-Update `editing-guide.md` with the final controls and local workflow after verification. Keep runtime diagnostics, changing URLs, screenshots, and implementation status outside `AGENTS.md`. Use `scripts/push.sh` for authorized commits, Git pushes, and R2 backups; publishing a live site or remote preview is a separate operation.
+Update `editing-guide.md` with the final controls and local workflow after verification. Keep runtime diagnostics, changing URLs, screenshots, and implementation status outside `AGENTS.md`. Use `scripts/push.sh` with a validated full Studio export for authorized commits, Git pushes, and R2 backups; publishing a live site or remote preview is a separate operation.
 
 ## Inspection status
 
@@ -52,6 +52,12 @@ The existing repository is registered as **LakeHub Social**, with native PHP 8.5
 **Startup is pending a compatibility fix.** Inspection of the installed Studio CLI 1.21.0 found that native startup calls `ensureWpConfig`, which passes `DB_NAME = wordpress` to its configuration transformer. An in-memory check confirmed that this replaces the project's `lakehub_required_env('DB_NAME')` expression. Do not start this registered site until a supported configuration-preserving startup path is verified. The stored site URL remains `http://lakehub-social.com`; registration's assigned port is not a verified running preview URL.
 
 Studio also generated `CLAUDE.md` and `STUDIO.md`. Those newly generated files were moved to ignored `.runtime/studio-generated/` so their generic runtime instructions do not override the project's workflow. Existing instructions and the staged MCP configuration were preserved.
+
+### Studio SQLite cutover, 12 September 2026
+
+The earlier MySQL startup limitation above is superseded. A disposable Studio site proved that the MySQL export imports cleanly into Studio SQLite, including all 17 project tables, pages, programs, plugins, and media. The canonical repository was then re-registered in place as **LakeHub Social**, running WordPress 7.1 with native PHP 8.5 at `http://localhost:8881/`. Studio now owns the ignored `wp-config.php`, SQLite drop-in/integration, and `wp-content/database/.ht.sqlite`; no database tunnel or MySQL service is required.
+
+Home and Programs were checked at desktop and mobile sizes after import, and every rendered image returned HTTP 200. The full Studio export workflow now packages the SQLite SQL, themes, plugins, and uploads together; R2 retains `latest.zip` plus the five newest timestamped exports and matching SHA-256 checksums.
 
 ### Design exports
 
@@ -69,13 +75,13 @@ The supplied impact copy contains obvious rendering/typing errors (an invisible 
 Run from the repository root after confirming the local target and exporting a fresh database backup:
 
 ```bash
-wp --path="$PWD" lakehub design refresh --dry-run
-wp --path="$PWD" lakehub design refresh
+studio wp --path="$PWD" lakehub design refresh --dry-run
+studio wp --path="$PWD" lakehub design refresh
 ```
 
 The refresh snapshots affected fields under `lakehub_design_refresh_snapshot_v1`; `lakehub_design_refresh_version` makes successful runs idempotent. It preserves page IDs, slugs, program destinations/thumbnails, article bodies, unrelated content, and the original block migration snapshot. The pre-refresh database dump is `.backups/before-design-refresh-20260909.sql` (local and ignored).
 
-For recovery, after backing up any subsequent editing, `wp --path="$PWD" lakehub design rollback` restores refresh-owned fields. Restore matching source to recover the previous appearance. Rollback retains imported media and the snapshot for reapplication. Do not rerun the original block migration to apply this refresh.
+For recovery, after backing up any subsequent editing, `studio wp --path="$PWD" lakehub design rollback` restores refresh-owned fields. Restore matching source to recover the previous appearance. Rollback retains imported media and the snapshot for reapplication. Do not rerun the original block migration to apply this refresh.
 
 ### Export provenance
 
@@ -133,16 +139,16 @@ The newsletter remains a visual preview. Chichwa and “View More People” use 
 
 ### Local application and recovery
 
-After a MySQL backup and target confirmation:
+After a full Studio export and target confirmation:
 
 ```bash
-wp --path="$PWD" lakehub completion-20260910 apply --dry-run
-wp --path="$PWD" lakehub completion-20260910 apply
+studio wp --path="$PWD" lakehub completion-20260910 apply --dry-run
+studio wp --path="$PWD" lakehub completion-20260910 apply
 ```
 
-This separate migration preserves the original block/design-refresh snapshots. It patches the existing Home hero and Insights query, updates referenced menu destinations, and creates the three pages and twelve team records. It does not replace Programs or article content. Its own marker makes repeat runs inert. Content writes are grouped in an InnoDB transaction; an independent journal supports recovery after an interrupted run.
+This separate migration preserves the original block/design-refresh snapshots. It patches the existing Home hero and Insights query, updates referenced menu destinations, and creates the three pages and twelve team records. It does not replace Programs or article content. Its own marker makes repeat runs inert. Content writes use the database abstraction's transaction support; an independent journal supports recovery after an interrupted run.
 
-After taking a fresh backup, `wp --path="$PWD" lakehub completion-20260910 rollback` restores the changed content and removes completion-created page/team records. Recovery refuses to overwrite records edited since completion. Media is retained for safe reuse; restore matching theme source to restore the old presentation.
+After taking a fresh backup, `studio wp --path="$PWD" lakehub completion-20260910 rollback` restores the changed content and removes completion-created page/team records. Recovery refuses to overwrite records edited since completion. Media is retained for safe reuse; restore matching theme source to restore the old presentation.
 
 This PHP 8.5 environment lacks DOM and image-processing extensions. The completion importer therefore records original image dimensions, file size and alt text without generating resized derivatives. On a fully equipped PHP runtime it uses normal WordPress media metadata generation. Originals remain selectable in the Media Library. XML/image extensions are needed for full image-processing support; the completion does not install system packages or alter vendor code.
 
@@ -172,10 +178,10 @@ The footer newsletter preview's Subscribe label also changes to Vivid Teal on po
 The About page's Full Team button now stores a site-relative permalink, so it works on local and deployed hosts. Apply the saved-content refinements after a database backup:
 
 ```bash
-wp --path="$PWD" lakehub refinements-20260911 apply --dry-run
-wp --path="$PWD" lakehub refinements-20260911 apply
+studio wp --path="$PWD" lakehub refinements-20260911 apply --dry-run
+studio wp --path="$PWD" lakehub refinements-20260911 apply
 ```
 
-The command snapshots only Home, About, and Impact content and refuses ambiguous targets. A repeat apply is inert. After preserving later editor work, `wp --path="$PWD" lakehub refinements-20260911 rollback` restores only those three page contents and refuses to overwrite pages changed since application.
+The command snapshots only Home, About, and Impact content and refuses ambiguous targets. A repeat apply is inert. After preserving later editor work, `studio wp --path="$PWD" lakehub refinements-20260911 rollback` restores only those three page contents and refuses to overwrite pages changed since application.
 
 LakeHub Social **3.2.3** and LakeHub Site **1.2.1** are active locally. The five-page responsive suite passes at seven viewport widths with all images loaded, and the interaction and authenticated editor suites pass with their temporary records removed.

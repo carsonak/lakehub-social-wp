@@ -2,6 +2,14 @@
 
 The Home, Programs, About, Impact, and Team pages use WordPress blocks. You do not need HTML, PHP, or CSS.
 
+## Open, preview, and back up the site
+
+Open the existing **LakeHub Social** entry in WordPress Studio. Studio runs this repository directly at its displayed local URL and stores the site's content in its local SQLite database, so MySQL and database tunnels are not required.
+
+Use Studio's **Preview site** action to create or refresh a temporary review link. Preview links expire after seven days; send reviewers the frontend URL only, not the Studio auto-login URL or administrator credentials. Before a risky content change, use **Import / Export → Export site → Full site** and retain the resulting ZIP.
+
+Git stores the tracked WordPress source. Cloudflare R2 stores full Studio exports for disaster recovery. To prepare a new machine, configure the R2-only `.env`, run `./scripts/setup.sh`, then import the downloaded ZIP through Studio's **Add site → Import from a backup** flow. `./scripts/pull.sh` downloads a restore package but never replaces the local site automatically.
+
 ## Home and Programs
 
 1. Open **Pages**, choose **Home** or **Programs**, and select **Edit**.

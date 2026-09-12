@@ -17,15 +17,14 @@ The four local `assets/gradients/program-*.svg` files preserve the gradient geom
 
 ## Migration
 
-Run from this site's root. Confirm the local target, export the database, and keep the matching source revision before applying changes:
+Run from this site's root. Confirm the Studio target, make a **Full site** export in Studio, and keep the matching source revision before applying changes:
 
 ```bash
-wp --path="$PWD" option get siteurl
-wp --path="$PWD" db export .backups/before-block-theme.sql --add-drop-table
-chmod 600 .backups/before-block-theme.sql
-wp --path="$PWD" plugin activate lakehub-site
-wp --path="$PWD" lakehub blocks migrate --dry-run
-wp --path="$PWD" lakehub blocks migrate
+studio status
+studio wp option get siteurl
+studio wp plugin activate lakehub-site
+studio wp lakehub blocks migrate --dry-run
+studio wp lakehub blocks migrate
 ```
 
 The migration locates the configured front page and existing `/programs/` page, preserving their IDs and slugs. It updates the four existing program records and three existing insight excerpts/images to the Figma defaults. It preserves article bodies, destinations, legacy homepage metadata, other pages, and unrelated posts. Missing expected records stop the migration instead of creating duplicates.
@@ -41,7 +40,7 @@ For a full rollback, restore the pre-migration database together with its matchi
 For testing or recovering migration-owned content fields:
 
 ```bash
-wp --path="$PWD" lakehub blocks rollback
+studio wp lakehub blocks rollback
 ```
 
 This restores the saved page/program/insight fields, thumbnail assignments, and template assignments. It clears the completion marker but retains imported media and the snapshot for a repeatable reapplication. It does not restore theme source, remove unrelated edits, or delete uploads. Running rollback after client editing would replace the affected fields with the original snapshot; take a fresh database backup first.

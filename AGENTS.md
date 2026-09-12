@@ -2,15 +2,15 @@
 
 ## Project baseline
 
-- This repository is a complete WordPress 7.1 site backed by MySQL. Run WP-CLI from the repository root with `wp --path="$PWD" ...`.
-- The active theme is `wp-content/themes/lakehub-social` 3.1.0, a native block theme. Home and Programs contain editable section blocks.
-- Active plugins at this baseline are Advanced Custom Fields 6.8.9, MCP Adapter 0.6.1, Starter Templates 4.7.5, WSP MCP - AI Agents Connector 2.7.1, and project-owned LakeHub Site 1.1.0.
+- This repository is the canonical WordPress Studio site: WordPress 7.1, Studio's native PHP runtime, and SQLite at `wp-content/database/.ht.sqlite`. Manage it from Studio; for rare diagnostics and migrations run `studio wp --path="$PWD" ...` from the repository root.
+- The active theme is `wp-content/themes/lakehub-social` 3.2.3, a native block theme. Home and Programs contain editable section blocks.
+- Active plugins at this baseline are Advanced Custom Fields 6.8.10, MCP Adapter 0.6.1, Starter Templates 4.7.6, WSP MCP - AI Agents Connector 2.8.0, and project-owned LakeHub Site 1.2.1.
 - Treat WordPress core and third-party plugins as vendor code. Do not edit them unless the task explicitly targets them. Preserve unrelated worktree changes.
 
 ## Architecture direction
 
 - Maintain the block theme using `theme.json`, `templates/*.html`, `parts/*.html`, native blocks, and filesystem patterns under `patterns/*.php`. See `docs/editing-guide.md` and `docs/block-migration.md`.
-- LakeHub Site owns the existing `program` content type and `lakehub/programs` block. Content migrations are explicit WP-CLI commands (`wp --path="$PWD" lakehub blocks migrate --dry-run`); never seed or overwrite content on admin visits.
+- LakeHub Site owns the existing `program` content type and `lakehub/programs` block. Content migrations are explicit Studio WP-CLI commands (`studio wp --path="$PWD" lakehub blocks migrate --dry-run`); never seed or overwrite content on admin visits.
 - Keep canonical templates, parts, patterns, tokens, and shipped defaults in Git. If a layout is prototyped in the Site Editor, export it to theme files; do not leave the only canonical copy as a database override.
 - Keep presentation in the theme. Put new custom post types, taxonomies, data migrations, scheduled tasks, and other site functionality in a project-owned plugin.
 - Prefer native blocks before custom blocks. Use an unsynced pattern for a reusable layout whose copies need independent content, such as cards. Use a synced pattern only when every occurrence should share content.
@@ -36,28 +36,28 @@
 
 ## Git and backup workflow
 
-- Use WordPress Studio to manage the existing repository as the local site, retaining its MySQL database and environment-based configuration. Studio does not replace the Git/R2 source and backup workflow.
-- Before registering or starting the site in Studio, verify the repository path, database connectivity, and local URL. Preserve the existing `wp-config.php`; do not convert this project to SQLite or create a second canonical site.
+- Use WordPress Studio to manage this repository as the canonical local site. Studio owns the ignored `wp-config.php`, SQLite drop-in/integration, local database, runtime, and temporary preview packaging.
+- Before starting or importing the site in Studio, verify the repository path and local URL. Do not create a second canonical site or add MySQL credentials back to `wp-config.php` or `.env`.
 - Keep changing design frame links and implementation status in project documentation, not in this file. See `docs/design-refresh.md` for the design references and refresh requirements.
 
 - Git stores source: WordPress core, themes, plugins, `.codex/skills/`, and this file.
-- Cloudflare R2 stores MySQL dumps and `wp-content/uploads/`. `.env`, `.runtime/`, `.backups/`, caches, logs, and WordPress upgrade work directories remain local and ignored.
-- First setup: copy `.env.example` to `.env`, fill it, restrict its permissions, then run `./scripts/setup.sh`.
-- Pull/restore: start from a clean worktree and run `./scripts/pull.sh`. It fast-forwards Git, creates a local rollback dump, imports the latest R2 MySQL dump, and copies uploads without local deletion.
-- Push/backup: stage intended source and run `./scripts/push.sh "commit message"`. It auto-stages only `.codex/skills/` and `AGENTS.md`, commits the full index, backs up MySQL/uploads to R2, and pushes the current branch.
+- Cloudflare R2 stores full WordPress Studio exports (SQLite SQL plus `wp-content`) under `studio-exports/`; Git remains the source of truth for tracked code. `.env`, `.runtime/`, `.backups/`, Studio database/drop-in files, caches, logs, and WordPress upgrade work directories remain local and ignored.
+- First setup: copy `.env.example` to `.env`, fill the R2 values, restrict its permissions, and run `./scripts/setup.sh`. Import the downloaded archive through Studio's **Add site → Import from a backup** flow using this repository as the site directory.
+- Pull/restore: start from a clean worktree and run `./scripts/pull.sh`. It fast-forwards Git and downloads and validates the latest full Studio export, but deliberately leaves the destructive import to the Studio UI.
+- Push/backup: first make a **Full site** export in Studio. Stage intended source, then run `./scripts/push.sh "commit message" /absolute/path/to/studio-export.zip`. It validates and uploads the export and checksum as both timestamped and latest R2 objects, retains the newest five timestamped exports, commits the existing index (plus project-owned agent instructions), and pushes the current branch.
 - Do not run pull, push, commit, install/update, import, search-replace, or other externally visible/destructive operations unless the user requested that operation.
 - Before committing, review `git status --short`, `git diff`, and `git diff --cached`. `git add .` excludes ignored runtime/R2 data but still stages modifications to every already-tracked file.
 
-## WP-CLI safety
+## Studio and WP-CLI safety
 
-- Confirm the target is this local site before writes. Use `--path="$PWD"`; use `--url=` as well if multisite is ever enabled.
-- Back up MySQL before risky writes. Run `wp search-replace --dry-run` before applying URL changes. Treat database imports/resets, bulk deletes, and mass updates as destructive.
-- Prefer repeatable WP-CLI commands for seeding or manipulating content. Verify the resulting content in wp-admin and on the frontend, and keep structural defaults represented in source where practical.
+- Confirm the Studio target is this repository before writes. Use `studio wp --path="$PWD"`; use `--url=` as well if multisite is ever enabled.
+- Make a full Studio export before risky writes. Run `studio wp --path="$PWD" search-replace --dry-run` before applying URL changes. Treat imports, resets, bulk deletes, and mass updates as destructive.
+- Prefer Studio's GUI for lifecycle, import/export, and preview management. Use repeatable Studio WP-CLI commands for project-owned content migrations, then verify the editor and frontend.
 
 ## Verification baseline
 
 - Project PHP syntax: `find wp-content/themes/lakehub-social wp-content/plugins/lakehub-site -type f -name '*.php' -print0 | xargs -0 -n1 php -l`.
 - Backup scripts: `bash -n scripts/setup.sh scripts/push.sh scripts/pull.sh scripts/lib/common.sh` and `shellcheck scripts/setup.sh scripts/push.sh scripts/pull.sh scripts/lib/common.sh`.
-- Runtime health: `wp --path="$PWD" db check`, `wp --path="$PWD" theme list`, and `wp --path="$PWD" plugin list`.
+- Runtime health: `studio status`, `studio wp --path="$PWD" core version`, `studio wp --path="$PWD" theme list`, and `studio wp --path="$PWD" plugin list`. Do not use `wp db check`; it invokes MySQL tooling and is not a valid SQLite health check.
 - For block work, insert in the editor, save, reload, and confirm there is no validation/recovery warning. Verify frontend/editor parity, content editability, responsive layouts, keyboard access, and the relevant Figma screenshot before completion.
 - Prefer existing project tooling. Node.js 20.18+ with npm/npx is required before using the installed Node-based WordPress scanners, block build tools, Playground, or browser tests.

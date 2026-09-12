@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Shared variables are populated by load_env and consumed by sourced entrypoints.
+# Shared helpers for Git and full WordPress Studio exports stored in R2.
 # shellcheck disable=SC2034,SC2154,SC2310
 set -Eeuo pipefail
 
@@ -9,9 +9,8 @@ ROOT_DIR="$(cd -- "${SCRIPT_LIB_DIR}/../.." && pwd)"
 ENV_FILE="${ROOT_DIR}/.env"
 RUNTIME_DIR="${ROOT_DIR}/.runtime"
 BACKUP_DIR="${ROOT_DIR}/.backups"
-LOCAL_BIN="${HOME}/.local/bin"
-
-export PATH="${LOCAL_BIN}:${HOME}/.pixi/bin:${HOME}/.pixi/envs/lakehub-wordpress/bin:${PATH}"
+STUDIO_EXPORT_PREFIX="studio-exports"
+STUDIO_EXPORT_RETENTION=5
 
 log() { printf '[lakehub] %s\n' "$*"; }
 warn() { printf '[lakehub] WARNING: %s\n' "$*" >&2; }
@@ -25,7 +24,7 @@ trim() {
 }
 
 load_env() {
-  [[ -f "${ENV_FILE}" ]] || die "Missing ${ENV_FILE}. Copy .env.example to .env and fill in its values."
+  [[ -f "${ENV_FILE}" ]] || die "Missing ${ENV_FILE}. Copy .env.example to .env and add the R2 credentials."
   local mode line key value first last
   mode="$(stat -c '%a' "${ENV_FILE}" 2>/dev/null || true)"
   if [[ "${mode}" != "600" ]]; then
@@ -54,7 +53,6 @@ load_env() {
     fi
   done < "${ENV_FILE}"
 
-  # Backward-compatible aliases for the names initially supplied in this project.
   R2_ACCESS_KEY_ID="${R2_ACCESS_KEY_ID:-${ACCESS_KEY_ID:-}}"
   R2_SECRET_ACCESS_KEY="${R2_SECRET_ACCESS_KEY:-${SECRET_ACCESS_KEY:-}}"
   R2_ENDPOINT="${R2_ENDPOINT:-${DEFAULT:-}}"
@@ -69,7 +67,7 @@ require_var() {
 
 require_settings() {
   local name
-  for name in R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY R2_ENDPOINT R2_BUCKET DB_NAME DB_USER DB_PASSWORD DB_HOST AUTH_KEY SECURE_AUTH_KEY LOGGED_IN_KEY NONCE_KEY AUTH_SALT SECURE_AUTH_SALT LOGGED_IN_SALT NONCE_SALT WP_CACHE_KEY_SALT; do
+  for name in R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY R2_ENDPOINT R2_BUCKET; do
     require_var "${name}"
   done
   [[ "${R2_ENDPOINT}" == https://*.r2.cloudflarestorage.com ]] || die "R2_ENDPOINT must be a Cloudflare R2 HTTPS S3 endpoint."
@@ -100,104 +98,60 @@ check_r2() {
   rclone lsf "r2:${R2_BUCKET}" --max-depth 1 >/dev/null || die "Cannot access R2 bucket ${R2_BUCKET}. Check .env credentials and endpoint."
 }
 
-check_wp_database() {
-  (cd "${ROOT_DIR}" && wp db check --quiet >/dev/null 2>&1)
+validate_studio_export() {
+  local archive="$1" listing
+  [[ -f "${archive}" ]] || die "Studio export not found: ${archive}"
+  [[ "${archive}" == *.zip ]] || die "Expected a full WordPress Studio .zip export."
+  unzip -tq "${archive}" >/dev/null || die "Studio export is corrupt: ${archive}"
+  listing="$(unzip -Z1 "${archive}")"
+  grep -Eq '^sql/[^/]+\.sql$' <<<"${listing}" || die "Studio export has no SQL payload."
+  grep -Eq '^wp-content/plugins/' <<<"${listing}" || die "Studio export has no plugins."
+  grep -Eq '^wp-content/themes/' <<<"${listing}" || die "Studio export has no themes."
+  grep -Eq '^wp-content/uploads/' <<<"${listing}" || die "Studio export has no uploads."
+  grep -qx 'meta.json' <<<"${listing}" || die "Studio export has no meta.json."
 }
 
-database_is_local_fallback() {
-  [[ "${DB_HOST}" == 127.0.0.1:* ]]
+write_checksum() {
+  local archive="$1" checksum_file="$2"
+  sha256sum "${archive}" | awk '{print $1}' > "${checksum_file}"
 }
 
-mysql_runtime_paths() {
-  MYSQL_RUNTIME_DIR="${MYSQL_RUNTIME_DIR:-${RUNTIME_DIR}/mysql}"
-  MYSQL_DATA_DIR="${MYSQL_RUNTIME_DIR}/data"
-  MYSQL_SOCKET="${MYSQL_RUNTIME_DIR}/mysql.sock"
-  MYSQL_PID_FILE="${MYSQL_RUNTIME_DIR}/mysql.pid"
-  MYSQL_LOG_FILE="${MYSQL_RUNTIME_DIR}/mysql.log"
-  LOCAL_MYSQL_PORT="${LOCAL_MYSQL_PORT:-${DB_HOST##*:}}"
-  [[ "${LOCAL_MYSQL_PORT}" =~ ^[0-9]+$ ]] || die "LOCAL_MYSQL_PORT must be numeric."
+verify_checksum() {
+  local archive="$1" checksum_file="$2" expected actual
+  expected="$(awk 'NR == 1 {print $1}' "${checksum_file}")"
+  actual="$(sha256sum "${archive}" | awk '{print $1}')"
+  [[ -n "${expected}" && "${expected}" == "${actual}" ]] || die "Checksum validation failed for ${archive}."
 }
 
-sql_quote() {
-  local value="$1"
-  value="${value//\\/\\\\}"
-  value="${value//\'/\'\'}"
-  printf '%s' "${value}"
+upload_studio_export() {
+  local archive="$1" remote_name="$2" checksum_file
+  checksum_file="${archive}.sha256"
+  write_checksum "${archive}" "${checksum_file}"
+  rclone copyto "${archive}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}")" --no-traverse
+  rclone copyto "${checksum_file}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.sha256")" --no-traverse
+  rclone copyto "${archive}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip")" --no-traverse
+  rclone copyto "${checksum_file}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")" --no-traverse
 }
 
-initialize_local_mysql() {
-  mysql_runtime_paths
-  [[ "${DB_NAME}" =~ ^[A-Za-z0-9_]+$ ]] || die "DB_NAME may contain only letters, numbers, and underscores for local setup."
-  [[ "${DB_USER}" =~ ^[A-Za-z0-9_]+$ ]] || die "DB_USER may contain only letters, numbers, and underscores for local setup."
-  mkdir -p "${MYSQL_RUNTIME_DIR}"
-  chmod 700 "${MYSQL_RUNTIME_DIR}"
-
-  if [[ ! -d "${MYSQL_DATA_DIR}/mysql" ]]; then
-    log "Initializing project-local MySQL data directory."
-    mkdir -p "${MYSQL_DATA_DIR}"
-    mysqld --initialize-insecure --datadir="${MYSQL_DATA_DIR}" --log-error="${MYSQL_LOG_FILE}"
+prune_studio_exports() {
+  local -a names=()
+  local name
+  mapfile -t names < <(rclone lsf "$(r2_path "${STUDIO_EXPORT_PREFIX}")" --files-only | grep -E '^lakehub-social-studio-[0-9]{8}T[0-9]{6}Z\.zip$' | sort -r)
+  if (("${#names[@]}" > STUDIO_EXPORT_RETENTION)); then
+    for name in "${names[@]:STUDIO_EXPORT_RETENTION}"; do
+      rclone deletefile "$(r2_path "${STUDIO_EXPORT_PREFIX}/${name}")"
+      rclone deletefile "$(r2_path "${STUDIO_EXPORT_PREFIX}/${name}.sha256")" || true
+    done
   fi
-
-  if [[ -f "${MYSQL_PID_FILE}" ]] && kill -0 "$(<"${MYSQL_PID_FILE}")" 2>/dev/null; then
-    return
-  fi
-
-  rm -f "${MYSQL_SOCKET}" "${MYSQL_PID_FILE}"
-  log "Starting project-local MySQL on 127.0.0.1:${LOCAL_MYSQL_PORT}."
-  mysqld --datadir="${MYSQL_DATA_DIR}" --socket="${MYSQL_SOCKET}" --pid-file="${MYSQL_PID_FILE}" --port="${LOCAL_MYSQL_PORT}" --bind-address=127.0.0.1 --log-error="${MYSQL_LOG_FILE}" --daemonize
-
-  local _attempt
-  for _attempt in {1..30}; do
-    mysqladmin --protocol=socket --socket="${MYSQL_SOCKET}" -uroot ping >/dev/null 2>&1 && break
-    sleep 1
-  done
-  mysqladmin --protocol=socket --socket="${MYSQL_SOCKET}" -uroot ping >/dev/null 2>&1 || die "Local MySQL failed to start; inspect ${MYSQL_LOG_FILE}."
-
-  local escaped_password
-  escaped_password="$(sql_quote "${DB_PASSWORD}")"
-  mysql --protocol=socket --socket="${MYSQL_SOCKET}" -uroot <<SQL
-CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER IF NOT EXISTS '${DB_USER}'@'127.0.0.1' IDENTIFIED BY '${escaped_password}';
-ALTER USER '${DB_USER}'@'127.0.0.1' IDENTIFIED BY '${escaped_password}';
-GRANT ALL PRIVILEGES ON \`${DB_NAME}\`.* TO '${DB_USER}'@'127.0.0.1';
-FLUSH PRIVILEGES;
-SQL
 }
 
-ensure_database() {
-  check_wp_database && return
-  database_is_local_fallback || die "WordPress cannot reach DB_HOST=${DB_HOST}; automatic fallback is allowed only for 127.0.0.1:PORT."
-  initialize_local_mysql
-  check_wp_database || die "MySQL is running, but WordPress still cannot access the configured database."
-}
-
-download_latest_database() {
-  local destination="$1"
-  rclone copyto "$(r2_path database/latest.sql.gz)" "${destination}" --no-traverse || die "No database/latest.sql.gz backup exists in R2. Run push.sh from the authoritative installation first."
-  gzip -t "${destination}" || die "The downloaded database backup is corrupt."
-}
-
-import_database() {
-  local archive="$1"
-  gzip -dc "${archive}" | (cd "${ROOT_DIR}" && wp db import -)
-}
-
-export_database_archive() {
-  local archive="$1"
-  local sql_file="${archive%.gz}"
-  (cd "${ROOT_DIR}" && wp db export "${sql_file}" --add-drop-table --quiet)
-  gzip -9 "${sql_file}"
-  gzip -t "${archive}"
-}
-
-copy_uploads_to_r2() {
-  mkdir -p "${ROOT_DIR}/wp-content/uploads"
-  rclone copy "${ROOT_DIR}/wp-content/uploads" "$(r2_path uploads)" --create-empty-src-dirs
-}
-
-copy_uploads_from_r2() {
-  mkdir -p "${ROOT_DIR}/wp-content/uploads"
-  rclone copy "$(r2_path uploads)" "${ROOT_DIR}/wp-content/uploads" --create-empty-src-dirs
+download_latest_studio_export() {
+  local destination="$1" checksum_file
+  checksum_file="${destination}.sha256"
+  rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip")" "${destination}" --no-traverse || die "No Studio latest.zip backup exists in R2."
+  rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")" "${checksum_file}" --no-traverse || die "The Studio export checksum is missing."
+  verify_checksum "${destination}" "${checksum_file}"
+  validate_studio_export "${destination}"
 }
 
 require_git_repository() {

@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+wp-config.php
 
 # WordPress runtime content
 wp-content/uploads/
@@ -10,6 +11,10 @@ wp-content/upgrade/
 wp-content/upgrade-temp-backup/
 wp-content/debug.log
 wp-content/*.log
+wp-content/db.php
+wp-content/database/
+wp-content/mu-plugins/99-studio-loader.php
+wp-content/mu-plugins/sqlite-database-integration/
 
 # Local database/runtime state and backup artifacts
 .runtime/
