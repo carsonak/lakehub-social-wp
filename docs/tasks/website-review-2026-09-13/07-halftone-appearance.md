@@ -29,16 +29,16 @@ Commit: `design: densify and align halftone backgrounds`
 
 ## Progress
 
-- Status: not started
-- [ ] Implementation complete
-- [ ] Relevant checks and visual/editor verification complete
-- [ ] Intended diff reviewed and committed
-- [ ] Fresh full Studio export backed up to R2 and Git pushed
-- Last checkpoint: plan recorded, 2026-09-13.
-- Next action: implement after earlier tasks have been verified.
-- Evidence: pending.
-- Commit/export/R2/push receipt: pending; reconcile Git and runtime receipts before retry.
-- Blockers: none identified beyond shared runtime prerequisites in README.
+- Status: complete
+- [x] Implementation complete
+- [x] Relevant checks and visual/editor verification complete
+- [x] Intended diff reviewed and committed
+- [x] Fresh full Studio export backed up to R2 and Git pushed
+- Last checkpoint: implementation and Playwright tests passed, full Studio export generated, 2026-09-13.
+- Next action: implement Task 08 (Transformation circles).
+- Evidence: REVIEW_TASK=07 node scripts/tests/review.cjs passed: halftone tile density (36px desktop / 16px mobile), at-rest anchoring (2 columns left, 1 row top), and mobile spacing adaptation.
+- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/07-halftone-density.zip, commit and R2 backup pending push execution.
+- Blockers: none.
 
 ## Recovery
 

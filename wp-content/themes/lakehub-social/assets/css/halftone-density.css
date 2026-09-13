@@ -1,0 +1,93 @@
+/* Halftone density tokens and background decoration overrides (Task 07).
+ * Reverting this file and its enqueue restores the original vector backgrounds without affecting hover repulsion.
+ */
+
+.is-style-lakehub-story-photo,
+.is-style-lakehub-community-photo,
+.is-style-lakehub-portfolio-photo,
+.is-style-lakehub-story-grid,
+.is-style-lakehub-community-grid,
+.is-style-lakehub-portfolio-grid {
+  --lakehub-dot-spacing: 36px;
+}
+
+@media (max-width: 600px) {
+  .is-style-lakehub-story-photo,
+  .is-style-lakehub-community-photo,
+  .is-style-lakehub-portfolio-photo,
+  .is-style-lakehub-story-grid,
+  .is-style-lakehub-community-grid,
+  .is-style-lakehub-portfolio-grid {
+    --lakehub-dot-spacing: 16px;
+  }
+}
+
+/* About Story photograph halftone decoration */
+.is-style-lakehub-story-photo::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: calc(-1 * var(--lakehub-dot-spacing)) !important;
+  left: calc(-2 * var(--lakehub-dot-spacing)) !important;
+  bottom: auto !important;
+  width: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+  height: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+  background-image: url('../images/completion/halftone-tile.svg') !important;
+  background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
+  background-repeat: repeat !important;
+  background-position: 0 0 !important;
+}
+
+/* Impact Community photograph halftone decoration */
+.is-style-lakehub-community-grid::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: calc(-1 * var(--lakehub-dot-spacing)) !important;
+  left: calc(-2 * var(--lakehub-dot-spacing)) !important;
+  width: calc(35.9375rem + 2 * var(--lakehub-dot-spacing)) !important;
+  height: calc(21.125rem + 2 * var(--lakehub-dot-spacing)) !important;
+  background-image: url('../images/completion/halftone-tile.svg') !important;
+  background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
+  background-repeat: repeat !important;
+  background-position: 0 0 !important;
+}
+@media (max-width: 900px) {
+  .is-style-lakehub-community-grid::before {
+    width: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+    height: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+  }
+}
+
+/* Impact Portfolio photograph halftone decoration */
+.is-style-lakehub-portfolio-grid::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: calc(0.875rem - 1 * var(--lakehub-dot-spacing)) !important;
+  left: calc(100% - 23.0625rem - 2 * var(--lakehub-dot-spacing)) !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: calc(23.0625rem + 2 * var(--lakehub-dot-spacing)) !important;
+  height: calc(28.5625rem + 2 * var(--lakehub-dot-spacing)) !important;
+  background-image: url('../images/completion/halftone-tile.svg') !important;
+  background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
+  background-repeat: repeat !important;
+  background-position: 0 0 !important;
+}
+@media (max-width: 900px) {
+  .is-style-lakehub-portfolio-grid::after {
+    top: auto !important;
+    bottom: calc(-1 * var(--lakehub-dot-spacing)) !important;
+    left: calc(-2 * var(--lakehub-dot-spacing)) !important;
+    width: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+    height: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+  }
+}
+
+/* Responsive spacing protection to prevent page overflow */
+.is-style-lakehub-story-grid,
+.is-style-lakehub-impact-community,
+.is-style-lakehub-impact-portfolio {
+  overflow-x: clip;
+}

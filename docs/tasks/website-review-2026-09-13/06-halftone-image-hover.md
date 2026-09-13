@@ -46,7 +46,7 @@ Commit: `feat: move halftone images away from the pointer`
 - Last checkpoint: implementation and Playwright tests passed, full Studio export generated, 2026-09-13.
 - Next action: implement Task 07 (Halftone appearance).
 - Evidence: REVIEW_TASK=06 node scripts/tests/review.cjs passed: halftone image repulsion in all directions, cap, reset, and reduced motion.
-- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/06-halftone-hover.zip, commit and R2 backup pending push execution.
+- Commit/export/R2/push receipt: commit a90b6fc (feat: move halftone images away from the pointer), full Studio export .runtime/review-20260913/06-halftone-hover.zip, R2 backup studio-exports/lakehub-social-studio-20260913T194028Z.zip and latest.zip, Git branch main pushed to origin.
 - Blockers: none.
 
 ## Recovery

@@ -7,10 +7,17 @@ add_action( 'after_setup_theme', static function () {
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'post-thumbnails' );
 	add_editor_style( 'style.css' );
+	if ( file_exists( get_theme_file_path( 'assets/css/halftone-density.css' ) ) ) {
+		add_editor_style( 'assets/css/halftone-density.css' );
+	}
 } );
 
 add_action( 'wp_enqueue_scripts', static function () {
 	wp_enqueue_style( 'lakehub-social', get_stylesheet_uri(), array(), filemtime( get_theme_file_path( 'style.css' ) ) );
+	$density_path = get_theme_file_path( 'assets/css/halftone-density.css' );
+	if ( file_exists( $density_path ) ) {
+		wp_enqueue_style( 'lakehub-social-halftone-density', get_theme_file_uri( 'assets/css/halftone-density.css' ), array( 'lakehub-social' ), filemtime( $density_path ) );
+	}
 	wp_enqueue_script( 'lakehub-social', get_theme_file_uri( 'assets/js/main.js' ), array(), filemtime( get_theme_file_path( 'assets/js/main.js' ) ), true );
 } );
 

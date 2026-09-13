@@ -153,6 +153,51 @@ const task = process.env.REVIEW_TASK || 'all';
 
    console.log('PASS 06: halftone image repulsion in all directions, cap, reset, and reduced motion');
   }
+  if(task==='all'||task==='07') {
+   await open('/about/');
+   const storyPhoto = page.locator('.is-style-lakehub-story-photo');
+   const desktopSpacing = await storyPhoto.evaluate(e => getComputedStyle(e).getPropertyValue('--lakehub-dot-spacing').trim());
+   assert.equal(desktopSpacing, '36px', 'Desktop halftone spacing is 36px');
+
+   const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+   assert.ok(storyBg.includes('halftone-tile.svg'), 'Story photo uses derived halftone tile');
+
+   const storyBeforeTop = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
+   const storyBeforeLeft = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+   assert.equal(storyBeforeTop, -36, 'Story dots top offset is -36px (1 row)');
+   assert.equal(storyBeforeLeft, -72, 'Story dots left offset is -72px (2 columns)');
+
+   await open('/impact/');
+   const communityGrid = page.locator('.is-style-lakehub-community-grid');
+   const commBeforeTop = await communityGrid.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
+   const commBeforeLeft = await communityGrid.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+   assert.equal(commBeforeTop, -36, 'Community dots top offset is -36px (1 row)');
+   assert.equal(commBeforeLeft, -72, 'Community dots left offset is -72px (2 columns)');
+
+   await page.setViewportSize({width:390,height:800});
+   await open('/about/');
+   const mobileStoryPhoto = page.locator('.is-style-lakehub-story-photo');
+   const mobileSpacing = await mobileStoryPhoto.evaluate(e => getComputedStyle(e).getPropertyValue('--lakehub-dot-spacing').trim());
+   assert.equal(mobileSpacing, '16px', 'Mobile halftone spacing is 16px');
+
+   const mobileBeforeTop = await mobileStoryPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
+   const mobileBeforeLeft = await mobileStoryPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+   assert.equal(mobileBeforeTop, -16, 'Mobile story dots top offset is -16px (1 row)');
+   assert.equal(mobileBeforeLeft, -32, 'Mobile story dots left offset is -32px (2 columns)');
+
+   await mobileStoryPhoto.scrollIntoViewIfNeeded();
+   const mBox = await mobileStoryPhoto.boundingBox();
+   await page.mouse.move(mBox.x + 10, mBox.y + 10);
+   await page.waitForTimeout(200);
+   const mRepelX = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
+   const mRepelY = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
+   const mDisp = Math.hypot(mRepelX, mRepelY);
+   assert.ok(mDisp <= 16.1, 'Mobile hover repulsion displacement capped at 16px');
+   await page.mouse.move(0, 0);
+
+   await page.setViewportSize({width:1280,height:900});
+   console.log('PASS 07: halftone tile density, at-rest anchoring, and mobile spacing adaptation');
+  }
   // REVIEW_TASKS
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
