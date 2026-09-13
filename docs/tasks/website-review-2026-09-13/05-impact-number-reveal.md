@@ -6,13 +6,31 @@ Reveal each metric description once per visit at half-visible first downward ent
 
 ## Implementation
 
-Theme CSS/JS.
+- **CSS Styling & Transitions**: [`wp-content/themes/lakehub-social/style.css`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/style.css)
+  - Pre-reveal state: `.is-style-lakehub-metric-copy` reserves layout space with `opacity: 0; pointer-events: none;`.
+  - Desktop (>600px):
+    - Odd rows (number left, copy right): emerges rightward (`transform: translate3d(-2rem, 0, 0)` -> `translate3d(0, 0, 0)`).
+    - Even rows (number right, copy left): emerges leftward (`transform: translate3d(2rem, 0, 0)` -> `translate3d(0, 0, 0)`).
+  - Mobile (<=600px):
+    - Stacked copy emerges downward (`transform: translate3d(0, -1.5rem, 0)` -> `translate3d(0, 0, 0)`).
+  - Transition duration: `550ms cubic-bezier(.25,.46,.45,.94)`.
+  - Number hover: `.is-style-lakehub-metric-photo` scales `transform: scale(1.04); transition: transform 200ms ease;` without clipping the photo-filled glyph background.
+  - Reduced motion / no-JS: `.is-style-lakehub-metric-copy` is static, visible (`opacity: 1; transform: none;`).
+- **JavaScript One-Time Observer**: [`wp-content/themes/lakehub-social/assets/js/main.js`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/assets/js/main.js)
+  - `IntersectionObserver` triggered on row reaching 50% visible during downward scroll.
+  - Unobserve each row immediately after reveal so each row reveals exactly once per visit.
+  - Pre-reveal any rows already passed during page restoration or anchor jump.
+- **Playwright Test**: Add Task 05 assertions to [`scripts/tests/review.cjs`](file:///home/line/projects/lakehub-social-wp/scripts/tests/review.cjs).
 
 Commit: `feat: reveal impact descriptions from their numbers`
 
 ## Acceptance
 
-Independent one-time row reveal, alternating origin, number image fill, saved content editability, mobile, reduced motion and no-JS.
+- Descriptions emerge horizontally from their respective numbers on desktop, downward on mobile.
+- Rows reveal independently once per visit upon crossing the 50% visibility threshold.
+- Reloading midway down the page reveals all already-passed rows instantly without jump.
+- Hovering over photo-filled numbers smoothly scales by 1.04 without text clipping or distortion.
+- Content remains editable in Site Editor without block recovery errors.
 
 ## Progress
 

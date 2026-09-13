@@ -6,13 +6,35 @@ Repel About story and Impact community/portfolio photograph frames from pointer 
 
 ## Implementation
 
-Theme CSS/JS. Implement before task 07 for independent revert.
+- **CSS Variables & Layering**: [`wp-content/themes/lakehub-social/style.css`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/style.css)
+  - Define custom property `--lakehub-dot-spacing: 36px;` on target image containers.
+  - Targets:
+    - About story: [`.is-style-lakehub-story-photo`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/style.css#L617)
+    - Impact community: [`.is-style-lakehub-community-photo`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/style.css#L773)
+    - Impact portfolio: [`.is-style-lakehub-portfolio-photo`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/style.css#L777)
+  - Stationary layout box: keep outer grid and dot decoration pseudo-elements (`::before` / `::after`) fixed in place.
+  - Frame movement: apply `transform: translate3d(var(--lakehub-repel-x, 0px), var(--lakehub-repel-y, 0px), 0); transition: transform 120ms cubic-bezier(.2,.6,.4,1);` to the photograph frame.
+  - Reduced motion / touch: no movement (`transform: none;`).
+- **JavaScript Repulsion Engine**: [`wp-content/themes/lakehub-social/assets/js/main.js`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/assets/js/main.js)
+  - Ignore `touch` pointer types and `prefers-reduced-motion: reduce`.
+  - On `pointermove`:
+    - Compute pointer position relative to target bounding box center `(cx, cy)`.
+    - Compute direction vector away from cursor: `dx = cx - pointerX; dy = cy - pointerY;`.
+    - Read max displacement: `maxCap = parseFloat(getComputedStyle(target).getPropertyValue('--lakehub-dot-spacing')) || 36;`.
+    - Apply smooth quadratic ease: `factor = Math.min(1, Math.hypot(dx, dy) / (target.offsetWidth / 2)); displacement = factor * maxCap;`.
+    - Set `--lakehub-repel-x` and `--lakehub-repel-y`.
+  - On `pointerleave`, `pointercancel`, blur, or motion preference change: smoothly reset both offsets to `0px`.
+- **Playwright Test**: Add Task 06 assertions to [`scripts/tests/review.cjs`](file:///home/line/projects/lakehub-social-wp/scripts/tests/review.cjs).
 
 Commit: `feat: move halftone images away from the pointer`
 
 ## Acceptance
 
-All directions, cap, smooth reset, no jitter/layout shift/crop changes, touch/reduced motion.
+- Pointer approach from top, bottom, left, or right pushes image frame in opposite direction.
+- Total displacement never exceeds `--lakehub-dot-spacing` (36px).
+- Surrounding layout and background dot patterns remain completely stationary.
+- Pointer exit smoothly returns frame to origin `(0, 0)` without snap or oscillation.
+- Touch interactions, reduced motion, and Site Editor interactions remain stationary.
 
 ## Progress
 

@@ -6,13 +6,27 @@ Rename Impact heading and editor metadata in source and saved page. Preserve #co
 
 ## Implementation
 
-Impact pattern and LakeHub Site CLI-only migration.
+- **Source pattern**: [`wp-content/themes/lakehub-social/patterns/impact-page.php`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/patterns/impact-page.php)
+  - Update `metadata.name`: `"Impact · Community Projects"` (was `"Impact · Community Engagements"`).
+  - Update heading text: `Community <mark ... class="has-inline-color has-teal-color">Projects</mark>` (was `Engagements`).
+  - **Preserve**: Section anchor `id="community-engagements"`, template lock `contentOnly`, and all inner vendor and Malika content blocks.
+- **Plugin migration**: [`wp-content/plugins/lakehub-site/includes/review-20260913.php`](file:///home/line/projects/lakehub-social-wp/wp-content/plugins/lakehub-site/includes/review-20260913.php)
+  - Register `lakehub review-20260913 rename-community apply` (with `--dry-run`) and `rollback` subcommands.
+  - Require in [`wp-content/plugins/lakehub-site/lakehub-site.php`](file:///home/line/projects/lakehub-social-wp/wp-content/plugins/lakehub-site/lakehub-site.php) under `defined( 'WP_CLI' ) && WP_CLI`.
+  - Target: Impact page (`get_page_by_path( 'impact', OBJECT, 'page' )`).
+  - Transaction safety: Wrap DB updates in `START TRANSACTION` / `COMMIT` / `ROLLBACK`.
+  - Snapshot & Idempotence: Save before/after SHA-256 in option `lakehub_review_20260913_rename_community_snapshot`; set done option `lakehub_review_20260913_rename_community_done`.
+  - Conflict protection on rollback: compare current post content hash against the `after` hash; abort if manual editor modifications occurred unless forced.
 
 Commit: `fix: rename Community Engagements to Community Projects`
 
 ## Acceptance
 
-Dry-run changes nothing; apply alters only intended fields; repeat safe; rollback protects edits; disposable SQLite verification and editor save/reload.
+- `studio wp --path="$PWD" lakehub review-20260913 rename-community apply --dry-run` reports exact planned heading change without writing to DB.
+- `studio wp --path="$PWD" lakehub review-20260913 rename-community apply` updates only the Impact page heading and metadata. Repeated runs report already applied without writes.
+- `studio wp --path="$PWD" lakehub review-20260913 rename-community rollback` restores original heading cleanly and detects conflicting editor changes.
+- Frontend test: `REVIEW_TASK=03 node scripts/tests/review.cjs` asserts `h2` contains "Community Projects" and anchor `#community-engagements` works.
+- Editor verification: Impact page loads in Site Editor without block recovery or validation errors.
 
 ## Progress
 

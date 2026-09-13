@@ -810,3 +810,14 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 @media(prefers-reduced-motion:reduce) {
  .wp-site-blocks > header:has(.is-style-lakehub-header) { transition: none; }
 }
+
+/* Review 02: align visible cap tops, then align each column's first content row. */
+.is-style-lakehub-footer-links { padding-top: 1rem; }
+.is-style-lakehub-footer-links h2,
+.is-style-lakehub-footer-links > p:first-child { font-size: 1.125rem; line-height: 1.75rem; margin-block: 0 1.5rem; }
+.is-style-lakehub-footer-links > p:first-child + p {
+ margin-top: 0; font-size: 1rem; line-height: 1.5rem; font-weight: 400;
+}
+@media(max-width:900px) {
+ .is-style-lakehub-footer-grid > :last-child { padding-top: 1rem; }
+}

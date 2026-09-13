@@ -6,13 +6,26 @@ Isolate design departure in own stylesheet/tokens/commit. Derive tile from origi
 
 ## Implementation
 
-Isolated decoration stylesheet, derived asset and theme enqueue. Depends on 06.
+- **Isolated Stylesheet**: [`wp-content/themes/lakehub-social/assets/css/halftone-density.css`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/assets/css/halftone-density.css)
+  - Overrides dot decoration background images with the derived SVG tile:
+    - Desktop (>600px): `--lakehub-dot-spacing: 36px;` with ~14px diameter dots.
+    - Mobile (<=600px): `--lakehub-dot-spacing: 16px;` with ~6px diameter dots.
+    - At-rest anchoring: positions decoration to reveal exactly 2 columns to the left and 1 row above each image frame.
+    - Reserved responsive space: padding/margin to prevent dot pattern clipping or overflow.
+- **Derived Tile Asset**: [`wp-content/themes/lakehub-social/assets/images/completion/halftone-tile.svg`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/assets/images/completion/halftone-tile.svg)
+  - Derived from original local vector data in `story-dots.svg` without external assets or re-encoding.
+- **Enqueue**: [`wp-content/themes/lakehub-social/functions.php`](file:///home/line/projects/lakehub-social-wp/wp-content/themes/lakehub-social/functions.php)
+  - Enqueue `lakehub-social-halftone-density` stylesheet.
+- **Playwright Test**: Add Task 07 assertions to [`scripts/tests/review.cjs`](file:///home/line/projects/lakehub-social-wp/scripts/tests/review.cjs).
 
 Commit: `design: densify and align halftone backgrounds`
 
 ## Acceptance
 
-Three images consistent; responsive overflow and row counts; revert only this commit and verify original decoration plus working hover.
+- All three images (About story, Impact community, Impact portfolio) display consistent 36px/14px dot density on desktop and 16px/6px on mobile.
+- At rest, exactly 2 left columns and 1 top row are visible beyond the image bounds.
+- Task 06 repulsion capping adapts seamlessly from 36px to 16px on mobile without JavaScript changes.
+- **Independent Reversion Verification**: Reverting only this commit completely restores the original SVG backgrounds and spacing while Task 06 hover repulsion remains fully functional.
 
 ## Progress
 

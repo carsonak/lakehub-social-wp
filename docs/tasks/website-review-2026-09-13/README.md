@@ -4,8 +4,8 @@ Eight individually committed, verified and backed-up tasks. User approved per-ro
 
 ## Task tracker
 
-- [ ] [Scroll navbar](01-scroll-navbar.md) — not started
-- [ ] [Footer alignment](02-footer-alignment.md) — not started
+- [x] [Scroll navbar](01-scroll-navbar.md) — complete (commit 3d889fb)
+- [ ] [Footer alignment](02-footer-alignment.md) — implementation & visual checks passed; backup pending
 - [ ] [Community Projects](03-community-projects.md) — not started
 - [ ] [Program card scroll](04-program-card-scroll.md) — not started
 - [ ] [Impact number reveal](05-impact-number-reveal.md) — not started
@@ -31,6 +31,7 @@ The canonical Studio target is this repository at http://localhost:8881/, native
 
 ## Progress
 
-- Planning documents prepared; initial export/commit/backup pending.
-- Next: start verified Studio target, export baseline, publish these documents, implement task 01.
+- Task 01 completed, committed (3d889fb), exported and backed up to R2.
+- Task 02 CSS implementation and test suite passed; screenshots captured in .runtime/review-20260913/.
+- Next: export Task 02 backup archive, stage and commit Task 02, push to R2/Git, and proceed to Task 03.
 - Receipts and screenshots: `.runtime/review-20260913/`.

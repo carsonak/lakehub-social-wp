@@ -28,6 +28,21 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.emulateMedia({reducedMotion:'no-preference'});await page.setViewportSize({width:1280,height:900});
    console.log('PASS 01: navbar directions, footprint, focus, mobile menu, reduced motion');
   }
+  if(task==='all'||task==='02') {
+   for (const width of [320,390,768,1024,1280,1440]) {
+    await page.setViewportSize({width,height:900});await open();
+    await page.locator('footer').scrollIntoViewIfNeeded();
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Footer does not overflow at '+width);
+    if(width>900) {
+     const tops=await page.locator('.is-style-lakehub-footer-links').evaluateAll(es=>es.map(e=>[e.firstElementChild.getBoundingClientRect().top,e.children[1].getBoundingClientRect().top]));
+     assert.ok(Math.max(...tops.map(x=>x[0]))-Math.min(...tops.map(x=>x[0]))<1,'Heading boxes align');
+     assert.ok(Math.max(...tops.map(x=>x[1]))-Math.min(...tops.map(x=>x[1]))<1,'First content rows align');
+    }
+    await page.locator('footer').screenshot({path:`.runtime/review-20260913/footer-${width}.png`});
+   }
+   await page.setViewportSize({width:1280,height:900});
+   console.log('PASS 02: footer row alignment and responsive overflow');
+  }
   // REVIEW_TASKS
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
