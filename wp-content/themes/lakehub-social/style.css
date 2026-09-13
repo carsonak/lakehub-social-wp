@@ -797,3 +797,16 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-impact-community h2 { font-weight: 700; }
 .is-style-lakehub-community-copy p { font-family: var(--wp--preset--font-family--body); }
 .is-style-lakehub-impact-transformation h2 { letter-spacing: -.06875rem; }
+
+/* Review 01: retain the header's footprint while revealing navigation on upward scroll. */
+.wp-site-blocks > header:has(.is-style-lakehub-header) {
+ position: sticky; top: var(--lakehub-admin-offset,0px); z-index: 100;
+ transition: transform 200ms ease;
+}
+.wp-site-blocks > header.is-navbar-hidden {
+ transform: translateY(calc(-100% - var(--lakehub-admin-offset,0px))); pointer-events: none;
+}
+.wp-site-blocks [id] { scroll-margin-top: calc(var(--lakehub-header-clearance,4rem) + 1rem); }
+@media(prefers-reduced-motion:reduce) {
+ .wp-site-blocks > header:has(.is-style-lakehub-header) { transition: none; }
+}

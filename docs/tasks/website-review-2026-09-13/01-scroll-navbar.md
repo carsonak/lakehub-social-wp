@@ -16,14 +16,14 @@ Scroll both directions, jitter, keyboard entry, mobile menu/Escape, admin bar, r
 
 ## Progress
 
-- Status: not started
-- [ ] Implementation complete
-- [ ] Relevant checks and visual/editor verification complete
+- Status: backup pending
+- [x] Implementation complete
+- [x] Relevant checks and visual/editor verification complete
 - [ ] Intended diff reviewed and committed
 - [ ] Fresh full Studio export backed up to R2 and Git pushed
-- Last checkpoint: plan recorded, 2026-09-13.
-- Next action: implement after earlier tasks have been verified.
-- Evidence: pending.
+- Last checkpoint: implementation and relevant checks passed, 2026-09-13.
+- Next action: export, review/stage intended changes, commit and back up; reconcile receipts before retry.
+- Evidence: REVIEW_TASK=01 node scripts/tests/review.cjs passed: direction thresholds, stable footprint, focus, mobile menu/Escape and reduced motion. JS syntax and whitespace passed.
 - Commit/export/R2/push receipt: pending; reconcile Git and runtime receipts before retry.
 - Blockers: none identified beyond shared runtime prerequisites in README.
 
