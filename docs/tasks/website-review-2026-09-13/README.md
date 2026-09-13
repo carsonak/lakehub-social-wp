@@ -11,7 +11,7 @@ Eight individually committed, verified and backed-up tasks. User approved per-ro
 - [x] [Impact number reveal](05-impact-number-reveal.md) — complete (commit 8a25975)
 - [x] [Halftone image hover](06-halftone-image-hover.md) — complete (commit a90b6fc)
 - [x] [Halftone appearance](07-halftone-appearance.md) — complete (commit 1294466)
-- [x] [Transformation circles](08-transformation-circles.md) — complete
+- [x] [Transformation circles](08-transformation-circles.md) — complete (commit a1d4c08)
 
 ## Resume and delivery workflow
 
@@ -38,5 +38,6 @@ The canonical Studio target is this repository at http://localhost:8881/, native
 - Task 05 completed, committed (8a25975), exported (05-impact-reveal.zip), backed up to R2, and pushed.
 - Task 06 completed, committed (a90b6fc), exported (06-halftone-hover.zip), backed up to R2, and pushed.
 - Task 07 completed, committed (1294466), exported (07-halftone-density.zip), backed up to R2, and pushed.
-- Task 08 completed, exported (08-transformation-circles.zip), all 8 review test suites verified.
+- Task 08 completed, committed (a1d4c08), exported (08-transformation-circles.zip), backed up to R2, and pushed.
+- All 8 tasks completed, verified against Playwright regressions (`REVIEW_TASK=all`), exported, backed up to Cloudflare R2, and pushed to `origin/main`.
 - Receipts and screenshots: `.runtime/review-20260913/`.
