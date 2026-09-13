@@ -13,9 +13,9 @@
 <!-- /wp:heading -->
 </div></section>
 <!-- /wp:cover -->
-<!-- wp:group {"className":"is-style-lakehub-impact-community","layout":{"type":"default"},"tagName":"section","metadata":{"name":"Impact · Community Engagements"},"anchor":"community-engagements","templateLock":"contentOnly"} -->
+<!-- wp:group {"className":"is-style-lakehub-impact-community","layout":{"type":"default"},"tagName":"section","metadata":{"name":"Impact · Community Projects"},"anchor":"community-engagements","templateLock":"contentOnly"} -->
 <section class="wp-block-group is-style-lakehub-impact-community" id="community-engagements"><!-- wp:heading -->
-<h2 class="wp-block-heading">Community <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-teal-color">Engagements</mark></h2>
+<h2 class="wp-block-heading">Community <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-teal-color">Projects</mark></h2>
 <!-- /wp:heading -->
 <!-- wp:group {"className":"is-style-lakehub-community-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-community-grid"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-lakehub-community-photo"} -->

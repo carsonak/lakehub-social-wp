@@ -43,6 +43,14 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.setViewportSize({width:1280,height:900});
    console.log('PASS 02: footer row alignment and responsive overflow');
   }
+  if(task==='all'||task==='03') {
+   await open('/impact/');
+   const section = page.locator('#community-engagements');
+   assert.equal(await section.count(), 1, 'Anchor #community-engagements preserved');
+   const heading = section.locator('h2');
+   assert.equal(await heading.innerText(), 'Community Projects');
+   console.log('PASS 03: rename Community Engagements to Community Projects with preserved anchor');
+  }
   // REVIEW_TASKS
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}

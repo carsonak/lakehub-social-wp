@@ -15,4 +15,5 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	require_once __DIR__ . '/includes/design-refresh.php';
 	require_once __DIR__ . '/includes/completion.php';
 	require_once __DIR__ . '/includes/refinements.php';
+	require_once __DIR__ . '/includes/review-20260913.php';
 }

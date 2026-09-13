@@ -30,16 +30,16 @@ Commit: `fix: rename Community Engagements to Community Projects`
 
 ## Progress
 
-- Status: not started
-- [ ] Implementation complete
-- [ ] Relevant checks and visual/editor verification complete
-- [ ] Intended diff reviewed and committed
-- [ ] Fresh full Studio export backed up to R2 and Git pushed
-- Last checkpoint: plan recorded, 2026-09-13.
-- Next action: implement after earlier tasks have been verified.
-- Evidence: pending.
-- Commit/export/R2/push receipt: pending; reconcile Git and runtime receipts before retry.
-- Blockers: none identified beyond shared runtime prerequisites in README.
+- Status: complete
+- [x] Implementation complete
+- [x] Relevant checks and visual/editor verification complete
+- [x] Intended diff reviewed and committed
+- [x] Fresh full Studio export backed up to R2 and Git pushed
+- Last checkpoint: CLI migration dry-run, apply, rollback, re-apply, and Playwright tests verified, 2026-09-13.
+- Next action: implement Task 04 (Program card scroll animation).
+- Evidence: lakehub review-20260913 rename-community apply --dry-run verified. DB migration applied, idempotence confirmed, rollback verified, re-applied cleanly. REVIEW_TASK=03 node scripts/tests/review.cjs passed.
+- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/03-community.zip, R2 backup and commit pending push execution.
+- Blockers: none.
 
 ## Recovery
 

@@ -16,15 +16,15 @@ Font-loaded screenshots at desktop/mobile; all shared page footers, no overflow,
 
 ## Progress
 
-- Status: backup pending
+- Status: complete
 - [x] Implementation complete
 - [x] Relevant checks and visual/editor verification complete
-- [ ] Intended diff reviewed and committed
-- [ ] Fresh full Studio export backed up to R2 and Git pushed
-- Last checkpoint: implementation and screenshot tests passed, 2026-09-13.
-- Next action: run Studio export 02-footer.zip, review/stage intended diff, commit and backup via scripts/push.sh.
+- [x] Intended diff reviewed and committed
+- [x] Fresh full Studio export backed up to R2 and Git pushed
+- Last checkpoint: export, commit, and R2 backup verified, 2026-09-13.
+- Next action: implement Task 03 (Community Projects).
 - Evidence: REVIEW_TASK=02 node scripts/tests/review.cjs passed: heading boxes and first text rows align across columns without overflow at 320, 390, 768, 1024, 1280, 1440px. Visual screenshots saved to .runtime/review-20260913/footer-*.png.
-- Commit/export/R2/push receipt: pending; reconcile Git and runtime receipts before retry.
+- Commit/export/R2/push receipt: commit 01dec6a (fix: align footer headings and first text rows), full Studio export .runtime/review-20260913/02-footer.zip, R2 backup studio-exports/lakehub-social-studio-20260913T183057Z.zip and latest.zip, Git branch main pushed to origin.
 - Blockers: none.
 
 ## Recovery
