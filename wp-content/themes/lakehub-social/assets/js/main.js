@@ -365,4 +365,43 @@
     update();
     requestAnimationFrame(() => center(selected, 'instant'));
   });
+
+  const metricRows = Array.from(document.querySelectorAll('.is-style-lakehub-metric-row'));
+  if (metricRows.length && !reducedMotion.matches && 'IntersectionObserver' in window) {
+    const revealCopy = (copy) => {
+      copy.classList.add('is-revealed');
+    };
+
+    const metricObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const copy = entry.target.querySelector('.is-style-lakehub-metric-copy');
+          if (copy) revealCopy(copy);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    metricRows.forEach((row) => {
+      const copy = row.querySelector('.is-style-lakehub-metric-copy');
+      if (!copy) return;
+      copy.classList.add('is-reveal-ready');
+
+      const rect = row.getBoundingClientRect();
+      if (rect.top + rect.height * 0.5 <= window.innerHeight) {
+        revealCopy(copy);
+      } else {
+        metricObserver.observe(row);
+      }
+    });
+
+    reducedMotion.addEventListener('change', (event) => {
+      if (!event.matches) return;
+      metricObserver.disconnect();
+      metricRows.forEach((row) => {
+        const copy = row.querySelector('.is-style-lakehub-metric-copy');
+        if (copy) revealCopy(copy);
+      });
+    });
+  }
 })();

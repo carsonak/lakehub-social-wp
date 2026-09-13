@@ -7,8 +7,8 @@ Eight individually committed, verified and backed-up tasks. User approved per-ro
 - [x] [Scroll navbar](01-scroll-navbar.md) — complete (commit 3d889fb)
 - [x] [Footer alignment](02-footer-alignment.md) — complete (commit 01dec6a)
 - [x] [Community Projects](03-community-projects.md) — complete (commit 7f3b71a)
-- [x] [Program card scroll](04-program-card-scroll.md) — complete
-- [ ] [Impact number reveal](05-impact-number-reveal.md) — not started
+- [x] [Program card scroll](04-program-card-scroll.md) — complete (commit 693f94d)
+- [x] [Impact number reveal](05-impact-number-reveal.md) — complete
 - [ ] [Halftone image hover](06-halftone-image-hover.md) — not started
 - [ ] [Halftone appearance](07-halftone-appearance.md) — not started
 - [ ] [Transformation circles](08-transformation-circles.md) — not started
@@ -34,6 +34,7 @@ The canonical Studio target is this repository at http://localhost:8881/, native
 - Task 01 completed, committed (3d889fb), exported and backed up to R2.
 - Task 02 completed, committed (01dec6a), exported (02-footer.zip), backed up to R2, and pushed.
 - Task 03 completed, committed (7f3b71a), exported (03-community.zip), backed up to R2, and pushed.
-- Task 04 completed, exported (04-program-cards.zip), tests verified.
-- Next: execute push for Task 04, then implement Task 05 (Impact number reveal).
+- Task 04 completed, committed (693f94d), exported (04-program-cards.zip), backed up to R2, and pushed.
+- Task 05 completed, exported (05-impact-reveal.zip), tests verified.
+- Next: execute push for Task 05, then implement Task 06 (Halftone image hover).
 - Receipts and screenshots: `.runtime/review-20260913/`.

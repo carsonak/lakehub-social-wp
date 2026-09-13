@@ -42,7 +42,7 @@ Commit: `feat: animate program cards through both viewport edges`
 - Last checkpoint: implementation and Playwright tests passed, full Studio export generated, 2026-09-13.
 - Next action: implement Task 05 (Impact number reveal).
 - Evidence: REVIEW_TASK=04 node scripts/tests/review.cjs passed: program cards two-edge scroll states, focus pinning, and reduced motion.
-- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/04-program-cards.zip, commit and R2 backup pending push execution.
+- Commit/export/R2/push receipt: commit 693f94d (feat: animate program cards through both viewport edges), full Studio export .runtime/review-20260913/04-program-cards.zip, R2 backup studio-exports/lakehub-social-studio-20260913T191238Z.zip and latest.zip, Git branch main pushed to origin.
 - Blockers: none.
 
 ## Recovery

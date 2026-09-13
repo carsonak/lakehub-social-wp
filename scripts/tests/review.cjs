@@ -74,6 +74,35 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.emulateMedia({reducedMotion:'no-preference'});
    console.log('PASS 04: program cards two-edge scroll states, focus pinning, and reduced motion');
   }
+  if(task==='all'||task==='05') {
+   await open('/');
+   const rows = page.locator('.is-style-lakehub-metric-row');
+   const count = await rows.count();
+   assert.ok(count >= 4, 'Metric rows found on home page');
+   const lastRow = rows.last();
+   const lastCopy = lastRow.locator('.is-style-lakehub-metric-copy');
+   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-reveal-ready') && !e.classList.contains('is-revealed')), 'Lower metric copy starts unrevealed');
+   await lastRow.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(650);
+   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Metric copy becomes is-revealed when scrolled 50% into view');
+   await scroll(0);
+   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Revealed metric copy stays revealed after scrolling away');
+   const photo = rows.first().locator('.is-style-lakehub-metric-photo');
+   await photo.hover();
+   await page.waitForTimeout(250);
+   const transform = await photo.evaluate(e => getComputedStyle(e).transform);
+   assert.ok(transform.includes('matrix') && transform !== 'none', 'Hover scales metric photo');
+   await page.setViewportSize({width:390,height:800});
+   await open('/');
+   const mobileRows = page.locator('.is-style-lakehub-metric-row');
+   const mobileLastCopy = mobileRows.last().locator('.is-style-lakehub-metric-copy');
+   assert.ok(await mobileLastCopy.evaluate(e => e.classList.contains('is-reveal-ready')), 'Mobile metric copy ready');
+   await mobileRows.last().scrollIntoViewIfNeeded();
+   await page.waitForTimeout(650);
+   assert.ok(await mobileLastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Mobile metric copy revealed');
+   await page.setViewportSize({width:1280,height:900});
+   console.log('PASS 05: metric description one-time reveals, photo hover scaling, and responsive emergence');
+  }
   // REVIEW_TASKS
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
