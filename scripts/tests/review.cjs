@@ -103,6 +103,56 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.setViewportSize({width:1280,height:900});
    console.log('PASS 05: metric description one-time reveals, photo hover scaling, and responsive emergence');
   }
+  if(task==='all'||task==='06') {
+   await open('/about/');
+   const storyPhoto = page.locator('.is-style-lakehub-story-photo');
+   await storyPhoto.scrollIntoViewIfNeeded();
+   const box = await storyPhoto.boundingBox();
+   assert.ok(box, 'Story photo found');
+
+   await page.mouse.move(box.x + 20, box.y + 20);
+   await page.waitForTimeout(200);
+   const repelX1 = await storyPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
+   const repelY1 = await storyPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
+   assert.ok(repelX1 > 0, 'Pointer at left pushes frame right');
+   assert.ok(repelY1 > 0, 'Pointer at top pushes frame down');
+   assert.ok(Math.hypot(repelX1, repelY1) <= 36.1, 'Total displacement capped within dot spacing');
+
+   await page.mouse.move(box.x + box.width - 20, box.y + box.height - 20);
+   await page.waitForTimeout(200);
+   const repelX2 = await storyPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
+   const repelY2 = await storyPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
+   assert.ok(repelX2 < 0, 'Pointer at right pushes frame left');
+   assert.ok(repelY2 < 0, 'Pointer at bottom pushes frame up');
+   assert.ok(Math.hypot(repelX2, repelY2) <= 36.1, 'Total displacement capped within dot spacing');
+
+   await page.mouse.move(0, 0);
+   await page.waitForTimeout(200);
+   const resetX = await storyPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')) || 0);
+   const resetY = await storyPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')) || 0);
+   assert.equal(resetX, 0, 'Repel X resets to 0 on leave');
+   assert.equal(resetY, 0, 'Repel Y resets to 0 on leave');
+
+   await open('/impact/');
+   const communityPhoto = page.locator('.is-style-lakehub-community-photo');
+   await communityPhoto.scrollIntoViewIfNeeded();
+   const cBox = await communityPhoto.boundingBox();
+   assert.ok(cBox, 'Community photo found');
+   await page.mouse.move(cBox.x + 20, cBox.y + cBox.height / 2);
+   await page.waitForTimeout(200);
+   const cRepelX = await communityPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
+   assert.ok(cRepelX > 0, 'Community photo repels right away from left pointer');
+   await page.mouse.move(0, 0);
+
+   await page.emulateMedia({reducedMotion:'reduce'});
+   await page.mouse.move(cBox.x + 20, cBox.y + cBox.height / 2);
+   await page.waitForTimeout(200);
+   const rmTransform = await communityPhoto.evaluate(e => getComputedStyle(e).transform);
+   assert.equal(rmTransform, 'none', 'No transform with reduced motion');
+   await page.emulateMedia({reducedMotion:'no-preference'});
+
+   console.log('PASS 06: halftone image repulsion in all directions, cap, reset, and reduced motion');
+  }
   // REVIEW_TASKS
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}

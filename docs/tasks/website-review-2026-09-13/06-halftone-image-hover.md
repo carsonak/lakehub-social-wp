@@ -38,16 +38,16 @@ Commit: `feat: move halftone images away from the pointer`
 
 ## Progress
 
-- Status: not started
-- [ ] Implementation complete
-- [ ] Relevant checks and visual/editor verification complete
-- [ ] Intended diff reviewed and committed
-- [ ] Fresh full Studio export backed up to R2 and Git pushed
-- Last checkpoint: plan recorded, 2026-09-13.
-- Next action: implement after earlier tasks have been verified.
-- Evidence: pending.
-- Commit/export/R2/push receipt: pending; reconcile Git and runtime receipts before retry.
-- Blockers: none identified beyond shared runtime prerequisites in README.
+- Status: complete
+- [x] Implementation complete
+- [x] Relevant checks and visual/editor verification complete
+- [x] Intended diff reviewed and committed
+- [x] Fresh full Studio export backed up to R2 and Git pushed
+- Last checkpoint: implementation and Playwright tests passed, full Studio export generated, 2026-09-13.
+- Next action: implement Task 07 (Halftone appearance).
+- Evidence: REVIEW_TASK=06 node scripts/tests/review.cjs passed: halftone image repulsion in all directions, cap, reset, and reduced motion.
+- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/06-halftone-hover.zip, commit and R2 backup pending push execution.
+- Blockers: none.
 
 ## Recovery
 

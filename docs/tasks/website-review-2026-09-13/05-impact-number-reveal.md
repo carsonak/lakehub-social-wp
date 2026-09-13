@@ -42,7 +42,7 @@ Commit: `feat: reveal impact descriptions from their numbers`
 - Last checkpoint: implementation and Playwright tests passed, full Studio export generated, 2026-09-13.
 - Next action: implement Task 06 (Halftone image hover).
 - Evidence: REVIEW_TASK=05 node scripts/tests/review.cjs passed: metric description one-time reveals, photo hover scaling, and responsive emergence.
-- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/05-impact-reveal.zip, commit and R2 backup pending push execution.
+- Commit/export/R2/push receipt: commit 8a25975 (feat: reveal impact descriptions from their numbers), full Studio export .runtime/review-20260913/05-impact-reveal.zip, R2 backup studio-exports/lakehub-social-studio-20260913T193409Z.zip and latest.zip, Git branch main pushed to origin.
 - Blockers: none.
 
 ## Recovery
