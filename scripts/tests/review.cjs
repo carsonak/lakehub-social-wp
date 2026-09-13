@@ -51,6 +51,29 @@ const task = process.env.REVIEW_TASK || 'all';
    assert.equal(await heading.innerText(), 'Community Projects');
    console.log('PASS 03: rename Community Engagements to Community Projects with preserved anchor');
   }
+  if(task==='all'||task==='04') {
+   await open('/programs/');
+   const cards = page.locator('.lakehub-program');
+   const count = await cards.count();
+   assert.ok(count >= 2, 'Program cards found');
+   const lastCard = cards.last();
+   assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-below')), 'Lower cards start in is-card-below state');
+   await lastCard.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(650);
+   assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-visible')), 'Card becomes is-card-visible when scrolled into view');
+   await scroll(await page.evaluate(() => document.body.scrollHeight));
+   const firstCard = cards.first();
+   assert.ok(await firstCard.evaluate(e => e.classList.contains('is-card-above')), 'Upper card transitions to is-card-above when scrolled past');
+   await firstCard.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(650);
+   assert.ok(await firstCard.evaluate(e => e.classList.contains('is-card-visible')), 'Upper card returns to is-card-visible on upward scroll');
+   await lastCard.evaluate(e => { e.tabIndex = 0; e.focus(); });
+   assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-visible')), 'Focused card remains visible');
+   await page.emulateMedia({reducedMotion:'reduce'});
+   assert.ok(await firstCard.evaluate(e => getComputedStyle(e).transitionDuration === '0s'), 'Transitions disabled with reduced motion');
+   await page.emulateMedia({reducedMotion:'no-preference'});
+   console.log('PASS 04: program cards two-edge scroll states, focus pinning, and reduced motion');
+  }
   // REVIEW_TASKS
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}

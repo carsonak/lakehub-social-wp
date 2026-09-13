@@ -742,20 +742,33 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
  .wp-site-blocks .is-style-lakehub-mission-collage img { transition: none; transform: rotate(-45deg) !important; }
 }
 
-/* Program cards reveal once as they enter the viewport; content stays visible without JavaScript. */
-.wp-site-blocks .lakehub-program.is-reveal-ready {
+/* Program cards animate through both viewport edges (above, visible, below states). */
+.wp-site-blocks .lakehub-program.is-card-ready {
  --lakehub-reveal-x: -2rem;
- opacity: 0;
- transform: translate3d(var(--lakehub-reveal-x),2.5rem,0);
  transition: opacity 550ms cubic-bezier(.25,.46,.45,.94), transform 550ms cubic-bezier(.25,.46,.45,.94), box-shadow 180ms ease;
 }
-.wp-site-blocks .lakehub-program.is-reveal-ready:nth-child(even) { --lakehub-reveal-x: 2rem; }
-.wp-site-blocks .lakehub-program.is-reveal-ready.is-revealed { opacity: 1; transform: translate3d(0,0,0); }
+.wp-site-blocks .lakehub-program.is-card-ready:nth-child(even) { --lakehub-reveal-x: 2rem; }
+.wp-site-blocks .lakehub-program.is-card-ready.is-card-below {
+ opacity: 0;
+ transform: translate3d(var(--lakehub-reveal-x),2.5rem,0);
+}
+.wp-site-blocks .lakehub-program.is-card-ready.is-card-visible {
+ opacity: 1;
+ transform: translate3d(0,0,0);
+}
+.wp-site-blocks .lakehub-program.is-card-ready.is-card-above {
+ opacity: 0;
+ transform: translate3d(var(--lakehub-reveal-x),-2.5rem,0);
+}
+.wp-site-blocks .lakehub-program.is-card-ready:focus-within {
+ opacity: 1 !important;
+ transform: translate3d(0,0,0) !important;
+}
 @media(max-width:900px) {
- .wp-site-blocks .lakehub-program.is-reveal-ready { --lakehub-reveal-x: 0rem; }
+ .wp-site-blocks .lakehub-program.is-card-ready { --lakehub-reveal-x: 0rem; }
 }
 @media(prefers-reduced-motion:reduce) {
- .wp-site-blocks .lakehub-program.is-reveal-ready { opacity: 1; transform: none; transition: none; }
+ .wp-site-blocks .lakehub-program.is-card-ready { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
 
 /* Desktop follows the approved 1280px scale. Editor UI keeps its own root size. */

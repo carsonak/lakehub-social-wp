@@ -38,7 +38,7 @@ Commit: `fix: rename Community Engagements to Community Projects`
 - Last checkpoint: CLI migration dry-run, apply, rollback, re-apply, and Playwright tests verified, 2026-09-13.
 - Next action: implement Task 04 (Program card scroll animation).
 - Evidence: lakehub review-20260913 rename-community apply --dry-run verified. DB migration applied, idempotence confirmed, rollback verified, re-applied cleanly. REVIEW_TASK=03 node scripts/tests/review.cjs passed.
-- Commit/export/R2/push receipt: full Studio export .runtime/review-20260913/03-community.zip, R2 backup and commit pending push execution.
+- Commit/export/R2/push receipt: commit 7f3b71a (fix: rename Community Engagements to Community Projects), full Studio export .runtime/review-20260913/03-community.zip, R2 backup studio-exports/lakehub-social-studio-20260913T184416Z.zip and latest.zip, Git branch main pushed to origin.
 - Blockers: none.
 
 ## Recovery

@@ -178,21 +178,78 @@
   });
 
   const programCards = Array.from(document.querySelectorAll('.lakehub-program'));
-  if (programCards.length && !reducedMotion.matches && 'IntersectionObserver' in window) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-revealed');
-        revealObserver.unobserve(entry.target);
+  if (programCards.length && !reducedMotion.matches) {
+    let bounds = [];
+    let frame = 0;
+    const measure = () => {
+      bounds = programCards.map((card) => {
+        let top = 0;
+        let el = card;
+        while (el) {
+          top += el.offsetTop || 0;
+          el = el.offsetParent;
+        }
+        return { card, top, height: card.offsetHeight };
       });
-    }, {threshold: 0.15, rootMargin: '0px 0px -10% 0px'});
-    programCards.forEach((card) => card.classList.add('is-reveal-ready'));
-    requestAnimationFrame(() => programCards.forEach((card) => revealObserver.observe(card)));
+    };
+    const updateCards = () => {
+      frame = 0;
+      const scrollY = window.scrollY;
+      const adminBottom = Math.max(0, document.getElementById('wpadminbar')?.getBoundingClientRect().bottom || 0);
+      const headerClearance = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--lakehub-header-clearance')) || (adminBottom + 80);
+      const viewHeight = Math.max(200, window.innerHeight - headerClearance);
+
+      bounds.forEach(({ card, top, height }) => {
+        if (card.contains(document.activeElement)) {
+          card.classList.remove('is-card-above', 'is-card-below');
+          card.classList.add('is-card-visible');
+          return;
+        }
+        const threshold = Math.min(height / 2, viewHeight / 2);
+        const cardTopInView = top - scrollY - headerClearance;
+        const cardBottomInView = cardTopInView + height;
+
+        if (cardBottomInView < threshold) {
+          card.classList.remove('is-card-visible', 'is-card-below');
+          card.classList.add('is-card-above');
+        } else if (cardTopInView > viewHeight - threshold) {
+          card.classList.remove('is-card-visible', 'is-card-above');
+          card.classList.add('is-card-below');
+        } else {
+          card.classList.remove('is-card-above', 'is-card-below');
+          card.classList.add('is-card-visible');
+        }
+      });
+    };
+    const scheduleUpdate = () => {
+      if (!frame) frame = requestAnimationFrame(updateCards);
+    };
+
+    programCards.forEach((card) => {
+      card.classList.add('is-card-ready');
+      card.addEventListener('focusin', scheduleUpdate);
+      card.addEventListener('focusout', scheduleUpdate);
+    });
+
+    measure();
+    updateCards();
+
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', () => { measure(); scheduleUpdate(); }, { passive: true });
+    new ResizeObserver(() => { measure(); scheduleUpdate(); }).observe(document.body);
+
     reducedMotion.addEventListener('change', (event) => {
-      if (!event.matches) return;
-      revealObserver.disconnect();
-      programCards.forEach((card) => card.classList.add('is-revealed'));
-    }, {once: true});
+      if (event.matches) {
+        programCards.forEach((card) => {
+          card.classList.remove('is-card-above', 'is-card-below', 'is-card-ready');
+          card.classList.add('is-card-visible');
+        });
+      } else {
+        programCards.forEach((card) => card.classList.add('is-card-ready'));
+        measure();
+        updateCards();
+      }
+    });
   }
 
   programCards.forEach((card) => {
