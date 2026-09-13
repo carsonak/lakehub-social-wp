@@ -1,0 +1,36 @@
+# Website review — 13 September 2026
+
+Eight individually committed, verified and backed-up tasks. User approved per-row metric reveals, all-direction image repulsion, half-visible program thresholds, and continuously blended circles including a mobile overlapping column.
+
+## Task tracker
+
+- [ ] [Scroll navbar](01-scroll-navbar.md) — not started
+- [ ] [Footer alignment](02-footer-alignment.md) — not started
+- [ ] [Community Projects](03-community-projects.md) — not started
+- [ ] [Program card scroll](04-program-card-scroll.md) — not started
+- [ ] [Impact number reveal](05-impact-number-reveal.md) — not started
+- [ ] [Halftone image hover](06-halftone-image-hover.md) — not started
+- [ ] [Halftone appearance](07-halftone-appearance.md) — not started
+- [ ] [Transformation circles](08-transformation-circles.md) — not started
+
+## Resume and delivery workflow
+
+Read each task's Progress section and inspect `git status --short` and recent history before resuming. Complete in numbered order. Keep implementation, relevant tests and task progress together. Record post-commit receipts in the next tracking update; finish with a documentation checkpoint. Never equate a local commit with a successful backup/push.
+
+Before each commit review `git diff`, `git diff --cached` and status, stage only intended source, and inspect agent assets automatically staged by `scripts/push.sh`. Make a fresh Studio Full site export, then run `./scripts/push.sh "task commit message" /absolute/path/to/export.zip`. The user authorized this for every task. If a step fails, record the exact completed stage before retrying. Runtime exports/screenshots/logs stay ignored.
+
+## Verification baseline
+
+Confirm this repository and Studio URL before writes. Run PHP/JS syntax and Git whitespace checks as applicable. Extend existing Playwright interaction/completion tests, using installed tooling. Verify 320, 390, 768, 1024, 1280, 1440px widths, short viewports, keyboard, touch, reduced motion and no-JS. Check relevant blocks in editor: edit, save, reload without recovery. Use a disposable SQLite copy for migration failure/recovery checks.
+
+## Design and environment evidence
+
+On 13 September, live Figma design context succeeded for Home 615:348 and Programs 299:174 in w9CKeLbqHoTXQczTCfsyyi. About 380:71 and Impact 409:150 returned Starter quota errors; the approved local PNG/SVG exports in `.runtime/design/figma-exports/` remain the reference, as authorized in AGENTS.md. Existing local photographs and vector paths are reused. The current review overrides the references for the behaviors documented here.
+
+The canonical Studio target is this repository at http://localhost:8881/, native PHP 8.5, WordPress 7.1. The initial sandbox runtime-lock error was resolved using approved Studio runtime access. Existing Playwright packages and Chromium binaries were located in the user caches; no dependency installation is planned.
+
+## Progress
+
+- Planning documents prepared; initial export/commit/backup pending.
+- Next: start verified Studio target, export baseline, publish these documents, implement task 01.
+- Receipts and screenshots: `.runtime/review-20260913/`.
