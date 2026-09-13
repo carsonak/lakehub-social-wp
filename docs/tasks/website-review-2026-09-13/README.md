@@ -10,8 +10,8 @@ Eight individually committed, verified and backed-up tasks. User approved per-ro
 - [x] [Program card scroll](04-program-card-scroll.md) — complete (commit 693f94d)
 - [x] [Impact number reveal](05-impact-number-reveal.md) — complete (commit 8a25975)
 - [x] [Halftone image hover](06-halftone-image-hover.md) — complete (commit a90b6fc)
-- [x] [Halftone appearance](07-halftone-appearance.md) — complete
-- [ ] [Transformation circles](08-transformation-circles.md) — not started
+- [x] [Halftone appearance](07-halftone-appearance.md) — complete (commit 1294466)
+- [x] [Transformation circles](08-transformation-circles.md) — complete
 
 ## Resume and delivery workflow
 
@@ -37,6 +37,6 @@ The canonical Studio target is this repository at http://localhost:8881/, native
 - Task 04 completed, committed (693f94d), exported (04-program-cards.zip), backed up to R2, and pushed.
 - Task 05 completed, committed (8a25975), exported (05-impact-reveal.zip), backed up to R2, and pushed.
 - Task 06 completed, committed (a90b6fc), exported (06-halftone-hover.zip), backed up to R2, and pushed.
-- Task 07 completed, exported (07-halftone-density.zip), tests verified.
-- Next: execute push for Task 07, then implement Task 08 (Transformation circles).
+- Task 07 completed, committed (1294466), exported (07-halftone-density.zip), backed up to R2, and pushed.
+- Task 08 completed, exported (08-transformation-circles.zip), all 8 review test suites verified.
 - Receipts and screenshots: `.runtime/review-20260913/`.

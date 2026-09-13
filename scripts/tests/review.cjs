@@ -198,7 +198,102 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.setViewportSize({width:1280,height:900});
    console.log('PASS 07: halftone tile density, at-rest anchoring, and mobile spacing adaptation');
   }
-  // REVIEW_TASKS
+  if(task==='all'||task==='08') {
+   await open('/impact/');
+   const grid = page.locator('.is-style-lakehub-transformation-grid');
+   assert.equal(await grid.count(), 1, 'Transformation grid found on impact page');
+   const cards = grid.locator('.is-style-lakehub-transformation-card');
+   assert.equal(await cards.count(), 4, '4 transformation cards found');
+
+   await grid.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(200);
+
+   // Desktop layout check
+   const cardBoxes = await cards.evaluateAll(es => es.map(e => {
+    const r = e.getBoundingClientRect();
+    return { left: r.left, top: r.top, width: r.width, height: r.height, borderRadius: getComputedStyle(e).borderRadius };
+   }));
+   assert.ok(cardBoxes[0].borderRadius.includes('50%'), 'Cards have circular border-radius 50%');
+   assert.ok(cardBoxes[1].left > cardBoxes[0].left, 'Desktop cards laid out horizontally');
+   assert.ok(cardBoxes[1].left < cardBoxes[0].left + cardBoxes[0].width, 'Desktop cards overlap horizontally');
+
+   // Pointer proximity test: hover over first card
+   const firstCardCenter = { x: cardBoxes[0].left + cardBoxes[0].width / 2, y: cardBoxes[0].top + cardBoxes[0].height / 2 };
+   await page.mouse.move(firstCardCenter.x, firstCardCenter.y);
+   await page.waitForTimeout(250);
+
+   const c0Scale = await cards.nth(0).evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-circle-scale')));
+   const c0Opacity = await cards.nth(0).evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-circle-opacity')));
+   const c0Z = await cards.nth(0).evaluate(e => parseInt(e.style.getPropertyValue('--lakehub-circle-z')));
+   const c3Opacity = await cards.nth(3).evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-circle-opacity')));
+
+   assert.ok(c0Scale >= 1.04, 'Active card scales up to ~1.05');
+   assert.ok(c0Opacity >= 0.98, 'Active card has full opacity ~1.0');
+   assert.equal(c0Z, 10, 'Active card has peak z-index 10');
+   assert.ok(c3Opacity <= 0.88, 'Distant sibling opacity blends towards 0.85');
+
+   // Crossover test between card 0 and card 1
+   const secondCardCenter = { x: cardBoxes[1].left + cardBoxes[1].width / 2, y: cardBoxes[1].top + cardBoxes[1].height / 2 };
+   const midX = (firstCardCenter.x + secondCardCenter.x) / 2;
+   const midY = (firstCardCenter.y + secondCardCenter.y) / 2;
+
+   // Slightly left of crossover
+   await page.mouse.move(midX - 15, midY);
+   await page.waitForTimeout(150);
+   const zBefore = [
+    await cards.nth(0).evaluate(e => parseInt(e.style.getPropertyValue('--lakehub-circle-z'))),
+    await cards.nth(1).evaluate(e => parseInt(e.style.getPropertyValue('--lakehub-circle-z')))
+   ];
+   assert.ok(zBefore[0] > zBefore[1], 'Card 0 draws on top when pointer is left of crossover');
+
+   // Slightly right of crossover
+   await page.mouse.move(midX + 15, midY);
+   await page.waitForTimeout(150);
+   const zAfter = [
+    await cards.nth(0).evaluate(e => parseInt(e.style.getPropertyValue('--lakehub-circle-z'))),
+    await cards.nth(1).evaluate(e => parseInt(e.style.getPropertyValue('--lakehub-circle-z')))
+   ];
+   assert.ok(zAfter[1] > zAfter[0], 'Card 1 draws on top when pointer is right of crossover');
+
+   // Reset on pointer leave
+   await page.mouse.move(0, 0);
+   await page.waitForTimeout(250);
+   const resetScale = await cards.nth(0).evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-circle-scale')));
+   const resetOpacity = await cards.nth(0).evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-circle-opacity')));
+   assert.equal(resetScale, 1, 'Scale resets to baseline 1');
+   assert.equal(resetOpacity, 1, 'Opacity resets to baseline 1');
+
+   // Mobile layout and scroll proximity
+   await page.setViewportSize({width: 390, height: 800});
+   await open('/impact/');
+   const mobileCards = page.locator('.is-style-lakehub-transformation-card');
+   const mBoxes = await mobileCards.evaluateAll(es => es.map(e => {
+    const r = e.getBoundingClientRect();
+    return { left: r.left, top: r.top, width: r.width, height: r.height, borderRadius: getComputedStyle(e).borderRadius };
+   }));
+
+   assert.ok(mBoxes[0].borderRadius.includes('50%'), 'Mobile cards remain circular with border-radius 50%');
+   assert.ok(mBoxes[0].width <= 353, 'Mobile circle diameter is capped at max 22rem');
+   assert.ok(Math.abs(mBoxes[0].left - mBoxes[1].left) < 5, 'Mobile cards are aligned in a single centered column');
+   assert.ok(mBoxes[1].top < mBoxes[0].top + mBoxes[0].height, 'Mobile cards vertically overlap (~12%)');
+
+   // Scroll proximity on mobile
+   await mobileCards.nth(1).scrollIntoViewIfNeeded();
+   await page.waitForTimeout(300);
+   const m1Z = await mobileCards.nth(1).evaluate(e => parseInt(e.style.getPropertyValue('--lakehub-circle-z')));
+   const m1Scale = await mobileCards.nth(1).evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-circle-scale')));
+   assert.ok(m1Z >= 9, 'Centered mobile card gets peak z-index');
+   assert.ok(m1Scale > 1.01, 'Centered mobile card scales up via scroll proximity');
+
+   // Reduced motion check
+   await page.emulateMedia({reducedMotion: 'reduce'});
+   const rmTransform = await mobileCards.nth(1).evaluate(e => getComputedStyle(e).transform);
+   assert.equal(rmTransform, 'none', 'Mobile transform disabled with reduced motion');
+   await page.emulateMedia({reducedMotion: 'no-preference'});
+
+   await page.setViewportSize({width: 1280, height: 900});
+   console.log('PASS 08: transformation circles desktop horizontal overlap, pointer proximity, crossover z-index, mobile vertical overlap, scroll proximity, and reduced motion');
+  }
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
