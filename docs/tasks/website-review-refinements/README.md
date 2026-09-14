@@ -11,7 +11,7 @@ Master task index and implementation tracker for the refinements plan approved i
 | **01** | [`01-dynamic-text-resizing-restoration.md`](01-dynamic-text-resizing-restoration.md) | `Complete` | Dynamic text resizing (`1.25vw`) restoration for Figma 1280px proportions across wide desktop viewports |
 | **02** | [`02-metric-mask-hover-text-zoom.md`](02-metric-mask-hover-text-zoom.md) | `Complete` | Metric numbers hover: text cutout stencil expands (`font-size`), underlying background image stays stationary |
 | **03** | [`03-bidirectional-scroll-one-third-threshold.md`](03-bidirectional-scroll-one-third-threshold.md) | `Complete` | 1/3 (33.3%) viewport threshold triggers, bidirectional entry and exit animations accounting for header clearance |
-| **04** | [`04-halftone-pattern-edge-fade-and-alignment.md`](04-halftone-pattern-edge-fade-and-alignment.md) | `Pending` | Halftone pattern edge fade-out (tapering dot radius & pitch, zero clipped dots), offsets locked to Figma exports |
+| **04** | [`04-halftone-pattern-edge-fade-and-alignment.md`](04-halftone-pattern-edge-fade-and-alignment.md) | `Complete` | Halftone pattern edge fade-out (tapering dot radius & pitch, zero clipped dots), offsets locked to Figma exports |
 
 ---
 

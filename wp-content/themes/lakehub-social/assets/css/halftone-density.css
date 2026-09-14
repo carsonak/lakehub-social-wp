@@ -33,10 +33,9 @@
   z-index: -1 !important;
   width: 100% !important;
   height: 100% !important;
-  background-image: url('../images/completion/halftone-tile.svg') !important;
-  background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
-  background-repeat: repeat !important;
-  background-position: 0 0 !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
   transform: translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
   transition: transform 120ms cubic-bezier(.2,.6,.4,1);
   will-change: transform;
@@ -51,30 +50,48 @@
   }
 }
 
-/* Section-specific offsets */
+/* Section-specific fade-out halftone SVGs and locked Figma offsets */
 
-/* Impact Community Projects: offset 2 rows to top, 1 column to left */
+/* Impact Community Projects: locked Figma offset top -37px (-2.3125rem), left -38px (-2.375rem) */
 .is-style-lakehub-community-photo::before {
-  top: calc(-2 * var(--lakehub-dot-spacing)) !important;
-  left: calc(-1 * var(--lakehub-dot-spacing)) !important;
+  background-image: url('../images/completion/community-dots.svg') !important;
+  top: -2.3125rem !important;
+  left: -2.375rem !important;
   right: auto !important;
   bottom: auto !important;
 }
 
-/* Impact Inspiring Portfolios: offset 2 columns to right, 1 row to bottom */
+/* Impact Inspiring Portfolios: locked Figma offset right -45px (-2.8125rem), bottom -24px (-1.5rem) */
 .is-style-lakehub-portfolio-photo::before {
-  top: calc(1 * var(--lakehub-dot-spacing)) !important;
-  left: calc(2 * var(--lakehub-dot-spacing)) !important;
-  right: auto !important;
-  bottom: auto !important;
+  background-image: url('../images/completion/portfolio-dots.svg') !important;
+  top: auto !important;
+  bottom: -1.5rem !important;
+  left: auto !important;
+  right: -2.8125rem !important;
 }
 
-/* About Our Story: offset 2 rows to bottom, 1 column to left */
+/* About Our Story: locked Figma offset left -41px (-2.5625rem), bottom -37px (-2.3125rem) */
 .is-style-lakehub-story-photo::before {
-  top: calc(2 * var(--lakehub-dot-spacing)) !important;
-  left: calc(-1 * var(--lakehub-dot-spacing)) !important;
+  background-image: url('../images/completion/story-dots.svg') !important;
+  top: auto !important;
+  bottom: -2.3125rem !important;
+  left: -2.5625rem !important;
   right: auto !important;
-  bottom: auto !important;
+}
+
+@media (max-width: 600px) {
+  .is-style-lakehub-community-photo::before {
+    top: -1.15625rem !important;
+    left: -1.1875rem !important;
+  }
+  .is-style-lakehub-portfolio-photo::before {
+    bottom: -0.75rem !important;
+    right: -1.40625rem !important;
+  }
+  .is-style-lakehub-story-photo::before {
+    bottom: -1.15625rem !important;
+    left: -1.28125rem !important;
+  }
 }
 
 /* Frame sizing: Story photo fits image bounding box exactly */

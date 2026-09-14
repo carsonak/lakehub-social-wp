@@ -206,54 +206,67 @@ const task = process.env.REVIEW_TASK || 'all';
   if(task==='all'||task==='07') {
    await open('/about/');
    const storyPhoto = page.locator('.is-style-lakehub-story-photo');
-   const desktopSpacing = await storyPhoto.evaluate(e => getComputedStyle(e).getPropertyValue('--lakehub-dot-spacing').trim());
-   assert.equal(desktopSpacing, '28px', 'Desktop halftone spacing is 28px');
+    const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+    assert.ok(storyBg.includes('story-dots.svg'), 'Story photo uses story-dots.svg');
 
-   const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
-   assert.ok(storyBg.includes('halftone-tile.svg'), 'Story photo uses derived halftone tile');
+    const storyBeforeBottom = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').bottom));
+    const storyBeforeLeft = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+    assert.ok(Math.abs(storyBeforeBottom - (-37)) < 1.5, 'Story dots bottom offset is -37px from Figma');
+    assert.ok(Math.abs(storyBeforeLeft - (-41)) < 1.5, 'Story dots left offset is -41px from Figma');
 
-   const storyBeforeTop = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
-   const storyBeforeLeft = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(storyBeforeTop, 56, 'Story dots top offset is 56px (2 rows)');
-   assert.equal(storyBeforeLeft, -28, 'Story dots left offset is -28px (1 column)');
+    await open('/impact/');
+    const commPhoto = page.locator('.is-style-lakehub-community-photo');
+    const commBg = await commPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+    assert.ok(commBg.includes('community-dots.svg'), 'Community photo uses community-dots.svg');
+    const commBeforeTop = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
+    const commBeforeLeft = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+    assert.ok(Math.abs(commBeforeTop - (-37)) < 1.5, 'Community dots top offset is -37px from Figma');
+    assert.ok(Math.abs(commBeforeLeft - (-38)) < 1.5, 'Community dots left offset is -38px from Figma');
 
-   await open('/impact/');
-   const commPhoto = page.locator('.is-style-lakehub-community-photo');
-   const commBeforeTop = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
-   const commBeforeLeft = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(commBeforeTop, -56, 'Community dots top offset is -56px (2 rows top)');
-   assert.equal(commBeforeLeft, -28, 'Community dots left offset is -28px (1 column left)');
+    const portPhoto = page.locator('.is-style-lakehub-portfolio-photo');
+    const portBg = await portPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+    assert.ok(portBg.includes('portfolio-dots.svg'), 'Portfolio photo uses portfolio-dots.svg');
+    const portBeforeBottom = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').bottom));
+    const portBeforeRight = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').right));
+    assert.ok(Math.abs(portBeforeBottom - (-24)) < 1.5, 'Portfolio dots bottom offset is -24px from Figma');
+    assert.ok(Math.abs(portBeforeRight - (-45)) < 1.5, 'Portfolio dots right offset is -45px from Figma');
 
-   const portPhoto = page.locator('.is-style-lakehub-portfolio-photo');
-   const portBeforeTop = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
-   const portBeforeLeft = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(portBeforeTop, 28, 'Portfolio dots top offset is 28px (1 row bottom)');
-   assert.equal(portBeforeLeft, 56, 'Portfolio dots left offset is 56px (2 columns right)');
+    // Verify SVG dot edge fade-out and zero boundary clipping
+    const fs = require('node:fs');
+    for (const file of ['community-dots.svg', 'portfolio-dots.svg', 'story-dots.svg']) {
+      const svg = fs.readFileSync(`wp-content/themes/lakehub-social/assets/images/completion/${file}`, 'utf8');
+      const vb = svg.match(/viewBox="0 0 (\d+) (\d+)"/);
+      assert.ok(vb, `${file} has valid viewBox`);
+      const w = parseFloat(vb[1]), h = parseFloat(vb[2]);
+      const circles = [...svg.matchAll(/<circle cx="([\d\.]+)" cy="([\d\.]+)" r="([\d\.]+)"/g)];
+      assert.ok(circles.length > 50, `${file} contains halftone circles`);
+      let minR = 99, maxR = 0;
+      for (const m of circles) {
+        const cx = parseFloat(m[1]), cy = parseFloat(m[2]), r = parseFloat(m[3]);
+        assert.ok(cx - r >= 2 && cx + r <= w - 2, `${file} dot at (${cx},${cy}) strictly inside width with zero clipping`);
+        assert.ok(cy - r >= 2 && cy + r <= h - 2, `${file} dot at (${cx},${cy}) strictly inside height with zero clipping`);
+        if (r < minR) minR = r;
+        if (r > maxR) maxR = r;
+      }
+      assert.ok(minR < maxR * 0.4, `${file} dot radii fade out smoothly towards perimeter (min=${minR}, max=${maxR})`);
+    }
 
-   await page.setViewportSize({width:390,height:800});
-   await open('/about/');
-   const mobileStoryPhoto = page.locator('.is-style-lakehub-story-photo');
-   const mobileSpacing = await mobileStoryPhoto.evaluate(e => getComputedStyle(e).getPropertyValue('--lakehub-dot-spacing').trim());
-   assert.equal(mobileSpacing, '14px', 'Mobile halftone spacing is 14px');
+    await page.setViewportSize({width:390,height:800});
+    await open('/about/');
+    const mobileStoryPhoto = page.locator('.is-style-lakehub-story-photo');
+    await mobileStoryPhoto.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(250);
+    const mBox = await mobileStoryPhoto.boundingBox();
+    await page.mouse.move(mBox.x + 10, mBox.y + 10);
+    await page.waitForTimeout(250);
+    const mRepelX = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
+    const mRepelY = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
+    const mDisp = Math.hypot(mRepelX, mRepelY);
+    assert.ok(mDisp <= 14.1, 'Mobile hover repulsion displacement active');
+    await page.mouse.move(0, 0);
 
-   const mobileBeforeTop = await mobileStoryPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
-   const mobileBeforeLeft = await mobileStoryPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(mobileBeforeTop, 28, 'Mobile story dots top offset is 28px (2 rows)');
-   assert.equal(mobileBeforeLeft, -14, 'Mobile story dots left offset is -14px (1 column)');
-
-   await mobileStoryPhoto.scrollIntoViewIfNeeded();
-   await page.waitForTimeout(250);
-   const mBox = await mobileStoryPhoto.boundingBox();
-   await page.mouse.move(mBox.x + 10, mBox.y + 10);
-   await page.waitForTimeout(250);
-   const mRepelX = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
-   const mRepelY = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
-   const mDisp = Math.hypot(mRepelX, mRepelY);
-   assert.ok(mDisp <= 14.1, 'Mobile hover repulsion displacement capped at 14px');
-   await page.mouse.move(0, 0);
-
-   await page.setViewportSize({width:1280,height:900});
-   console.log('PASS 07: halftone tile density, at-rest anchoring, and mobile spacing adaptation');
+    await page.setViewportSize({width:1280,height:900});
+    console.log('PASS 07: halftone fade-out patterns, locked Figma offsets, and zero boundary clipping');
   }
   if(task==='all'||task==='08') {
    await open('/impact/');

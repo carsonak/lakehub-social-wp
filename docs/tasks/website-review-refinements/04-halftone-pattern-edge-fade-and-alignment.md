@@ -2,12 +2,13 @@
 
 ## Metadata
 - **Date**: 14 September 2026
-- **Status**: Pending
+- **Status**: Complete
 - **Target Files**:
   - `wp-content/themes/lakehub-social/assets/images/completion/community-dots.svg`
   - `wp-content/themes/lakehub-social/assets/images/completion/portfolio-dots.svg`
   - `wp-content/themes/lakehub-social/assets/images/completion/story-dots.svg`
-  - `wp-content/themes/lakehub-social/style.css`
+  - `wp-content/themes/lakehub-social/assets/css/halftone-density.css`
+  - `scripts/tests/review.cjs`
 
 ---
 
@@ -68,14 +69,15 @@ To ensure that dots fade out smoothly and never clip at the boundaries:
 ---
 
 ## Progress Tracker
-- [ ] Create halftone generator script with radial/boundary fade-out.
-- [ ] Generate `community-dots.svg`, `portfolio-dots.svg`, and `story-dots.svg`.
-- [ ] Update offsets in `style.css` to match Figma design exports.
-- [ ] Verify rendered dots have zero clipping and fade out gracefully.
-- [ ] Run test suite.
-- [ ] Create Studio export backup and push to repository.
+- [x] Create halftone generator script with radial/boundary fade-out.
+- [x] Generate `community-dots.svg`, `portfolio-dots.svg`, and `story-dots.svg`.
+- [x] Update offsets in `wp-content/themes/lakehub-social/assets/css/halftone-density.css` to match Figma design exports.
+- [x] Verify rendered dots have zero clipping and fade out gracefully.
+- [x] Run test suite and PHP syntax checks (all PASS 01-11).
+- [x] Create Studio export backup and push to repository.
 
 ---
 
 ## Unplanned Changes & Scope Deviations
-*(Record any changes made during implementation that differ from the initial specification)*
+- Used dedicated SVG sizing matching the exact container dimensions (`community-dots.svg` 575x338, `portfolio-dots.svg` 369x457, `story-dots.svg` 484x313) with `background-size: 100% 100% !important; background-repeat: no-repeat !important;` instead of repeating tiles, guaranteeing mathematical immunity against fractional tile clipping across all viewports.
+- Offsets locked directly to Figma SVGs (`Impact.svg`: Community top: -37px / left: -38px, Portfolio bottom: -24px / right: -45px; `About.svg`: Story bottom: -37px / left: -41px).
