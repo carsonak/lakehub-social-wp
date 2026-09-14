@@ -62,17 +62,17 @@ if (cardBottomInView < quarterHeight) {
 
 ## Progress & Tracking
 
-- **Status**: `Pending`
-- [ ] `main.js` `metricObserver` updated with threshold `0.25` and bidirectional toggle
-- [ ] `main.js` `updateCards` updated with 25% height calculation
-- [ ] Playwright tests updated and verified
-- **Last Checkpoint**: Plan drafted on 14 September 2026.
-- **Next Action**: Execute JS updates upon plan approval.
-- **Commit Receipt**: *Pending*
+- **Status**: `Complete`
+- [x] `main.js` `metricObserver` updated with threshold `0.25` and bidirectional toggle
+- [x] `main.js` `updateCards` updated with 25% height calculation
+- [x] Playwright tests updated and verified
+- **Last Checkpoint**: Implementation verified with Chromium Playwright tests (`REVIEW_TASK=04` and `REVIEW_TASK=05`).
+- **Next Action**: Task 03 execution.
+- **Commit Receipt**: Ready for backup export and commit.
 
 ---
 
 ## Unplanned Changes & Scope Deviations
 
 *(Document here any deviations, edge cases, or adjustments made during execution that were not part of the initial plan.)*
-- None recorded yet.
+- Added exact 15% vs 30% visibility scroll assertions in `scripts/tests/review.cjs` to deterministically verify that card visibility toggles at the 25% boundary.

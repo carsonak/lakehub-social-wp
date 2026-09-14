@@ -205,7 +205,7 @@
           card.classList.add('is-card-visible');
           return;
         }
-        const threshold = Math.min(height / 2, viewHeight / 2);
+        const threshold = height * 0.25;
         const cardTopInView = top - scrollY - headerClearance;
         const cardBottomInView = cardTopInView + height;
 

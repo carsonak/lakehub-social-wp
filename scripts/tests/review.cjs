@@ -69,12 +69,32 @@ const task = process.env.REVIEW_TASK || 'all';
    await firstCard.scrollIntoViewIfNeeded();
    await page.waitForTimeout(650);
    assert.ok(await firstCard.evaluate(e => e.classList.contains('is-card-visible')), 'Upper card returns to is-card-visible on upward scroll');
-   await lastCard.evaluate(e => { e.tabIndex = 0; e.focus(); });
-   assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-visible')), 'Focused card remains visible');
-   await page.emulateMedia({reducedMotion:'reduce'});
-   assert.ok(await firstCard.evaluate(e => getComputedStyle(e).transitionDuration === '0s'), 'Transitions disabled with reduced motion');
-   await page.emulateMedia({reducedMotion:'no-preference'});
-   console.log('PASS 04: program cards two-edge scroll states, uniform trajectory, focus pinning, and reduced motion');
+    // Explicitly test 25% quarter-height threshold
+    const secondCard = cards.nth(1);
+    const cardInfo = await secondCard.evaluate((el) => {
+      let top = 0;
+      let e = el;
+      while (e) { top += e.offsetTop || 0; e = e.offsetParent; }
+      const adminBottom = Math.max(0, document.getElementById('wpadminbar')?.getBoundingClientRect().bottom || 0);
+      const headerClearance = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--lakehub-header-clearance')) || (adminBottom + 80);
+      return { top, height: el.offsetHeight, viewHeight: Math.max(200, window.innerHeight - headerClearance), headerClearance };
+    });
+    // Scroll so that only 15% is in view (< 25%)
+    await scroll(cardInfo.top - cardInfo.headerClearance - cardInfo.viewHeight + (cardInfo.height * 0.15));
+    await page.waitForTimeout(250);
+    assert.ok(await secondCard.evaluate(e => e.classList.contains('is-card-below')), 'Card remains is-card-below when < 25% in view');
+
+    // Scroll so that 30% is in view (>= 25%)
+    await scroll(cardInfo.top - cardInfo.headerClearance - cardInfo.viewHeight + (cardInfo.height * 0.30));
+    await page.waitForTimeout(250);
+    assert.ok(await secondCard.evaluate(e => e.classList.contains('is-card-visible')), 'Card becomes is-card-visible when >= 25% in view');
+
+    await lastCard.evaluate(e => { e.tabIndex = 0; e.focus(); });
+    assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-visible')), 'Focused card remains visible');
+    await page.emulateMedia({reducedMotion:'reduce'});
+    assert.ok(await firstCard.evaluate(e => getComputedStyle(e).transitionDuration === '0s'), 'Transitions disabled with reduced motion');
+    await page.emulateMedia({reducedMotion:'no-preference'});
+    console.log('PASS 04: program cards two-edge scroll states, 25% threshold, uniform trajectory, focus pinning, and reduced motion');
   }
   if(task==='all'||task==='05') {
    await open('/');
