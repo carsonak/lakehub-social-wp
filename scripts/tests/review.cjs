@@ -69,7 +69,7 @@ const task = process.env.REVIEW_TASK || 'all';
    await firstCard.scrollIntoViewIfNeeded();
    await page.waitForTimeout(650);
    assert.ok(await firstCard.evaluate(e => e.classList.contains('is-card-visible')), 'Upper card returns to is-card-visible on upward scroll');
-    // Explicitly test 25% quarter-height threshold
+    // Explicitly test 1/3 (33.3%) threshold
     const secondCard = cards.nth(1);
     const cardInfo = await secondCard.evaluate((el) => {
       let top = 0;
@@ -79,43 +79,52 @@ const task = process.env.REVIEW_TASK || 'all';
       const headerClearance = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--lakehub-header-clearance')) || (adminBottom + 80);
       return { top, height: el.offsetHeight, viewHeight: Math.max(200, window.innerHeight - headerClearance), headerClearance };
     });
-    // Scroll so that only 15% is in view (< 25%)
-    await scroll(cardInfo.top - cardInfo.headerClearance - cardInfo.viewHeight + (cardInfo.height * 0.15));
+    // Scroll so that only 25% is in view (< 33.3%)
+    await scroll(cardInfo.top - cardInfo.headerClearance - cardInfo.viewHeight + (cardInfo.height * 0.25));
     await page.waitForTimeout(250);
-    assert.ok(await secondCard.evaluate(e => e.classList.contains('is-card-below')), 'Card remains is-card-below when < 25% in view');
+    assert.ok(await secondCard.evaluate(e => e.classList.contains('is-card-below')), 'Card remains is-card-below when < 1/3 in view');
 
-    // Scroll so that 30% is in view (>= 25%)
-    await scroll(cardInfo.top - cardInfo.headerClearance - cardInfo.viewHeight + (cardInfo.height * 0.30));
+    // Scroll so that 40% is in view (>= 33.3%)
+    await scroll(cardInfo.top - cardInfo.headerClearance - cardInfo.viewHeight + (cardInfo.height * 0.40));
     await page.waitForTimeout(250);
-    assert.ok(await secondCard.evaluate(e => e.classList.contains('is-card-visible')), 'Card becomes is-card-visible when >= 25% in view');
+    assert.ok(await secondCard.evaluate(e => e.classList.contains('is-card-visible')), 'Card becomes is-card-visible when >= 1/3 in view');
 
     await lastCard.evaluate(e => { e.tabIndex = 0; e.focus(); });
     assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-visible')), 'Focused card remains visible');
     await page.emulateMedia({reducedMotion:'reduce'});
     assert.ok(await firstCard.evaluate(e => getComputedStyle(e).transitionDuration === '0s'), 'Transitions disabled with reduced motion');
     await page.emulateMedia({reducedMotion:'no-preference'});
-    console.log('PASS 04: program cards two-edge scroll states, 25% threshold, uniform trajectory, focus pinning, and reduced motion');
+    console.log('PASS 04: program cards two-edge scroll states, 1/3 threshold, uniform trajectory, focus pinning, and reduced motion');
   }
   if(task==='all'||task==='05') {
-   await open('/');
-   const rows = page.locator('.is-style-lakehub-metric-row');
-   const count = await rows.count();
-   assert.ok(count >= 4, 'Metric rows found on home page');
-   const lastRow = rows.last();
-   const lastCopy = lastRow.locator('.is-style-lakehub-metric-copy');
-   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-reveal-ready') && !e.classList.contains('is-revealed')), 'Lower metric copy starts unrevealed');
+    await open('/');
+    const rows = page.locator('.is-style-lakehub-metric-row');
+    const count = await rows.count();
+    assert.ok(count >= 4, 'Metric rows found on home page');
+    const lastRow = rows.last();
+    const lastCopy = lastRow.locator('.is-style-lakehub-metric-copy');
+    assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-reveal-ready') && !e.classList.contains('is-revealed')), 'Lower metric copy starts unrevealed');
 
-   const secondRow = rows.nth(1);
+    // Test row 1 exit when scrolled past header
+    await scroll(1100);
+    assert.ok(await rows.first().evaluate(e => !e.classList.contains('is-revealed')), 'Row 1 exits when scrolled past header clearance');
+    await scroll(500);
+    assert.ok(await rows.first().evaluate(e => e.classList.contains('is-revealed')), 'Row 1 re-enters when scrolled back into view');
+
+    const secondRow = rows.nth(1);
+    await scroll(0);
    const unrevealedLineWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e, '::after').width));
    const totalRowWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e).width));
    assert.ok(unrevealedLineWidth / totalRowWidth < 0.5, 'Separating line is shrunk when unrevealed');
 
-   await lastRow.scrollIntoViewIfNeeded();
-   await page.waitForTimeout(650);
-   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Metric copy becomes is-revealed when scrolled into view');
+    await secondRow.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(650);
+    const revealedLineWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e, '::after').width));
+    assert.ok(Math.abs(revealedLineWidth - totalRowWidth) < 2, 'Separating line expands to full width when revealed');
 
-   const revealedLineWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e, '::after').width));
-   assert.ok(Math.abs(revealedLineWidth - totalRowWidth) < 2, 'Separating line expands to full width when revealed');
+    await lastRow.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(650);
+    assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Metric copy becomes is-revealed when scrolled into view');
 
    await scroll(0);
    assert.ok(await lastRow.evaluate(e => !e.classList.contains('is-revealed')), 'Metric row swallows back on scroll away');

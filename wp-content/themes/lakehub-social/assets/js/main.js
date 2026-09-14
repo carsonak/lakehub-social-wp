@@ -205,7 +205,7 @@
           card.classList.add('is-card-visible');
           return;
         }
-        const threshold = height * 0.25;
+        const threshold = height * (1 / 3);
         const cardTopInView = top - scrollY - headerClearance;
         const cardBottomInView = cardTopInView + height;
 
@@ -367,7 +367,7 @@
   });
 
   const metricRows = Array.from(document.querySelectorAll('.is-style-lakehub-metric-row'));
-  if (metricRows.length && !reducedMotion.matches && 'IntersectionObserver' in window) {
+  if (metricRows.length) {
     const setRowRevealed = (row, isRevealed) => {
       if (isRevealed) {
         row.classList.add('is-revealed');
@@ -380,31 +380,74 @@
       }
     };
 
-    const metricObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        setRowRevealed(entry.target, entry.isIntersecting);
-      });
-    }, { threshold: [0.25] });
-
     metricRows.forEach((row) => {
       const copy = row.querySelector('.is-style-lakehub-metric-copy');
       if (copy) copy.classList.add('is-reveal-ready');
-
-      const rect = row.getBoundingClientRect();
-      const inView = rect.top < window.innerHeight - (rect.height * 0.25) && rect.bottom > (rect.height * 0.25);
-      if (inView) {
-        setRowRevealed(row, true);
-      } else {
-        setRowRevealed(row, false);
-      }
-      metricObserver.observe(row);
     });
 
-    reducedMotion.addEventListener('change', (event) => {
-      if (!event.matches) return;
-      metricObserver.disconnect();
+    if (reducedMotion.matches) {
       metricRows.forEach((row) => setRowRevealed(row, true));
-    });
+    } else {
+      let bounds = [];
+      let frame = 0;
+      const measureMetricRows = () => {
+        bounds = metricRows.map((row) => {
+          let top = 0;
+          let el = row;
+          while (el) {
+            top += el.offsetTop || 0;
+            el = el.offsetParent;
+          }
+          return { row, top, height: row.offsetHeight };
+        });
+      };
+
+      const updateMetricRows = () => {
+        frame = 0;
+        const scrollY = window.scrollY;
+        const adminBottom = Math.max(0, document.getElementById('wpadminbar')?.getBoundingClientRect().bottom || 0);
+        const headerClearance = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--lakehub-header-clearance')) || (adminBottom + 80);
+        const viewHeight = Math.max(200, window.innerHeight - headerClearance);
+
+        bounds.forEach(({ row, top, height }) => {
+          if (row.contains(document.activeElement)) {
+            setRowRevealed(row, true);
+            return;
+          }
+          const threshold = height * (1 / 3);
+          const rowTopInView = top - scrollY - headerClearance;
+          const rowBottomInView = rowTopInView + height;
+
+          const inView = rowBottomInView >= threshold && rowTopInView <= viewHeight - threshold;
+          setRowRevealed(row, inView);
+        });
+      };
+
+      const scheduleMetricRows = () => {
+        if (!frame) frame = requestAnimationFrame(updateMetricRows);
+      };
+
+      metricRows.forEach((row) => {
+        row.addEventListener('focusin', scheduleMetricRows);
+        row.addEventListener('focusout', scheduleMetricRows);
+      });
+
+      measureMetricRows();
+      updateMetricRows();
+
+      window.addEventListener('scroll', scheduleMetricRows, { passive: true });
+      window.addEventListener('resize', () => { measureMetricRows(); scheduleMetricRows(); }, { passive: true });
+      new ResizeObserver(() => { measureMetricRows(); scheduleMetricRows(); }).observe(document.body);
+
+      reducedMotion.addEventListener('change', (event) => {
+        if (event.matches) {
+          metricRows.forEach((row) => setRowRevealed(row, true));
+        } else {
+          measureMetricRows();
+          updateMetricRows();
+        }
+      });
+    }
   }
 
   const halftoneTargets = Array.from(document.querySelectorAll('.is-style-lakehub-story-photo, .is-style-lakehub-community-photo, .is-style-lakehub-portfolio-photo'));
