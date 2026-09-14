@@ -84,16 +84,33 @@ const task = process.env.REVIEW_TASK || 'all';
    const lastRow = rows.last();
    const lastCopy = lastRow.locator('.is-style-lakehub-metric-copy');
    assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-reveal-ready') && !e.classList.contains('is-revealed')), 'Lower metric copy starts unrevealed');
+
+   const secondRow = rows.nth(1);
+   const unrevealedLineWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e, '::after').width));
+   const totalRowWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e).width));
+   assert.ok(unrevealedLineWidth / totalRowWidth < 0.5, 'Separating line is shrunk when unrevealed');
+
    await lastRow.scrollIntoViewIfNeeded();
    await page.waitForTimeout(650);
-   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Metric copy becomes is-revealed when scrolled 50% into view');
+   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Metric copy becomes is-revealed when scrolled into view');
+
+   const revealedLineWidth = await secondRow.evaluate(e => parseFloat(getComputedStyle(e, '::after').width));
+   assert.ok(Math.abs(revealedLineWidth - totalRowWidth) < 2, 'Separating line expands to full width when revealed');
+
    await scroll(0);
-   assert.ok(await lastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Revealed metric copy stays revealed after scrolling away');
+   assert.ok(await lastRow.evaluate(e => !e.classList.contains('is-revealed')), 'Metric row swallows back on scroll away');
+
    const photo = rows.first().locator('.is-style-lakehub-metric-photo');
+   const p = photo.locator('p');
+   const baseFontSize = await p.evaluate(e => parseFloat(getComputedStyle(e).fontSize));
+   const baseTransform = await photo.evaluate(e => getComputedStyle(e).transform);
    await photo.hover();
-   await page.waitForTimeout(250);
-   const transform = await photo.evaluate(e => getComputedStyle(e).transform);
-   assert.ok(transform.includes('matrix') && transform !== 'none', 'Hover scales metric photo');
+   await page.waitForTimeout(300);
+   const hoverFontSize = await p.evaluate(e => parseFloat(getComputedStyle(e).fontSize));
+   const hoverTransform = await photo.evaluate(e => getComputedStyle(e).transform);
+   assert.ok(hoverFontSize > baseFontSize, 'Hover expands masking text font-size');
+   assert.equal(hoverTransform, baseTransform, 'Photo container transform does not zoom underlying image');
+
    await page.setViewportSize({width:390,height:800});
    await open('/');
    const mobileRows = page.locator('.is-style-lakehub-metric-row');
@@ -103,7 +120,7 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.waitForTimeout(650);
    assert.ok(await mobileLastCopy.evaluate(e => e.classList.contains('is-revealed')), 'Mobile metric copy revealed');
    await page.setViewportSize({width:1280,height:900});
-   console.log('PASS 05: metric description one-time reveals, photo hover scaling, and responsive emergence');
+   console.log('PASS 05: metric bidirectional center reveal/swallow, line expansion, and text-only hover zoom');
   }
   if(task==='all'||task==='06') {
    await open('/about/');

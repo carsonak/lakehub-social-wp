@@ -368,40 +368,42 @@
 
   const metricRows = Array.from(document.querySelectorAll('.is-style-lakehub-metric-row'));
   if (metricRows.length && !reducedMotion.matches && 'IntersectionObserver' in window) {
-    const revealCopy = (copy) => {
-      copy.classList.add('is-revealed');
+    const setRowRevealed = (row, isRevealed) => {
+      if (isRevealed) {
+        row.classList.add('is-revealed');
+        const copy = row.querySelector('.is-style-lakehub-metric-copy');
+        if (copy) copy.classList.add('is-revealed');
+      } else {
+        row.classList.remove('is-revealed');
+        const copy = row.querySelector('.is-style-lakehub-metric-copy');
+        if (copy) copy.classList.remove('is-revealed');
+      }
     };
 
-    const metricObserver = new IntersectionObserver((entries, observer) => {
+    const metricObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const copy = entry.target.querySelector('.is-style-lakehub-metric-copy');
-          if (copy) revealCopy(copy);
-          observer.unobserve(entry.target);
-        }
+        setRowRevealed(entry.target, entry.isIntersecting);
       });
-    }, { threshold: 0.5 });
+    }, { threshold: [0.25] });
 
     metricRows.forEach((row) => {
       const copy = row.querySelector('.is-style-lakehub-metric-copy');
-      if (!copy) return;
-      copy.classList.add('is-reveal-ready');
+      if (copy) copy.classList.add('is-reveal-ready');
 
       const rect = row.getBoundingClientRect();
-      if (rect.top + rect.height * 0.5 <= window.innerHeight) {
-        revealCopy(copy);
+      const inView = rect.top < window.innerHeight - (rect.height * 0.25) && rect.bottom > (rect.height * 0.25);
+      if (inView) {
+        setRowRevealed(row, true);
       } else {
-        metricObserver.observe(row);
+        setRowRevealed(row, false);
       }
+      metricObserver.observe(row);
     });
 
     reducedMotion.addEventListener('change', (event) => {
       if (!event.matches) return;
       metricObserver.disconnect();
-      metricRows.forEach((row) => {
-        const copy = row.querySelector('.is-style-lakehub-metric-copy');
-        if (copy) revealCopy(copy);
-      });
+      metricRows.forEach((row) => setRowRevealed(row, true));
     });
   }
 
