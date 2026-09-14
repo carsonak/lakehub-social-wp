@@ -105,6 +105,7 @@ const task = process.env.REVIEW_TASK || 'all';
   }
   if(task==='all'||task==='06') {
    await open('/about/');
+   await page.mouse.move(0, 0);
    const storyPhoto = page.locator('.is-style-lakehub-story-photo');
    await storyPhoto.scrollIntoViewIfNeeded();
    const box = await storyPhoto.boundingBox();
@@ -299,6 +300,49 @@ const task = process.env.REVIEW_TASK || 'all';
 
    await page.setViewportSize({width: 1280, height: 900});
    console.log('PASS 08: transformation circles desktop horizontal overlap, pointer proximity, crossover z-index, mobile vertical overlap, scroll proximity, and reduced motion');
+  }
+  if(task==='all'||task==='09') {
+   await open('/about/');
+   const card = page.locator('.is-style-lakehub-mission-card');
+   assert.equal(await card.count(), 1, 'Mission & Vision card found');
+   const copyCol = page.locator('.is-style-lakehub-mission-copy');
+   const collage = page.locator('.is-style-lakehub-mission-collage');
+   const collageRect = await collage.boundingBox();
+   const dividingLine = collageRect.x;
+
+   const group = page.locator('.is-style-lakehub-mission-group');
+   const speaker = page.locator('.is-style-lakehub-mission-speaker');
+   const event = page.locator('.is-style-lakehub-mission-event');
+   const main = page.locator('.is-style-lakehub-mission-main');
+
+   const groupBox = await group.boundingBox();
+   const groupCenterX = groupBox.x + groupBox.width / 2;
+   assert.ok(Math.abs(groupCenterX - dividingLine) < 1, 'Left diamond vertical diagonal centered on dividing line');
+
+   const copyBg = await copyCol.evaluate(e => getComputedStyle(e).backgroundColor);
+   const copyZ = await copyCol.evaluate(e => parseInt(getComputedStyle(e).zIndex));
+   assert.ok(copyZ >= 2, 'Copy column has elevated z-index to hide outer left corners');
+   assert.ok(copyBg.includes('rgb(255, 255, 255)'), 'Copy column has opaque background');
+
+   const sBox = await speaker.boundingBox();
+   const eBox = await event.boundingBox();
+   const mBox = await main.boundingBox();
+
+   const gCenter = { x: groupBox.x + groupBox.width / 2, y: groupBox.y + groupBox.height / 2 };
+   const sCenter = { x: sBox.x + sBox.width / 2, y: sBox.y + sBox.height / 2 };
+   const eCenter = { x: eBox.x + eBox.width / 2, y: eBox.y + eBox.height / 2 };
+   const mCenter = { x: mBox.x + mBox.width / 2, y: mBox.y + mBox.height / 2 };
+
+   const gapGS = (Math.abs(sCenter.x - gCenter.x) + Math.abs(sCenter.y - gCenter.y)) / Math.SQRT2 - 150;
+   const gapGE = (Math.abs(eCenter.x - gCenter.x) + Math.abs(eCenter.y - gCenter.y)) / Math.SQRT2 - 150;
+   const gapSM = (Math.abs(mCenter.x - sCenter.x) + Math.abs(mCenter.y - sCenter.y)) / Math.SQRT2 - (401 + 150) / 2;
+   const gapEM = (Math.abs(mCenter.x - eCenter.x) + Math.abs(mCenter.y - eCenter.y)) / Math.SQRT2 - (401 + 150) / 2;
+
+   assert.ok(Math.abs(gapGS - gapGE) < 1, 'Gaps GS and GE are equal');
+   assert.ok(Math.abs(gapGS - gapSM) < 1, 'Gaps GS and SM are equal');
+   assert.ok(Math.abs(gapGS - gapEM) < 1, 'Gaps GS and EM are equal');
+
+   console.log('PASS 09: mission & vision cross grid alignment, equal diagonal gaps, and left diagonal center anchoring');
   }
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}

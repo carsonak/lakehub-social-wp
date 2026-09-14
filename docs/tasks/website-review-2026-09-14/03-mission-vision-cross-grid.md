@@ -126,21 +126,22 @@ Maintain proportionate stacking/scaling below 900px and 600px breakpoints.
 
 ## Progress & Tracking
 
-- **Status**: `Pending`
-- [ ] Geometry and coordinates verified against `About.svg`
-- [ ] CSS rules in `style.css` updated
-- [ ] Visual verification of equal diamond edge distance completed
-- [ ] Left image diagonal center alignment and corner clipping verified
-- **Last Checkpoint**: Plan drafted on 14 September 2026.
-- **Next Action**: Execute CSS updates upon plan approval.
-- **Commit Receipt**: *Pending*
+- **Status**: `Complete`
+- [x] Geometry and coordinates verified against `About.svg`
+- [x] CSS rules in `style.css` updated
+- [x] Visual verification of equal diamond edge distance completed (18px uniform gap across all 4 adjacent parallel pairs)
+- [x] Left image diagonal center alignment and corner clipping verified (diagonal at X=640px exactly, outer left corners hidden)
+- **Last Checkpoint**: Implementation verified visually via screenshot and automated Playwright test PASS 09 on 14 September 2026.
+- **Next Action**: Create Studio backup export and push to R2 / Git.
+- **Commit Receipt**: *Staging for commit*
 
 ---
 
 ## Unplanned Changes & Scope Deviations
 
 *(Document here any deviations, edge cases, or adjustments made during execution that were not part of the initial plan.)*
-- None recorded yet.
+- Added `.is-style-lakehub-mission-copy { background: white; z-index: 2; position: relative; }` and `.is-style-lakehub-mission-collage { overflow: hidden; }` to guarantee that outer left corners extending across the dividing line ($X < 0$) are completely hidden behind the text column.
+- Added Task 09 automated Playwright test assertions in `scripts/tests/review.cjs` to continuously verify equal parallel gaps and vertical diagonal alignment.
 
 ---
 

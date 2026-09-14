@@ -656,18 +656,18 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 .is-style-lakehub-about-intro p { font: 400 1.125rem/1.75rem var(--wp--preset--font-family--inter); max-width: 67.625rem; }
 .is-style-lakehub-about-mission { padding-block: 1.5rem 2rem; }
 .is-style-lakehub-mission-card { margin-top: 2.5rem; min-height: 32.0625rem; background: white; border-radius: 1.5rem; box-shadow: 0 0 0.625rem #00000026; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
-.is-style-lakehub-mission-copy { padding: 2.125rem 0 3rem 3.125rem; position: relative; z-index: 1; }
+.is-style-lakehub-mission-copy { padding: 2.125rem 0 3rem 3.125rem; position: relative; z-index: 2; background: white; }
 .is-style-lakehub-mission-copy h3 { font: 400 2.5rem/3.125rem var(--wp--preset--font-family--inter); color: var(--lakehub-teal); margin-bottom: 2.625rem; }
 .is-style-lakehub-mission-copy p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); }
 .is-style-lakehub-mission-copy h3:not(:first-child) { margin-top: 4rem; }
-.is-style-lakehub-mission-collage { position: relative; min-height: 32.0625rem; }
+.is-style-lakehub-mission-collage { position: relative; min-height: 32.0625rem; overflow: hidden; }
 .is-style-lakehub-mission-collage figure { position: absolute; overflow: hidden; border-radius: 1.5rem; transform: rotate(45deg); }
 .is-style-lakehub-mission-collage img { width: 142%; height: 142%; max-width: none; object-fit: cover; position: absolute; top: -21%; left: -21%; transform: rotate(-45deg); transition: transform 250ms ease; }
-.is-style-lakehub-mission-main { width: 25.0625rem; height: 25.375rem; left: 20.8125rem; top: 1.875rem; }
+.is-style-lakehub-mission-main { width: 25.0625rem; height: 25.375rem; left: 13.41rem; top: calc(50% - 12.6875rem); z-index: 0; }
 .is-style-lakehub-mission-speaker,.is-style-lakehub-mission-group,.is-style-lakehub-mission-event { width: 9.375rem; height: 9.375rem; }
-.is-style-lakehub-mission-speaker { left: 10.875rem; top: 2.5rem; }
-.is-style-lakehub-mission-group { left: 3.5625rem; top: 9.625rem; }
-.is-style-lakehub-mission-event { left: 10.875rem; top: 17rem; }
+.is-style-lakehub-mission-speaker { left: 2.7375rem; top: 3.91875rem; z-index: 1; }
+.is-style-lakehub-mission-group { left: -4.6875rem; top: calc(50% - 4.6875rem); z-index: 1; }
+.is-style-lakehub-mission-event { left: 2.7375rem; top: auto; bottom: 3.91875rem; z-index: 1; }
 .is-style-lakehub-about-story { padding-block: 0 3.5rem; }
 .is-style-lakehub-story-grid { margin-top: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
 .is-style-lakehub-story-photo { position: relative; isolation: isolate; padding-left: 1.75rem; }
