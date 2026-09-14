@@ -652,8 +652,8 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 :is(.is-style-lakehub-about-page,.is-style-lakehub-impact-page) > section:not(.wp-block-cover),.is-style-lakehub-team-page { max-width: 80rem; margin-inline: auto; padding-inline: 4rem; }
 .is-style-lakehub-about-page h2 { font: 400 2rem/2.5rem var(--wp--preset--font-family--inter); letter-spacing: -0.02rem; }
 .is-style-lakehub-about-intro { padding-block: 3rem 1.5rem; }
-.is-style-lakehub-about-intro h2 { font-size: 3rem; line-height: 3.5rem; letter-spacing: -0.06rem; margin-bottom: 1.5rem; }
-.is-style-lakehub-about-intro p { font: 400 1.125rem/1.75rem var(--wp--preset--font-family--inter); max-width: 67.625rem; }
+.is-style-lakehub-about-intro h2 { font-size: 2.25rem; line-height: 2.75rem; letter-spacing: -0.06rem; margin-bottom: 1.5rem; }
+.is-style-lakehub-about-intro p { font: 400 1rem/1.75rem var(--wp--preset--font-family--inter); max-width: 67.625rem; }
 .is-style-lakehub-about-mission { padding-block: 1.5rem 2rem; }
 .is-style-lakehub-mission-card { margin-top: 2.5rem; min-height: 32.0625rem; background: white; border-radius: 1.5rem; box-shadow: 0 0 0.625rem #00000026; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
 .is-style-lakehub-mission-copy { padding: 2.125rem 0 3rem 3.125rem; position: relative; z-index: 2; background: white; }

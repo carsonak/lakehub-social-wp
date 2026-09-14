@@ -344,6 +344,20 @@ const task = process.env.REVIEW_TASK || 'all';
 
    console.log('PASS 09: mission & vision cross grid alignment, equal diagonal gaps, and left diagonal center anchoring');
   }
+  if(task==='all'||task==='10') {
+   await open('/about/');
+   const introText = await page.locator('.is-style-lakehub-about-intro p').innerText();
+   assert.ok(introText.includes('LakeHub is a tech education and innovation ecosystem that creates pathways'), 'Intro text matches Figma');
+
+   const headings = await page.locator('.is-style-lakehub-mission-copy h3').allInnerTexts();
+   assert.deepEqual(headings, ['What we dream of doing?', 'Where we’re heading?'], 'Mission headings match Figma');
+
+   const missionParas = await page.locator('.is-style-lakehub-mission-copy p').allInnerTexts();
+   assert.ok(missionParas[0].includes('To democratize access to quality technical training'), 'Mission text 1 matches');
+   assert.ok(missionParas[1].includes('To cultivate a fully integrated regional network'), 'Mission text 2 matches');
+
+   console.log('PASS 10: about page intro narrative and mission & vision Figma copy updates');
+  }
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

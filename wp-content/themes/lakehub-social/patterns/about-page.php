@@ -18,7 +18,7 @@
 <h2 class="wp-block-heading">About <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-teal-color">LakeHub</mark></h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>An innovative non-profit organization dedicated to bridging the skills gap and create a brighter future for Africa&#x27;s youth through innovative learning and development programs. At Lake Hub, we believe that Africa&#x27;s youth are a crucial resource for the continent&#x27;s future, and we are working to provide them with the tools and opportunities they need to succeed. Whether it&#x27;s through offering training in cutting-edge technologies, providing access to mentors and role models, or creating opportunities for young people to connect and collaborate with their peers, Lake Hub is committed to helping Africa&#x27;s youth reach their full potential and contribute to the growth and progress of the continent.</p>
+<p>LakeHub is a tech education and innovation ecosystem that creates pathways for African youth to enter and thrive in the digital economy. Through programs such as Zone01 and other initiatives, LakeHub connects young people with practical technology training, mentorship, community, and opportunities. Its mission is to democratize access to tech education, based on the belief that talent is equally distributed but opportunities are not. LakeHub Social extends this ecosystem beyond training by connecting apprentices, alumni, and mentors in one network, keeping graduates connected to opportunities and to each other while enabling LakeHub to understand where its talent goes, how they progress, and the impact they create.</p>
 <!-- /wp:paragraph -->
 </section>
 <!-- /wp:group -->
@@ -29,16 +29,16 @@
 <!-- wp:group {"className":"is-style-lakehub-mission-card","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-mission-card"><!-- wp:group {"className":"is-style-lakehub-mission-copy","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-mission-copy"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Vision</h3>
+<h3 class="wp-block-heading">What we dream of doing?</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>LakeHub aims to be a leading innovation hub driven by a community creating sustainable digital solutions for social change</p>
+<p>To democratize access to quality technical training, opening sustainable pathways for young Africans to actively participate, build careers, and flourish within the global digital economy.</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Mission</h3>
+<h3 class="wp-block-heading">Where we’re heading?</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>LakeHub empowers local talent and addresses social issues by expanding tech access and supporting grassroots youth entrepreneurship.</p>
+<p>To cultivate a fully integrated regional network where every apprentice, graduate, and industry mentor continuously unlocks economic opportunity, exchanges expertise, and drives meaningful community transformation.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
