@@ -10,7 +10,7 @@ Master task index and implementation protocol for the followup visual, interacti
 | :--- | :--- | :--- | :--- |
 | **01** | [`01-impact-hover-mask-and-bidirectional-scroll.md`](01-impact-hover-mask-and-bidirectional-scroll.md) | `Complete` | "Impact through Precision": Hover zoom on masking text only; bidirectional entry/exit scroll animations; animated separating lines |
 | **02** | [`02-viewport-quarter-scroll-triggers.md`](02-viewport-quarter-scroll-triggers.md) | `Complete` | 1/4 (25%) viewport threshold triggers for Impact metrics and Our Other Programs scroll animations |
-| **03** | [`03-revert-dynamic-text-resizing-accessibility.md`](03-revert-dynamic-text-resizing-accessibility.md) | `Pending` | Revert `1.25vw` root font-size to restore browser zoom controls with high-resolution layout content cap |
+| **03** | [`03-revert-dynamic-text-resizing-accessibility.md`](03-revert-dynamic-text-resizing-accessibility.md) | `Complete` | Revert `1.25vw` root font-size to restore browser zoom controls with high-resolution layout content cap |
 | **04** | [`04-mission-vision-right-border-anchoring.md`](04-mission-vision-right-border-anchoring.md) | `Pending` | "Mission & Vision": Anchor center of big diamond 26.5px inside right border; eliminate viewport drift across desktop and tablet |
 
 ---

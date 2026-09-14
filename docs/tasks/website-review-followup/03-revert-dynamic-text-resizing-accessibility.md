@@ -45,17 +45,17 @@ Ensure major section containers (`:is(.is-style-lakehub-about-page, .is-style-la
 
 ## Progress & Tracking
 
-- **Status**: `Pending`
-- [ ] Root `font-size: 1.25vw` removed from `style.css`
-- [ ] High-resolution content constraints verified
-- [ ] Playwright tests verifying 16px root font-size passing
-- **Last Checkpoint**: Plan drafted on 14 September 2026.
-- **Next Action**: Execute CSS edits upon plan approval.
-- **Commit Receipt**: *Pending*
+- **Status**: `Complete`
+- [x] Root `font-size: 1.25vw` removed from `style.css`
+- [x] High-resolution content constraints verified
+- [x] Playwright tests verifying 16px root font-size passing
+- **Last Checkpoint**: Implementation verified with Chromium Playwright test (`REVIEW_TASK=11 node scripts/tests/review.cjs`).
+- **Next Action**: Task 04 execution.
+- **Commit Receipt**: Ready for backup export and commit.
 
 ---
 
 ## Unplanned Changes & Scope Deviations
 
 *(Document here any deviations, edge cases, or adjustments made during execution that were not part of the initial plan.)*
-- None recorded yet.
+- Added explicit multi-viewport root font-size checks (1280px, 1440px, 1920px) to `scripts/tests/review.cjs` to guard against dynamic viewport text resizing regression.

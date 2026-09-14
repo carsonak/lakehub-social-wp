@@ -399,6 +399,16 @@ const task = process.env.REVIEW_TASK || 'all';
 
    console.log('PASS 10: about page intro narrative and mission & vision Figma copy updates');
   }
+  if(task==='all'||task==='11') {
+   await open('/');
+   for (const width of [1280, 1440, 1920]) {
+     await page.setViewportSize({width, height: 900});
+     const rootFontSize = await page.evaluate(() => parseFloat(getComputedStyle(document.documentElement).fontSize));
+     assert.equal(rootFontSize, 16, `Root font-size must be 16px at ${width}px viewport (was ${rootFontSize}px)`);
+   }
+   await page.setViewportSize({width: 1280, height: 900});
+   console.log('PASS 11: root font-size standard 16px across viewports for WCAG 1.4.4 zoom accessibility');
+  }
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

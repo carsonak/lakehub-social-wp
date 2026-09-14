@@ -915,9 +915,14 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
  .wp-site-blocks .lakehub-program.is-card-ready { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
 
-/* Desktop follows the approved 1280px scale. Editor UI keeps its own root size. */
+/* Accessibility: standard 16px root font size preserves native browser zoom controls and user scaling preferences */
 html:has(.wp-site-blocks) { font-size: 16px; }
-@media (min-width:1280px) { html:has(.wp-site-blocks) { font-size: 1.25vw; } }
+
+:is(.is-style-lakehub-about-page, .is-style-lakehub-impact-page) > section:not(.wp-block-cover),
+.is-style-lakehub-team-page {
+ max-width: min(90rem, calc(100vw - 4rem));
+ margin-inline: auto;
+}
 
 .is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd) { display: block; }
 
