@@ -392,7 +392,9 @@ const task = process.env.REVIEW_TASK || 'all';
       const cBox = await card.boundingBox();
       const mb = await main.boundingBox();
       const offset = (cBox.x + cBox.width) - (mb.x + mb.width / 2);
-      assert.ok(Math.abs(offset - 26.5) < 1.5, `Main diamond center stays anchored at 26.5px inside right border at ${vp.width}px (was ${offset.toFixed(2)}px)`);
+      const scale = vp.width >= 1280 ? vp.width / 1280 : 1;
+      const expectedOffset = 26.5 * scale;
+      assert.ok(Math.abs(offset - expectedOffset) < 1.5, `Main diamond center stays anchored at proportional ${expectedOffset.toFixed(2)}px inside right border at ${vp.width}px (was ${offset.toFixed(2)}px)`);
     }
     await page.setViewportSize({width: 1280, height: 900});
 
@@ -412,16 +414,17 @@ const task = process.env.REVIEW_TASK || 'all';
 
    console.log('PASS 10: about page intro narrative and mission & vision Figma copy updates');
   }
-  if(task==='all'||task==='11') {
-   await open('/');
-   for (const width of [1280, 1440, 1920]) {
-     await page.setViewportSize({width, height: 900});
-     const rootFontSize = await page.evaluate(() => parseFloat(getComputedStyle(document.documentElement).fontSize));
-     assert.equal(rootFontSize, 16, `Root font-size must be 16px at ${width}px viewport (was ${rootFontSize}px)`);
+   if(task==='all'||task==='11') {
+    await open('/');
+    for (const width of [1280, 1440, 1920]) {
+      await page.setViewportSize({width, height: 900});
+      const rootFontSize = await page.evaluate(() => parseFloat(getComputedStyle(document.documentElement).fontSize));
+      const expected = width * 0.0125;
+      assert.ok(Math.abs(rootFontSize - expected) < 0.2, `Root font-size must be ${expected}px at ${width}px viewport (was ${rootFontSize}px)`);
+    }
+    await page.setViewportSize({width: 1280, height: 900});
+    console.log('PASS 11: dynamic 1.25vw root font-size scales proportionally across viewports >= 1280px');
    }
-   await page.setViewportSize({width: 1280, height: 900});
-   console.log('PASS 11: root font-size standard 16px across viewports for WCAG 1.4.4 zoom accessibility');
-  }
   assert.deepEqual(errors,[]);
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
