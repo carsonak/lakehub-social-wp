@@ -12,7 +12,7 @@ Implementation plan for visual refinements, halftone grid sizing and offsets, cr
 | **02** | [`02-halftone-grid-sizing-and-offsets.md`](02-halftone-grid-sizing-and-offsets.md) | `Complete` | 28px dot pitch tile, exact image frame matching across all viewports, section-specific offsets |
 | **03** | [`03-mission-vision-cross-grid.md`](03-mission-vision-cross-grid.md) | `Complete` | Mission & Vision collage alignment, equal parallel edge distance, left diamond diagonal on center |
 | **04** | [`04-about-page-copy-updates.md`](04-about-page-copy-updates.md) | `Complete` | Add "About LakeHub" narrative block, update Mission & Vision questions and paragraphs |
-| **05** | [`05-program-card-directional-scroll.md`](05-program-card-directional-scroll.md) | `Pending` | Directional fade/slide for program cards (bottom-right on scroll-down, top-right on scroll-up) |
+| **05** | [`05-program-card-directional-scroll.md`](05-program-card-directional-scroll.md) | `Complete` | Directional fade/slide for program cards (bottom-right on scroll-down, top-right on scroll-up) |
 
 ---
 

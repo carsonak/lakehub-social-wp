@@ -58,6 +58,8 @@ const task = process.env.REVIEW_TASK || 'all';
    assert.ok(count >= 2, 'Program cards found');
    const lastCard = cards.last();
    assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-below')), 'Lower cards start in is-card-below state');
+   const revealXs = await cards.evaluateAll(es => es.map(e => getComputedStyle(e).getPropertyValue('--lakehub-reveal-x').trim()));
+   assert.ok(revealXs.every(x => x === '2.5rem' || parseFloat(x) > 0), 'All cards use uniform positive reveal-x');
    await lastCard.scrollIntoViewIfNeeded();
    await page.waitForTimeout(650);
    assert.ok(await lastCard.evaluate(e => e.classList.contains('is-card-visible')), 'Card becomes is-card-visible when scrolled into view');
@@ -72,7 +74,7 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.emulateMedia({reducedMotion:'reduce'});
    assert.ok(await firstCard.evaluate(e => getComputedStyle(e).transitionDuration === '0s'), 'Transitions disabled with reduced motion');
    await page.emulateMedia({reducedMotion:'no-preference'});
-   console.log('PASS 04: program cards two-edge scroll states, focus pinning, and reduced motion');
+   console.log('PASS 04: program cards two-edge scroll states, uniform trajectory, focus pinning, and reduced motion');
   }
   if(task==='all'||task==='05') {
    await open('/');
@@ -108,6 +110,7 @@ const task = process.env.REVIEW_TASK || 'all';
    await page.mouse.move(0, 0);
    const storyPhoto = page.locator('.is-style-lakehub-story-photo');
    await storyPhoto.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(250);
    const box = await storyPhoto.boundingBox();
    assert.ok(box, 'Story photo found');
 
@@ -193,9 +196,10 @@ const task = process.env.REVIEW_TASK || 'all';
    assert.equal(mobileBeforeLeft, -14, 'Mobile story dots left offset is -14px (1 column)');
 
    await mobileStoryPhoto.scrollIntoViewIfNeeded();
+   await page.waitForTimeout(250);
    const mBox = await mobileStoryPhoto.boundingBox();
    await page.mouse.move(mBox.x + 10, mBox.y + 10);
-   await page.waitForTimeout(200);
+   await page.waitForTimeout(250);
    const mRepelX = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
    const mRepelY = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
    const mDisp = Math.hypot(mRepelX, mRepelY);

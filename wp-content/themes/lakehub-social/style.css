@@ -832,12 +832,11 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
  .is-style-lakehub-transformation-card { transform: none !important; opacity: 1 !important; color: white !important; transition: none !important; }
 }
 
-/* Program cards animate through both viewport edges (above, visible, below states). */
+/* Program cards animate along uniform bottom-right <-> top-right axis */
 .wp-site-blocks .lakehub-program.is-card-ready {
- --lakehub-reveal-x: -2rem;
+ --lakehub-reveal-x: 2.5rem;
  transition: opacity 550ms cubic-bezier(.25,.46,.45,.94), transform 550ms cubic-bezier(.25,.46,.45,.94), box-shadow 180ms ease;
 }
-.wp-site-blocks .lakehub-program.is-card-ready:nth-child(even) { --lakehub-reveal-x: 2rem; }
 .wp-site-blocks .lakehub-program.is-card-ready.is-card-below {
  opacity: 0;
  transform: translate3d(var(--lakehub-reveal-x),2.5rem,0);
@@ -855,7 +854,7 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
  transform: translate3d(0,0,0) !important;
 }
 @media(max-width:900px) {
- .wp-site-blocks .lakehub-program.is-card-ready { --lakehub-reveal-x: 0rem; }
+ .wp-site-blocks .lakehub-program.is-card-ready { --lakehub-reveal-x: 1.5rem; }
 }
 @media(prefers-reduced-motion:reduce) {
  .wp-site-blocks .lakehub-program.is-card-ready { opacity: 1 !important; transform: none !important; transition: none !important; }

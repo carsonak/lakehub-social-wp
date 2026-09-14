@@ -94,21 +94,21 @@ File: `scripts/tests/review.cjs` under `if (task==='all'||task==='04')`:
 
 ## Progress & Tracking
 
-- **Status**: `Pending`
-- [ ] CSS in `style.css` updated
-- [ ] Downward and upward scroll verified visually
-- [ ] Keyboard focus-within pin verified
-- [ ] Playwright test suite `REVIEW_TASK=04` passed
-- **Last Checkpoint**: Plan drafted on 14 September 2026.
-- **Next Action**: Apply CSS changes upon plan approval.
-- **Commit Receipt**: *Pending*
+- **Status**: `Complete`
+- [x] CSS in `style.css` updated with uniform positive `--lakehub-reveal-x: 2.5rem`
+- [x] Downward and upward scroll verified visually and via Playwright
+- [x] Keyboard focus-within pin verified
+- [x] Playwright test suite `REVIEW_TASK=04` passed
+- **Last Checkpoint**: Implementation verified via Playwright test PASS 04 on 14 September 2026.
+- **Next Action**: Create Studio backup export and push to R2 / Git.
+- **Commit Receipt**: *Staging for commit*
 
 ---
 
 ## Unplanned Changes & Scope Deviations
 
 *(Document here any deviations, edge cases, or adjustments made during execution that were not part of the initial plan.)*
-- None recorded yet.
+- None recorded. Uniform trajectory applied cleanly to all program cards.
 
 ---
 
