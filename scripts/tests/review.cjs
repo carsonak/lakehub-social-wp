@@ -356,34 +356,47 @@ const task = process.env.REVIEW_TASK || 'all';
    const event = page.locator('.is-style-lakehub-mission-event');
    const main = page.locator('.is-style-lakehub-mission-main');
 
-   const groupBox = await group.boundingBox();
-   const groupCenterX = groupBox.x + groupBox.width / 2;
-   assert.ok(Math.abs(groupCenterX - dividingLine) < 1, 'Left diamond vertical diagonal centered on dividing line');
+    const cardRect = await card.boundingBox();
+    const mBox = await main.boundingBox();
+    const mCenterX = mBox.x + mBox.width / 2;
+    const distFromRight = (cardRect.x + cardRect.width) - mCenterX;
+    assert.ok(Math.abs(distFromRight - 26.5) < 1.5, `Main diamond center anchored 26.5px inside right border (was ${distFromRight.toFixed(2)}px)`);
 
-   const copyBg = await copyCol.evaluate(e => getComputedStyle(e).backgroundColor);
-   const copyZ = await copyCol.evaluate(e => parseInt(getComputedStyle(e).zIndex));
-   assert.ok(copyZ >= 2, 'Copy column has elevated z-index to hide outer left corners');
-   assert.ok(copyBg.includes('rgb(255, 255, 255)'), 'Copy column has opaque background');
+    const copyBg = await copyCol.evaluate(e => getComputedStyle(e).backgroundColor);
+    const copyZ = await copyCol.evaluate(e => parseInt(getComputedStyle(e).zIndex));
+    assert.ok(copyZ >= 2, 'Copy column has elevated z-index to hide outer left corners');
+    assert.ok(copyBg.includes('rgb(255, 255, 255)'), 'Copy column has opaque background');
 
-   const sBox = await speaker.boundingBox();
-   const eBox = await event.boundingBox();
-   const mBox = await main.boundingBox();
+    const sBox = await speaker.boundingBox();
+    const eBox = await event.boundingBox();
+    const groupBox = await group.boundingBox();
 
-   const gCenter = { x: groupBox.x + groupBox.width / 2, y: groupBox.y + groupBox.height / 2 };
-   const sCenter = { x: sBox.x + sBox.width / 2, y: sBox.y + sBox.height / 2 };
-   const eCenter = { x: eBox.x + eBox.width / 2, y: eBox.y + eBox.height / 2 };
-   const mCenter = { x: mBox.x + mBox.width / 2, y: mBox.y + mBox.height / 2 };
+    const gCenter = { x: groupBox.x + groupBox.width / 2, y: groupBox.y + groupBox.height / 2 };
+    const sCenter = { x: sBox.x + sBox.width / 2, y: sBox.y + sBox.height / 2 };
+    const eCenter = { x: eBox.x + eBox.width / 2, y: eBox.y + eBox.height / 2 };
+    const mCenter = { x: mBox.x + mBox.width / 2, y: mBox.y + mBox.height / 2 };
 
-   const gapGS = (Math.abs(sCenter.x - gCenter.x) + Math.abs(sCenter.y - gCenter.y)) / Math.SQRT2 - 150;
-   const gapGE = (Math.abs(eCenter.x - gCenter.x) + Math.abs(eCenter.y - gCenter.y)) / Math.SQRT2 - 150;
-   const gapSM = (Math.abs(mCenter.x - sCenter.x) + Math.abs(mCenter.y - sCenter.y)) / Math.SQRT2 - (401 + 150) / 2;
-   const gapEM = (Math.abs(mCenter.x - eCenter.x) + Math.abs(mCenter.y - eCenter.y)) / Math.SQRT2 - (401 + 150) / 2;
+    const gapGS = (Math.abs(sCenter.x - gCenter.x) + Math.abs(sCenter.y - gCenter.y)) / Math.SQRT2 - 150;
+    const gapGE = (Math.abs(eCenter.x - gCenter.x) + Math.abs(eCenter.y - gCenter.y)) / Math.SQRT2 - 150;
+    const gapSM = (Math.abs(mCenter.x - sCenter.x) + Math.abs(mCenter.y - sCenter.y)) / Math.SQRT2 - (401 + 150) / 2;
+    const gapEM = (Math.abs(mCenter.x - eCenter.x) + Math.abs(mCenter.y - eCenter.y)) / Math.SQRT2 - (401 + 150) / 2;
 
-   assert.ok(Math.abs(gapGS - gapGE) < 1, 'Gaps GS and GE are equal');
-   assert.ok(Math.abs(gapGS - gapSM) < 1, 'Gaps GS and SM are equal');
-   assert.ok(Math.abs(gapGS - gapEM) < 1, 'Gaps GS and EM are equal');
+    assert.ok(Math.abs(gapGS - gapGE) < 1, 'Gaps GS and GE are equal');
+    assert.ok(Math.abs(gapGS - gapSM) < 1, 'Gaps GS and SM are equal');
+    assert.ok(Math.abs(gapGS - gapEM) < 1, 'Gaps GS and EM are equal');
 
-   console.log('PASS 09: mission & vision cross grid alignment, equal diagonal gaps, and left diagonal center anchoring');
+    // Viewport stability: verify right-border anchoring on desktop (1440px) and tablet (820px)
+    for (const vp of [{width: 1440, height: 900}, {width: 820, height: 1024}]) {
+      await page.setViewportSize(vp);
+      await page.waitForTimeout(150);
+      const cBox = await card.boundingBox();
+      const mb = await main.boundingBox();
+      const offset = (cBox.x + cBox.width) - (mb.x + mb.width / 2);
+      assert.ok(Math.abs(offset - 26.5) < 1.5, `Main diamond center stays anchored at 26.5px inside right border at ${vp.width}px (was ${offset.toFixed(2)}px)`);
+    }
+    await page.setViewportSize({width: 1280, height: 900});
+
+    console.log('PASS 09: mission & vision cross grid alignment, equal diagonal gaps, and right-border center anchoring across viewports');
   }
   if(task==='all'||task==='10') {
    await open('/about/');

@@ -106,18 +106,19 @@ File: `wp-content/themes/lakehub-social/style.css`
 
 ## Progress & Tracking
 
-- **Status**: `Pending`
-- [ ] Right-anchored coordinates calculated and applied in `style.css`
-- [ ] Desktop viewport resize stability tested
-- [ ] Tablet viewport stability tested
-- [ ] Playwright assertions updated and passing
-- **Last Checkpoint**: Plan drafted on 14 September 2026.
-- **Next Action**: Execute CSS updates upon plan approval.
-- **Commit Receipt**: *Pending*
+- **Status**: `Complete`
+- [x] Right-anchored coordinates calculated and applied in `style.css`
+- [x] Desktop viewport resize stability tested
+- [x] Tablet viewport stability tested
+- [x] Playwright assertions updated and passing
+- **Last Checkpoint**: Implementation verified with Chromium Playwright tests across 820px, 1024px, 1280px, and 1440px viewports (`REVIEW_TASK=09 node scripts/tests/review.cjs`). Visual screenshots verified at desktop and tablet.
+- **Next Action**: All followup review tasks complete.
+- **Commit Receipt**: Ready for backup export and commit.
 
 ---
 
 ## Unplanned Changes & Scope Deviations
 
 *(Document here any deviations, edge cases, or adjustments made during execution that were not part of the initial plan.)*
-- None recorded yet.
+- Added mobile (`@media(max-width:600px)`) resets for `.is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo` (`grid-column: 1`, `grid-row: auto`, `justify-self: center`) to prevent specificity conflicts on 320px narrow screens.
+- Updated `scripts/tests/review.cjs` Task 09 test to verify exact 26.5px right border anchoring across multiple viewports (1440px and 820px tablet) in addition to 1280px desktop.
