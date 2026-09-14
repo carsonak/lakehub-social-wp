@@ -435,7 +435,12 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
 .wp-block-group.is-style-lakehub-metric-photo {
  justify-self: end;
  padding: 0;
- width: max-content;
+ width: 27rem;
+ height: 13.375rem;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ text-align: right;
  max-width: 100%;
  background-image: none;
  background-size: 0;
@@ -443,7 +448,7 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
  position: relative;
  z-index: 2;
  --lakehub-photo-center-shift: 2rem;
- transform: translateX(var(--lakehub-photo-center-shift));
+ transform: translateX(calc(var(--lakehub-photo-shift-x, 0rem) + var(--lakehub-photo-center-shift)));
  transition: transform 550ms cubic-bezier(.25,.46,.45,.94);
  transform-origin: center center;
 }
@@ -451,10 +456,12 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
  grid-column: 2;
  grid-row: 1;
  justify-self: start;
+ justify-content: flex-start;
+ text-align: left;
  --lakehub-photo-center-shift: -2rem;
 }
 .is-style-lakehub-metric-row.is-revealed .wp-block-group.is-style-lakehub-metric-photo {
- transform: translateX(0);
+ transform: translateX(var(--lakehub-photo-shift-x, 0rem));
 }
 @media(max-width:600px) {
  .wp-block-group.is-style-lakehub-metric-photo,
@@ -462,6 +469,10 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
   grid-column: 1;
   grid-row: auto;
   justify-self: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
   --lakehub-photo-center-shift: 0rem;
  }
 }

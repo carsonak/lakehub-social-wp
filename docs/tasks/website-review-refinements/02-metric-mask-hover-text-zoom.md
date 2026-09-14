@@ -2,7 +2,7 @@
 
 ## Metadata
 - **Date**: 14 September 2026
-- **Status**: Pending
+- **Status**: Complete
 - **Target Files**:
   - `wp-content/themes/lakehub-social/style.css`
 
@@ -10,7 +10,7 @@
 
 ## Context & Objectives
 In the "Impact through Precision" section, large numbers mask an underlying photo using `background-clip: text`.
-Currently, `.wp-block-group.is-style-lakehub-metric-photo` has `width: max-content` and `background-size: cover`. When hovering over the metric number, `<p>` font size expands from `var(--wp--preset--font-size--metric)` by 4.5%. Because the container expands to fit the larger text, `background-size: cover` recalculates and stretches the background image by 4.5% as well.
+Previously, `.wp-block-group.is-style-lakehub-metric-photo` had `width: max-content` and `background-size: cover`. When hovering over the metric number, `<p>` font size expands from `var(--wp--preset--font-size--metric)` by 4.5%. Because the container expanded to fit the larger text, `background-size: cover` recalculated and stretched the background image by 4.5% as well.
 
 The user's explicit requirement:
 > "I would like the zoom effect on hover to only apply to the masking text not to the image underneath. The numbers should expand a little but the image underneath retains its original size."
@@ -19,22 +19,19 @@ The user's explicit requirement:
 
 ## Detailed Implementation Instructions
 1. In `wp-content/themes/lakehub-social/style.css`:
-   - Inspect `.wp-block-group.is-style-lakehub-metric-photo`:
-     - Fix the container dimensions or decouple background image dimensions from the font-size expansion.
-     - Option A: Set fixed container dimensions (e.g. `width: 26.5rem; height: 13.5rem; display: flex; align-items: center; justify-content: flex-end;` on odd rows, `justify-content: flex-start;` on even rows).
-     - Option B: Set explicit fixed background dimensions on `.wp-block-group.is-style-lakehub-metric-photo` (e.g. `background-size: 26.5rem 13.5rem; background-position: center;`) so container width variations do not stretch or scale the background image.
-     - Ensure the background image does not scale or translate when `:hover` triggers.
+   - Updated `.wp-block-group.is-style-lakehub-metric-photo`:
+     - Fixed container dimensions to `width: 27rem; height: 13.375rem; max-width: 100%; display: flex; align-items: center; justify-content: flex-end; text-align: right;` (and `justify-content: flex-start; text-align: left;` for even rows).
+     - Because container width and height are fixed, the background image (with `background-size: cover; background-position: 50% 50%`) does not change size or shift by even 0.01px when hovered.
    - On `.wp-block-group.is-style-lakehub-metric-photo:hover p`:
      - Keep `font-size: calc(var(--wp--preset--font-size--metric) * 1.045);`.
-     - Because the background size and position are fixed, expanding the font size reveals more of the stationary underlying image through the larger text glyphs.
+     - Expanding the font size reveals more of the stationary underlying image through the larger text glyphs without zooming the image itself.
 
 ---
 
 ## Verification & Backups
 1. **Visual & Playwright Verification**:
-   - Inspect the rendered image box during hover state.
-   - Assert `background-size` and background image scaling do not change on hover.
-   - Confirm the number text enlarges smoothly without moving or scaling the image pixels.
+   - Inspected container bounding boxes and background image stability during hover.
+   - Asserted `width diff = 0.00px`, `height diff = 0.00px` on hover while `font-size` increases from 169.997px to 177.647px (+4.5%).
 2. **PHP & Suite Checks**:
    ```bash
    find wp-content/themes/lakehub-social wp-content/plugins/lakehub-site -type f -name '*.php' -print0 | xargs -0 -n1 php -l
@@ -49,10 +46,10 @@ The user's explicit requirement:
 ---
 
 ## Progress Tracker
-- [ ] Update `.is-style-lakehub-metric-photo` CSS to lock background image dimensions.
-- [ ] Verify hover state in browser: image stays stationary while text expands.
-- [ ] Run test suite.
-- [ ] Create Studio export backup and push to repository.
+- [x] Update `.is-style-lakehub-metric-photo` CSS to lock background image dimensions.
+- [x] Verify hover state in browser: image stays stationary while text expands.
+- [x] Run test suite.
+- [x] Create Studio export backup and push to repository.
 
 ---
 
