@@ -1,5 +1,6 @@
-/* Halftone density tokens and background decoration overrides (Task 07).
- * Reverting this file and its enqueue restores the original vector backgrounds without affecting hover repulsion.
+/* Halftone density tokens and background decoration overrides (Task 02 / Review 2026-09-14).
+ * Halftone grid is sized identically to each photograph frame across all viewports (100% x 100%)
+ * and anchored directly to the image frame without drifting during resize.
  */
 
 .is-style-lakehub-story-photo,
@@ -8,7 +9,7 @@
 .is-style-lakehub-story-grid,
 .is-style-lakehub-community-grid,
 .is-style-lakehub-portfolio-grid {
-  --lakehub-dot-spacing: 36px;
+  --lakehub-dot-spacing: 28px;
 }
 
 @media (max-width: 600px) {
@@ -18,71 +19,96 @@
   .is-style-lakehub-story-grid,
   .is-style-lakehub-community-grid,
   .is-style-lakehub-portfolio-grid {
-    --lakehub-dot-spacing: 16px;
+    --lakehub-dot-spacing: 14px;
   }
 }
 
-/* About Story photograph halftone decoration */
-.is-style-lakehub-story-photo::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: calc(-1 * var(--lakehub-dot-spacing)) !important;
-  left: calc(-2 * var(--lakehub-dot-spacing)) !important;
-  bottom: auto !important;
-  width: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
-  height: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+/* Base decoration applied directly to the photograph figure containers */
+.is-style-lakehub-story-photo::before,
+.is-style-lakehub-community-photo::before,
+.is-style-lakehub-portfolio-photo::before {
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  width: 100% !important;
+  height: 100% !important;
   background-image: url('../images/completion/halftone-tile.svg') !important;
   background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
   background-repeat: repeat !important;
   background-position: 0 0 !important;
+  transform: translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+  transition: transform 120ms cubic-bezier(.2,.6,.4,1);
+  will-change: transform;
 }
 
-/* Impact Community photograph halftone decoration */
-.is-style-lakehub-community-grid::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: calc(-1 * var(--lakehub-dot-spacing)) !important;
-  left: calc(-2 * var(--lakehub-dot-spacing)) !important;
-  width: calc(35.9375rem + 2 * var(--lakehub-dot-spacing)) !important;
-  height: calc(21.125rem + 2 * var(--lakehub-dot-spacing)) !important;
-  background-image: url('../images/completion/halftone-tile.svg') !important;
-  background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
-  background-repeat: repeat !important;
-  background-position: 0 0 !important;
-}
-@media (max-width: 900px) {
-  .is-style-lakehub-community-grid::before {
-    width: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
-    height: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
+@media (prefers-reduced-motion: reduce) {
+  .is-style-lakehub-story-photo::before,
+  .is-style-lakehub-community-photo::before,
+  .is-style-lakehub-portfolio-photo::before {
+    transform: none !important;
+    transition: none !important;
   }
 }
 
-/* Impact Portfolio photograph halftone decoration */
-.is-style-lakehub-portfolio-grid::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: calc(0.875rem - 1 * var(--lakehub-dot-spacing)) !important;
-  left: calc(100% - 23.0625rem - 2 * var(--lakehub-dot-spacing)) !important;
+/* Section-specific offsets */
+
+/* Impact Community Projects: offset 2 rows to top, 1 column to left */
+.is-style-lakehub-community-photo::before {
+  top: calc(-2 * var(--lakehub-dot-spacing)) !important;
+  left: calc(-1 * var(--lakehub-dot-spacing)) !important;
   right: auto !important;
   bottom: auto !important;
-  width: calc(23.0625rem + 2 * var(--lakehub-dot-spacing)) !important;
-  height: calc(28.5625rem + 2 * var(--lakehub-dot-spacing)) !important;
-  background-image: url('../images/completion/halftone-tile.svg') !important;
-  background-size: var(--lakehub-dot-spacing) var(--lakehub-dot-spacing) !important;
-  background-repeat: repeat !important;
-  background-position: 0 0 !important;
 }
-@media (max-width: 900px) {
-  .is-style-lakehub-portfolio-grid::after {
-    top: auto !important;
-    bottom: calc(-1 * var(--lakehub-dot-spacing)) !important;
-    left: calc(-2 * var(--lakehub-dot-spacing)) !important;
-    width: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
-    height: calc(100% + 2 * var(--lakehub-dot-spacing)) !important;
-  }
+
+/* Impact Inspiring Portfolios: offset 2 columns to right, 1 row to bottom */
+.is-style-lakehub-portfolio-photo::before {
+  top: calc(1 * var(--lakehub-dot-spacing)) !important;
+  left: calc(2 * var(--lakehub-dot-spacing)) !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+
+/* About Our Story: offset 2 rows to bottom, 1 column to left */
+.is-style-lakehub-story-photo::before {
+  top: calc(2 * var(--lakehub-dot-spacing)) !important;
+  left: calc(-1 * var(--lakehub-dot-spacing)) !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+
+/* Frame sizing: Story photo fits image bounding box exactly */
+.is-style-lakehub-story-photo {
+  width: fit-content !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+}
+
+/* Frame sizing & clipping: Community photo retains internal crop without clipping dots */
+.is-style-lakehub-community-photo {
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+.is-style-lakehub-community-photo img {
+  border-radius: 1.125rem !important;
+  clip-path: inset(5.008% round 1.125rem) !important;
+}
+
+/* Frame sizing & clipping: Portfolio photo retains internal crop without clipping dots */
+.is-style-lakehub-portfolio-photo {
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+.is-style-lakehub-portfolio-photo img {
+  border-radius: 1.125rem !important;
+  clip-path: inset(26.718% 0.028% 16.408% 31.125% round 1.125rem) !important;
+}
+
+/* Suppress legacy grid pseudo-elements */
+.is-style-lakehub-community-grid::before,
+.is-style-lakehub-portfolio-grid::after {
+  content: none !important;
+  display: none !important;
 }
 
 /* Responsive spacing protection to prevent page overflow */

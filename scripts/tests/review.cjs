@@ -157,33 +157,39 @@ const task = process.env.REVIEW_TASK || 'all';
    await open('/about/');
    const storyPhoto = page.locator('.is-style-lakehub-story-photo');
    const desktopSpacing = await storyPhoto.evaluate(e => getComputedStyle(e).getPropertyValue('--lakehub-dot-spacing').trim());
-   assert.equal(desktopSpacing, '36px', 'Desktop halftone spacing is 36px');
+   assert.equal(desktopSpacing, '28px', 'Desktop halftone spacing is 28px');
 
    const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
    assert.ok(storyBg.includes('halftone-tile.svg'), 'Story photo uses derived halftone tile');
 
    const storyBeforeTop = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
    const storyBeforeLeft = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(storyBeforeTop, -36, 'Story dots top offset is -36px (1 row)');
-   assert.equal(storyBeforeLeft, -72, 'Story dots left offset is -72px (2 columns)');
+   assert.equal(storyBeforeTop, 56, 'Story dots top offset is 56px (2 rows)');
+   assert.equal(storyBeforeLeft, -28, 'Story dots left offset is -28px (1 column)');
 
    await open('/impact/');
-   const communityGrid = page.locator('.is-style-lakehub-community-grid');
-   const commBeforeTop = await communityGrid.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
-   const commBeforeLeft = await communityGrid.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(commBeforeTop, -36, 'Community dots top offset is -36px (1 row)');
-   assert.equal(commBeforeLeft, -72, 'Community dots left offset is -72px (2 columns)');
+   const commPhoto = page.locator('.is-style-lakehub-community-photo');
+   const commBeforeTop = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
+   const commBeforeLeft = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+   assert.equal(commBeforeTop, -56, 'Community dots top offset is -56px (2 rows top)');
+   assert.equal(commBeforeLeft, -28, 'Community dots left offset is -28px (1 column left)');
+
+   const portPhoto = page.locator('.is-style-lakehub-portfolio-photo');
+   const portBeforeTop = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
+   const portBeforeLeft = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+   assert.equal(portBeforeTop, 28, 'Portfolio dots top offset is 28px (1 row bottom)');
+   assert.equal(portBeforeLeft, 56, 'Portfolio dots left offset is 56px (2 columns right)');
 
    await page.setViewportSize({width:390,height:800});
    await open('/about/');
    const mobileStoryPhoto = page.locator('.is-style-lakehub-story-photo');
    const mobileSpacing = await mobileStoryPhoto.evaluate(e => getComputedStyle(e).getPropertyValue('--lakehub-dot-spacing').trim());
-   assert.equal(mobileSpacing, '16px', 'Mobile halftone spacing is 16px');
+   assert.equal(mobileSpacing, '14px', 'Mobile halftone spacing is 14px');
 
    const mobileBeforeTop = await mobileStoryPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
    const mobileBeforeLeft = await mobileStoryPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-   assert.equal(mobileBeforeTop, -16, 'Mobile story dots top offset is -16px (1 row)');
-   assert.equal(mobileBeforeLeft, -32, 'Mobile story dots left offset is -32px (2 columns)');
+   assert.equal(mobileBeforeTop, 28, 'Mobile story dots top offset is 28px (2 rows)');
+   assert.equal(mobileBeforeLeft, -14, 'Mobile story dots left offset is -14px (1 column)');
 
    await mobileStoryPhoto.scrollIntoViewIfNeeded();
    const mBox = await mobileStoryPhoto.boundingBox();
@@ -192,7 +198,7 @@ const task = process.env.REVIEW_TASK || 'all';
    const mRepelX = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-x')));
    const mRepelY = await mobileStoryPhoto.evaluate(e => parseFloat(e.style.getPropertyValue('--lakehub-repel-y')));
    const mDisp = Math.hypot(mRepelX, mRepelY);
-   assert.ok(mDisp <= 16.1, 'Mobile hover repulsion displacement capped at 16px');
+   assert.ok(mDisp <= 14.1, 'Mobile hover repulsion displacement capped at 14px');
    await page.mouse.move(0, 0);
 
    await page.setViewportSize({width:1280,height:900});

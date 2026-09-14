@@ -174,22 +174,22 @@ File: `scripts/tests/review.cjs` under `if (task==='all'||task==='07')`:
 
 ## Progress & Tracking
 
-- **Status**: `Pending`
-- [ ] SVG tile updated with 28px pitch
-- [ ] `assets/css/halftone-density.css` updated with tokens, sizing, clipping, and offsets
-- [ ] Obsolete grid pseudo-elements removed
-- [ ] Hover repulsion counter-transforms tested
-- [ ] Playwright tests updated and verified passing
-- **Last Checkpoint**: Plan drafted on 14 September 2026.
-- **Next Action**: Execute CSS and SVG changes upon plan approval.
-- **Commit Receipt**: *Pending*
+- **Status**: `Complete`
+- [x] SVG tile updated with 28px pitch
+- [x] `assets/css/halftone-density.css` updated with tokens, sizing, clipping, and offsets
+- [x] Obsolete grid pseudo-elements removed
+- [x] Hover repulsion counter-transforms tested
+- [x] Playwright tests updated and verified passing
+- **Last Checkpoint**: Implementation verified with PASS 06 and PASS 07 on 14 September 2026.
+- **Next Action**: Create Studio backup export and push to R2 / Git.
+- **Commit Receipt**: *Staging for commit*
 
 ---
 
 ## Unplanned Changes & Scope Deviations
 
 *(Document here any deviations, edge cases, or adjustments made during execution that were not part of the initial plan.)*
-- None recorded yet.
+- Added `overflow: visible !important; border-radius: 0 !important;` to `.is-style-lakehub-community-photo` and `.is-style-lakehub-portfolio-photo`, while applying matching `border-radius: 1.125rem` and exact inset `clip-path` directly to internal `img` elements so the `::before` pseudo-element extends beyond the container without clipping, while internal image zooms/crops remain perfectly preserved.
 
 ---
 
