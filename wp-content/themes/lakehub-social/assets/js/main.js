@@ -769,7 +769,8 @@
       drawer.classList.remove('is-collapsed');
       drawer.classList.add('is-expanded');
       drawer.setAttribute('aria-expanded', 'true');
-      readMoreBtn.style.display = 'none';
+      readMoreBtn.classList.add('is-hidden');
+      readMoreBtn.style.setProperty('display', 'none', 'important');
       hideBtn.focus();
     };
 
@@ -777,7 +778,8 @@
       drawer.classList.remove('is-expanded');
       drawer.classList.add('is-collapsed');
       drawer.setAttribute('aria-expanded', 'false');
-      readMoreBtn.style.display = 'inline-flex';
+      readMoreBtn.classList.remove('is-hidden');
+      readMoreBtn.style.removeProperty('display');
       readMoreBtn.focus();
       const topOffset = container.getBoundingClientRect().top + window.scrollY - 120;
       if (window.scrollY > topOffset) {
