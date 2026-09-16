@@ -1,0 +1,157 @@
+LAKEHUB SOCIAL — PROGRAMS PAGE (/programs)
+
+Page Introduction
+
+Headline: Our Programs Pipeline
+
+Subheadline: Explore the programs driving tech talent development across Western Kenya and beyond. From flagship accelerators to grassroots initiatives, each program is designed to bridge the gap between training and employment.
+
+1. Program Portfolio
+
+Zone01 Kisumu
+
+Program Type: Flagship Talent Accelerator
+
+Duration: 12 months
+
+Location: Kisumu, Kenya
+
+LakeHub's flagship talent accelerator. It offers a fully funded, peer-to-peer, and gamified 1-year software engineering curriculum that prepares local youth for enterprise roles in the digital economy.
+
+Key Features:
+
+Fully funded program — no cost to participants 
+
+Peer-to-peer learning model 
+
+Gamified curriculum for engagement 
+
+Production-ready project portfolio 
+
+Direct connections to 45+ hiring partners 
+
+Outcomes:
+
+88% direct job placement rate within 6 months of graduation 
+
+500+ alumni across global tech ecosystems 
+
+12+ months of intensive, hands-on portfolio building 
+
+CTA: [ Learn More About Zone01 ]
+
+Grassroots Tech Initiatives
+
+Program Type: Specialized Bootcamps & Workshops
+
+Duration: Varies (4-12 weeks)
+
+Location: Western Kenya
+
+Specialized bootcamps, workshops, and gender-inclusive mentorship tracks designed to bridge the digital literacy gap across Western Kenya.
+
+Initiative Tracks:
+
+FemiDevs: Gender-inclusive mentorship track empowering women in tech 
+
+Agribiz 4 Youth: Tech solutions for agricultural challenges facing youth 
+
+Digital Literacy Bootcamps: Foundational skills for tech career pathways 
+
+Key Features:
+
+Shorter, intensive format for quick skill acquisition 
+
+Gender-inclusive approach 
+
+Industry-relevant curriculum 
+
+Community-driven learning 
+
+CTA: [ Explore Bootcamps ]
+
+Mentorship Program
+
+Program Type: Ongoing Mentorship
+
+Duration: Continuous
+
+Location: Virtual + In-person
+
+Structured mentorship connecting current apprentices with alumni and industry professionals. Enables warm introductions, interview preparation, and career guidance.
+
+Key Features:
+
+1-on-1 mentor matching 
+
+Structured guidance sessions 
+
+Career transition support 
+
+Network building opportunities 
+
+CTA: [ Become a Mentor ]
+
+2. Program Comparison
+
+Feature
+
+Zone01 Kisumu
+
+Grassroots Initiatives
+
+Mentorship
+
+Duration
+
+12 months
+
+4-12 weeks
+
+Continuous
+
+Cost
+
+Fully Funded
+
+Varies
+
+Free
+
+Format
+
+In-person
+
+Hybrid
+
+Virtual + In-person
+
+Outcome
+
+Job Placement
+
+Skill Acquisition
+
+Career Guidance
+
+Ideal For
+
+Aspiring developers
+
+Career changers
+
+All levels
+
+3. Call to Action
+
+Headline: Find the Right Program for Your Tech Journey
+
+Body: Whether you're just starting out or looking to specialize, LakeHub has a program designed for your goals. Connect with our team to find the right fit.
+
+CTA Buttons:
+
+[ Apply to Zone01 ] 
+
+[ Browse Bootcamps ] 
+
+[ Talk to Our Team ] 

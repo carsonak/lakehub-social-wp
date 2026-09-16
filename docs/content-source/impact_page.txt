@@ -1,0 +1,119 @@
+LAKEHUB SOCIAL — IMPACT PAGE (/impact)
+
+Page Header
+
+Headline: Decentralizing tech training in Kenya and positioning youth for leading tech roles.
+
+2. Community Solutions.
+
+Technology built by the LakeHub and Zone01 community to solve real problems and create meaningful impact.
+
+Chichwa
+
+Community Solution A community-focused digital solution built to address a real challenge faced by local communities, turning technology into a practical tool for everyday needs.
+
+Chama Trust Wallet
+
+Financial Inclusion A digital savings platform helping women, chamas, and individuals manage group finances and savings more transparently.
+
+ZoneBridge
+
+Peer Learning A knowledge-sharing platform connecting Zone01 apprentices with peers who can help them solve technical challenges and share expertise.
+
+Ujuzi360
+
+Education A learning platform connecting students and teachers through accessible course creation, sharing, and management.
+
+Rust Kisumu
+
+Developer Community A community-driven platform making Rust learning resources easier to discover and helping developers build skills through an active local ecosystem.
+
+3. Alumni Success Stories (Inspiring Portfolios)
+
+Featured Alumni
+
+Name: [Alumni Name]
+
+Current Role: [Job Title]
+
+Current Company: [Company Name]
+
+Program Track: Zone01 Kisumu (Cohort 1)
+
+How LakeHub Helped: [Brief description of impact — skills gained, career transition, mentorship received]
+
+Signal Interest to Connect
+
+Featured Alumni
+
+Name: [Alumni Name]
+
+Current Role: Junior Software Engineer at Safaricom PLC
+
+Current Company: Safaricom PLC
+
+Program Track: Zone01 Kisumu (Cohort 1)
+
+How LakeHub Helped: Hands-on training in production-ready projects, structured mentorship from industry professionals, and direct job placement through enterprise hiring partners.
+
+Signal Interest to Connect
+
+Featured Alumni
+
+Name: [Alumni Name]
+
+Current Role: DevOps Specialist at Flutterwave
+
+Current Company: Flutterwave
+
+Program Track: FemiDevs Mentor / Core Track
+
+How LakeHub Helped: Gender-inclusive mentorship track, hands-on technical skills development, and networking opportunities with industry leaders.
+
+Signal Interest to Connect
+
+4. Dimensions of Transformation (How We Build Careers)
+
+ Technical Mastery
+
+Apprentices learn through production-ready projects that mirror actual engineering environments, moving past theory into deployable skills. Graduates leave with a portfolio of real-world projects ready for enterprise roles.
+
+Structured Mentorship
+
+Direct channels to industry experts and senior alumni who guide technical transitions and help graduates navigate job interviews. Ongoing guidance even after program completion ensures continuous career growth.
+
+Employment Pipelines
+
+Seamless handoffs to enterprise hiring partners through mock interview training, active resume feedback loops, and direct matching. 88% of graduates secure tech roles within 6 months of completion.
+
+Personal Growth
+
+Overcoming imposter syndrome by learning within a fiercely collaborative, supportive community that fosters lifelong career confidence. Graduates gain clarity on career goals and expanded professional networks.
+
+5. The Lakehub Difference
+
+What sets LakeHub alumni apart:
+
+Practical, portfolio-ready skills from day one 
+
+Strong industry connections through 45+ hiring partners 
+
+Continuous support beyond graduation 
+
+Community of peers and mentors invested in mutual success 
+
+Data-driven impact tracking for long-term career visibility 
+
+6. Call to Action
+
+Headline: Be Part of Our Growing Legacy
+
+Body: Whether you're an apprentice ready to start your journey, an alumnus tracking your career progress, or a partner seeking vetted tech talent — LakeHub Social is where impact happens.
+
+CTA Buttons:
+
+[ Explore Alumni Stories ] 
+
+[ Connect With an Alumnus ] 
+
+[ Partner With Us ] 

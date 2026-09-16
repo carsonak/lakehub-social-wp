@@ -1,0 +1,94 @@
+{
+  "google_drive_folder": "https://drive.google.com/drive/folders/1zIEg_it4RXoLnIy-J4hl3YS77uC9V4np?usp=sharing",
+  "retrieved_at": "2026-09-16T14:34:48+03:00",
+  "documents": {
+    "about_page.docx": {
+      "drive_id": "1ATjjyBnILzCZ5QujJjUnJSLVwUundH5h"
+    },
+    "home_page.docx": {
+      "drive_id": "1yAOYJXQkKG_ymrjVuSN0t0JhzccCThwM"
+    },
+    "impact_page.docx": {
+      "drive_id": "1GHbxTWaFn5BwRJBmWJNCZpvZlxbjS6c3"
+    },
+    "programs_page.docx": {
+      "drive_id": "1DP37dygiUurND-UEhajlT7wuLxyg_MTp"
+    }
+  },
+  "files": {
+    "about_page.docx": {
+      "size_bytes": 11787,
+      "sha256": "c08e0cf71b1d909056b5493708e8bb62bb851dbdbf34dc7117eb23012cf3fced"
+    },
+    "about_page.txt": {
+      "size_bytes": 4509,
+      "sha256": "aeec9dfd09ecd587724ac8db3173981b028fbff17c94695ab1ee656ad5d845ab"
+    },
+    "home_page.docx": {
+      "size_bytes": 203335,
+      "sha256": "d41543fb9a4a2e2e9976389d5b995c26e0a6516793533ad6f13b8c3dffea4e1a"
+    },
+    "home_page.txt": {
+      "size_bytes": 12609,
+      "sha256": "d8f9d31289658613ae3ad725152f071fbe375d57f25645672fbf8b659d0045be"
+    },
+    "impact_page.docx": {
+      "size_bytes": 199805,
+      "sha256": "3e62a0c055bef5e787498bc70a50d3a0c107d1845e9d2b17df809de16bae3c02"
+    },
+    "impact_page.txt": {
+      "size_bytes": 3810,
+      "sha256": "d7564ee3e529c3127dada6cd14b4b585506e4ee13a6d89b6cdb9dcc52164a84c"
+    },
+    "programs_page.docx": {
+      "size_bytes": 200186,
+      "sha256": "eacbe7b9e17f57c33c8d238348d31f93e60f8ac5a0649506b17cd30202a47f3a"
+    },
+    "programs_page.txt": {
+      "size_bytes": 2853,
+      "sha256": "7c8796fec94906d9747f82642d747248eeb763ffa44cd5cd22a374f8d7ce908c"
+    }
+  },
+  "design_exports_16_09_2026": {
+    "About.png": {
+      "size_bytes": 7871825,
+      "sha256": "7d28671fe19827fd7e608a8a7a691b7962cf0ae112fd30b8f1d5c13a5618a039"
+    },
+    "About.svg": {
+      "size_bytes": 14088455,
+      "sha256": "96aae822190af9baf10897958ff2c209c84e7c68fbfeae218e7536994298b9a8"
+    },
+    "Home.png": {
+      "size_bytes": 12679630,
+      "sha256": "b774ff034e20da820a7674d443b22448719b32d2ef89bdc2cb480405b92b6984"
+    },
+    "Home.svg": {
+      "size_bytes": 19134439,
+      "sha256": "d9d3a4cfe61fbb42717b18a1aaf42ac53768102a33ae523fd4b49d7c753c8886"
+    },
+    "Impact.png": {
+      "size_bytes": 4978017,
+      "sha256": "19f45497da52624c05be441adc21debc88b4cacc99383caf1b94c3abd99e550b"
+    },
+    "Impact.svg": {
+      "size_bytes": 823976,
+      "sha256": "cc7ee2d6f5100d89d01440526f349ad2c92012157b05622455bea2c958ee3647"
+    },
+    "Our Programs.png": {
+      "size_bytes": 10094736,
+      "sha256": "613172859c12c0211d776626fe7e2aba601d99846de3f68bd8e0ecc5df1c462a"
+    },
+    "Our Programs.svg": {
+      "size_bytes": 16267854,
+      "sha256": "d5dd1493eecfecc847ae99d9a060d14c3c31361c84fa1e6b8f45d65866240c43"
+    },
+    "blog-template.png": {
+      "size_bytes": 532082,
+      "sha256": "20871d373b0c4c9a985f91a81ccfceb2b5529866cf144088a906dc1e6fcb762a"
+    },
+    "blog-template.svg": {
+      "size_bytes": 94661,
+      "sha256": "d307c2ff42c49d956bb37657cce384b3ee9aafee119ec7211cba7dc10ce49c0e"
+    }
+  }
+}
