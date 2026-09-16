@@ -31,12 +31,15 @@
   display: block !important;
   position: absolute !important;
   z-index: -1 !important;
-  width: 100% !important;
-  height: 100% !important;
-  background-size: 100% 100% !important;
+  top: 50% !important;
+  left: 50% !important;
+  bottom: auto !important;
+  right: auto !important;
+  background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  transform: translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+  pointer-events: none !important;
+  transform: translate(-50%, -50%) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
   transition: transform 120ms cubic-bezier(.2,.6,.4,1);
   will-change: transform;
 }
@@ -45,52 +48,48 @@
   .is-style-lakehub-story-photo::before,
   .is-style-lakehub-community-photo::before,
   .is-style-lakehub-portfolio-photo::before {
-    transform: none !important;
+    transform: translate(-50%, -50%) !important;
     transition: none !important;
   }
 }
 
-/* Section-specific fade-out halftone SVGs and locked Figma offsets */
+/* Section-specific radial halftone SVGs and dimensions */
 
-/* Impact Community Projects: locked Figma offset top -37px (-2.3125rem), left -38px (-2.375rem) */
-.is-style-lakehub-community-photo::before {
-  background-image: url('../images/completion/community-dots.svg') !important;
-  top: -2.3125rem !important;
-  left: -2.375rem !important;
-  right: auto !important;
-  bottom: auto !important;
-}
-
-/* Impact Inspiring Portfolios: locked Figma offset right -45px (-2.8125rem), bottom -24px (-1.5rem) */
-.is-style-lakehub-portfolio-photo::before {
-  background-image: url('../images/completion/portfolio-dots.svg') !important;
-  top: auto !important;
-  bottom: -1.5rem !important;
-  left: auto !important;
-  right: -2.8125rem !important;
-}
-
-/* About Our Story: locked Figma offset left -41px (-2.5625rem), bottom -37px (-2.3125rem) */
+/* About Our Story: 484x313 frame, enclosing circle 2R = 599px (outer radius R = 295.2px, 7px clearance) */
 .is-style-lakehub-story-photo::before {
-  background-image: url('../images/completion/story-dots.svg') !important;
-  top: auto !important;
-  bottom: -2.3125rem !important;
-  left: -2.5625rem !important;
-  right: auto !important;
+  width: 599px !important;
+  height: 599px !important;
+  background-image: url('../images/completion/story-dots-radial.svg') !important;
+}
+
+/* Impact Community Projects: 575x338 frame, enclosing circle 2R = 689px (outer radius R = 340.5px, 7px clearance) */
+.is-style-lakehub-community-photo::before {
+  width: 689px !important;
+  height: 689px !important;
+  background-image: url('../images/completion/community-dots-radial.svg') !important;
+}
+
+/* Impact Inspiring Portfolios: 369x457 frame, enclosing circle 2R = 610px (outer radius R = 300.7px, 7px clearance) */
+.is-style-lakehub-portfolio-photo::before {
+  width: 610px !important;
+  height: 610px !important;
+  background-image: url('../images/completion/portfolio-dots-radial.svg') !important;
 }
 
 @media (max-width: 600px) {
-  .is-style-lakehub-community-photo::before {
-    top: -1.15625rem !important;
-    left: -1.1875rem !important;
-  }
+  .is-style-lakehub-story-photo::before,
+  .is-style-lakehub-community-photo::before,
   .is-style-lakehub-portfolio-photo::before {
-    bottom: -0.75rem !important;
-    right: -1.40625rem !important;
+    transform: translate(-50%, -50%) scale(0.65) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0) !important;
   }
-  .is-style-lakehub-story-photo::before {
-    bottom: -1.15625rem !important;
-    left: -1.28125rem !important;
+}
+
+@media (max-width: 600px) and (prefers-reduced-motion: reduce) {
+  .is-style-lakehub-story-photo::before,
+  .is-style-lakehub-community-photo::before,
+  .is-style-lakehub-portfolio-photo::before {
+    transform: translate(-50%, -50%) scale(0.65) !important;
+    transition: none !important;
   }
 }
 

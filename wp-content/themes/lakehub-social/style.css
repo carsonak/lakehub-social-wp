@@ -949,7 +949,6 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-community-grid,.is-style-lakehub-portfolio-grid { position: relative; isolation: isolate; }
 .is-style-lakehub-community-photo { aspect-ratio: 575 / 338; overflow: hidden; border-radius: 1.125rem; }
 .is-style-lakehub-community-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; transform: scale(1.1113); }
-.is-style-lakehub-community-photo::before,.is-style-lakehub-portfolio-photo::before { display: none; }
 .is-style-lakehub-community-grid::before { content: ''; position: absolute; z-index: -1; left: -2.125rem; top: -3rem; width: 37.5rem; height: 26.25rem; background: url('assets/images/completion/community-dots.svg') left top / contain no-repeat; }
 .is-style-lakehub-portfolio-photo { width: 100%; height: 28.5625rem; overflow: hidden; border-radius: 1.125rem; }
 .is-style-lakehub-portfolio-photo img { position: absolute; max-width: none; width: 145.2497%; height: 175.8285%; left: -45.2093%; top: -46.9786%; object-fit: fill; }
@@ -966,8 +965,10 @@ html:has(.wp-site-blocks) { font-size: 16px; }
  transition: transform 120ms cubic-bezier(.2,.6,.4,1);
  will-change: transform;
 }
-.is-style-lakehub-story-photo::before {
- transform: translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+.is-style-lakehub-story-photo::before,
+.is-style-lakehub-community-photo::before,
+.is-style-lakehub-portfolio-photo::before {
+ transform: translate(-50%, -50%) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
  transition: transform 120ms cubic-bezier(.2,.6,.4,1);
  will-change: transform;
 }
@@ -978,8 +979,10 @@ html:has(.wp-site-blocks) { font-size: 16px; }
   transform: none !important;
   transition: none !important;
  }
- .is-style-lakehub-story-photo::before {
-  transform: none !important;
+ .is-style-lakehub-story-photo::before,
+ .is-style-lakehub-community-photo::before,
+ .is-style-lakehub-portfolio-photo::before {
+  transform: translate(-50%, -50%) !important;
   transition: none !important;
  }
 }
