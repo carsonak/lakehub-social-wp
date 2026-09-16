@@ -29,8 +29,8 @@
 <h3 class="wp-block-heading">Chichwa e-commerce platform</h3>
 <!-- /wp:heading -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-lakehub-optional-action","metadata":{"name":"Read more → — add destination to display"}} -->
-<div class="wp-block-button is-style-lakehub-optional-action"><a class="wp-block-button__link wp-element-button">Read more →</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-lakehub-optional-action"} -->
+<div class="wp-block-button is-style-lakehub-optional-action"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/coming-soon/">Read more →</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
@@ -53,11 +53,11 @@
 <p>Malika Asman joined Zone01 Kisumu with no coding background and, in roughly 18 months, turned that blank slate into a portfolio of real-world products and global open-source contributions. She’s the founder of Chama Trust Wallet, a digital savings platform for community groups; co-creator of HEAL, the hackathon-winning AI app that provides mental health support to GBV survivors; and now works as a systems security engineer on projects like GNOME and Flatseal through Outreachy</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://www.zone01kisumu.ke/">Read more</a> to see how she turned peer‑to‑peer learning at Zone01 Kisumu into real products, global roles, and a roadmap for the next generation of builders.</p>
+<p><a href="<?php echo esc_url( home_url() ); ?>/from-kisumu-to-global-opportunities/">Read more</a> to see how she turned peer‑to‑peer learning at Zone01 Kisumu into real products, global roles, and a roadmap for the next generation of builders.</p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-lakehub-optional-action","metadata":{"name":"View More People — add destination to display"}} -->
-<div class="wp-block-button is-style-lakehub-optional-action"><a class="wp-block-button__link wp-element-button">View More People</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-lakehub-optional-action"} -->
+<div class="wp-block-button is-style-lakehub-optional-action"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/team/">View More People</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

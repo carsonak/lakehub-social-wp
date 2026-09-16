@@ -20,7 +20,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">View Program</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.zone01kisumu.ke/" target="_blank" rel="noopener noreferrer">View Program</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></section>

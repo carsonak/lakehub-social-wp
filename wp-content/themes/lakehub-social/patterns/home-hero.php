@@ -12,7 +12,7 @@
 <h1 class="wp-block-heading">Empowering the<br>next generation of<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-teal-color">innovators</mark> in Africa.</h1>
 <!-- /wp:heading --><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/#community">JOIN THE COMMUNITY</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/coming-soon/">JOIN THE COMMUNITY</a></div>
 <!-- /wp:button --><!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/programs/">OUR PROGRAMS</a></div>
 <!-- /wp:button --></div>
