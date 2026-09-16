@@ -14,7 +14,6 @@
     <p class="lakehub-coming-soon-desc">We are preparing this initiative to expand opportunities, resources, and connections across the LakeHub ecosystem. Check back soon for updates or explore our active programs and community stories.</p>
     <div class="wp-block-buttons lakehub-coming-soon-buttons">
       <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/' ) ); ?>">BACK TO HOME</a></div>
-      <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/programs/' ) ); ?>">EXPLORE PROGRAMS</a></div>
     </div>
   </div>
 </section>

@@ -57,7 +57,7 @@
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-lakehub-optional-action"} -->
-<div class="wp-block-button is-style-lakehub-optional-action"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url() ); ?>/team/">View More People</a></div>
+<div class="wp-block-button is-style-lakehub-optional-action"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/coming-soon/' ) ); ?>">View More People</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->
