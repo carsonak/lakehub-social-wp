@@ -857,7 +857,7 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
  .is-style-lakehub-footer-grid { grid-template-columns: 1.1fr .65fr .55fr 1.5fr; gap: 1.5rem; }
  .is-style-lakehub-community-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
  .is-style-lakehub-portfolio-grid { grid-template-columns: 1.5fr 1fr; gap: 3.5rem; }
- .is-style-lakehub-transformation-card { padding: 2.5rem 1.25rem; min-height: 18.75rem; }
+ .is-style-lakehub-transformation-card { padding: 2.5rem 1.25rem; min-height: 0; }
  .is-style-lakehub-transformation-card p { font-size: 0.9375rem; line-height: 1.25rem; }
  .is-style-lakehub-transformation-card h3 { font-size: 1.25rem; line-height: 1.35rem; margin-bottom: 0.75rem; }
 }

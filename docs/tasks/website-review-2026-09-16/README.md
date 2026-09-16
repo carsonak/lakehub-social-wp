@@ -14,7 +14,7 @@ Master implementation plan for visual refinements, radial halftone vignette, hom
 | **04** | [`04-blog-post-template-and-articles.md`](04-blog-post-template-and-articles.md) | `Complete` | Single post template (`single.html`) matching `blog-template` design, publish Google Drive insight articles, Query Loop wiring |
 | **05** | [`05-coming-soon-and-link-resolution.md`](05-coming-soon-and-link-resolution.md) | `Complete` | Dedicated "Coming Soon" page, complete site-wide link resolution (ReadMore buttons, CTAs, footer links) |
 | **06** | [`06-site-copy-updates.md`](06-site-copy-updates.md) | `Complete` | Comprehensive copy updates across Home, About, Impact, and Programs pages, plus Rodgers Kaunda team update |
-| **07** | [`07-verification-and-regression-tests.md`](07-verification-and-regression-tests.md) | `In Progress` | PHP linting, Playwright regression suite, visual verification baseline across viewports |
+| **07** | [`07-verification-and-regression-tests.md`](07-verification-and-regression-tests.md) | `Complete` | PHP linting, Playwright regression suite, visual verification baseline across viewports |
 
 ---
 
