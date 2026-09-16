@@ -369,6 +369,38 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
 .is-style-lakehub-photo-hero-copy .wp-block-buttons { margin-top: 4.875rem; gap: 1rem; }
 .is-style-lakehub-photo-hero-copy .wp-block-button__link { font-family: var(--wp--preset--font-family--body); font-weight: 800; padding: 0.8125rem 1.75rem; }
 .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link { color: white; }
+
+/* Hero 4-image continuous slideshow */
+.lakehub-hero-slideshow {
+  position: relative;
+  overflow: hidden;
+}
+.lakehub-hero-slides {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.lakehub-hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+  pointer-events: none;
+}
+.lakehub-hero-slide.is-active {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lakehub-hero-slide {
+    transition: none !important;
+  }
+}
+
 .wp-block-group.is-style-lakehub-impact-stats { padding: 3.3125rem var(--lakehub-gutter) 0; background: white; }
 .is-style-lakehub-impact-stats > h2 { max-width: 71.375rem; margin: 0 auto 2.5rem; font-size: 1.875rem; line-height: 3.25rem; letter-spacing: -0.06875rem; }
 .is-style-lakehub-metrics { max-width: 61rem; margin-inline: auto; }
