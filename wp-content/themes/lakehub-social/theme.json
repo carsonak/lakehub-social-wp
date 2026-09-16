@@ -308,10 +308,10 @@
         {
           "slug": "metric",
           "name": "Impact figure",
-          "size": "10.625rem",
+          "size": "7.96875rem",
           "fluid": {
-            "min": "6rem",
-            "max": "10.625rem"
+            "min": "4.5rem",
+            "max": "7.96875rem"
           }
         }
       ]
