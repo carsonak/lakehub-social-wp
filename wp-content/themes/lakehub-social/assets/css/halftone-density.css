@@ -53,27 +53,27 @@
   }
 }
 
-/* Section-specific radial halftone SVGs and dimensions */
+/* Section-specific rectangular halftone SVGs and dimensions (12px edge margin) */
 
-/* About Our Story: 484x313 frame, enclosing circle 2R = 599px (outer radius R = 295.2px, 7px clearance) */
+/* About Our Story: 484x313 frame, rectangular pattern 508x337 (12px clearance) */
 .is-style-lakehub-story-photo::before {
-  width: 599px !important;
-  height: 599px !important;
-  background-image: url('../images/completion/story-dots-radial.svg') !important;
+  width: 508px !important;
+  height: 337px !important;
+  background-image: url('../images/completion/story-dots-rectangular.svg') !important;
 }
 
-/* Impact Community Projects: 575x338 frame, enclosing circle 2R = 689px (outer radius R = 340.5px, 7px clearance) */
+/* Impact Community Projects: 575x338 frame, rectangular pattern 599x362 (12px clearance) */
 .is-style-lakehub-community-photo::before {
-  width: 689px !important;
-  height: 689px !important;
-  background-image: url('../images/completion/community-dots-radial.svg') !important;
+  width: 599px !important;
+  height: 362px !important;
+  background-image: url('../images/completion/community-dots-rectangular.svg') !important;
 }
 
-/* Impact Inspiring Portfolios: 369x457 frame, enclosing circle 2R = 610px (outer radius R = 300.7px, 7px clearance) */
+/* Impact Inspiring Portfolios: 369x457 frame, rectangular pattern 393x481 (12px clearance) */
 .is-style-lakehub-portfolio-photo::before {
-  width: 610px !important;
-  height: 610px !important;
-  background-image: url('../images/completion/portfolio-dots-radial.svg') !important;
+  width: 393px !important;
+  height: 481px !important;
+  background-image: url('../images/completion/portfolio-dots-rectangular.svg') !important;
 }
 
 @media (max-width: 600px) {
