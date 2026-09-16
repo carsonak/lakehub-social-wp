@@ -114,9 +114,9 @@ img { max-width: 100%; }
 .is-style-lakehub-milestone:nth-child(3)::after { border: 0.125rem solid var(--lakehub-teal); background: #e4e2e2; }
 .is-style-lakehub-milestone:nth-child(4)::after { background: url('assets/icons/journey-star.svg') center/contain no-repeat; width: 1.5rem; height: 1.5rem; top: 8rem; left: calc(50% - 0.75rem); }
 
-.is-style-lakehub-partners { min-height: 15.3125rem; padding: 3.1875rem var(--lakehub-gutter); border-block: 0.0625rem solid var(--lakehub-line); }
-.is-style-lakehub-partners > p { letter-spacing: 0.075rem; line-height: 1rem; }
-.is-style-lakehub-partner-logos { max-width: 72rem; margin: 1.5rem auto 0; min-height: 6.1875rem; display: flex; align-items: center; justify-content: space-between; gap: 2.9375rem; flex-wrap: wrap; }
+.is-style-lakehub-partners { min-height: 15.3125rem; padding-block: 3.1875rem; padding-inline: 0 !important; border-block: 0.0625rem solid var(--lakehub-line); overflow: hidden; }
+.is-style-lakehub-partners > p { letter-spacing: 0.075rem; line-height: 1rem; padding-inline: var(--lakehub-gutter); }
+.is-style-lakehub-partner-logos { width: 100%; max-width: 100% !important; margin: 1.5rem 0 0; min-height: 6.1875rem; display: flex; align-items: center; justify-content: space-between; gap: 2.9375rem; flex-wrap: wrap; }
 .is-style-lakehub-partner-logo { flex: 1 1 9.375rem; min-width: 0; }
 .is-style-lakehub-partner-logo img { display: block; width: 100%; height: 4.75rem; object-fit: contain; opacity: .8; transition: opacity 180ms ease; }
 .is-style-lakehub-partner-logo a:hover img { opacity: 1; }
@@ -623,8 +623,9 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 /* Frontend enhancements leave native blocks and editor controls unchanged. */
 .wp-site-blocks .is-style-lakehub-partner-logos {
  --lakehub-partner-columns: 4;
+ max-width: 100% !important; width: 100% !important;
  display: flex; flex-wrap: nowrap; justify-content: flex-start; gap: 2rem;
- overflow-x: auto; padding: 1rem 0.625rem; scroll-behavior: auto;
+ overflow-x: auto; padding-block: 1rem; padding-inline: 0 !important; scroll-behavior: auto;
  scrollbar-width: thin; scrollbar-color: #ffffff70 transparent;
 }
 .wp-site-blocks .is-style-lakehub-partner-logos[role="region"] { scrollbar-width: none; }

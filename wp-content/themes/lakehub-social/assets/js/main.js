@@ -110,13 +110,13 @@
       }
       update();
     };
-    section.addEventListener('pointerenter', (event) => {
+    track.addEventListener('pointerenter', (event) => {
       if (event.pointerType !== 'touch') { hovered = true; update(); }
     });
-    section.addEventListener('pointerleave', () => { hovered = false; update(); });
-    section.addEventListener('focusin', () => { focused = true; update(); });
-    section.addEventListener('focusout', (event) => {
-      if (!section.contains(event.relatedTarget)) { focused = false; normalize(); update(); }
+    track.addEventListener('pointerleave', () => { hovered = false; update(); });
+    track.addEventListener('focusin', () => { focused = true; update(); });
+    track.addEventListener('focusout', (event) => {
+      if (!track.contains(event.relatedTarget)) { focused = false; normalize(); update(); }
     });
     track.addEventListener('keydown', (event) => {
       if (!['ArrowLeft', 'ArrowRight'].includes(event.key) || event.altKey || event.ctrlKey || event.metaKey) return;
