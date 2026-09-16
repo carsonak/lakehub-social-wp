@@ -62,15 +62,12 @@
 <p class="has-small-font-size">Subscribe to our news letter</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"metadata":{"name":"Newsletter preview (no subscription service)"},"className":"is-style-lakehub-newsletter","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-newsletter"><!-- wp:paragraph -->
-<p>example@gmail.com</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"is-style-lakehub-newsletter-label"} -->
-<p class="is-style-lakehub-newsletter-label">Subscribe</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
+<!-- wp:html -->
+<form class="is-style-lakehub-newsletter" action="#" method="post">
+  <input type="email" class="lakehub-newsletter-input" placeholder="example@gmail.com" aria-label="Your email address" required />
+  <button type="submit" class="is-style-lakehub-newsletter-label">Subscribe</button>
+</form>
+<!-- /wp:html --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 

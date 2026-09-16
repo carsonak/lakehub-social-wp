@@ -788,5 +788,23 @@
     readMoreBtn.addEventListener('click', expand);
     hideBtn.addEventListener('click', collapse);
   });
+
+  // Interactive newsletter form feedback
+  document.querySelectorAll('form.is-style-lakehub-newsletter').forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const input = form.querySelector('.lakehub-newsletter-input');
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (!input || !submitBtn) return;
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Subscribed!';
+      submitBtn.disabled = true;
+      input.value = '';
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 2500);
+    });
+  });
 })();
 

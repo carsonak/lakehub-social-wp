@@ -157,9 +157,15 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
 .is-style-lakehub-footer-links > p { margin-top: 0.75rem; color: #e4e2e2cc; line-height: 1.5rem; }
 .is-style-lakehub-footer-links > p:first-child { margin-top: 0; font-weight: 500; color: white; }
 .is-style-lakehub-footer-links > p:first-child + p { margin-top: 0; }
-.is-style-lakehub-newsletter { margin-top: 0.75rem; width: 100%; min-height: 3.75rem; padding: 0.3125rem; border: 0.0625rem solid #e4e4e7; border-radius: 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+.is-style-lakehub-newsletter { margin-top: 0.75rem; width: 100%; min-height: 3.75rem; padding: 0.3125rem; border: 0.0625rem solid #e4e4e7; border-radius: 2.5rem; display: flex; align-items: center; gap: 0.5rem; box-sizing: border-box; }
+.lakehub-newsletter-input { flex: 1 1 auto; min-width: 0; background: transparent; border: none; outline: none; color: white; font-family: var(--wp--preset--font-family--inter, sans-serif); font-size: 1rem; line-height: 1.5; padding-left: 0.75rem; padding-right: 0.5rem; }
+.lakehub-newsletter-input::placeholder { color: rgba(255, 255, 255, 0.4); opacity: 1; transition: color 180ms ease; }
+.lakehub-newsletter-input:focus::placeholder { color: rgba(255, 255, 255, 0.25); }
 .is-style-lakehub-newsletter p:first-child { padding-left: 0.375rem; font-size: 1.125rem; min-width: 0; flex: 1; }
-.is-style-lakehub-newsletter-label { flex: 0 0 auto; padding: 0.6875rem 1rem; border-radius: 2.5rem; background: var(--lakehub-teal); font-size: 1.125rem; transition: background-color 200ms ease; }
+button.is-style-lakehub-newsletter-label,
+.is-style-lakehub-newsletter-label { flex: 0 0 auto; padding: 0.6875rem 1rem; border: none; border-radius: 2.5rem; background: var(--lakehub-teal); color: white; font-family: var(--wp--preset--font-family--inter, sans-serif); font-size: 1.125rem; cursor: pointer; transition: background-color 200ms ease; }
+button.is-style-lakehub-newsletter-label:hover,
+button.is-style-lakehub-newsletter-label:focus-visible { background-color: var(--lakehub-vivid-teal); }
 .is-style-lakehub-footer-bottom { max-width: 72rem; margin-inline: auto; display: flex; justify-content: space-between; gap: 1.5rem; border-top: 0.0625rem solid #bcc9c91a; padding-top: 0.4375rem; color: #e4e2e280; font: 500 0.75rem/1rem var(--wp--preset--font-family--mono); letter-spacing: 0.0375rem; }
 
 .wp-block-cover.is-style-lakehub-flagship { min-height: 47.5rem; padding: 6.375rem 2.625rem 3.5rem; margin-top: 0.5625rem; color: var(--lakehub-ink); align-items: start; }
