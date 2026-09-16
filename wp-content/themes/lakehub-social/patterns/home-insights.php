@@ -13,7 +13,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"body","fontSize":"lead"} -->
-<p class="has-body-color has-text-color has-lead-font-size">Stories of innovation and community progress.</p>
+<p class="has-body-color has-text-color has-lead-font-size">Ideas, people and innovations shaping the future from Kisumu and beyond.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

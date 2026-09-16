@@ -781,6 +781,8 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 .is-style-lakehub-story-photo img { width: 30.25rem; height: 19.5625rem; object-fit: cover; border-radius: 0.75rem; }
 .is-style-lakehub-story-photo::before { content: ''; position: absolute; z-index: -1; left: -2.375rem; bottom: -2.625rem; width: 33.75rem; height: 20rem; background: url('assets/images/completion/story-dots.svg') left bottom / contain no-repeat; }
 .is-style-lakehub-story-grid p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); }
+.is-style-lakehub-story-copy h3 { font: 700 1.5rem/2rem var(--wp--preset--font-family--heading); margin-top: 0; margin-bottom: 1rem; color: #1e293b; }
+.is-style-lakehub-story-copy p { margin-bottom: 1rem; }
 .is-style-lakehub-about-team { padding-block: 2.5rem 2.5rem; }
 .is-style-lakehub-about-team h2 { margin-bottom: 4rem; }
 .is-style-lakehub-about-team h2 mark { font: 700 2.375rem/2.5rem var(--wp--preset--font-family--body); }

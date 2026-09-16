@@ -42,7 +42,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-lakehub-year","textColor":"teal","fontSize":"caption","fontFamily":"mono"} -->
-<p class="is-style-lakehub-year has-teal-color has-text-color has-mono-font-family has-caption-font-size">2015</p>
+<p class="is-style-lakehub-year has-teal-color has-text-color has-mono-font-family has-caption-font-size">2014</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

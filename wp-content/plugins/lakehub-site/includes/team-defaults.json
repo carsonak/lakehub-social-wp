@@ -117,16 +117,16 @@
     }
   },
   {
-    "name": "Stacy Dina",
+    "name": "Rodgers Kaunda",
     "role": "TECH ASSOCIATE",
-    "bio": "",
-    "image": "stacy.jpg",
+    "bio": "Tech Associate supporting technical operations, workshops, and cohort learning at LakeHub.",
+    "image": "rodgers-placeholder.png",
     "featured": false,
     "crop": {
-      "width": 100.003,
-      "height": 160.4347,
-      "left": -0.0015,
-      "top": -21.3043
+      "width": 100.0,
+      "height": 100.0,
+      "left": 0,
+      "top": 0
     }
   },
   {
