@@ -11,8 +11,8 @@ Master implementation plan for visual refinements, radial halftone vignette, hom
 | **01** | [`01-git-track-design-exports-and-content.md`](01-git-track-design-exports-and-content.md) | `Complete` | Version 10 Figma export files (16-09-2026) and 4 Google Docs source files in Git |
 | **02** | [`02-radial-halftone-vignette.md`](02-radial-halftone-vignette.md) | `Complete` | Radial halftone vignette behind photos: center-dense dot decay, 6-8px corner clearance, center anchoring, hover repulsion |
 | **03** | [`03-home-hero-image-slideshow.md`](03-home-hero-image-slideshow.md) | `Complete` | 4-image slideshow (`home-hero.jpg` + 3 slides), 3s endless cycle, no hover pause/controls, reduced-motion randomizer |
-| **04** | [`04-blog-post-template-and-articles.md`](04-blog-post-template-and-articles.md) | `In Progress` | Single post template (`single.html`) matching `blog-template` design, publish Google Drive insight articles, Query Loop wiring |
-| **05** | [`05-coming-soon-and-link-resolution.md`](05-coming-soon-and-link-resolution.md) | `Pending Approval` | Dedicated "Coming Soon" page, complete site-wide link resolution (ReadMore buttons, CTAs, footer links) |
+| **04** | [`04-blog-post-template-and-articles.md`](04-blog-post-template-and-articles.md) | `Complete` | Single post template (`single.html`) matching `blog-template` design, publish Google Drive insight articles, Query Loop wiring |
+| **05** | [`05-coming-soon-and-link-resolution.md`](05-coming-soon-and-link-resolution.md) | `In Progress` | Dedicated "Coming Soon" page, complete site-wide link resolution (ReadMore buttons, CTAs, footer links) |
 | **06** | [`06-site-copy-updates.md`](06-site-copy-updates.md) | `Pending Approval` | Comprehensive copy updates across Home, About, Impact, and Programs pages, plus Rodgers Kaunda team update |
 | **07** | [`07-verification-and-regression-tests.md`](07-verification-and-regression-tests.md) | `Pending Approval` | PHP linting, Playwright regression suite, visual verification baseline across viewports |
 
