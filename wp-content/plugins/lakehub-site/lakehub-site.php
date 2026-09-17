@@ -10,6 +10,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 require_once __DIR__ . '/includes/programs.php';
 require_once __DIR__ . '/includes/team.php';
+require_once __DIR__ . '/includes/newsletter.php';
 if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	require_once __DIR__ . '/includes/migration.php';
 	require_once __DIR__ . '/includes/design-refresh.php';
