@@ -10,7 +10,8 @@ This directory tracks the UI refinements requested for LakeHub Social, covering 
 |---|---|---|---|
 | **01** | [`01-halftone-dots-edge-visibility.md`](01-halftone-dots-edge-visibility.md) | `Complete` | Rectangular halftone edge dots: fix SVG clipping, margin clearance, visible on all 4 sides |
 
-| **02** | [`02-our-story-full-width-wrap-and-gentle-reveal.md`](02-our-story-full-width-wrap-and-gentle-reveal.md) | `Pending` | "Our Story": remove 2-column grid, float photo, span 100% width below photo, gentle 800ms unroll, stationary viewport |
+| **02** | [`02-our-story-full-width-wrap-and-gentle-reveal.md`](02-our-story-full-width-wrap-and-gentle-reveal.md) | `Complete` | "Our Story": remove 2-column grid, float photo, span 100% width below photo, gentle 800ms unroll, stationary viewport |
+
 | **03** | [`03-404-search-removal-and-upward-arrows.md`](03-404-search-removal-and-upward-arrows.md) | `Pending` | Remove search from 404 template; adopt upward top-right diagonal arrow icon (Flaticon 7242785) for navigation links |
 | **04** | [`04-latest-insights-arrow-bounce.md`](04-latest-insights-arrow-bounce.md) | `Pending` | "Latest Insights" card arrow: 2.0s damped spring bounce oscillation on hover |
 | **05** | [`05-external-links-target-blank.md`](05-external-links-target-blank.md) | `Pending` | External links and partner logos open in a new tab (`target="_blank"` with `rel="noopener noreferrer"`) |

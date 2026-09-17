@@ -766,12 +766,18 @@
     drawer.appendChild(hideBtn);
 
     const expand = () => {
+      const fullHeight = drawer.scrollHeight;
+      drawer.style.setProperty('--lakehub-drawer-full-height', `${fullHeight + 48}px`);
       drawer.classList.remove('is-collapsed');
       drawer.classList.add('is-expanded');
       drawer.setAttribute('aria-expanded', 'true');
       readMoreBtn.classList.add('is-hidden');
       readMoreBtn.style.setProperty('display', 'none', 'important');
-      hideBtn.focus();
+      try {
+        hideBtn.focus({ preventScroll: true });
+      } catch (_) {
+        hideBtn.focus();
+      }
     };
 
     const collapse = () => {
@@ -780,7 +786,11 @@
       drawer.setAttribute('aria-expanded', 'false');
       readMoreBtn.classList.remove('is-hidden');
       readMoreBtn.style.removeProperty('display');
-      readMoreBtn.focus();
+      try {
+        readMoreBtn.focus({ preventScroll: true });
+      } catch (_) {
+        readMoreBtn.focus();
+      }
       const topOffset = container.getBoundingClientRect().top + window.scrollY - 120;
       if (window.scrollY > topOffset) {
         window.scrollTo({ top: topOffset, behavior: reducedMotion.matches ? 'instant' : 'smooth' });

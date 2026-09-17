@@ -855,17 +855,37 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 .is-style-lakehub-mission-group { right: 22.91rem; left: auto; top: calc(50% - 4.6875rem); z-index: 1; }
 .is-style-lakehub-mission-event { right: 15.486rem; left: auto; top: auto; bottom: 3.91875rem; z-index: 1; }
 .is-style-lakehub-about-story { padding-block: 0 3.5rem; }
-.is-style-lakehub-story-grid { margin-top: 3.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
-.is-style-lakehub-story-photo { position: relative; isolation: isolate; padding-left: 1.75rem; }
+.is-style-lakehub-story-grid {
+  margin-top: 3.5rem;
+  display: block;
+  position: relative;
+  clear: both;
+}
+.is-style-lakehub-story-grid::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.is-style-lakehub-story-photo {
+  float: left;
+  position: relative;
+  isolation: isolate;
+  margin: 0.5rem 3.5rem 1.75rem 0.875rem;
+  width: fit-content;
+  max-width: 30.25rem;
+}
 .is-style-lakehub-story-photo img { width: 30.25rem; height: 19.5625rem; object-fit: cover; border-radius: 0.75rem; }
 .is-style-lakehub-story-photo::before { content: ''; position: absolute; z-index: -1; left: -2.375rem; bottom: -2.625rem; width: 33.75rem; height: 20rem; background: url('assets/images/completion/story-dots.svg') left bottom / contain no-repeat; }
 .is-style-lakehub-story-grid p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); }
+.is-style-lakehub-story-copy { display: contents; }
 .is-style-lakehub-story-copy h3 { font: 700 1.5rem/2rem var(--wp--preset--font-family--heading); margin-top: 0; margin-bottom: 1rem; color: #1e293b; }
 .is-style-lakehub-story-copy p { margin-bottom: 1rem; }
 
 /* Collapsible text section with fade-out & Read More / Hide toggle buttons */
 .lakehub-collapsible-drawer {
   position: relative;
+  transition: max-height 800ms cubic-bezier(0.16, 1, 0.3, 1), opacity 600ms ease;
+  will-change: max-height;
 }
 .lakehub-collapsible-drawer.is-collapsed {
   max-height: 3.5rem;
@@ -873,17 +893,15 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
   -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
-  transition: max-height 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .lakehub-collapsible-drawer.is-collapsed .lakehub-btn-hide {
   display: none !important;
 }
 .lakehub-collapsible-drawer.is-expanded {
-  max-height: 120rem;
+  max-height: var(--lakehub-drawer-full-height, 80rem);
   overflow: visible;
   -webkit-mask-image: none;
   mask-image: none;
-  transition: max-height 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .lakehub-collapsible-drawer.is-expanded .lakehub-btn-hide {
   display: inline-flex !important;
