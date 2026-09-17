@@ -482,24 +482,20 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
  content: '';
  position: absolute;
  bottom: 0;
- left: 0;
+ left: var(--lakehub-line-left, 25%);
+ right: var(--lakehub-line-right, 25%);
  height: 0.0625rem;
  background: #ccc;
- width: 42%;
- transform-origin: left center;
- transition: width 550ms cubic-bezier(.25,.46,.45,.94);
-}
-.is-style-lakehub-metric-row:nth-child(even):not(:last-child)::after {
- left: auto;
- right: 0;
- transform-origin: right center;
+ transition: left 550ms cubic-bezier(.25,.46,.45,.94), right 550ms cubic-bezier(.25,.46,.45,.94);
 }
 .is-style-lakehub-metric-row.is-revealed:not(:last-child)::after {
- width: 100%;
+ left: 0;
+ right: 0;
 }
 @media(max-width:600px) {
  .is-style-lakehub-metric-row:not(:last-child)::after {
-  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
  }
 }
 
@@ -618,7 +614,8 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin-to
   font-size: var(--wp--preset--font-size--metric) !important;
  }
  .is-style-lakehub-metric-row:not(:last-child)::after {
-  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
   transition: none !important;
  }
 }

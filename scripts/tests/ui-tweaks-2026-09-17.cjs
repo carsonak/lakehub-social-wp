@@ -103,6 +103,70 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
       assert.ok(rel && rel.includes('noopener') && rel.includes('noreferrer'), 'Footer social link rel must include noopener and noreferrer');
     }
 
+    // -------------------------------------------------------------------------
+    // Test 6: Impact Separating Lines Symmetrical Center Shrink
+    // -------------------------------------------------------------------------
+    console.log('Testing Task 06: Impact separating lines symmetrical shrink & center alignment...');
+    await open('/');
+    const metricRows = await page.locator('.is-style-lakehub-metric-row').all();
+    assert.ok(metricRows.length >= 4, 'Should have 4 metric rows');
+
+    // Ensure rows are in unrevealed exit state to test shrunk geometry
+    for (let i = 0; i < 3; i++) {
+      await metricRows[i].evaluate((r) => r.classList.remove('is-revealed'));
+    }
+    await page.waitForTimeout(600);
+
+    for (let i = 0; i < 3; i++) {
+      const row = metricRows[i];
+      const data = await row.evaluate((r) => {
+        const cs = window.getComputedStyle(r);
+        const leftVar = parseFloat(cs.getPropertyValue('--lakehub-line-left')) || 0;
+        const rightVar = parseFloat(cs.getPropertyValue('--lakehub-line-right')) || 0;
+        const rWidth = r.offsetWidth;
+        const p = r.querySelector('.is-style-lakehub-metric-photo p');
+        const pWidth = p.offsetWidth;
+        const lineWidth = rWidth - leftVar - rightVar;
+        const lineCenter = leftVar + lineWidth / 2;
+
+        // Visual unrevealed center of number p
+        const pBox = p.getBoundingClientRect();
+        const rBox = r.getBoundingClientRect();
+        const pVisualCenter = (pBox.left + pBox.width / 2) - rBox.left;
+
+        const afterPseudo = window.getComputedStyle(r, '::after');
+
+        return {
+          rWidth,
+          pWidth,
+          leftVar,
+          rightVar,
+          lineWidth,
+          lineCenter,
+          pVisualCenter,
+          diffCenter: Math.abs(lineCenter - pVisualCenter),
+          diffWidth: Math.abs(lineWidth - (pWidth + 32)),
+          transition: afterPseudo.transition
+        };
+      });
+
+      console.log(`Row ${i + 1} line geometry:`, data);
+      assert.ok(data.diffCenter < 3, `Row ${i + 1} line center should match number center (diff: ${data.diffCenter}px)`);
+      assert.ok(data.diffWidth < 3, `Row ${i + 1} line width should be number width + 32px (diff: ${data.diffWidth}px)`);
+      assert.ok(data.transition.includes('left') && data.transition.includes('right'), `Row ${i + 1} should transition left and right`);
+    }
+
+    // Test revealed state expands line to left: 0, right: 0
+    await metricRows[0].evaluate((r) => r.classList.add('is-revealed'));
+    await page.waitForTimeout(600);
+    const revealedPseudo = await metricRows[0].evaluate((r) => {
+      const cs = window.getComputedStyle(r, '::after');
+      return { left: cs.left, right: cs.right };
+    });
+    console.log('Row 1 revealed line state:', revealedPseudo);
+    assert.equal(revealedPseudo.left, '0px', 'Revealed line left should be 0px');
+    assert.equal(revealedPseudo.right, '0px', 'Revealed line right should be 0px');
+
     console.log('\nAll tests passed successfully!');
   } catch (err) {
     console.error('Test failed:', err);

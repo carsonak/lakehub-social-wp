@@ -432,12 +432,51 @@
         row.addEventListener('focusout', scheduleMetricRows);
       });
 
+      const updateMetricLineGeometry = () => {
+        const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+        metricRows.forEach((row, index) => {
+          if (index === metricRows.length - 1) return;
+          const photo = row.querySelector('.is-style-lakehub-metric-photo');
+          const numP = photo ? photo.querySelector('p') : null;
+          if (!photo || !numP) return;
+
+          const rowWidth = row.offsetWidth;
+          const numWidth = numP.offsetWidth;
+          if (!rowWidth || !numWidth) return;
+
+          const photoStyle = getComputedStyle(photo);
+          const shiftX = (parseFloat(photoStyle.getPropertyValue('--lakehub-photo-shift-x')) || 0) * rootFontSize;
+          const centerShift = (parseFloat(photoStyle.getPropertyValue('--lakehub-photo-center-shift')) || 0) * rootFontSize;
+
+          const unrevealedCenter = photo.offsetLeft + numP.offsetLeft + (numWidth / 2) + shiftX + centerShift;
+          const halfWidth = (numWidth + 32) / 2;
+
+          const left = Math.max(0, Math.round(unrevealedCenter - halfWidth));
+          const right = Math.max(0, Math.round(rowWidth - (unrevealedCenter + halfWidth)));
+
+          row.style.setProperty('--lakehub-line-left', `${left}px`);
+          row.style.setProperty('--lakehub-line-right', `${right}px`);
+        });
+      };
+
       measureMetricRows();
       updateMetricRows();
+      updateMetricLineGeometry();
+      if (document.fonts?.ready) {
+        document.fonts.ready.then(updateMetricLineGeometry);
+      }
 
       window.addEventListener('scroll', scheduleMetricRows, { passive: true });
-      window.addEventListener('resize', () => { measureMetricRows(); scheduleMetricRows(); }, { passive: true });
-      new ResizeObserver(() => { measureMetricRows(); scheduleMetricRows(); }).observe(document.body);
+      window.addEventListener('resize', () => {
+        measureMetricRows();
+        updateMetricLineGeometry();
+        scheduleMetricRows();
+      }, { passive: true });
+      new ResizeObserver(() => {
+        measureMetricRows();
+        updateMetricLineGeometry();
+        scheduleMetricRows();
+      }).observe(document.body);
 
       reducedMotion.addEventListener('change', (event) => {
         if (event.matches) {
@@ -445,6 +484,7 @@
         } else {
           measureMetricRows();
           updateMetricRows();
+          updateMetricLineGeometry();
         }
       });
     }
