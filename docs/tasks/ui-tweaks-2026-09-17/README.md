@@ -14,6 +14,6 @@ This directory tracks the UI refinements requested for LakeHub Social, covering 
 
 | **03** | [`03-404-search-removal-and-upward-arrows.md`](03-404-search-removal-and-upward-arrows.md) | `Complete` | Remove search from 404 template; adopt upward top-right diagonal arrow icon (Flaticon 7242785) for navigation links |
 | **04** | [`04-latest-insights-arrow-bounce.md`](04-latest-insights-arrow-bounce.md) | `Complete` | "Latest Insights" card arrow: 2.0s damped spring bounce oscillation on hover |
-| **05** | [`05-external-links-target-blank.md`](05-external-links-target-blank.md) | `Pending` | External links and partner logos open in a new tab (`target="_blank"` with `rel="noopener noreferrer"`) |
+| **05** | [`05-external-links-target-blank.md`](05-external-links-target-blank.md) | `Complete` | External links and partner logos open in a new tab (`target="_blank"` with `rel="noopener noreferrer"`) |
 | **06** | [`06-impact-metric-lines-symmetrical-shrink.md`](06-impact-metric-lines-symmetrical-shrink.md) | `Pending` | "Impact Through Precision": separating lines shrink symmetrically from both sides centered on number glyphs |
 | **07** | [`07-verification-and-regression-suite.md`](07-verification-and-regression-suite.md) | `Pending` | Comprehensive automated regression suite & cross-device validation |

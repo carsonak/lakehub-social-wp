@@ -80,7 +80,30 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     assert.equal(animReduced, 'none', 'Animation should be disabled under prefers-reduced-motion: reduce');
     await reducedMotionPage.close();
 
-    console.log('\nAll phase 3 and 4 tests passed successfully!');
+    // -------------------------------------------------------------------------
+    // Test 5: External Links Target _blank
+    // -------------------------------------------------------------------------
+    console.log('Testing Task 05: External links open in new tab with noopener noreferrer...');
+    await open('/');
+    const partnerLinks = await page.locator('.is-style-lakehub-partner-logos a').all();
+    assert.ok(partnerLinks.length > 0, 'Should have partner links');
+    for (const link of partnerLinks) {
+      const target = await link.getAttribute('target');
+      const rel = await link.getAttribute('rel');
+      assert.equal(target, '_blank', 'Partner link target must be _blank');
+      assert.ok(rel && rel.includes('noopener') && rel.includes('noreferrer'), 'Partner link rel must include noopener and noreferrer');
+    }
+
+    const footerLinks = await page.locator('.is-style-lakehub-social-icon a').all();
+    assert.ok(footerLinks.length > 0, 'Should have footer social links');
+    for (const link of footerLinks) {
+      const target = await link.getAttribute('target');
+      const rel = await link.getAttribute('rel');
+      assert.equal(target, '_blank', 'Footer social link target must be _blank');
+      assert.ok(rel && rel.includes('noopener') && rel.includes('noreferrer'), 'Footer social link rel must include noopener and noreferrer');
+    }
+
+    console.log('\nAll tests passed successfully!');
   } catch (err) {
     console.error('Test failed:', err);
     process.exit(1);

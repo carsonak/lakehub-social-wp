@@ -818,5 +818,32 @@
       }, 2500);
     });
   });
+
+  // Ensure all external links open in a new tab with security attributes
+  const ensureExternalAttributes = (link) => {
+    try {
+      const url = new URL(link.href, window.location.origin);
+      if (url.origin && url.origin !== window.location.origin) {
+        link.setAttribute('target', '_blank');
+        const rel = link.getAttribute('rel') || '';
+        const parts = new Set(rel.split(/\s+/).filter(Boolean));
+        parts.add('noopener');
+        parts.add('noreferrer');
+        link.setAttribute('rel', Array.from(parts).join(' '));
+      }
+    } catch (_) {}
+  };
+
+  const processExternalLinks = (root = document) => {
+    const links = root.querySelectorAll('a[href^="http://"], a[href^="https://"]');
+    links.forEach(ensureExternalAttributes);
+  };
+  processExternalLinks();
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="http://"], a[href^="https://"]');
+    if (link) ensureExternalAttributes(link);
+  }, { capture: true });
 })();
+
 
