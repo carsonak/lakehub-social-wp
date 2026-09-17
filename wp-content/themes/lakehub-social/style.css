@@ -1211,6 +1211,9 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 @media(max-width:900px) {
  .wp-site-blocks .lakehub-program.is-card-ready { --lakehub-reveal-x: 1.5rem; }
 }
+@media(max-width:600px) {
+ .wp-site-blocks .lakehub-program.is-card-ready { --lakehub-reveal-x: 0; }
+}
 @media(prefers-reduced-motion:reduce) {
  .wp-site-blocks .lakehub-program.is-card-ready { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
