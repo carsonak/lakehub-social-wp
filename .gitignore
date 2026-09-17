@@ -47,5 +47,4 @@ Thumbs.db
 !wp-includes/build/**
 !wp-content/plugins/advanced-custom-fields/assets/build/
 !wp-content/plugins/advanced-custom-fields/assets/build/**
-!wp-content/plugins/astra-sites/**/build/
-!wp-content/plugins/astra-sites/**/build/**
+

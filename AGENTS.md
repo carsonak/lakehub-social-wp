@@ -4,7 +4,7 @@
 
 - This repository is the canonical WordPress Studio site: WordPress 7.1, Studio's native PHP runtime, and SQLite at `wp-content/database/.ht.sqlite`. Manage it from Studio; for rare diagnostics and migrations run `studio wp --path="$PWD" ...` from the repository root.
 - The active theme is `wp-content/themes/lakehub-social` 3.2.3, a native block theme. Home and Programs contain editable section blocks.
-- Active plugins at this baseline are Advanced Custom Fields 6.8.10, MCP Adapter 0.6.1, Starter Templates 4.7.6, WSP MCP - AI Agents Connector 2.8.0, and project-owned LakeHub Site 1.2.1.
+- Active plugins at this baseline are Advanced Custom Fields 6.8.10, Mailchimp for WordPress 4.14.1, MCP Adapter 0.6.1, WSP MCP - AI Agents Connector 2.8.0, and project-owned LakeHub Site 1.2.1.
 - Treat WordPress core and third-party plugins as vendor code. Do not edit them unless the task explicitly targets them. Preserve unrelated worktree changes.
 
 ## Architecture direction
