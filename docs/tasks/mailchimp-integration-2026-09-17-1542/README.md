@@ -12,4 +12,4 @@ This directory tracks the integration of Mailchimp for WordPress (`MC4WP`) with 
 | **02** | [`02-footer-pattern-and-styling.md`](02-footer-pattern-and-styling.md) | `Complete` | Footer pattern block integration (`<!-- wp:mailchimp-for-wp/form /-->`), CSS styling for `.mc4wp-form` and alerts, JS submission handling |
 | **03** | [`03-confirmation-email-hook.md`](03-confirmation-email-hook.md) | `Complete` | LakeHub branded HTML confirmation email via `mc4wp_form_subscribed` hook with dynamic admin email sender |
 | **04** | [`04-automated-testing-and-verification.md`](04-automated-testing-and-verification.md) | `Complete` | End-to-end Playwright test suite `scripts/tests/mailchimp-newsletter.cjs` & full regression suite |
-| **05** | [`05-studio-export-r2-backup-and-push.md`](05-studio-export-r2-backup-and-push.md) | `Pending` | Studio full export `.zip` generation, Cloudflare R2 backup upload, and GitHub push via `scripts/push.sh` |
+| **05** | [`05-studio-export-r2-backup-and-push.md`](05-studio-export-r2-backup-and-push.md) | `Complete` | Studio full export `.zip` generation, Cloudflare R2 backup upload, and GitHub push via `scripts/push.sh` |
