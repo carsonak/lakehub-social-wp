@@ -156,6 +156,44 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
   transform-origin: center center;
   transition: transform 180ms ease, color 180ms ease;
 }
+@keyframes lakehub-arrow-bounce {
+  0% {
+    transform: scale(1);
+  }
+  16% {
+    transform: scale(1.22);
+  }
+  36% {
+    transform: scale(0.88);
+  }
+  54% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  84% {
+    transform: scale(1.03);
+  }
+  94% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.is-style-lakehub-insight-card:hover .wp-block-read-more::before,
+.is-style-lakehub-insight-copy .wp-block-read-more:hover::before,
+.is-style-lakehub-insight-copy .wp-block-read-more:focus-visible::before {
+  animation: lakehub-arrow-bounce 2s cubic-bezier(0.25, 1, 0.5, 1) 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-style-lakehub-insight-card:hover .wp-block-read-more::before,
+  .is-style-lakehub-insight-copy .wp-block-read-more:hover::before,
+  .is-style-lakehub-insight-copy .wp-block-read-more:focus-visible::before {
+    animation: none;
+  }
+}
 .lakehub-arrow-icon {
   display: inline-block;
   vertical-align: middle;
