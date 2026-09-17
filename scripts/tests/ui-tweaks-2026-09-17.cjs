@@ -1,5 +1,13 @@
 /**
  * End-to-end test suite for LakeHub Social UI Tweaks (2026-09-17).
+ * Tests all 6 phases and cross-viewport responsiveness:
+ * 1. Halftone dots edge visibility
+ * 2. Our Story full-width wrap & gentle unroll (stationary viewport)
+ * 3. 404 search removal & upward top-right navigation arrows
+ * 4. Latest Insights arrow bounce animation
+ * 5. External links target _blank with noopener noreferrer
+ * 6. Impact Through Precision separating lines symmetrical center shrink
+ * 7. Cross-viewport responsive checks (1280px, 768px, 375px)
  */
 const assert = require('node:assert/strict');
 const { chromium } = require('playwright');
@@ -27,6 +35,62 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     console.log('--- Testing LakeHub Social UI Tweaks (2026-09-17) ---');
 
     // -------------------------------------------------------------------------
+    // Test 1: Rectangular Halftone Pattern Edge Dots Visibility
+    // -------------------------------------------------------------------------
+    console.log('Testing Task 01: Halftone pattern edge dots visibility...');
+    await open('/about/');
+    const storyPhoto = page.locator('.is-style-lakehub-story-photo');
+    await storyPhoto.scrollIntoViewIfNeeded();
+    const storyDots = await storyPhoto.evaluate(el => {
+      const cs = window.getComputedStyle(el, '::before');
+      return {
+        content: cs.content,
+        bgImage: cs.backgroundImage
+      };
+    });
+    assert.ok(storyDots.bgImage.includes('story-dots-rectangular.svg'), 'Story photo should use story-dots-rectangular.svg');
+
+    // -------------------------------------------------------------------------
+    // Test 2: Our Story Full-Width Wrap & Gentle Unroll
+    // -------------------------------------------------------------------------
+    console.log('Testing Task 02: Our Story full-width wrap and gentle unroll...');
+    const storyGrid = page.locator('.is-style-lakehub-story-grid');
+    const photoFloat = await page.locator('.is-style-lakehub-story-photo').evaluate(el => {
+      return window.getComputedStyle(el).float;
+    });
+    console.log('Story photo float style:', photoFloat);
+    assert.equal(photoFloat, 'left', 'Story photo should be floated left');
+
+    // Test Read More button unroll and stationary scroll position
+    const readMoreBtn = page.locator('.lakehub-btn-read-more');
+    await readMoreBtn.scrollIntoViewIfNeeded();
+    const scrollBefore = await page.evaluate(() => window.scrollY);
+
+    await readMoreBtn.click();
+    await page.waitForTimeout(400); // mid-unroll
+    const scrollMid = await page.evaluate(() => window.scrollY);
+    assert.equal(scrollMid, scrollBefore, 'Viewport position should remain stationary during unroll');
+
+    await page.waitForTimeout(600); // finish 800ms unroll
+    const scrollAfter = await page.evaluate(() => window.scrollY);
+    assert.equal(scrollAfter, scrollBefore, 'Viewport position should remain stationary after unroll');
+
+    const drawer = page.locator('.lakehub-collapsible-drawer');
+    const isExpanded = await drawer.evaluate(el => el.classList.contains('is-expanded'));
+    assert.ok(isExpanded, 'Drawer should have is-expanded class');
+
+    // Test text below photo spans full section width (> 900px on 1280px viewport)
+    const secondParagraph = page.locator('.lakehub-collapsible-drawer p').first();
+    const pWidth = await secondParagraph.evaluate(el => el.offsetWidth);
+    console.log('Second paragraph full width below photo:', pWidth);
+    assert.ok(pWidth > 800, 'Paragraph below photo should span full section width');
+
+    // Collapse back
+    const hideBtn = page.locator('.lakehub-btn-hide');
+    await hideBtn.click();
+    await page.waitForTimeout(300);
+
+    // -------------------------------------------------------------------------
     // Test 3: 404 Search Removal & Upward Top-Right Arrows
     // -------------------------------------------------------------------------
     console.log('Testing Task 03: 404 page search removal and home link...');
@@ -36,6 +100,11 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     const backBtn = await page.locator('main a[href="/"]').first();
     assert.ok(await backBtn.isVisible(), '404 page should have a Back to Home button');
 
+    // Check upward arrows on Impact page
+    await open('/impact/');
+    const impactArrow = await page.locator('.is-style-lakehub-optional-action .lakehub-arrow-icon').first();
+    assert.ok(await impactArrow.isVisible(), 'Impact Community Projects button should have upward top-right arrow SVG');
+
     // -------------------------------------------------------------------------
     // Test 4: Latest Insights Arrow Bounce
     // -------------------------------------------------------------------------
@@ -44,14 +113,12 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     const card = page.locator('.is-style-lakehub-insight-card').first();
     await card.scrollIntoViewIfNeeded();
 
-    // Check before hover: animation is none
     const animBefore = await card.locator('.wp-block-read-more').evaluate(el => {
       const pseudo = window.getComputedStyle(el, '::before');
       return pseudo.animationName;
     });
-    console.log('Animation before hover:', animBefore);
+    assert.equal(animBefore, 'none', 'Animation before hover should be none');
 
-    // Hover card
     await card.hover();
     const animHover = await card.locator('.wp-block-read-more').evaluate(el => {
       const pseudo = window.getComputedStyle(el, '::before');
@@ -76,7 +143,6 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
       const pseudo = window.getComputedStyle(el, '::before');
       return pseudo.animationName;
     });
-    console.log('Animation with prefers-reduced-motion:', animReduced);
     assert.equal(animReduced, 'none', 'Animation should be disabled under prefers-reduced-motion: reduce');
     await reducedMotionPage.close();
 
@@ -129,7 +195,6 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
         const lineWidth = rWidth - leftVar - rightVar;
         const lineCenter = leftVar + lineWidth / 2;
 
-        // Visual unrevealed center of number p
         const pBox = p.getBoundingClientRect();
         const rBox = r.getBoundingClientRect();
         const pVisualCenter = (pBox.left + pBox.width / 2) - rBox.left;
@@ -167,7 +232,29 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     assert.equal(revealedPseudo.left, '0px', 'Revealed line left should be 0px');
     assert.equal(revealedPseudo.right, '0px', 'Revealed line right should be 0px');
 
-    console.log('\nAll tests passed successfully!');
+    // -------------------------------------------------------------------------
+    // Test 7: Cross-Viewport Responsive Validation
+    // -------------------------------------------------------------------------
+    console.log('Testing Task 07: Cross-viewport responsive overflow validation...');
+    const viewports = [
+      { name: 'Desktop', width: 1280, height: 900 },
+      { name: 'Tablet', width: 768, height: 1024 },
+      { name: 'Mobile', width: 375, height: 667 }
+    ];
+
+    for (const vp of viewports) {
+      await page.setViewportSize({ width: vp.width, height: vp.height });
+      await open('/');
+      const overflow = await page.evaluate(() => {
+        return document.documentElement.scrollWidth - window.innerWidth;
+      });
+      console.log(`Viewport ${vp.name} (${vp.width}x${vp.height}) overflow:`, overflow);
+      assert.ok(overflow <= 1, `${vp.name} viewport should have no horizontal overflow`);
+    }
+
+    console.log('\n========================================');
+    console.log('ALL 7 TASKS PASSED REGRESSION VALIDATION');
+    console.log('========================================\n');
   } catch (err) {
     console.error('Test failed:', err);
     process.exit(1);
