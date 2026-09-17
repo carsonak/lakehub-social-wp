@@ -27,7 +27,7 @@
 
 <!-- wp:post-excerpt {"showMoreOnNewLine":false,"excerptLength":32} /-->
 
-<!-- wp:read-more {"content":"➜"} /--></div>
+<!-- wp:read-more {"content":"↗"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->

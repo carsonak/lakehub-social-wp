@@ -134,8 +134,37 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
 .is-style-lakehub-insight-copy h3 { line-height: 1.40625rem; font-weight: 600; }
 .is-style-lakehub-insight-copy h3 a { text-decoration: none; color: inherit; }
 .is-style-lakehub-insight-copy .wp-block-post-excerpt { margin: 1.375rem 0 1rem; font-size: var(--wp--preset--font-size--small); line-height: 1.25rem; color: var(--wp--preset--color--body); }
-.is-style-lakehub-insight-copy .wp-block-read-more { align-self: end; margin-top: auto; text-decoration: none; font-size: 0; line-height: 1rem; }
-.is-style-lakehub-insight-copy .wp-block-read-more::before { content: '➜'; font: 600 1.25rem/1 var(--wp--preset--font-family--body); }
+.is-style-lakehub-insight-copy .wp-block-read-more {
+  align-self: end;
+  margin-top: auto;
+  text-decoration: none;
+  font-size: 0;
+  line-height: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lakehub-teal, #00676B);
+}
+.is-style-lakehub-insight-copy .wp-block-read-more::before {
+  content: '';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'/%3E%3Cpolyline points='7 7 17 7 17 17'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'/%3E%3Cpolyline points='7 7 17 7 17 17'/%3E%3C/svg%3E") no-repeat center / contain;
+  transform-origin: center center;
+  transition: transform 180ms ease, color 180ms ease;
+}
+.lakehub-arrow-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.375rem;
+  transition: transform 180ms ease;
+}
+.is-style-lakehub-optional-action:hover .lakehub-arrow-icon {
+  transform: translate(0.125rem, -0.125rem);
+}
 .lakehub-insights-controls { display: flex; justify-content: space-between; pointer-events: none; position: absolute; inset: 12.3125rem -2.8125rem auto; }
 .lakehub-insights-controls button { pointer-events: auto; color: var(--lakehub-teal); background: transparent; border: 0; font: 1.5rem var(--wp--preset--font-family--mono); cursor: pointer; }
 .lakehub-insights-controls button:disabled { opacity: .4; cursor: default; }
