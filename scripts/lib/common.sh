@@ -124,13 +124,30 @@ verify_checksum() {
 }
 
 upload_studio_export() {
-  local archive="$1" remote_name="$2" checksum_file
+  local archive="$1" remote_name="$2" checksum_file local_checksum remote_checksum remote_sha_tmp
   checksum_file="${archive}.sha256"
+
+  log "Computing and verifying SHA256 checksum before upload..."
   write_checksum "${archive}" "${checksum_file}"
+  verify_checksum "${archive}" "${checksum_file}"
+  local_checksum="$(awk 'NR == 1 {print $1}' "${checksum_file}")"
+
+  remote_sha_tmp="${checksum_file}.remote"
+  if rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")" "${remote_sha_tmp}" --no-traverse 2>/dev/null; then
+    remote_checksum="$(awk 'NR == 1 {print $1}' "${remote_sha_tmp}")"
+    rm -f "${remote_sha_tmp}"
+    if [[ -n "${remote_checksum}" && "${local_checksum}" == "${remote_checksum}" ]]; then
+      log "Notice: Remote latest.zip already has identical SHA256 (${local_checksum:0:12})."
+    fi
+  fi
+
+  log "Uploading ${remote_name} to R2..."
   rclone copyto "${archive}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}")" --no-traverse
   rclone copyto "${checksum_file}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.sha256")" --no-traverse
-  rclone copyto "${archive}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip")" --no-traverse
-  rclone copyto "${checksum_file}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")" --no-traverse
+
+  log "Updating latest.zip in R2 via server-side copy..."
+  rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}")" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip")"
+  rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.sha256")" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")"
 }
 
 prune_studio_exports() {
@@ -146,10 +163,27 @@ prune_studio_exports() {
 }
 
 download_latest_studio_export() {
-  local destination="$1" checksum_file
+  local destination="$1" checksum_file remote_checksum local_checksum temp_checksum
   checksum_file="${destination}.sha256"
+  temp_checksum="${checksum_file}.remote"
+
+  log "Checking remote checksum for latest Studio export."
+  rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")" "${temp_checksum}" --no-traverse || die "The Studio export checksum is missing in R2."
+  remote_checksum="$(awk 'NR == 1 {print $1}' "${temp_checksum}")"
+
+  if [[ -f "${destination}" && -f "${checksum_file}" ]]; then
+    local_checksum="$(awk 'NR == 1 {print $1}' "${checksum_file}")"
+    if [[ -n "${remote_checksum}" && "${remote_checksum}" == "${local_checksum}" ]] && verify_checksum "${destination}" "${checksum_file}" 2>/dev/null; then
+      log "Local latest Studio export is already up to date (${remote_checksum:0:12}). Skipping archive download."
+      rm -f "${temp_checksum}"
+      validate_studio_export "${destination}"
+      return 0
+    fi
+  fi
+
+  log "Downloading latest full Studio export from R2."
   rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip")" "${destination}" --no-traverse || die "No Studio latest.zip backup exists in R2."
-  rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")" "${checksum_file}" --no-traverse || die "The Studio export checksum is missing."
+  mv "${temp_checksum}" "${checksum_file}"
   verify_checksum "${destination}" "${checksum_file}"
   validate_studio_export "${destination}"
 }
