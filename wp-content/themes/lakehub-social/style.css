@@ -233,6 +233,14 @@ button.is-style-lakehub-newsletter-label,
 .is-style-lakehub-newsletter-label { flex: 0 0 auto; padding: 0.6875rem 1rem; border: none; border-radius: 2.5rem; background: var(--lakehub-teal); color: white; font-family: var(--wp--preset--font-family--inter, sans-serif); font-size: 1.125rem; cursor: pointer; transition: background-color 200ms ease; }
 button.is-style-lakehub-newsletter-label:hover,
 button.is-style-lakehub-newsletter-label:focus-visible { background-color: var(--lakehub-vivid-teal); }
+.mc4wp-form { width: 100%; margin-top: 0.75rem; }
+.mc4wp-form .is-style-lakehub-newsletter { margin-top: 0; }
+.mc4wp-form .mc4wp-response { margin-top: 0.625rem; font-size: 0.875rem; line-height: 1.35; }
+.mc4wp-form .mc4wp-alert { margin: 0; padding: 0.625rem 1rem; border-radius: 0.5rem; font-family: var(--wp--preset--font-family--inter, sans-serif); }
+.mc4wp-form .mc4wp-alert p { margin: 0; }
+.mc4wp-form .mc4wp-success { background: rgba(0, 103, 107, 0.25); border: 1px solid var(--lakehub-teal, #00676B); color: #c9ecee; }
+.mc4wp-form .mc4wp-error { background: rgba(220, 38, 38, 0.2); border: 1px solid rgba(248, 113, 113, 0.4); color: #fecaca; }
+.mc4wp-form .mc4wp-notice { background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(96, 165, 250, 0.4); color: #bfdbfe; }
 .is-style-lakehub-footer-bottom { max-width: 72rem; margin-inline: auto; display: flex; justify-content: space-between; gap: 1.5rem; border-top: 0.0625rem solid #bcc9c91a; padding-top: 0.4375rem; color: #e4e2e280; font: 500 0.75rem/1rem var(--wp--preset--font-family--mono); letter-spacing: 0.0375rem; }
 
 .wp-block-cover.is-style-lakehub-flagship { min-height: 47.5rem; padding: 6.375rem 2.625rem 3.5rem; margin-top: 0.5625rem; color: var(--lakehub-ink); align-items: start; }

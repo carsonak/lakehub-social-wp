@@ -62,12 +62,7 @@
 <p class="has-small-font-size">Subscribe to our news letter</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<form class="is-style-lakehub-newsletter" action="#" method="post">
-  <input type="email" class="lakehub-newsletter-input" placeholder="example@gmail.com" aria-label="Your email address" required />
-  <button type="submit" class="is-style-lakehub-newsletter-label">Subscribe</button>
-</form>
-<!-- /wp:html --></div>
+<!-- wp:mailchimp-for-wp/form /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 

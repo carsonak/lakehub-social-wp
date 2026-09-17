@@ -842,20 +842,29 @@
   });
 
   // Interactive newsletter form feedback
-  document.querySelectorAll('form.is-style-lakehub-newsletter').forEach((form) => {
+  document.querySelectorAll('.mc4wp-form, form.is-style-lakehub-newsletter').forEach((form) => {
     form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const input = form.querySelector('.lakehub-newsletter-input');
+      if (!form.querySelector('input[name="_mc4wp_form_id"]')) {
+        event.preventDefault();
+        const input = form.querySelector('.lakehub-newsletter-input');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (!input || !submitBtn) return;
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Subscribed!';
+        submitBtn.disabled = true;
+        input.value = '';
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }, 2500);
+        return;
+      }
+
       const submitBtn = form.querySelector('button[type="submit"]');
-      if (!input || !submitBtn) return;
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Subscribed!';
-      submitBtn.disabled = true;
-      input.value = '';
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      }, 2500);
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Subscribing...';
+      }
     });
   });
 
