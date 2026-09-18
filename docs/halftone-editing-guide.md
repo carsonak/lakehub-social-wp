@@ -61,13 +61,13 @@ Any photograph on the site that uses an Image block can have dynamic concentric 
 
 ## 3. Available Controls & What They Do
 
-Inside the **Halftone Pattern Settings** panel, you will find six controls:
+Inside the **Halftone Pattern Settings** panel, you will find eight controls:
 
 ### 1. Halftone Pattern Template (Dropdown)
 Choose the pattern geometry:
 - **Default (Inherit from photo style)**: Uses the recommended pattern if the image has a LakeHub style class (`rectangular` for story, community, and portfolio photos).
-- **Rectangular Concentric Rings**: Dots form concentric rectangular rings expanding outward from the center. Recommended for landscape and portrait framed photos.
-- **Circular Concentric Rings**: Dots form concentric circular rings expanding radially. Ideal for circular portraits, benefit icons, or radial focal points.
+- **Rectangular Concentric Rings**: Dots form concentric rectangular rings expanding outward from the center. All dots along the same perimeter loop have the exact same radius.
+- **Circular Concentric Rings**: Dots form concentric circular rings expanding radially. All dots along the same circular ring circumference have the exact same radius.
 - **None / Disabled**: Disables halftone generation completely on this image.
 
 ### 2. Pattern Placement / Corner Offset (Dropdown & Sliders)
@@ -82,21 +82,26 @@ Offset the placement of the halftone pattern relative to the image frame:
   - **Horizontal Offset (X)**: Slider from `-120px` to `+120px` (shifts left/right).
   - **Vertical Offset (Y)**: Slider from `-120px` to `+120px` (shifts up/down).
 
-### 3. Pattern Spread Beyond Frame (px) (Slider)
-- **Range**: `10px` to `150px` (Default: `60px`).
-- **Function**: Controls how far the halftone pattern extends outside the photo boundary. Increase this if you want a larger decorative halo around the image.
+### 3. Pattern Container Size (Scale) (Slider)
+- **Range**: `0.60` to `2.50` (Default: `1.25`).
+- **Function**: Adjusts the cut-off boundary (the length of the diagonals for rectangular patterns, or the circle diameter for circular patterns) while strictly maintaining the container aspect ratio.
+- **Isolation Guarantee**: This control scales **only the background dots layer**. It does not scale, resize, or alter the photo image or any text/content on top of the pattern.
 
-### 4. Center Max Dot Size (px) (Slider)
+### 4. Dot Spacing (px) (Slider)
+- **Range**: `10px` to `32px` (Default: `16px`).
+- **Function**: Configures the distance (pitch) between dots across all rings.
+
+### 5. Center Max Dot Size (px) (Slider)
 - **Range**: `2px` to `20px` (Default: `7.5px`).
 - **Function**: Sets the diameter of the innermost dots at the center of the image.
 
-### 5. Ring Shrink Factor (Slider)
+### 6. Ring Shrink Factor (Slider)
 - **Range**: `0.60` to `0.98` (Default: `0.88`).
-- **Function**: Controls how fast dot sizes shrink as they radiate outward towards the perimeter.
+- **Function**: Controls how fast dot sizes shrink as they radiate outward towards the perimeter. All dots on the same concentric ring/perimeter share the identical size, reducing ring-by-ring outward.
   - Lower values (e.g. `0.75`): Faster vignette fade; dots shrink quickly.
   - Higher values (e.g. `0.92`): Gentler vignette fade; dots remain larger near the edges.
 
-### 6. Dot Color (Color Palette & Custom Picker)
+### 7. Dot Color (Color Palette & Custom Picker)
 - Choose a branded color preset or pick any custom HEX color:
   - **LakeHub Teal**: `#00676B` *(Theme default)*
   - **Deep Teal**: `#004F52`
@@ -110,7 +115,8 @@ Offset the placement of the halftone pattern relative to the image frame:
 
 ## 4. Key Design Properties
 
-- **Uniform Dot Spacing**: Dot spacing is uniformly fixed at **`16px`** across all rings. The vignette fade is achieved purely through dot radius shrinking.
+- **Perimeter-Uniform Dot Sizing**: Dots along any given concentric ring or perimeter (both rectangular and circular) have identical diameter, ensuring smooth, symmetrical vignette fading.
+- **Configurable Dot Spacing**: Dot spacing is adjustable from `10px` to `32px` directly within the Block Inspector.
 - **Interactive Mouse Repel**: On fine-pointer devices (desktop mice/trackpads), dots smoothly repel away from the cursor as you hover near the photo frame, resetting cleanly on pointer leave.
 - **Responsive Layout**: Patterns automatically scale and recalculate via `ResizeObserver` across mobile, tablet, and desktop viewports.
 - **Accessibility**: Under `prefers-reduced-motion: reduce`, cursor repulsion is automatically disabled and patterns remain statically positioned.

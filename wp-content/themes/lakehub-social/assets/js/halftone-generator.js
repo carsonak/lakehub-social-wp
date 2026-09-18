@@ -21,29 +21,34 @@
   /**
    * Generates rectangular concentric rings of halftone dots.
    * Rings expand outward in Chebyshev distance (max(|i|, |j|)) from center.
+   * All dots along the same rectangular perimeter loop have identical radius.
+   * Scaling the container scales the diagonal cut-off while preserving aspect ratio.
    */
-  function generateRectangularSVG(width, height, spread, maxDot, shrinkFactor, color) {
-    const totalW = Math.round(width + spread * 2);
-    const totalH = Math.round(height + spread * 2);
+  function generateRectangularSVG(width, height, containerScale, maxDot, shrinkFactor, color, spacing) {
+    const s = spacing || 16;
+    const scale = containerScale !== undefined && containerScale > 0 ? containerScale : 1.25;
+    const totalW = Math.round(width * scale);
+    const totalH = Math.round(height * scale);
     const cx = totalW / 2;
     const cy = totalH / 2;
 
-    const maxI = Math.ceil(totalW / (2 * SPACING));
-    const maxJ = Math.ceil(totalH / (2 * SPACING));
+    const maxI = Math.ceil(totalW / (2 * s));
+    const maxJ = Math.ceil(totalH / (2 * s));
 
     let circles = '';
 
     for (let i = -maxI; i <= maxI; i++) {
-      const x = +(cx + i * SPACING).toFixed(1);
+      const x = +(cx + i * s).toFixed(1);
       if (x < 0 || x > totalW) continue;
 
       for (let j = -maxJ; j <= maxJ; j++) {
-        const y = +(cy + j * SPACING).toFixed(1);
+        const y = +(cy + j * s).toFixed(1);
         if (y < 0 || y > totalH) continue;
 
+        // Concentric rectangular ring index (Chebyshev distance)
         const k = Math.max(Math.abs(i), Math.abs(j));
-        // Dot radius shrinks monotonically with ring index k
-        const r = Math.max(1.2, +(maxDot * Math.pow(shrinkFactor, k)).toFixed(2));
+        // Every dot along the same rectangular perimeter line has the exact same radius
+        const r = Math.max(1.0, +(maxDot * Math.pow(shrinkFactor, k)).toFixed(2));
         circles += `<circle cx="${x}" cy="${y}" r="${r}" />`;
       }
     }
@@ -54,23 +59,30 @@
   /**
    * Generates circular concentric rings of halftone dots.
    * Rings expand outward radially with uniform spacing along each circumference.
+   * All dots along the same circular circumference ring have identical radius.
+   * Scaling the container scales the circle diameter cut-off.
    */
-  function generateCircularSVG(width, height, spread, maxDot, shrinkFactor, color) {
-    const totalW = Math.round(width + spread * 2);
-    const totalH = Math.round(height + spread * 2);
+  function generateCircularSVG(width, height, containerScale, maxDot, shrinkFactor, color, spacing) {
+    const s = spacing || 16;
+    const scale = containerScale !== undefined && containerScale > 0 ? containerScale : 1.25;
+    const baseD = Math.max(width, height);
+    const totalD = Math.round(baseD * scale);
+    const totalW = totalD;
+    const totalH = totalD;
     const cx = totalW / 2;
     const cy = totalH / 2;
-    const maxR = Math.hypot(totalW / 2, totalH / 2);
+    const maxR = totalD / 2;
 
     // Center dot (ring 0)
     let circles = `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${maxDot.toFixed(2)}" />`;
 
-    const numRings = Math.floor(maxR / SPACING);
+    const numRings = Math.floor(maxR / s);
     for (let k = 1; k <= numRings; k++) {
-      const R = k * SPACING;
+      const R = k * s;
       const circumference = 2 * Math.PI * R;
-      const numDots = Math.max(6, Math.round(circumference / SPACING));
-      const r = Math.max(1.2, +(maxDot * Math.pow(shrinkFactor, k)).toFixed(2));
+      const numDots = Math.max(6, Math.round(circumference / s));
+      // Every dot along the same circular perimeter ring has the exact same radius
+      const r = Math.max(1.0, +(maxDot * Math.pow(shrinkFactor, k)).toFixed(2));
 
       for (let i = 0; i < numDots; i++) {
         const angle = (i / numDots) * 2 * Math.PI;
@@ -156,7 +168,17 @@
       return;
     }
 
-    const spread = parseFloat(target.getAttribute('data-lakehub-halftone-spread')) || 60;
+    const rawScale = target.getAttribute('data-lakehub-halftone-scale');
+    const rawSpread = target.getAttribute('data-lakehub-halftone-spread');
+    let containerScale = 1.25;
+    if (rawScale !== null) {
+      containerScale = parseFloat(rawScale) || 1.25;
+    } else if (rawSpread !== null) {
+      const spreadVal = parseFloat(rawSpread) || 60;
+      containerScale = Math.max(1.0, 1 + (spreadVal * 2) / Math.max(target.clientWidth || 300, 300));
+    }
+
+    const spacing = parseFloat(target.getAttribute('data-lakehub-halftone-spacing')) || 16;
     const maxDot = parseFloat(target.getAttribute('data-lakehub-halftone-max-dot')) || 7.5;
     const shrinkFactor = parseFloat(target.getAttribute('data-lakehub-halftone-shrink')) || 0.88;
     const color = target.getAttribute('data-lakehub-halftone-color') || '#00676B';
@@ -167,9 +189,9 @@
 
     let svgHtml = '';
     if (template === 'circular') {
-      svgHtml = generateCircularSVG(w, h, spread, maxDot, shrinkFactor, color);
+      svgHtml = generateCircularSVG(w, h, containerScale, maxDot, shrinkFactor, color, spacing);
     } else {
-      svgHtml = generateRectangularSVG(w, h, spread, maxDot, shrinkFactor, color);
+      svgHtml = generateRectangularSVG(w, h, containerScale, maxDot, shrinkFactor, color, spacing);
     }
 
     let layer = target.querySelector('.lakehub-halftone-layer');

@@ -132,6 +132,8 @@ add_filter( 'render_block_core/image', static function ( $block_content, $block 
 	$max_dot = isset( $attrs['lakehubHalftoneMaxDot'] ) ? (float) $attrs['lakehubHalftoneMaxDot'] : 7.5;
 	$shrink = isset( $attrs['lakehubHalftoneShrink'] ) ? (float) $attrs['lakehubHalftoneShrink'] : 0.88;
 	$color = $attrs['lakehubHalftoneColor'] ?? '#00676B';
+	$scale = isset( $attrs['lakehubHalftoneContainerScale'] ) ? (float) $attrs['lakehubHalftoneContainerScale'] : 1.25;
+	$spacing = isset( $attrs['lakehubHalftoneSpacing'] ) ? (float) $attrs['lakehubHalftoneSpacing'] : 16;
 	$placement = $attrs['lakehubHalftonePlacement'] ?? '';
 	$offset_x = isset( $attrs['lakehubHalftoneOffsetX'] ) ? (float) $attrs['lakehubHalftoneOffsetX'] : 0;
 	$offset_y = isset( $attrs['lakehubHalftoneOffsetY'] ) ? (float) $attrs['lakehubHalftoneOffsetY'] : 0;
@@ -180,6 +182,8 @@ add_filter( 'render_block_core/image', static function ( $block_content, $block 
 	$tags = new WP_HTML_Tag_Processor( $block_content );
 	if ( $tags->next_tag( array( 'tag_name' => 'figure' ) ) ) {
 		$tags->set_attribute( 'data-lakehub-halftone', esc_attr( $template ) );
+		$tags->set_attribute( 'data-lakehub-halftone-scale', esc_attr( (string) $scale ) );
+		$tags->set_attribute( 'data-lakehub-halftone-spacing', esc_attr( (string) $spacing ) );
 		$tags->set_attribute( 'data-lakehub-halftone-spread', esc_attr( (string) $spread ) );
 		$tags->set_attribute( 'data-lakehub-halftone-max-dot', esc_attr( (string) $max_dot ) );
 		$tags->set_attribute( 'data-lakehub-halftone-shrink', esc_attr( (string) $shrink ) );

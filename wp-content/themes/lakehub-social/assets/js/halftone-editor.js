@@ -71,6 +71,14 @@
             type: 'number',
             default: 0,
           },
+          lakehubHalftoneContainerScale: {
+            type: 'number',
+            default: 1.25,
+          },
+          lakehubHalftoneSpacing: {
+            type: 'number',
+            default: 16,
+          },
         }),
       });
     }
@@ -90,6 +98,8 @@
       const {
         lakehubHalftoneTemplate = '',
         lakehubHalftoneSpread = 60,
+        lakehubHalftoneContainerScale = 1.25,
+        lakehubHalftoneSpacing = 16,
         lakehubHalftoneMaxDot = 7.5,
         lakehubHalftoneShrink = 0.88,
         lakehubHalftoneColor = '#00676B',
@@ -204,14 +214,26 @@
               }),
             isEnabled &&
               el(RangeControl, {
-                label: __('Pattern Spread Beyond Frame (px)', 'lakehub-social'),
-                value: lakehubHalftoneSpread !== undefined ? lakehubHalftoneSpread : 60,
-                min: 10,
-                max: 150,
-                step: 5,
-                help: __('Distance the halftone pattern extends outside the photo frame. Default is 60px.', 'lakehub-social'),
+                label: __('Pattern Container Size (Scale)', 'lakehub-social'),
+                value: lakehubHalftoneContainerScale !== undefined ? lakehubHalftoneContainerScale : 1.25,
+                min: 0.6,
+                max: 2.5,
+                step: 0.05,
+                help: __('Scales pattern container maintaining aspect ratio (diagonals for rectangle, diameter for circle). Applies only to dots layer.', 'lakehub-social'),
                 onChange: function (value) {
-                  setAttributes({ lakehubHalftoneSpread: value });
+                  setAttributes({ lakehubHalftoneContainerScale: value });
+                },
+              }),
+            isEnabled &&
+              el(RangeControl, {
+                label: __('Dot Spacing (px)', 'lakehub-social'),
+                value: lakehubHalftoneSpacing !== undefined ? lakehubHalftoneSpacing : 16,
+                min: 10,
+                max: 32,
+                step: 1,
+                help: __('Distance / pitch between dots across all rings. Default is 16px.', 'lakehub-social'),
+                onChange: function (value) {
+                  setAttributes({ lakehubHalftoneSpacing: value });
                 },
               }),
             isEnabled &&
