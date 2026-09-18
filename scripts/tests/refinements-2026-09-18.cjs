@@ -142,8 +142,8 @@ const assert = require('assert');
   });
   assert(rootedHeading, 'Rooted in Kisumu heading must exist');
   assert.strictEqual(rootedHeading.tagName, 'H3', 'Rooted in Kisumu must be H3');
-  assert.strictEqual(rootedHeading.fontWeight, '800', 'Rooted in Kisumu font weight must be 800 (bold)');
-  console.log('✓ Rooted in Kisumu heading H3 with font-weight 800 verified.');
+  assert.strictEqual(rootedHeading.fontWeight, '600', 'Rooted in Kisumu font weight must be 600 (semi-bold)');
+  console.log('✓ Rooted in Kisumu heading H3 with font-weight 600 verified.');
 
   // 5. Dynamic Halftone Generator & Repel Physics
   console.log('\n[5/5] Verifying Dynamic Halftone Generator & Physics...');
@@ -162,9 +162,9 @@ const assert = require('assert');
   });
   assert(halftoneTest && halftoneTest.isActive, 'Dynamic halftone must be active on story photo');
   assert(halftoneTest.hasSvg, 'Dynamic halftone layer must render SVG');
-  assert.strictEqual(halftoneTest.spacing, 20, 'Uniform dot spacing must be 20px');
-  assert(halftoneTest.circleCount > 200, `Circle count should be > 200 (got ${halftoneTest.circleCount})`);
-  console.log('✓ Dynamic halftone generator with 20px spacing verified.');
+  assert.strictEqual(halftoneTest.spacing, 16, 'Uniform dot spacing must be 16px');
+  assert(halftoneTest.circleCount > 400, `Circle count should be > 400 with 16px spacing (got ${halftoneTest.circleCount})`);
+  console.log('✓ Dynamic halftone generator with 16px spacing verified (', halftoneTest.circleCount, 'dots).');
 
   await browser.close();
   console.log('\n========================================');

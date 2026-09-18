@@ -9,7 +9,7 @@
 .is-style-lakehub-story-grid,
 .is-style-lakehub-community-grid,
 .is-style-lakehub-portfolio-grid {
-  --lakehub-dot-spacing: 28px;
+  --lakehub-dot-spacing: 16px;
 }
 
 @media (max-width: 600px) {

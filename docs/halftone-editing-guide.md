@@ -1,0 +1,109 @@
+# Halftone Pattern Editor Guide
+
+This guide explains how to find, edit, and apply dynamic halftone patterns to images in the WordPress Block Editor and Site Editor.
+
+---
+
+## 1. Where Are the Halftone Controls?
+
+The halftone pattern generator is integrated directly into the native **WordPress Image Block (`core/image`)**.
+
+Any photograph on the site that uses an Image block can have dynamic concentric halftone patterns applied and customized in the editor UI.
+
+> [!NOTE]
+> Pre-styled photos on the site (such as the About "Our Story" photo, Impact "Community Projects" photo, and "Meet Malika" portfolio photo) already have halftone enabled by default. You can select them at any time to adjust their template, spread, dot size, shrink rate, or color.
+
+---
+
+## 2. Step-by-Step Navigation in the WordPress UI
+
+### Step 1: Open the Page or Post in the Editor
+- In the WordPress Admin dashboard, navigate to **Pages → All Pages** (or **Appearance → Editor** for site templates).
+- Click on the page you want to edit (e.g., **About**, **Impact**, or **Home**).
+
+### Step 2: Select the Image Block
+- Click directly on the photograph you wish to customize.
+- Check the breadcrumb bar at the bottom left of the editor canvas to confirm that you have selected the **Image** block:
+  ```
+  Document > Group > Image
+  ```
+  *(If you clicked a surrounding container such as a Group or Column, click the image itself to select the `core/image` block).*
+
+### Step 3: Open the Settings Sidebar
+- In the top-right corner of the editor toolbar, click the **Settings** icon (the gear / sidebar toggle icon).
+- At the top of the sidebar, make sure the **Block** tab is active (not the "Page" tab).
+
+```
++-------------------------------------------------------------+
+|  WordPress Toolbar                        [Save] [⚙ Settings] |
++-------------------------------------------------------+-----+
+|                                                       |Block|
+|                                                       +-----+
+|  Editor Canvas                                        |Image|
+|                                                       |     |
+|   [ Selected Image ]                                  |▼ Halftone
+|                                                       |  Pattern
+|                                                       |  Settings
++-------------------------------------------------------+-----+
+```
+
+### Step 4: Locate "Halftone Pattern Settings"
+- In the Block settings sidebar, you will see the **Halftone Pattern Settings** panel.
+- This panel is **open by default** whenever an Image block is selected.
+
+---
+
+## 3. Available Controls & What They Do
+
+Inside the **Halftone Pattern Settings** panel, you will find five controls:
+
+### 1. Halftone Pattern Template (Dropdown)
+Choose the pattern geometry:
+- **Default (Inherit from photo style)**: Uses the recommended pattern if the image has a LakeHub style class (`rectangular` for story, community, and portfolio photos).
+- **Rectangular Concentric Rings**: Dots form concentric rectangular rings expanding outward from the center. Recommended for landscape and portrait framed photos.
+- **Circular Concentric Rings**: Dots form concentric circular rings expanding radially. Ideal for circular portraits, benefit icons, or radial focal points.
+- **None / Disabled**: Disables halftone generation completely on this image.
+
+### 2. Pattern Spread Beyond Frame (px) (Slider)
+- **Range**: `10px` to `150px` (Default: `60px`).
+- **Function**: Controls how far the halftone pattern extends outside the photo boundary. Increase this if you want a larger decorative halo around the image.
+
+### 3. Center Max Dot Size (px) (Slider)
+- **Range**: `2px` to `20px` (Default: `7.5px`).
+- **Function**: Sets the diameter of the innermost dots at the center of the image.
+
+### 4. Ring Shrink Factor (Slider)
+- **Range**: `0.60` to `0.98` (Default: `0.88`).
+- **Function**: Controls how fast dot sizes shrink as they radiate outward towards the perimeter.
+  - Lower values (e.g. `0.75`): Faster vignette fade; dots shrink quickly.
+  - Higher values (e.g. `0.92`): Gentler vignette fade; dots remain larger near the edges.
+
+### 5. Dot Color (Color Palette & Custom Picker)
+- Choose a branded color preset or pick any custom HEX color:
+  - **LakeHub Teal**: `#00676B` *(Theme default)*
+  - **Deep Teal**: `#004F52`
+  - **LakeHub Orange**: `#F15A24`
+  - **Dark Charcoal**: `#1E1E1E`
+  - **Light Gray**: `#E0E0E0`
+  - **White**: `#FFFFFF`
+- You can also click the custom color indicator to enter any HEX code.
+
+---
+
+## 4. Key Design Properties
+
+- **Uniform Dot Spacing**: Dot spacing is uniformly fixed at **`16px`** across all rings. The vignette fade is achieved purely through dot radius shrinking.
+- **Interactive Mouse Repel**: On fine-pointer devices (desktop mice/trackpads), dots smoothly repel away from the cursor as you hover near the photo frame, resetting cleanly on pointer leave.
+- **Responsive Layout**: Patterns automatically scale and recalculate via `ResizeObserver` across mobile, tablet, and desktop viewports.
+- **Accessibility**: Under `prefers-reduced-motion: reduce`, cursor repulsion is automatically disabled and patterns remain statically positioned.
+
+---
+
+## 5. Troubleshooting
+
+| Issue | Solution |
+|---|---|
+| **I don't see the "Halftone Pattern Settings" panel in the sidebar** | Make sure you have selected an **Image block** (`core/image`) and that the **Block** tab (not Page tab) is selected in the right sidebar. |
+| **I clicked a hero section image, but the panel isn't there** | Hero sections use the **Cover block** (`core/cover`), which does not use halftone decoration. Halftone controls are designed for **Image blocks**. |
+| **I changed the color or spread, but I don't see it on the frontend** | Click **Update / Save** in the top right of the editor to persist the block attributes to the page. |
+| **I want to remove the halftone pattern from an image** | In the "Halftone Pattern Template" dropdown, select **None / Disabled**. |

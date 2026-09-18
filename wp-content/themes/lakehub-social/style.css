@@ -127,21 +127,21 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading { padding: 0;
 section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0; }
 .wp-block-query.is-style-lakehub-insights { position: relative; margin-top: 3.8125rem; }
 .wp-block-query.is-style-lakehub-insights .wp-block-post-template { gap: 2rem; }
-.is-style-lakehub-insight-card { min-height: 24.9375rem; overflow: hidden; border: 0.0625rem solid var(--lakehub-line); border-radius: 0.5rem; background: var(--wp--preset--color--paper); transition: box-shadow 180ms ease; }
+.is-style-lakehub-insight-card { min-height: 27.5rem; overflow: hidden; border: 0.0625rem solid var(--lakehub-line); border-radius: 0.5rem; background: var(--wp--preset--color--paper); transition: box-shadow 180ms ease; }
 .is-style-lakehub-insight-card:hover { box-shadow: 0 0.75rem 1.625rem #00484c20; }
 .is-style-lakehub-insight-card .wp-block-post-featured-image img { display: block; height: 12rem; width: 100%; object-fit: cover; }
 .is-style-lakehub-insight-card img[src*="malika"],
 .lakehub-blog-featured-media img[src*="malika"] {
-  transform: scale(1.4) translate(-12%, 5%);
+  transform: scale(1.1) translate(-12%, 9%);
   transform-origin: center center;
 }
 .wp-site-blocks .is-style-lakehub-insight-card:is(:hover, :focus-within) img[src*="malika"] {
-  transform: scale(1.46) translate(-12%, 5%);
+  transform: scale(1.15) translate(-12%, 9%);
 }
 .is-style-lakehub-insight-copy {
   position: relative;
   padding: 1.5rem 1.5rem 2.25rem 1.5rem;
-  min-height: 14rem;
+  min-height: 15.5rem;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -159,13 +159,13 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
 .is-style-lakehub-insight-copy h3 a { text-decoration: none; color: inherit; }
 .is-style-lakehub-insight-copy .wp-block-post-excerpt {
   margin: 0;
-  max-height: 4.25rem;
+  max-height: 6.5rem;
   overflow: hidden;
   font-size: var(--wp--preset--font-size--small);
   line-height: 1.25rem;
   color: var(--wp--preset--color--body);
-  mask-image: linear-gradient(to bottom, black 40%, transparent 95%);
-  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 95%);
+  mask-image: linear-gradient(to bottom, black 5rem, transparent 6.5rem);
+  -webkit-mask-image: linear-gradient(to bottom, black 5rem, transparent 6.5rem);
 }
 .is-style-lakehub-insight-copy .wp-block-read-more {
   position: absolute;
@@ -197,22 +197,22 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
     transform: scale(1);
   }
   16% {
-    transform: scale(1.22);
+    transform: scale(1.45);
   }
   36% {
-    transform: scale(0.88);
+    transform: scale(0.68);
   }
   54% {
-    transform: scale(1.1);
+    transform: scale(1.25);
   }
   70% {
-    transform: scale(0.95);
+    transform: scale(0.85);
   }
   84% {
-    transform: scale(1.03);
+    transform: scale(1.12);
   }
   94% {
-    transform: scale(0.99);
+    transform: scale(0.96);
   }
   100% {
     transform: scale(1);
@@ -986,7 +986,7 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
   font-family: var(--wp--preset--font-family--inter, sans-serif);
   font-size: 1.75rem;
   line-height: 2.25rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--wp--preset--color--ink, #1b1c1c);
   margin-top: 0;
   margin-bottom: 1.25rem;

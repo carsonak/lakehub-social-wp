@@ -15,8 +15,8 @@
 (function () {
   'use strict';
 
-  // Constant uniform dot spacing across all rings (20px)
-  const SPACING = 20;
+  // Constant uniform dot spacing across all rings (16px)
+  const SPACING = 16;
 
   /**
    * Generates rectangular concentric rings of halftone dots.

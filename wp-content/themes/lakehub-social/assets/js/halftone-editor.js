@@ -112,14 +112,14 @@
             PanelBody,
             {
               title: __('Halftone Pattern Settings', 'lakehub-social'),
-              initialOpen: !!lakehubHalftoneTemplate && lakehubHalftoneTemplate !== 'none',
+              initialOpen: true,
             },
             el(SelectControl, {
               label: __('Halftone Pattern Template', 'lakehub-social'),
               value: lakehubHalftoneTemplate,
               options: templateOptions,
               help: __(
-                'Select a concentric halftone template. Spacing between dots is fixed at 20px.',
+                'Select a concentric halftone template. Spacing between dots is fixed at 16px.',
                 'lakehub-social'
               ),
               onChange: function (value) {
