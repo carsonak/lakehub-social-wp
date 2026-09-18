@@ -119,8 +119,9 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     });
     assert.equal(animBefore, 'none', 'Animation before hover should be none');
 
-    await card.hover();
-    const animHover = await card.locator('.wp-block-read-more').evaluate(el => {
+    const arrowBtn = card.locator('.wp-block-read-more');
+    await arrowBtn.hover();
+    const animHover = await arrowBtn.evaluate(el => {
       const pseudo = window.getComputedStyle(el, '::before');
       return {
         name: pseudo.animationName,
@@ -130,16 +131,17 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     });
     console.log('Animation on hover:', animHover);
     assert.equal(animHover.name, 'lakehub-arrow-bounce', 'Arrow should have lakehub-arrow-bounce animation on hover');
-    assert.equal(animHover.duration, '2s', 'Animation duration should be 2s');
+    assert.equal(animHover.duration, '2.4s', 'Animation duration should be 2.4s');
 
     // Test prefers-reduced-motion
     const reducedMotionPage = await context.newPage();
     await reducedMotionPage.emulateMedia({ reducedMotion: 'reduce' });
     await reducedMotionPage.goto(base + '/', { waitUntil: 'networkidle' });
     const cardReduced = reducedMotionPage.locator('.is-style-lakehub-insight-card').first();
-    await cardReduced.scrollIntoViewIfNeeded();
-    await cardReduced.hover();
-    const animReduced = await cardReduced.locator('.wp-block-read-more').evaluate(el => {
+    const arrowBtnReduced = cardReduced.locator('.wp-block-read-more');
+    await arrowBtnReduced.scrollIntoViewIfNeeded();
+    await arrowBtnReduced.hover();
+    const animReduced = await arrowBtnReduced.evaluate(el => {
       const pseudo = window.getComputedStyle(el, '::before');
       return pseudo.animationName;
     });

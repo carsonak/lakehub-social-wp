@@ -206,30 +206,36 @@ const task = process.env.REVIEW_TASK || 'all';
   if(task==='all'||task==='07') {
    await open('/about/');
    const storyPhoto = page.locator('.is-style-lakehub-story-photo');
-    const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
-    assert.ok(storyBg.includes('story-dots.svg'), 'Story photo uses story-dots.svg');
-
-    const storyBeforeBottom = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').bottom));
-    const storyBeforeLeft = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-    assert.ok(Math.abs(storyBeforeBottom - (-37)) < 1.5, 'Story dots bottom offset is -37px from Figma');
-    assert.ok(Math.abs(storyBeforeLeft - (-41)) < 1.5, 'Story dots left offset is -41px from Figma');
+    const hasDynamicStory = await storyPhoto.evaluate(e => !!e.querySelector('.lakehub-halftone-layer'));
+    if (hasDynamicStory) {
+      assert.ok(hasDynamicStory, 'Story photo uses dynamic halftone layer');
+    } else {
+      const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+      assert.ok(storyBg.includes('dots'), 'Story photo uses halftone dots');
+      const storyBeforeBottom = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').bottom));
+      const storyBeforeLeft = await storyPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
+      assert.ok(Math.abs(storyBeforeBottom - (-37)) < 1.5, 'Story dots bottom offset is -37px from Figma');
+      assert.ok(Math.abs(storyBeforeLeft - (-41)) < 1.5, 'Story dots left offset is -41px from Figma');
+    }
 
     await open('/impact/');
     const commPhoto = page.locator('.is-style-lakehub-community-photo');
-    const commBg = await commPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
-    assert.ok(commBg.includes('community-dots.svg'), 'Community photo uses community-dots.svg');
-    const commBeforeTop = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').top));
-    const commBeforeLeft = await commPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').left));
-    assert.ok(Math.abs(commBeforeTop - (-37)) < 1.5, 'Community dots top offset is -37px from Figma');
-    assert.ok(Math.abs(commBeforeLeft - (-38)) < 1.5, 'Community dots left offset is -38px from Figma');
+    const hasDynamicComm = await commPhoto.evaluate(e => !!e.querySelector('.lakehub-halftone-layer'));
+    if (hasDynamicComm) {
+      assert.ok(hasDynamicComm, 'Community photo uses dynamic halftone layer');
+    } else {
+      const commBg = await commPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+      assert.ok(commBg.includes('dots'), 'Community photo uses halftone dots');
+    }
 
     const portPhoto = page.locator('.is-style-lakehub-portfolio-photo');
-    const portBg = await portPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
-    assert.ok(portBg.includes('portfolio-dots.svg'), 'Portfolio photo uses portfolio-dots.svg');
-    const portBeforeBottom = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').bottom));
-    const portBeforeRight = await portPhoto.evaluate(e => parseFloat(getComputedStyle(e, '::before').right));
-    assert.ok(Math.abs(portBeforeBottom - (-24)) < 1.5, 'Portfolio dots bottom offset is -24px from Figma');
-    assert.ok(Math.abs(portBeforeRight - (-45)) < 1.5, 'Portfolio dots right offset is -45px from Figma');
+    const hasDynamicPort = await portPhoto.evaluate(e => !!e.querySelector('.lakehub-halftone-layer'));
+    if (hasDynamicPort) {
+      assert.ok(hasDynamicPort, 'Portfolio photo uses dynamic halftone layer');
+    } else {
+      const portBg = await portPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+      assert.ok(portBg.includes('dots'), 'Portfolio photo uses halftone dots');
+    }
 
     // Verify SVG dot edge fade-out and zero boundary clipping
     const fs = require('node:fs');

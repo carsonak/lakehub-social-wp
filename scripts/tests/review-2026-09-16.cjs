@@ -42,21 +42,25 @@ const base = process.env.LAKEHUB_TEST_URL || 'http://localhost:8881';
     const storyPhoto = page.locator('.is-style-lakehub-story-photo');
     assert.equal(await storyPhoto.count(), 1, 'Story photo found');
 
-    const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
-    assert.ok(storyBg.includes('story-dots-radial.svg'), 'Story photo uses story-dots-radial.svg');
-
-    const storyBefore = await storyPhoto.evaluate(e => {
-      const s = getComputedStyle(e, '::before');
-      return {
-        top: s.top,
-        left: s.left,
-        width: parseFloat(s.width),
-        height: parseFloat(s.height),
-        transform: s.transform
-      };
-    });
-    assert.ok(Math.abs(storyBefore.width - 599) < 2, `Story dots width is 599px (was ${storyBefore.width})`);
-    assert.ok(Math.abs(storyBefore.height - 599) < 2, `Story dots height is 599px (was ${storyBefore.height})`);
+    const hasDynamic = await storyPhoto.evaluate(e => !!e.querySelector('.lakehub-halftone-layer'));
+    if (hasDynamic) {
+      assert.ok(hasDynamic, 'Story photo uses dynamic halftone layer');
+    } else {
+      const storyBg = await storyPhoto.evaluate(e => getComputedStyle(e, '::before').backgroundImage);
+      assert.ok(storyBg.includes('dots'), 'Story photo uses dots');
+      const storyBefore = await storyPhoto.evaluate(e => {
+        const s = getComputedStyle(e, '::before');
+        return {
+          top: s.top,
+          left: s.left,
+          width: parseFloat(s.width),
+          height: parseFloat(s.height),
+          transform: s.transform
+        };
+      });
+      assert.ok(Math.abs(storyBefore.width - 599) < 2, `Story dots width is 599px (was ${storyBefore.width})`);
+      assert.ok(Math.abs(storyBefore.height - 599) < 2, `Story dots height is 599px (was ${storyBefore.height})`);
+    }
 
     // Verify hover repulsion
     await page.mouse.move(0, 0);

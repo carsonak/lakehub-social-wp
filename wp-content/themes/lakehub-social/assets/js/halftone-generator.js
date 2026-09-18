@@ -119,7 +119,7 @@
           reset();
           return;
         }
-        const maxCap = SPACING;
+        const maxCap = parseFloat(getComputedStyle(target).getPropertyValue('--lakehub-dot-spacing')) || SPACING;
         const radius = Math.max(rect.width, rect.height) / 2 || 1;
         const norm = Math.min(1, dist / radius);
         const factor = norm * (2 - norm);
