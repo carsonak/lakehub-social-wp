@@ -893,6 +893,25 @@
     const link = event.target.closest('a[href^="http://"], a[href^="https://"]');
     if (link) ensureExternalAttributes(link);
   }, { capture: true });
+
+  // Latest Insights arrow bounce interaction
+  const initInsightArrowBounce = () => {
+    const arrowButtons = document.querySelectorAll('.is-style-lakehub-insight-copy .wp-block-read-more');
+    arrowButtons.forEach((btn) => {
+      btn.addEventListener('pointerenter', () => {
+        // Reset animation from 0s on each enter
+        btn.classList.remove('is-arrow-animating');
+        void btn.offsetWidth; // Force reflow
+        btn.classList.add('is-arrow-animating');
+      });
+
+      btn.addEventListener('animationend', () => {
+        // Animation finished: remove class so it stops and does not repeat while hovering
+        btn.classList.remove('is-arrow-animating');
+      });
+    });
+  };
+  initInsightArrowBounce();
 })();
 
 
