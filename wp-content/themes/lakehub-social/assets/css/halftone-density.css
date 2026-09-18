@@ -138,3 +138,60 @@
   overflow-x: clip;
 }
 
+/* Dynamic Halftone Layer Positioning & Physics */
+.lakehub-has-halftone,
+[data-lakehub-halftone],
+.is-style-lakehub-story-photo,
+.is-style-lakehub-community-photo,
+.is-style-lakehub-portfolio-photo {
+  position: relative;
+  overflow: visible !important;
+}
+
+.lakehub-halftone-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+  transition: transform 120ms cubic-bezier(.2, .6, .4, 1);
+  will-change: transform;
+  pointer-events: none;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lakehub-halftone-layer svg {
+  display: block;
+  pointer-events: none;
+  overflow: visible;
+}
+
+@media (max-width: 600px) {
+  .lakehub-halftone-layer {
+    transform: translate(-50%, -50%) scale(0.65) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lakehub-halftone-layer {
+    transform: translate(-50%, -50%) !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 600px) and (prefers-reduced-motion: reduce) {
+  .lakehub-halftone-layer {
+    transform: translate(-50%, -50%) scale(0.65) !important;
+    transition: none !important;
+  }
+}
+
+/* Suppress static pseudo-element fallback when dynamic generator is active */
+.lakehub-halftone-active::before {
+  content: none !important;
+  display: none !important;
+}
+
+
