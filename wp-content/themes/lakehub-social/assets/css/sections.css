@@ -116,8 +116,8 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-milestone::after { content: ''; position: absolute; left: calc(50% - 0.5rem); top: 8.25rem; width: 1rem; height: 1rem; border-radius: 50%; background: var(--lakehub-teal); }
 .is-style-lakehub-milestone:nth-child(even) { padding-top: 10.75rem; display: flex; flex-direction: column; }
 .is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year { order: -1; margin: 0 0 0.5rem; }
-.is-style-lakehub-milestone:nth-child(2)::after { background: url('assets/icons/journey-dot.svg') center/contain no-repeat; }
-.is-style-lakehub-milestone:nth-child(4)::after { background: url('assets/icons/journey-star.svg') center/contain no-repeat; width: 1.5rem; height: 1.5rem; top: 8rem; left: calc(50% - 0.75rem); }
+.is-style-lakehub-milestone:nth-child(2)::after { background: url('../icons/journey-dot.svg') center/contain no-repeat; }
+.is-style-lakehub-milestone:nth-child(4)::after { background: url('../icons/journey-star.svg') center/contain no-repeat; width: 1.5rem; height: 1.5rem; top: 8rem; left: calc(50% - 0.75rem); }
 .is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd) { display: block; }
 .wp-site-blocks .is-style-lakehub-milestone > :is(h3,p),
 .wp-site-blocks .is-style-lakehub-milestone::after { transition: transform 200ms ease; }
@@ -159,7 +159,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .wp-block-lakehub-programs { max-width: 73.5rem; margin-inline: auto; display: grid; gap: 2.9375rem; }
 .lakehub-program {
   display: grid; grid-template-columns: 49% 51%; min-height: 26.4375rem; border-radius: 0.75rem; overflow: hidden;
-  background-image: url('assets/gradients/program-1.svg'); background-size: 100% 100%; background-position: center bottom; background-repeat: no-repeat;
+  background-image: url('../gradients/program-1.svg'); background-size: 100% 100%; background-position: center bottom; background-repeat: no-repeat;
   font-family: var(--wp--preset--font-family--inter); transition: box-shadow 180ms ease;
 }
 .lakehub-program:hover { box-shadow: 0 0.75rem 1.625rem #00414520; }
@@ -170,9 +170,9 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .lakehub-program-description p { font-family: var(--wp--preset--font-family--inter); }
 .lakehub-program-description > * { margin-block: 0 0.75rem; }
 .lakehub-program-link { margin-top: auto; padding-top: 0.75rem; color: var(--lakehub-teal); font-size: 1rem; line-height: 1.5625rem; font-weight: 600; text-decoration: none; }
-.lakehub-program:nth-child(even) { grid-template-columns: 55% 45%; background-image: url('assets/gradients/program-2.svg'); }
-.lakehub-program:nth-child(3) { background-image: url('assets/gradients/program-3.svg'); }
-.lakehub-program:nth-child(4) { background-image: url('assets/gradients/program-4.svg'); }
+.lakehub-program:nth-child(even) { grid-template-columns: 55% 45%; background-image: url('../gradients/program-2.svg'); }
+.lakehub-program:nth-child(3) { background-image: url('../gradients/program-3.svg'); }
+.lakehub-program:nth-child(4) { background-image: url('../gradients/program-4.svg'); }
 .lakehub-program:nth-child(even) .lakehub-program-image { grid-column: 2; grid-row: 1; }
 .lakehub-program:nth-child(even) .lakehub-program-copy { grid-column: 1; grid-row: 1; padding-left: 3.125rem; padding-right: 2.5rem; }
 .lakehub-program:nth-child(even) :is(h2,h3) { max-width: 22.5rem; margin-bottom: 2.875rem; }
@@ -233,7 +233,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-story-grid::after { content: ''; display: table; clear: both; }
 .is-style-lakehub-story-photo { float: left; position: relative; isolation: isolate; margin: 0.5rem 3.5rem 1.75rem 0.875rem; width: fit-content; max-width: 30.25rem; }
 .is-style-lakehub-story-photo img { width: 30.25rem; height: 19.5625rem; object-fit: cover; border-radius: 0.75rem; }
-.is-style-lakehub-story-photo::before { content: ''; position: absolute; z-index: -1; left: -2.375rem; bottom: -2.625rem; width: 33.75rem; height: 20rem; background: url('assets/images/completion/story-dots.svg') left bottom / contain no-repeat; }
+.is-style-lakehub-story-photo::before { content: ''; position: absolute; z-index: -1; left: -2.375rem; bottom: -2.625rem; width: 33.75rem; height: 20rem; background: url('../images/completion/story-dots.svg') left bottom / contain no-repeat; }
 .is-style-lakehub-story-grid p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); }
 .is-style-lakehub-story-copy { display: contents; }
 .is-style-lakehub-story-copy h3 { font-family: var(--wp--preset--font-family--inter, sans-serif); font-size: 1.75rem; line-height: 2.25rem; font-weight: 600; color: var(--wp--preset--color--ink, #1b1c1c); margin-top: 0; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
@@ -285,7 +285,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-community-photo, .is-style-lakehub-portfolio-photo { position: relative; isolation: isolate; }
 .is-style-lakehub-community-photo { aspect-ratio: 575 / 338; overflow: hidden; border-radius: 1.125rem; }
 .is-style-lakehub-community-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; transform: scale(1.1113); }
-.is-style-lakehub-community-grid::before { content: ''; position: absolute; z-index: -1; left: -2.125rem; top: -3rem; width: 37.5rem; height: 26.25rem; background: url('assets/images/completion/community-dots.svg') left top / contain no-repeat; }
+.is-style-lakehub-community-grid::before { content: ''; position: absolute; z-index: -1; left: -2.125rem; top: -3rem; width: 37.5rem; height: 26.25rem; background: url('../images/completion/community-dots.svg') left top / contain no-repeat; }
 .is-style-lakehub-community-copy p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); font-family: var(--wp--preset--font-family--body); }
 .is-style-lakehub-community-copy h3 { font: 600 1.25rem/1.75rem var(--wp--preset--font-family--inter); margin-top: 0.5rem; }
 .is-style-lakehub-community-copy .wp-block-buttons { margin-top: 1.5rem; }
@@ -301,7 +301,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-portfolio-copy .wp-block-buttons { margin-top: 3rem; }
 .is-style-lakehub-portfolio-photo { width: 100%; height: 28.5625rem; aspect-ratio: 369 / 457; overflow: visible; border-radius: 1.125rem; position: relative; margin-top: 0.875rem !important; }
 .is-style-lakehub-portfolio-photo img { position: static; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 1.125rem; }
-.is-style-lakehub-portfolio-grid::after { content: ''; position: absolute; z-index: -1; right: -1.0625rem; top: 8.75rem; width: 21.25rem; height: 23.75rem; background: url('assets/images/completion/portfolio-dots.svg') right bottom / contain no-repeat; }
+.is-style-lakehub-portfolio-grid::after { content: ''; position: absolute; z-index: -1; right: -1.0625rem; top: 8.75rem; width: 21.25rem; height: 23.75rem; background: url('../images/completion/portfolio-dots.svg') right bottom / contain no-repeat; }
 
 /* Transformation Section */
 .is-style-lakehub-impact-transformation { background: white; padding-block: 2.5rem; }

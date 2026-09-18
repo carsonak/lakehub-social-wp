@@ -9,8 +9,8 @@ Run the full verification suite across all modified theme code:
 5. Site Editor parity verification (ensuring block editor renders styles cleanly without recovery errors).
 
 ## Checklist
-- [ ] Run PHP syntax linting.
-- [ ] Run shell script validation.
-- [ ] Run WordPress Studio CLI health commands.
-- [ ] Verify frontend rendering and browser console (zero JS errors).
-- [ ] Verify Site Editor styling.
+- [x] Run PHP syntax linting.
+- [x] Run shell script validation.
+- [x] Run WordPress Studio CLI health commands.
+- [x] Verify frontend rendering and browser console (zero JS errors).
+- [x] Verify Site Editor styling.
