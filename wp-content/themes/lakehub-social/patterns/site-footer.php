@@ -58,8 +58,8 @@
 <p>Get in touch!</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Subscribe to our news letter</p>
+<!-- wp:paragraph -->
+<p>Subscribe to our news letter</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:mailchimp-for-wp/form /--></div>

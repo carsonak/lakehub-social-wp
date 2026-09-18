@@ -130,6 +130,14 @@ section.is-style-lakehub-insights .is-style-lakehub-impact-heading p { margin: 0
 .is-style-lakehub-insight-card { min-height: 24.9375rem; overflow: hidden; border: 0.0625rem solid var(--lakehub-line); border-radius: 0.5rem; background: var(--wp--preset--color--paper); transition: box-shadow 180ms ease; }
 .is-style-lakehub-insight-card:hover { box-shadow: 0 0.75rem 1.625rem #00484c20; }
 .is-style-lakehub-insight-card .wp-block-post-featured-image img { display: block; height: 12rem; width: 100%; object-fit: cover; }
+.is-style-lakehub-insight-card img[src*="malika"],
+.lakehub-blog-featured-media img[src*="malika"] {
+  transform: scale(1.4) translate(-12%, 5%);
+  transform-origin: center center;
+}
+.wp-site-blocks .is-style-lakehub-insight-card:is(:hover, :focus-within) img[src*="malika"] {
+  transform: scale(1.46) translate(-12%, 5%);
+}
 .is-style-lakehub-insight-copy { padding: 1.5rem; min-height: 14rem; display: flex; flex-direction: column; }
 .is-style-lakehub-insight-copy h3 { line-height: 1.40625rem; font-weight: 600; }
 .is-style-lakehub-insight-copy h3 a { text-decoration: none; color: inherit; }
@@ -950,7 +958,16 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 .is-style-lakehub-story-photo::before { content: ''; position: absolute; z-index: -1; left: -2.375rem; bottom: -2.625rem; width: 33.75rem; height: 20rem; background: url('assets/images/completion/story-dots.svg') left bottom / contain no-repeat; }
 .is-style-lakehub-story-grid p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); }
 .is-style-lakehub-story-copy { display: contents; }
-.is-style-lakehub-story-copy h3 { font: 700 1.5rem/2rem var(--wp--preset--font-family--heading); margin-top: 0; margin-bottom: 1rem; color: #1e293b; }
+.is-style-lakehub-story-copy h3 {
+  font-family: var(--wp--preset--font-family--inter, sans-serif);
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  color: var(--wp--preset--color--ink, #1b1c1c);
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
 .is-style-lakehub-story-copy p { margin-bottom: 1rem; }
 
 /* Collapsible text section with fade-out & Read More / Hide toggle buttons */
@@ -1062,7 +1079,7 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
 .is-style-lakehub-impact-portfolio { padding-block: 1rem 5rem; }
 .is-style-lakehub-impact-portfolio > h2 { border-bottom: 0.0625rem solid #c4c7c7; padding-bottom: 0.25rem; }
 .is-style-lakehub-portfolio-grid { display: grid; grid-template-columns: 38rem 23.0625rem; gap: 8.625rem; align-items: start; margin-top: 4.5rem; }
-.is-style-lakehub-portfolio-copy h2 { font: 700 3rem/3.5rem var(--wp--preset--font-family--inter); letter-spacing: -0.06rem; margin-bottom: 2.5rem; }
+.is-style-lakehub-portfolio-copy :is(h2, h3) { font: 700 2rem/2.5rem var(--wp--preset--font-family--inter); letter-spacing: -0.06rem; margin-bottom: 2.5rem; }
 .is-style-lakehub-portfolio-copy p { font: 500 1.125rem/1.9375rem var(--wp--preset--font-family--body); letter-spacing: -0.06rem; }
 .is-style-lakehub-portfolio-copy p + p { margin-top: 3.75rem; }
 .is-style-lakehub-portfolio-copy .wp-block-buttons { margin-top: 3rem; }
@@ -1153,7 +1170,8 @@ section.is-style-lakehub-insights { min-height: 42.9375rem; }
  :is(.is-style-lakehub-about-page,.is-style-lakehub-impact-page) > section:not(.wp-block-cover),.is-style-lakehub-team-page { padding-inline: 1.25rem; }
  .wp-block-cover:is(.is-style-lakehub-about-hero,.is-style-lakehub-impact-hero) { min-height: 22.5rem !important; padding: 2.5rem 1.25rem; }
  .is-style-lakehub-about-hero h1,.is-style-lakehub-about-hero h1 span,.is-style-lakehub-impact-hero h1 { font-size: 2rem; line-height: 2.5rem; }
- .is-style-lakehub-about-intro h2,.is-style-lakehub-portfolio-copy h2,.is-style-lakehub-team-page h1 { font-size: 2.25rem; line-height: 2.75rem; }
+ .is-style-lakehub-about-intro h2,.is-style-lakehub-team-page h1 { font-size: 2.25rem; line-height: 2.75rem; }
+ .is-style-lakehub-portfolio-copy :is(h2, h3) { font-size: 1.75rem; line-height: 2.125rem; }
  .is-style-lakehub-about-intro p { font-size: 1rem; line-height: 1.625rem; }
  .is-style-lakehub-mission-copy { padding: 1.75rem 1.5rem; }
  .is-style-lakehub-mission-collage { width: 17.5rem; min-height: 18.125rem; margin-top: 1.375rem; }
@@ -1307,7 +1325,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-footer-links h2,
 .is-style-lakehub-footer-links > p:first-child { font-size: 1.125rem; line-height: 1.75rem; margin-block: 0 1.5rem; }
 .is-style-lakehub-footer-links > p:first-child + p {
- margin-top: 0; font-size: 1rem; line-height: 1.5rem; font-weight: 400;
+ margin-top: 0; font-family: var(--wp--preset--font-family--body); font-size: 1rem; line-height: 1.5rem; font-weight: 400;
 }
 @media(max-width:900px) {
  .is-style-lakehub-footer-grid > :last-child { padding-top: 1rem; }

@@ -46,8 +46,8 @@
 <!-- /wp:heading -->
 <!-- wp:group {"className":"is-style-lakehub-portfolio-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-lakehub-portfolio-grid"><!-- wp:group {"className":"is-style-lakehub-portfolio-copy","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-lakehub-portfolio-copy"><!-- wp:heading -->
-<h2 class="wp-block-heading">Meet <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-teal-color">Malika</mark></h2>
+<div class="wp-block-group is-style-lakehub-portfolio-copy"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Meet <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-teal-color">Malika</mark></h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
 <p>Malika Asman joined Zone01 Kisumu with no coding background and, in roughly 18 months, turned that blank slate into a portfolio of real-world products and global open-source contributions. She’s the founder of Chama Trust Wallet, a digital savings platform for community groups; co-creator of HEAL, the hackathon-winning AI app that provides mental health support to GBV survivors; and now works as a systems security engineer on projects like GNOME and Flatseal through Outreachy</p>
