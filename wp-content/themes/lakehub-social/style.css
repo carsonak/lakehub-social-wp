@@ -1359,6 +1359,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .lakehub-blog-post-shell {
   background: #ffffff;
   min-height: calc(100vh - 8rem);
+  padding-bottom: 3rem;
 }
 
 .lakehub-blog-header {
@@ -1504,9 +1505,12 @@ html:has(.wp-site-blocks) { font-size: 16px; }
   color: #000000;
 }
 
-.lakehub-blog-share {
+:root .lakehub-blog-share,
+:root .lakehub-blog-body > .lakehub-blog-share {
   border-top: 1px solid #dbdbdb;
   margin-top: 4rem;
+  margin-block-end: 5rem;
+  margin-bottom: 5rem;
   padding-top: 2rem;
 }
 
