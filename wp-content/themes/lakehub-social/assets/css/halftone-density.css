@@ -112,14 +112,20 @@
   clip-path: inset(5.008% round 1.125rem) !important;
 }
 
-/* Frame sizing & clipping: Portfolio photo retains internal crop without clipping dots */
+/* Frame sizing & clipping: Portfolio photo fills container leaving no padding */
 .is-style-lakehub-portfolio-photo {
   overflow: visible !important;
-  border-radius: 0 !important;
+  border-radius: 1.125rem !important;
+  padding: 0 !important;
 }
 .is-style-lakehub-portfolio-photo img {
   border-radius: 1.125rem !important;
-  clip-path: inset(26.718% 0.028% 16.408% 31.125% round 1.125rem) !important;
+  clip-path: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
 }
 
 /* Suppress legacy grid pseudo-elements */
@@ -152,7 +158,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+  transform: translate(calc(-50% + var(--lakehub-halftone-offset-x, 0px)), calc(-50% + var(--lakehub-halftone-offset-y, 0px))) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
   transition: transform 120ms cubic-bezier(.2, .6, .4, 1);
   will-change: transform;
   pointer-events: none;
@@ -170,20 +176,20 @@
 
 @media (max-width: 600px) {
   .lakehub-halftone-layer {
-    transform: translate(-50%, -50%) scale(0.65) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
+    transform: translate(calc(-50% + calc(var(--lakehub-halftone-offset-x, 0px) * 0.65)), calc(-50% + calc(var(--lakehub-halftone-offset-y, 0px) * 0.65))) scale(0.65) translate3d(calc(-1 * var(--lakehub-repel-x, 0px)), calc(-1 * var(--lakehub-repel-y, 0px)), 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .lakehub-halftone-layer {
-    transform: translate(-50%, -50%) !important;
+    transform: translate(calc(-50% + var(--lakehub-halftone-offset-x, 0px)), calc(-50% + var(--lakehub-halftone-offset-y, 0px))) !important;
     transition: none !important;
   }
 }
 
 @media (max-width: 600px) and (prefers-reduced-motion: reduce) {
   .lakehub-halftone-layer {
-    transform: translate(-50%, -50%) scale(0.65) !important;
+    transform: translate(calc(-50% + calc(var(--lakehub-halftone-offset-x, 0px) * 0.65)), calc(-50% + calc(var(--lakehub-halftone-offset-y, 0px) * 0.65))) scale(0.65) !important;
     transition: none !important;
   }
 }

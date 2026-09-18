@@ -1275,8 +1275,8 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-community-photo { aspect-ratio: 575 / 338; overflow: hidden; border-radius: 1.125rem; }
 .is-style-lakehub-community-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; transform: scale(1.1113); }
 .is-style-lakehub-community-grid::before { content: ''; position: absolute; z-index: -1; left: -2.125rem; top: -3rem; width: 37.5rem; height: 26.25rem; background: url('assets/images/completion/community-dots.svg') left top / contain no-repeat; }
-.is-style-lakehub-portfolio-photo { width: 100%; height: 28.5625rem; overflow: hidden; border-radius: 1.125rem; }
-.is-style-lakehub-portfolio-photo img { position: absolute; max-width: none; width: 145.2497%; height: 175.8285%; left: -45.2093%; top: -46.9786%; object-fit: fill; }
+.is-style-lakehub-portfolio-photo { width: 100%; height: 28.5625rem; aspect-ratio: 369 / 457; overflow: visible; border-radius: 1.125rem; position: relative; }
+.is-style-lakehub-portfolio-photo img { position: static; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 1.125rem; }
 .is-style-lakehub-portfolio-grid::after { content: ''; position: absolute; z-index: -1; right: -1.0625rem; top: 8.75rem; width: 21.25rem; height: 23.75rem; background: url('assets/images/completion/portfolio-dots.svg') right bottom / contain no-repeat; }
 
 /* Halftone photograph hover repulsion */
@@ -1319,7 +1319,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
  .is-style-lakehub-community-photo img { height: 100%; }
  .is-style-lakehub-community-grid::before { top: -1.5rem; height: 16rem; }
  .is-style-lakehub-portfolio-photo { height: auto; aspect-ratio: 369 / 457; }
- .is-style-lakehub-portfolio-photo img { height: 175.8285%; }
+ .is-style-lakehub-portfolio-photo img { height: 100%; }
  .is-style-lakehub-portfolio-grid::after { right: -.5rem; width: 85%; height: 20rem; }
 }
 

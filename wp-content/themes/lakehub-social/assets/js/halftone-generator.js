@@ -180,6 +180,38 @@
       target.prepend(layer);
     }
 
+    const rawOffsetX = target.getAttribute('data-lakehub-halftone-offset-x');
+    const rawOffsetY = target.getAttribute('data-lakehub-halftone-offset-y');
+    let offsetX = rawOffsetX !== null ? parseFloat(rawOffsetX) : null;
+    let offsetY = rawOffsetY !== null ? parseFloat(rawOffsetY) : null;
+
+    if (offsetX === null || isNaN(offsetX)) {
+      if (target.classList.contains('is-style-lakehub-story-photo')) {
+        offsetX = -35;
+      } else if (target.classList.contains('is-style-lakehub-community-photo')) {
+        offsetX = -35;
+      } else if (target.classList.contains('is-style-lakehub-portfolio-photo')) {
+        offsetX = 35;
+      } else {
+        offsetX = 0;
+      }
+    }
+
+    if (offsetY === null || isNaN(offsetY)) {
+      if (target.classList.contains('is-style-lakehub-story-photo')) {
+        offsetY = 35;
+      } else if (target.classList.contains('is-style-lakehub-community-photo')) {
+        offsetY = -35;
+      } else if (target.classList.contains('is-style-lakehub-portfolio-photo')) {
+        offsetY = 25;
+      } else {
+        offsetY = 0;
+      }
+    }
+
+    layer.style.setProperty('--lakehub-halftone-offset-x', `${offsetX}px`);
+    layer.style.setProperty('--lakehub-halftone-offset-y', `${offsetY}px`);
+
     layer.innerHTML = svgHtml;
     target.classList.add('lakehub-halftone-active');
 

@@ -59,6 +59,18 @@
             type: 'string',
             default: '#00676B',
           },
+          lakehubHalftonePlacement: {
+            type: 'string',
+            default: '',
+          },
+          lakehubHalftoneOffsetX: {
+            type: 'number',
+            default: 0,
+          },
+          lakehubHalftoneOffsetY: {
+            type: 'number',
+            default: 0,
+          },
         }),
       });
     }
@@ -81,6 +93,9 @@
         lakehubHalftoneMaxDot = 7.5,
         lakehubHalftoneShrink = 0.88,
         lakehubHalftoneColor = '#00676B',
+        lakehubHalftonePlacement = '',
+        lakehubHalftoneOffsetX = 0,
+        lakehubHalftoneOffsetY = 0,
       } = attributes;
 
       const templateOptions = [
@@ -88,6 +103,16 @@
         { label: __('Rectangular Concentric Rings', 'lakehub-social'), value: 'rectangular' },
         { label: __('Circular Concentric Rings', 'lakehub-social'), value: 'circular' },
         { label: __('None / Disabled', 'lakehub-social'), value: 'none' },
+      ];
+
+      const placementOptions = [
+        { label: __('Default (Inherit from photo style)', 'lakehub-social'), value: '' },
+        { label: __('Centered (0px, 0px)', 'lakehub-social'), value: 'center' },
+        { label: __('Bottom-Left (About Story: -35px, +35px)', 'lakehub-social'), value: 'bottom-left' },
+        { label: __('Top-Left (Community Projects: -35px, -35px)', 'lakehub-social'), value: 'top-left' },
+        { label: __('Bottom-Right (Portfolio: +35px, +25px)', 'lakehub-social'), value: 'bottom-right' },
+        { label: __('Top-Right (+35px, -35px)', 'lakehub-social'), value: 'top-right' },
+        { label: __('Custom (Manual sliders)', 'lakehub-social'), value: 'custom' },
       ];
 
       const colorPaletteColors = [
@@ -126,6 +151,57 @@
                 setAttributes({ lakehubHalftoneTemplate: value });
               },
             }),
+            isEnabled &&
+              el(SelectControl, {
+                label: __('Pattern Placement / Corner Offset', 'lakehub-social'),
+                value: lakehubHalftonePlacement,
+                options: placementOptions,
+                help: __('Offset the pattern towards a corner or customize X/Y coordinates.', 'lakehub-social'),
+                onChange: function (value) {
+                  const updates = { lakehubHalftonePlacement: value };
+                  if (value === 'bottom-left') {
+                    updates.lakehubHalftoneOffsetX = -35;
+                    updates.lakehubHalftoneOffsetY = 35;
+                  } else if (value === 'top-left') {
+                    updates.lakehubHalftoneOffsetX = -35;
+                    updates.lakehubHalftoneOffsetY = -35;
+                  } else if (value === 'bottom-right') {
+                    updates.lakehubHalftoneOffsetX = 35;
+                    updates.lakehubHalftoneOffsetY = 25;
+                  } else if (value === 'top-right') {
+                    updates.lakehubHalftoneOffsetX = 35;
+                    updates.lakehubHalftoneOffsetY = -35;
+                  } else if (value === 'center') {
+                    updates.lakehubHalftoneOffsetX = 0;
+                    updates.lakehubHalftoneOffsetY = 0;
+                  }
+                  setAttributes(updates);
+                },
+              }),
+            isEnabled && (lakehubHalftonePlacement === 'custom' || lakehubHalftonePlacement === '') &&
+              el(RangeControl, {
+                label: __('Horizontal Offset (X) (px)', 'lakehub-social'),
+                value: lakehubHalftoneOffsetX !== undefined ? lakehubHalftoneOffsetX : 0,
+                min: -120,
+                max: 120,
+                step: 5,
+                help: __('Horizontal shift of pattern relative to image frame.', 'lakehub-social'),
+                onChange: function (value) {
+                  setAttributes({ lakehubHalftoneOffsetX: value, lakehubHalftonePlacement: 'custom' });
+                },
+              }),
+            isEnabled && (lakehubHalftonePlacement === 'custom' || lakehubHalftonePlacement === '') &&
+              el(RangeControl, {
+                label: __('Vertical Offset (Y) (px)', 'lakehub-social'),
+                value: lakehubHalftoneOffsetY !== undefined ? lakehubHalftoneOffsetY : 0,
+                min: -120,
+                max: 120,
+                step: 5,
+                help: __('Vertical shift of pattern relative to image frame.', 'lakehub-social'),
+                onChange: function (value) {
+                  setAttributes({ lakehubHalftoneOffsetY: value, lakehubHalftonePlacement: 'custom' });
+                },
+              }),
             isEnabled &&
               el(RangeControl, {
                 label: __('Pattern Spread Beyond Frame (px)', 'lakehub-social'),

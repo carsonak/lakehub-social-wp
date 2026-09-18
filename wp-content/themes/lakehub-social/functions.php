@@ -132,6 +132,9 @@ add_filter( 'render_block_core/image', static function ( $block_content, $block 
 	$max_dot = isset( $attrs['lakehubHalftoneMaxDot'] ) ? (float) $attrs['lakehubHalftoneMaxDot'] : 7.5;
 	$shrink = isset( $attrs['lakehubHalftoneShrink'] ) ? (float) $attrs['lakehubHalftoneShrink'] : 0.88;
 	$color = $attrs['lakehubHalftoneColor'] ?? '#00676B';
+	$placement = $attrs['lakehubHalftonePlacement'] ?? '';
+	$offset_x = isset( $attrs['lakehubHalftoneOffsetX'] ) ? (float) $attrs['lakehubHalftoneOffsetX'] : 0;
+	$offset_y = isset( $attrs['lakehubHalftoneOffsetY'] ) ? (float) $attrs['lakehubHalftoneOffsetY'] : 0;
 
 	$class_name = $attrs['className'] ?? '';
 	$is_style_photo = str_contains( $class_name, 'is-style-lakehub-story-photo' )
@@ -140,6 +143,34 @@ add_filter( 'render_block_core/image', static function ( $block_content, $block 
 
 	if ( empty( $template ) && $is_style_photo ) {
 		$template = 'rectangular';
+	}
+
+	if ( 'bottom-left' === $placement ) {
+		$offset_x = -35;
+		$offset_y = 35;
+	} elseif ( 'top-left' === $placement ) {
+		$offset_x = -35;
+		$offset_y = -35;
+	} elseif ( 'bottom-right' === $placement ) {
+		$offset_x = 35;
+		$offset_y = 25;
+	} elseif ( 'top-right' === $placement ) {
+		$offset_x = 35;
+		$offset_y = -35;
+	} elseif ( 'center' === $placement ) {
+		$offset_x = 0;
+		$offset_y = 0;
+	} elseif ( empty( $placement ) ) {
+		if ( str_contains( $class_name, 'is-style-lakehub-story-photo' ) ) {
+			$offset_x = -35;
+			$offset_y = 35;
+		} elseif ( str_contains( $class_name, 'is-style-lakehub-community-photo' ) ) {
+			$offset_x = -35;
+			$offset_y = -35;
+		} elseif ( str_contains( $class_name, 'is-style-lakehub-portfolio-photo' ) ) {
+			$offset_x = 35;
+			$offset_y = 25;
+		}
 	}
 
 	if ( empty( $template ) || 'none' === $template ) {
@@ -153,6 +184,8 @@ add_filter( 'render_block_core/image', static function ( $block_content, $block 
 		$tags->set_attribute( 'data-lakehub-halftone-max-dot', esc_attr( (string) $max_dot ) );
 		$tags->set_attribute( 'data-lakehub-halftone-shrink', esc_attr( (string) $shrink ) );
 		$tags->set_attribute( 'data-lakehub-halftone-color', esc_attr( $color ) );
+		$tags->set_attribute( 'data-lakehub-halftone-offset-x', esc_attr( (string) $offset_x ) );
+		$tags->set_attribute( 'data-lakehub-halftone-offset-y', esc_attr( (string) $offset_y ) );
 		$tags->add_class( 'lakehub-has-halftone' );
 		return $tags->get_updated_html();
 	}
