@@ -14,14 +14,15 @@ Decompose `wp-content/themes/lakehub-social/assets/js/main.js` (918 lines) into 
 - Update `inc/enqueue.php` to enqueue scripts with safe DOM guards.
 
 ## Checklist
-- [ ] Create `assets/js/modules/partner-carousel.js`.
-- [ ] Create `assets/js/modules/program-cards.js`.
-- [ ] Create `assets/js/modules/hero-slideshow.js`.
-- [ ] Create `assets/js/modules/insights-carousel.js`.
-- [ ] Create `assets/js/modules/collapsible.js`.
-- [ ] Create `assets/js/modules/metrics.js`.
-- [ ] Create `assets/js/modules/social-share.js`.
-- [ ] Create `assets/js/modules/halftone-hover.js`.
-- [ ] Refactor `assets/js/main.js` to focus on global navigation and link attributes.
-- [ ] Update `inc/enqueue.php` to register/enqueue modules.
-- [ ] Verify frontend interactivity across Home, Programs, About, Impact, and Single Post.
+- [x] Create `assets/js/modules/partner-carousel.js`.
+- [x] Create `assets/js/modules/program-cards.js`.
+- [x] Create `assets/js/modules/hero-slideshow.js`.
+- [x] Create `assets/js/modules/insights-carousel.js`.
+- [x] Create `assets/js/modules/collapsible.js`.
+- [x] Create `assets/js/modules/metrics.js`.
+- [x] Create `assets/js/modules/social-share.js`.
+- [x] Create `assets/js/modules/halftone-hover.js`.
+- [x] Refactor `assets/js/main.js` to focus on global navigation and link attributes.
+- [x] Update `inc/enqueue.php` to register/enqueue modules.
+- [x] Verify frontend interactivity across Home, Programs, About, Impact, and Single Post.
+
