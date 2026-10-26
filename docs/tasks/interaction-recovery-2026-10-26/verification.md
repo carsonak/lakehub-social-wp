@@ -22,3 +22,7 @@ Header pointer underline and team sheen were not located in inspected snapshots 
 Local ignored reports/screenshots: `.runtime/interaction-recovery/`. Full exports and push logs: `.backups/interaction-recovery-*`. Approved static design evidence: existing exports under `docs/design-exports/16-09-2026/`; no claim is made that current Figma frames were revalidated or unchanged. This work restores established layout and behavior, not a new Figma implementation.
 
 Studio DOM-inspection tools timed out; direct Playwright browser verification succeeded. Initial browser navigation timeouts were resolved for verification by explicit localhost IPv4 resolution and proxy bypass. One pre-existing duplicate heading on Coming Soon was kept outside this interaction recovery; its content/button spacing passes all viewports. Original media and published content remain intact.
+
+## Hosted preview
+
+https://carsoniskihara-grykm-studio.wp.build — created and listed active by Studio. Three hosted Chromium checks pass: complete Home geometry/images/assets, header indicator movement/reset, Mission/Vision zoom and story expansion/collapse. Exact expiration was not returned by Studio. Final full export is `.backups/interaction-recovery-final.zip`, paired with the final source revision by the usual push script.
