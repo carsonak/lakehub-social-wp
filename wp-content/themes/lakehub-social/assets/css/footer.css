@@ -227,3 +227,112 @@ button.is-style-lakehub-newsletter-label:focus-visible {
     flex-wrap: wrap;
   }
 }
+
+/* Recovered final treatments from the pre-modularisation theme. */
+.is-style-lakehub-footer-links h2 {
+  margin-bottom: 1.5rem;
+}
+.is-style-lakehub-footer-links > p:first-child {
+  margin-top: 0;
+  font-weight: 500;
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer-grid {
+  gap: 1.75rem;
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer-brand > .wp-block-group {
+  padding-left: 0;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer {
+  padding-top: 2.5rem;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer-bottom {
+  font-size: 0.625rem;
+  gap: 0.75rem;
+  padding-block: 1rem;
+}
+}
+.is-style-lakehub-footer-links .wp-block-navigation {
+  font: 400 1rem/1.5rem var(--wp--preset--font-family--body);
+  text-transform: none;
+  letter-spacing: 0;
+  color: #e4e2e2cc;
+}
+.is-style-lakehub-footer-links .wp-block-navigation__container {
+  gap: 0.75rem;
+}
+.wp-site-blocks :is(
+  .is-style-lakehub-footer-links a,
+  .is-style-lakehub-footer-bottom a,
+  .is-style-lakehub-footer .wp-block-navigation a
+) {
+  display: inline-block;
+  transition: transform 180ms ease, color 180ms ease, text-decoration-color 180ms ease !important;
+  text-decoration: none;
+}
+.wp-site-blocks :is(
+  .is-style-lakehub-footer-links a,
+  .is-style-lakehub-footer-bottom a,
+  .is-style-lakehub-footer .wp-block-navigation a
+):is(:hover, :focus-visible) {
+  background: transparent !important;
+  transform: translateY(-0.125rem) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.25rem !important;
+  color: white !important;
+}
+.is-style-lakehub-footer-grid {
+  justify-content: space-between;
+  align-items: start;
+  grid-template-columns: 18rem 7.5rem 6.375rem minmax(0,21.625rem);
+  gap: 2rem;
+}
+.is-style-lakehub-footer-links > p:first-child + p {
+  color: white;
+}
+@media (max-width:1199px) {
+.is-style-lakehub-footer-grid {
+  grid-template-columns: 1.1fr .65fr .55fr 1.5fr;
+}
+}
+@media (max-width:900px) {
+.is-style-lakehub-footer-grid {
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width:900px) {
+.is-style-lakehub-footer-grid > :last-child {
+  padding: 0;
+  grid-column: auto;
+  max-width: none;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer-brand {
+  grid-column: 1/-1;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-footer-grid > :last-child {
+  grid-column: 1/-1;
+}
+}
+
+.is-style-lakehub-social-icon img { opacity: .8; transition: opacity 180ms ease, filter 180ms ease; }
+.is-style-lakehub-social-icon a:is(:hover, :focus-visible) img { opacity: 1; filter: brightness(1.35); }
+@media (prefers-reduced-motion: reduce) {
+  .is-style-lakehub-social-icon img { transition: none; }
+}

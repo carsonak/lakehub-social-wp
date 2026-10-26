@@ -23,6 +23,9 @@ add_action( 'after_setup_theme', static function () {
 		'assets/css/navigation-header.css',
 		'assets/css/footer.css',
 		'assets/css/sections.css',
+		'assets/css/timeline.css',
+		'assets/css/team.css',
+		'assets/css/interactions.css',
 		'assets/css/partners.css',
 		'assets/css/insights.css',
 		'assets/css/single-post.css',
@@ -48,8 +51,15 @@ add_action( 'wp_enqueue_scripts', static function () {
 		'lakehub-navigation' => 'assets/css/navigation-header.css',
 		'lakehub-footer'     => 'assets/css/footer.css',
 		'lakehub-sections'   => 'assets/css/sections.css',
+		'assets/css/timeline.css',
+		'assets/css/team.css',
+		'assets/css/interactions.css',
 		'lakehub-partners'   => 'assets/css/partners.css',
 		'lakehub-insights'   => 'assets/css/insights.css',
+		'lakehub-timeline'   => 'assets/css/timeline.css',
+		'lakehub-team'       => 'assets/css/team.css',
+		'lakehub-interactions' => 'assets/css/interactions.css',
+		'lakehub-coming-soon' => 'assets/css/coming-soon.css',
 	);
 
 	foreach ( $modular_stylesheets as $handle => $relative_path ) {

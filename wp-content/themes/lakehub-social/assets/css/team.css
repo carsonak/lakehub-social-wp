@@ -1,0 +1,19 @@
+
+/* Recovered final treatments from the pre-modularisation theme. */
+@media (hover:hover) and (pointer:fine) {
+.lakehub-team-card:hover {
+  box-shadow: 0 0.5rem 1.25rem #00414524;
+}
+}
+.lakehub-team-photo.has-design-crop {
+  position: relative;
+}
+.lakehub-team-photo.has-design-crop img {
+  position: absolute;
+  max-width: none;
+  width: var(--lakehub-crop-width);
+  height: var(--lakehub-crop-height);
+  left: var(--lakehub-crop-left);
+  top: var(--lakehub-crop-top);
+  object-fit: fill;
+}

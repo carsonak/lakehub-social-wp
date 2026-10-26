@@ -1,0 +1,102 @@
+
+/* Recovered final treatments from the pre-modularisation theme. */
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .is-style-lakehub-milestone:hover > :is(h3,p) {
+  transform: scale(1.05);
+}
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .is-style-lakehub-milestone:hover::after {
+  transform: scale(1.2);
+}
+}
+@media (prefers-reduced-motion:reduce) {
+.wp-site-blocks .is-style-lakehub-milestone > :is(h3,p) {
+  transition: none !important;
+  transform: none !important;
+}
+}
+@media (prefers-reduced-motion:reduce) {
+.wp-site-blocks .is-style-lakehub-milestone::after {
+  transition: none !important;
+  transform: none !important;
+}
+}
+.is-style-lakehub-journey {
+  padding-inline: 2rem;
+}
+.is-style-lakehub-journey > .is-style-lakehub-timeline {
+  max-width: 76rem;
+}
+.wp-block-group.is-style-lakehub-timeline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.75rem 0 1.5rem;
+  margin-top: 3.25rem;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+.wp-block-group.is-style-lakehub-timeline::-webkit-scrollbar {
+  display: none;
+}
+.is-style-lakehub-timeline::before {
+  display: none;
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone {
+  flex: 1 0 17.5rem;
+  min-width: 17.5rem;
+  min-height: 16.6875rem;
+  padding-inline: 1rem;
+  position: relative;
+  scroll-snap-align: center;
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8.625rem;
+  width: auto;
+  height: 0.25rem;
+  background: var(--lakehub-line);
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone::after {
+  top: 8.125rem;
+  left: calc(50% - 0.5625rem);
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url('../icons/journey-dot.svg') center/contain no-repeat;
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone:last-child::after {
+  background-image: url('../icons/journey-star.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 7.9375rem;
+  left: calc(50% - 0.75rem);
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd) {
+  padding-top: 1.125rem;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even) {
+  padding-top: 9.75rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year {
+  position: static;
+  margin-top: 0.5rem;
+}
+.is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year {
+  position: absolute;
+  top: 6.5rem;
+  left: 0;
+  right: 0;
+}
+
+.wp-site-blocks .is-style-lakehub-timeline { cursor: grab; touch-action: pan-x pan-y pinch-zoom; }
+.wp-site-blocks .is-style-lakehub-timeline.is-dragging { cursor: grabbing; user-select: none; scroll-snap-type: none; }

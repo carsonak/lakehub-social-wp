@@ -121,3 +121,27 @@
     padding: 0.625rem 0;
   }
 }
+
+/* Recovered final treatments from the pre-modularisation theme. */
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a {
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+  display: inline-block;
+}
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible {
+  color: var(--lakehub-teal);
+  border-bottom-color: currentColor;
+  font-weight: 500;
+  transform: translateY(-0.125rem);
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover {
+  font-weight: 500;
+  transform: translateY(-0.125rem);
+}
+}
+@media (prefers-reduced-motion:reduce) {
+.wp-site-blocks .is-style-lakehub-header .wp-block-navigation a {
+  transition: none !important;
+  transform: none !important;
+}
+}

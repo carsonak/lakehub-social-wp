@@ -9,7 +9,7 @@
       "file": "old",
       "line": 246,
       "key": "[[],\".is-style-lakehub-footer-links h2\",\"margin-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -20,7 +20,7 @@
       "file": "old",
       "line": 248,
       "key": "[[],\".is-style-lakehub-footer-links>p:first-child\",\"margin-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -44,7 +44,7 @@
       "file": "old",
       "line": 300,
       "key": "[[\"@media (min-width:1281px)\"],\".is-style-lakehub-program-section\",\"padding-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -57,7 +57,7 @@
       "file": "old",
       "line": 367,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-partner-logo\",\"flex-basis\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -70,7 +70,7 @@
       "file": "old",
       "line": 368,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-partner-logo img\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -83,7 +83,7 @@
       "file": "old",
       "line": 369,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-partners>p\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -96,7 +96,7 @@
       "file": "old",
       "line": 370,
       "key": "[[\"@media (max-width:600px)\"],\"section.is-style-lakehub-insights\",\"padding-block\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -109,7 +109,7 @@
       "file": "old",
       "line": 370,
       "key": "[[\"@media (max-width:600px)\"],\"section.is-style-lakehub-insights\",\"min-height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -122,7 +122,7 @@
       "file": "old",
       "line": 371,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-query.is-style-lakehub-insights\",\"margin-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -135,7 +135,7 @@
       "file": "old",
       "line": 372,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"flex-basis\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -148,7 +148,7 @@
       "file": "old",
       "line": 1180,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -161,7 +161,7 @@
       "file": "old",
       "line": 374,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-grid\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -174,7 +174,7 @@
       "file": "old",
       "line": 1181,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-brand\",\"grid-column\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -187,7 +187,7 @@
       "file": "old",
       "line": 376,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-logo img\",\"max-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -200,7 +200,7 @@
       "file": "old",
       "line": 376,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-logo img\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -213,7 +213,7 @@
       "file": "old",
       "line": 377,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-brand>.wp-block-group\",\"padding-left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -226,7 +226,7 @@
       "file": "old",
       "line": 378,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer\",\"padding-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -239,7 +239,7 @@
       "file": "old",
       "line": 379,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-bottom\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -252,7 +252,7 @@
       "file": "old",
       "line": 379,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-bottom\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -265,7 +265,7 @@
       "file": "old",
       "line": 379,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-bottom\",\"padding-block\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -278,7 +278,7 @@
       "file": "old",
       "line": 395,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-insight-card\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -291,7 +291,7 @@
       "file": "old",
       "line": 395,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-partner-logo img\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -302,7 +302,7 @@
       "file": "old",
       "line": 398,
       "key": "[[],\".editor-styles-wrapper .wp-block-lakehub-programs\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -313,7 +313,7 @@
       "file": "old",
       "line": 399,
       "key": "[[],\".editor-styles-wrapper .wp-block-lakehub-programs .wp-block-lakehub-programs\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -326,7 +326,7 @@
       "file": "old",
       "line": 434,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -339,7 +339,7 @@
       "file": "old",
       "line": 412,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact-feature\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -352,7 +352,7 @@
       "file": "old",
       "line": 412,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -365,7 +365,7 @@
       "file": "old",
       "line": 413,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-flagship-heading\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -378,7 +378,7 @@
       "file": "old",
       "line": 414,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-benefit\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -389,7 +389,7 @@
       "file": "old",
       "line": 416,
       "key": "[[],\".wp-block-group.is-style-lakehub-impact\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -400,7 +400,7 @@
       "file": "old",
       "line": 417,
       "key": "[[],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -411,7 +411,7 @@
       "file": "old",
       "line": 419,
       "key": "[[],\"section.is-style-lakehub-insights .is-style-lakehub-impact-heading p\",\"margin-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -424,7 +424,7 @@
       "file": "old",
       "line": 443,
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(4)\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -437,7 +437,7 @@
       "file": "old",
       "line": 426,
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(4)\",\"grid-template-columns\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -450,7 +450,7 @@
       "file": "old",
       "line": 673,
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(4):is(h2,h3)\",\"margin-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -463,7 +463,7 @@
       "file": "old",
       "line": 435,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -476,7 +476,7 @@
       "file": "old",
       "line": 438,
       "key": "[[\"@media (min-width:1200px)\"],\".wp-block-group.is-style-lakehub-benefit\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -489,7 +489,7 @@
       "file": "old",
       "line": 439,
       "key": "[[\"@media (min-width:1200px)\"],\".wp-block-lakehub-programs\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -500,7 +500,7 @@
       "file": "old",
       "line": 449,
       "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"font\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -511,7 +511,7 @@
       "file": "old",
       "line": 449,
       "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"text-transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -522,7 +522,7 @@
       "file": "old",
       "line": 449,
       "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"letter-spacing\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -533,7 +533,7 @@
       "file": "old",
       "line": 449,
       "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -544,7 +544,7 @@
       "file": "old",
       "line": 450,
       "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation__container\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -555,7 +555,7 @@
       "file": "old",
       "line": 452,
       "key": "[[],\".wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -568,7 +568,7 @@
       "file": "old",
       "line": 454,
       "key": "[[\"@media (min-width:901px)\"],\".is-style-lakehub-flagship-heading h1\",\"white-space\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -581,7 +581,7 @@
       "file": "old",
       "line": 454,
       "key": "[[\"@media (min-width:901px)\"],\".is-style-lakehub-flagship-heading h1\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -594,7 +594,7 @@
       "file": "old",
       "line": 527,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -607,7 +607,7 @@
       "file": "old",
       "line": 527,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"right\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -620,7 +620,7 @@
       "file": "old",
       "line": 553,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-copy\",\"--lakehub-reveal-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -633,7 +633,7 @@
       "file": "old",
       "line": 553,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-copy\",\"--lakehub-reveal-y\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -646,7 +646,7 @@
       "file": "old",
       "line": 553,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy\",\"--lakehub-reveal-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -659,7 +659,7 @@
       "file": "old",
       "line": 553,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy\",\"--lakehub-reveal-y\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -672,7 +672,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"grid-column\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -685,7 +685,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"grid-row\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -698,7 +698,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"justify-self\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -711,7 +711,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"justify-content\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -724,7 +724,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"text-align\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -737,7 +737,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -750,7 +750,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -763,7 +763,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"--lakehub-photo-center-shift\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -776,7 +776,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"grid-column\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -789,7 +789,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"grid-row\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -802,7 +802,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"justify-self\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -815,7 +815,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"justify-content\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -828,7 +828,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"text-align\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -841,7 +841,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -854,7 +854,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -867,7 +867,7 @@
       "file": "old",
       "line": 599,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"--lakehub-photo-center-shift\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -880,7 +880,7 @@
       "file": "old",
       "line": 623,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-block-group.is-style-lakehub-metric-photo:hover p\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -893,7 +893,7 @@
       "file": "old",
       "line": 633,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"opacity\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -906,7 +906,7 @@
       "file": "old",
       "line": 633,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -919,7 +919,7 @@
       "file": "old",
       "line": 633,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -932,7 +932,7 @@
       "file": "old",
       "line": 633,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"pointer-events\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -945,7 +945,7 @@
       "file": "old",
       "line": 639,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -958,7 +958,7 @@
       "file": "old",
       "line": 639,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -971,7 +971,7 @@
       "file": "old",
       "line": 643,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-photo p\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -984,7 +984,7 @@
       "file": "old",
       "line": 643,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-photo p\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -997,7 +997,7 @@
       "file": "old",
       "line": 647,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1010,7 +1010,7 @@
       "file": "old",
       "line": 647,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"right\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1023,7 +1023,7 @@
       "file": "old",
       "line": 647,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1034,7 +1034,7 @@
       "file": "old",
       "line": 660,
       "key": "[[],\".is-style-lakehub-program-section\",\"padding-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1045,7 +1045,7 @@
       "file": "old",
       "line": 660,
       "key": "[[],\".is-style-lakehub-program-section\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1058,7 +1058,7 @@
       "file": "old",
       "line": 668,
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program-copy\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1071,7 +1071,7 @@
       "file": "old",
       "line": 672,
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(3):is(h2,h3)\",\"margin-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1084,7 +1084,7 @@
       "file": "old",
       "line": 677,
       "key": "[[\"@media (max-width:1199px)\"],\".is-style-lakehub-metric-row\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1097,7 +1097,7 @@
       "file": "old",
       "line": 678,
       "key": "[[\"@media (max-width:1199px)\"],\".is-style-lakehub-metric-photo p\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1110,7 +1110,7 @@
       "file": "old",
       "line": 703,
       "key": "[[\"@media (forced-colors:active)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"background\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1123,7 +1123,7 @@
       "file": "old",
       "line": 703,
       "key": "[[\"@media (forced-colors:active)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1136,7 +1136,7 @@
       "file": "old",
       "line": 704,
       "key": "[[\"@media (forced-colors:active)\"],\".is-style-lakehub-zone-word\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1149,7 +1149,7 @@
       "file": "old",
       "line": 704,
       "key": "[[\"@media (forced-colors:active)\"],\".is-style-lakehub-zone-word\",\"-webkit-text-stroke\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1160,7 +1160,7 @@
       "file": "old",
       "line": 709,
       "key": "[[],\".is-style-lakehub-cta .wp-block-button__link\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1173,7 +1173,7 @@
       "file": "old",
       "line": 721,
       "key": "[[\"@supports not ((background-clip:text) or (-webkit-background-clip:text))\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"background-image\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1186,7 +1186,7 @@
       "file": "old",
       "line": 721,
       "key": "[[\"@supports not ((background-clip:text) or (-webkit-background-clip:text))\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"background-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1199,7 +1199,7 @@
       "file": "old",
       "line": 721,
       "key": "[[\"@supports not ((background-clip:text) or (-webkit-background-clip:text))\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1210,7 +1210,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"max-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1221,7 +1221,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1232,7 +1232,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1243,7 +1243,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"flex-wrap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1254,7 +1254,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"justify-content\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1265,7 +1265,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1276,7 +1276,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"overflow-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1287,7 +1287,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"padding-block\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1298,7 +1298,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"padding-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1309,7 +1309,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"scroll-behavior\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1320,7 +1320,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"scrollbar-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1331,7 +1331,7 @@
       "file": "old",
       "line": 725,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"scrollbar-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1342,7 +1342,7 @@
       "file": "old",
       "line": 740,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img\",\"filter\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1353,7 +1353,7 @@
       "file": "old",
       "line": 740,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img\",\"opacity\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1364,7 +1364,7 @@
       "file": "old",
       "line": 740,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1375,7 +1375,7 @@
       "file": "old",
       "line": 754,
       "key": "[[],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1386,7 +1386,7 @@
       "file": "old",
       "line": 754,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1397,7 +1397,7 @@
       "file": "old",
       "line": 758,
       "key": "[[],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1408,7 +1408,7 @@
       "file": "old",
       "line": 758,
       "key": "[[],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible\",\"box-shadow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1419,7 +1419,7 @@
       "file": "old",
       "line": 759,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible\",\"background-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1430,7 +1430,7 @@
       "file": "old",
       "line": 759,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1441,7 +1441,7 @@
       "file": "old",
       "line": 759,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible\",\"border-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1452,7 +1452,7 @@
       "file": "old",
       "line": 759,
       "key": "[[],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible\",\"background-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1463,7 +1463,7 @@
       "file": "old",
       "line": 759,
       "key": "[[],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1474,7 +1474,7 @@
       "file": "old",
       "line": 759,
       "key": "[[],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible\",\"border-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1485,7 +1485,7 @@
       "file": "old",
       "line": 761,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1496,7 +1496,7 @@
       "file": "old",
       "line": 762,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1507,7 +1507,7 @@
       "file": "old",
       "line": 762,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"border-bottom-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1518,7 +1518,7 @@
       "file": "old",
       "line": 762,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"font-weight\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1529,7 +1529,7 @@
       "file": "old",
       "line": 762,
       "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1542,7 +1542,7 @@
       "file": "old",
       "line": 775,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-partner-logo:hover img\",\"filter\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1555,7 +1555,7 @@
       "file": "old",
       "line": 775,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-partner-logo:hover img\",\"opacity\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1568,7 +1568,7 @@
       "file": "old",
       "line": 775,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-partner-logo:hover img\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1581,7 +1581,7 @@
       "file": "old",
       "line": 776,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-milestone:hover>:is(h3,p)\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1594,7 +1594,7 @@
       "file": "old",
       "line": 777,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-milestone:hover::after\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1607,7 +1607,7 @@
       "file": "old",
       "line": 778,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1620,7 +1620,7 @@
       "file": "old",
       "line": 778,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover\",\"box-shadow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1633,7 +1633,7 @@
       "file": "old",
       "line": 779,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1646,7 +1646,7 @@
       "file": "old",
       "line": 779,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover\",\"box-shadow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1659,7 +1659,7 @@
       "file": "old",
       "line": 780,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-newsletter-label:hover\",\"background-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1672,7 +1672,7 @@
       "file": "old",
       "line": 781,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover\",\"background-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1685,7 +1685,7 @@
       "file": "old",
       "line": 781,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1698,7 +1698,7 @@
       "file": "old",
       "line": 781,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover\",\"border-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1711,7 +1711,7 @@
       "file": "old",
       "line": 781,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover\",\"background-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1724,7 +1724,7 @@
       "file": "old",
       "line": 781,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1737,7 +1737,7 @@
       "file": "old",
       "line": 781,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover\",\"border-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1750,7 +1750,7 @@
       "file": "old",
       "line": 783,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover\",\"font-weight\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1763,7 +1763,7 @@
       "file": "old",
       "line": 783,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1776,7 +1776,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone>:is(h3,p)\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1789,7 +1789,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone>:is(h3,p)\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1802,7 +1802,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone::after\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1815,7 +1815,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone::after\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1828,7 +1828,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .wp-block-button .wp-block-button__link\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1841,7 +1841,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .wp-block-button .wp-block-button__link\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1854,7 +1854,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-newsletter-label\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1867,7 +1867,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-newsletter-label\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1880,7 +1880,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -1893,7 +1893,7 @@
       "file": "old",
       "line": 793,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/navigation-header.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1904,7 +1904,7 @@
       "file": "old",
       "line": 827,
       "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"background\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1915,7 +1915,7 @@
       "file": "old",
       "line": 827,
       "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"border-color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1926,7 +1926,7 @@
       "file": "old",
       "line": 827,
       "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"box-shadow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1937,7 +1937,7 @@
       "file": "old",
       "line": 827,
       "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1948,7 +1948,7 @@
       "file": "old",
       "line": 843,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a )\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1959,7 +1959,7 @@
       "file": "old",
       "line": 843,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a )\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1970,7 +1970,7 @@
       "file": "old",
       "line": 843,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a )\",\"text-decoration\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1981,7 +1981,7 @@
       "file": "old",
       "line": 853,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"background\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -1992,7 +1992,7 @@
       "file": "old",
       "line": 853,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2003,7 +2003,7 @@
       "file": "old",
       "line": 853,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"text-decoration\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2014,7 +2014,7 @@
       "file": "old",
       "line": 853,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"text-underline-offset\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2025,7 +2025,7 @@
       "file": "old",
       "line": 853,
       "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -2038,7 +2038,7 @@
       "file": "old",
       "line": 866,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link,.is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2049,7 +2049,7 @@
       "file": "old",
       "line": 879,
       "key": "[[],\".wp-site-blocks:is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo)\",\"overflow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2060,7 +2060,7 @@
       "file": "old",
       "line": 880,
       "key": "[[],\".wp-site-blocks:is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo) img\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -2073,7 +2073,7 @@
       "file": "old",
       "line": 882,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks:is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card):hover img\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2084,7 +2084,7 @@
       "file": "old",
       "line": 884,
       "key": "[[],\".wp-site-blocks:is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card):focus-within img\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2095,7 +2095,7 @@
       "file": "old",
       "line": 885,
       "key": "[[],\".is-style-lakehub-journey\",\"padding-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2106,7 +2106,7 @@
       "file": "old",
       "line": 886,
       "key": "[[],\".is-style-lakehub-journey>.is-style-lakehub-timeline\",\"max-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2117,7 +2117,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2128,7 +2128,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"flex-wrap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2139,7 +2139,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2150,7 +2150,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"overflow-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2161,7 +2161,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"overflow-y\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2172,7 +2172,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2183,7 +2183,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"margin-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2194,7 +2194,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"scroll-snap-type\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2205,7 +2205,7 @@
       "file": "old",
       "line": 887,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"scrollbar-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2216,7 +2216,7 @@
       "file": "old",
       "line": 891,
       "key": "[[],\".wp-block-group.is-style-lakehub-timeline::-webkit-scrollbar\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2227,7 +2227,7 @@
       "file": "old",
       "line": 892,
       "key": "[[],\".is-style-lakehub-timeline::before\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2238,7 +2238,7 @@
       "file": "old",
       "line": 893,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"flex\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2249,7 +2249,7 @@
       "file": "old",
       "line": 893,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"min-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2260,7 +2260,7 @@
       "file": "old",
       "line": 893,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"min-height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2271,7 +2271,7 @@
       "file": "old",
       "line": 893,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"padding-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2282,7 +2282,7 @@
       "file": "old",
       "line": 893,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2293,7 +2293,7 @@
       "file": "old",
       "line": 893,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"scroll-snap-align\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2304,7 +2304,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"content\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2315,7 +2315,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2326,7 +2326,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2337,7 +2337,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"right\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2348,7 +2348,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2359,7 +2359,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2370,7 +2370,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2381,7 +2381,7 @@
       "file": "old",
       "line": 894,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"background\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2392,7 +2392,7 @@
       "file": "old",
       "line": 895,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2403,7 +2403,7 @@
       "file": "old",
       "line": 895,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2414,7 +2414,7 @@
       "file": "old",
       "line": 895,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2425,7 +2425,7 @@
       "file": "old",
       "line": 895,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2436,7 +2436,7 @@
       "file": "old",
       "line": 895,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"background\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2447,7 +2447,7 @@
       "file": "old",
       "line": 896,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"background-image\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2458,7 +2458,7 @@
       "file": "old",
       "line": 896,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2469,7 +2469,7 @@
       "file": "old",
       "line": 896,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2480,7 +2480,7 @@
       "file": "old",
       "line": 896,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2491,7 +2491,7 @@
       "file": "old",
       "line": 896,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2502,7 +2502,7 @@
       "file": "old",
       "line": 897,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd)\",\"padding-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2513,7 +2513,7 @@
       "file": "old",
       "line": 897,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd)\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2524,7 +2524,7 @@
       "file": "old",
       "line": 897,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd)\",\"text-align\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2535,7 +2535,7 @@
       "file": "old",
       "line": 898,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even)\",\"padding-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2546,7 +2546,7 @@
       "file": "old",
       "line": 898,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even)\",\"padding-bottom\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2557,7 +2557,7 @@
       "file": "old",
       "line": 898,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even)\",\"text-align\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2568,7 +2568,7 @@
       "file": "old",
       "line": 899,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2579,7 +2579,7 @@
       "file": "old",
       "line": 899,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year\",\"margin-top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2590,7 +2590,7 @@
       "file": "old",
       "line": 900,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2601,7 +2601,7 @@
       "file": "old",
       "line": 900,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2612,7 +2612,7 @@
       "file": "old",
       "line": 900,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2623,7 +2623,7 @@
       "file": "old",
       "line": 900,
       "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"right\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/timeline.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2634,7 +2634,7 @@
       "file": "old",
       "line": 901,
       "key": "[[],\".wp-block-query.is-style-lakehub-insights\",\"container-type\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2645,7 +2645,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"--lakehub-card-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2656,7 +2656,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2667,7 +2667,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"gap\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2678,7 +2678,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"overflow-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2689,7 +2689,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"scroll-snap-type\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2700,7 +2700,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"scrollbar-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2711,7 +2711,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2722,7 +2722,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2733,7 +2733,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"margin-block\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2744,7 +2744,7 @@
       "file": "old",
       "line": 902,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"margin-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2755,7 +2755,7 @@
       "file": "old",
       "line": 907,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template::-webkit-scrollbar\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2766,7 +2766,7 @@
       "file": "old",
       "line": 908,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template\",\"padding-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2777,7 +2777,7 @@
       "file": "old",
       "line": 908,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template\",\"padding-block\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2788,7 +2788,7 @@
       "file": "old",
       "line": 908,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template\",\"margin-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2799,7 +2799,7 @@
       "file": "old",
       "line": 909,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"flex\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2810,7 +2810,7 @@
       "file": "old",
       "line": 909,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"min-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2821,7 +2821,7 @@
       "file": "old",
       "line": 909,
       "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"scroll-snap-align\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2832,7 +2832,7 @@
       "file": "old",
       "line": 910,
       "key": "[[],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2843,7 +2843,7 @@
       "file": "old",
       "line": 910,
       "key": "[[],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2854,7 +2854,7 @@
       "file": "old",
       "line": 910,
       "key": "[[],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2865,7 +2865,7 @@
       "file": "old",
       "line": 911,
       "key": "[[],\".wp-site-blocks .is-enhanced .is-current .is-style-lakehub-insight-card\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2876,7 +2876,7 @@
       "file": "old",
       "line": 911,
       "key": "[[],\".wp-site-blocks .is-enhanced .is-current .is-style-lakehub-insight-card\",\"box-shadow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2887,7 +2887,7 @@
       "file": "old",
       "line": 912,
       "key": "[[],\".lakehub-insights-controls\",\"align-items\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2898,7 +2898,7 @@
       "file": "old",
       "line": 912,
       "key": "[[],\".lakehub-insights-controls\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2909,7 +2909,7 @@
       "file": "old",
       "line": 912,
       "key": "[[],\".lakehub-insights-controls\",\"margin\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2920,7 +2920,7 @@
       "file": "old",
       "line": 913,
       "key": "[[],\".lakehub-insights-controls button\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2931,7 +2931,7 @@
       "file": "old",
       "line": 913,
       "key": "[[],\".lakehub-insights-controls button\",\"place-items\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2942,7 +2942,7 @@
       "file": "old",
       "line": 913,
       "key": "[[],\".lakehub-insights-controls button\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2953,7 +2953,7 @@
       "file": "old",
       "line": 913,
       "key": "[[],\".lakehub-insights-controls button\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2964,7 +2964,7 @@
       "file": "old",
       "line": 913,
       "key": "[[],\".lakehub-insights-controls button\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2975,7 +2975,7 @@
       "file": "old",
       "line": 913,
       "key": "[[],\".lakehub-insights-controls button\",\"border-radius\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2986,7 +2986,7 @@
       "file": "old",
       "line": 914,
       "key": "[[],\".lakehub-insights-controls button:last-child\",\"margin-left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -2997,7 +2997,7 @@
       "file": "old",
       "line": 915,
       "key": "[[],\".lakehub-insights-controls button[hidden]\",\"display\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3008,7 +3008,7 @@
       "file": "old",
       "line": 916,
       "key": "[[],\".lakehub-insights-controls button:is(:hover,:focus-visible)\",\"background\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3019,7 +3019,7 @@
       "file": "old",
       "line": 916,
       "key": "[[],\".lakehub-insights-controls button:is(:hover,:focus-visible)\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3030,7 +3030,7 @@
       "file": "old",
       "line": 917,
       "key": "[[],\".is-style-lakehub-footer-grid\",\"justify-content\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3041,7 +3041,7 @@
       "file": "old",
       "line": 917,
       "key": "[[],\".is-style-lakehub-footer-grid\",\"align-items\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3052,7 +3052,7 @@
       "file": "old",
       "line": 920,
       "key": "[[],\".is-style-lakehub-footer-links>p:first-child+p\",\"color\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3063,7 +3063,7 @@
       "file": "old",
       "line": 922,
       "key": "[[],\".is-style-lakehub-newsletter p:first-child\",\"white-space\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3074,7 +3074,7 @@
       "file": "old",
       "line": 923,
       "key": "[[],\".is-style-lakehub-newsletter-label\",\"font-weight\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3085,7 +3085,7 @@
       "file": "old",
       "line": 923,
       "key": "[[],\".is-style-lakehub-newsletter-label\",\"line-height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3098,7 +3098,7 @@
       "file": "old",
       "line": 1055,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-collapsible-drawer.is-collapsed\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3111,7 +3111,7 @@
       "file": "old",
       "line": 1055,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-collapsible-drawer.is-expanded\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3124,7 +3124,7 @@
       "file": "old",
       "line": 1059,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-text-toggle-btn:hover\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3137,7 +3137,7 @@
       "file": "old",
       "line": 1059,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-text-toggle-btn:focus-visible\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3150,7 +3150,7 @@
       "file": "old",
       "line": 1071,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".lakehub-team-card:hover\",\"box-shadow\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3163,7 +3163,7 @@
       "file": "old",
       "line": 1072,
       "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".is-style-lakehub-mission-collage figure:hover img\",\"transform\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3196,7 +3196,7 @@
       "file": "old",
       "line": 1133,
       "key": "[[],\".editor-styles-wrapper .is-style-lakehub-optional-action\",\"outline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3209,7 +3209,7 @@
       "file": "old",
       "line": 1143,
       "key": "[[\"@media (max-width:900px)\"],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"--lakehub-card-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3222,7 +3222,7 @@
       "file": "old",
       "line": 1146,
       "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"padding\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3235,7 +3235,7 @@
       "file": "old",
       "line": 1179,
       "key": "[[\"@media (max-width:600px)\"],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"--lakehub-card-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3248,7 +3248,7 @@
       "file": "old",
       "line": 1181,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"grid-column\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3261,7 +3261,7 @@
       "file": "old",
       "line": 1182,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter\",\"max-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3274,7 +3274,7 @@
       "file": "old",
       "line": 1183,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter p:first-child\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3287,7 +3287,7 @@
       "file": "old",
       "line": 1184,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter-label\",\"font-size\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3300,7 +3300,7 @@
       "file": "old",
       "line": 1184,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter-label\",\"padding-inline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3313,7 +3313,7 @@
       "file": "old",
       "line": 1210,
       "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-portfolio-photo img\",\"aspect-ratio\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3326,7 +3326,7 @@
       "file": "old",
       "line": 1217,
       "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"transition\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3339,7 +3339,7 @@
       "file": "old",
       "line": 1245,
       "key": "[[\"@media (max-width:900px)\"],\".wp-site-blocks .lakehub-program.is-card-ready\",\"--lakehub-reveal-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3352,7 +3352,7 @@
       "file": "old",
       "line": 1248,
       "key": "[[\"@media (max-width:600px)\"],\".wp-site-blocks .lakehub-program.is-card-ready\",\"--lakehub-reveal-x\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3363,7 +3363,7 @@
       "file": "old",
       "line": 1261,
       "key": "[[],\".lakehub-team-photo.has-design-crop\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3374,7 +3374,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3385,7 +3385,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"max-width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3396,7 +3396,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"width\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3407,7 +3407,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"height\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3418,7 +3418,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"left\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3429,7 +3429,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"top\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3440,7 +3440,7 @@
       "file": "old",
       "line": 1262,
       "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"object-fit\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/team.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3451,7 +3451,7 @@
       "file": "old",
       "line": 1263,
       "key": "[[],\".is-style-lakehub-about-hero>.wp-block-cover__image-background\",\"object-position\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3462,7 +3462,7 @@
       "file": "old",
       "line": 1317,
       "key": "[[],\".wp-site-blocks:is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible\",\"outline\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3473,7 +3473,7 @@
       "file": "old",
       "line": 1317,
       "key": "[[],\".wp-site-blocks:is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible\",\"outline-offset\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3484,7 +3484,7 @@
       "file": "old",
       "line": 1320,
       "key": "[[],\".is-style-lakehub-metric-row:last-child .is-style-lakehub-metric-copy h3\",\"font-weight\"]",
-      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     }
   ],
   "changed": [
@@ -3512,7 +3512,7 @@
       "key": "[[],\".is-style-lakehub-partner-logo img\",\"transition\"]",
       "current": "opacity 180ms ease, transform 180ms ease, filter 180ms ease",
       "currentFile": "assets/css/partners.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/partners.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3525,7 +3525,7 @@
       "key": "[[],\"section.is-style-lakehub-insights\",\"min-height\"]",
       "current": "45rem",
       "currentFile": "assets/css/insights.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3538,7 +3538,7 @@
       "key": "[[],\"section.is-style-lakehub-insights .is-style-lakehub-impact-heading\",\"display\"]",
       "current": "flex",
       "currentFile": "assets/css/insights.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3551,7 +3551,7 @@
       "key": "[[],\".lakehub-insights-controls\",\"inset\"]",
       "current": "12.3125rem -2.8125rem auto",
       "currentFile": "assets/css/insights.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3564,7 +3564,7 @@
       "key": "[[],\".lakehub-insights-controls button\",\"font\"]",
       "current": "1.5rem var(--wp--preset--font-family--mono)",
       "currentFile": "assets/css/insights.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3577,7 +3577,7 @@
       "key": "[[],\".is-style-lakehub-cta .wp-block-button.is-style-outline .wp-block-button__link\",\"padding\"]",
       "current": "1rem 2rem",
       "currentFile": "assets/css/sections.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/interactions.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3590,7 +3590,7 @@
       "key": "[[],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
       "current": "20.625rem 11.5rem 9.875rem minmax(0, 1fr)",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3603,7 +3603,7 @@
       "key": "[[],\".is-style-lakehub-footer-grid\",\"gap\"]",
       "current": "2.25rem",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3616,7 +3616,7 @@
       "key": "[[],\".is-style-lakehub-footer-links>p:first-child\",\"font-weight\"]",
       "current": "600",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3629,7 +3629,7 @@
       "key": "[[],\".is-style-lakehub-newsletter-label\",\"padding\"]",
       "current": "0.6875rem 1rem",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3668,7 +3668,7 @@
       "key": "[[],\".lakehub-program-copy:is(h2,h3)\",\"margin\"]",
       "current": "0 0 2.5rem",
       "currentFile": "assets/css/sections.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3696,7 +3696,7 @@
       "key": "[[\"@media (max-width:1199px)\"],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
       "current": "1.3fr .8fr .6fr 1.5fr",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3711,7 +3711,7 @@
       "key": "[[\"@media (max-width:900px)\"],\".lakehub-insights-controls\",\"margin-top\"]",
       "current": "0.75rem",
       "currentFile": "assets/css/insights.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/insights.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3726,7 +3726,7 @@
       "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
       "current": "1.4fr 1fr 1fr",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3741,7 +3741,7 @@
       "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"grid-column\"]",
       "current": "1 / -1",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3756,7 +3756,7 @@
       "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"max-width\"]",
       "current": "25rem",
       "currentFile": "assets/css/footer.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/footer.css; see behavior verification matrix."
     },
     {
       "ctx": [],
@@ -3810,7 +3810,7 @@
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program-copy:is(h2,h3)\",\"margin-bottom\"]",
       "current": "3.25rem",
       "currentFile": "assets/css/sections.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3825,7 +3825,7 @@
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(2) .lakehub-program-copy\",\"padding-top\"]",
       "current": "4.5rem",
       "currentFile": "assets/css/sections.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [
@@ -3840,7 +3840,7 @@
       "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(3) .lakehub-program-copy\",\"padding-top\"]",
       "current": "6.125rem",
       "currentFile": "assets/css/sections.css",
-      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+      "resolution": "Restored in assets/css/sections.css; see behavior verification matrix."
     },
     {
       "ctx": [],

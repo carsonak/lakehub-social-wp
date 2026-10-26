@@ -11,3 +11,7 @@ Reconstructed rather than recovered: moving header indicator and team-card point
 Design provenance: existing approved exports in docs/design-exports/16-09-2026 and docs/design-refresh.md; this task restores historical behavior without claiming updated Figma frames were inspected or unchanged.
 
 Backup before modification: .backups/interaction-recovery-before.zip, full Studio export succeeded. Studio target and active theme verified through Studio tools. Browser DOM baseline requests are pending; direct network access requires sandbox escalation.
+
+## JavaScript body comparison
+
+Transformation and collapsible modules retain their feature bodies verbatim apart from wrappers/comments. Partner carousel drops only an unused `section` variable. Program cards/halftone/slideshow/social-share wrap the same behavior in standalone guards. Metrics retains measurement, line geometry, font readiness, scroll/resize/focus and motion-change listeners. External-link click-time protection and rel-token preservation were the confirmed behavioral omissions and are restored. Insights browsing deliberately changes from padded center selection to complete 3/2/1-card viewports per the approved plan.

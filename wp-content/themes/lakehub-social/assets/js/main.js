@@ -93,7 +93,10 @@
       const url = new URL(href, window.location.origin);
       if (url.origin !== window.location.origin) {
         link.setAttribute('target', '_blank');
-        link.setAttribute('rel', 'noopener noreferrer');
+        const rel = new Set((link.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
+        rel.add('noopener');
+        rel.add('noreferrer');
+        link.setAttribute('rel', Array.from(rel).join(' '));
       }
     } catch (_) {}
   };
@@ -102,4 +105,8 @@
     root.querySelectorAll('a[href]').forEach(ensureExternalAttributes);
   };
   processExternalLinks();
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (link) ensureExternalAttributes(link);
+  }, { capture: true });
 })();

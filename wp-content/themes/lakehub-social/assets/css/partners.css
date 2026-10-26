@@ -151,3 +151,54 @@
     transform: none !important;
   }
 }
+
+/* Recovered final treatments from the pre-modularisation theme. */
+.is-style-lakehub-partner-logo img {
+  transition: opacity 180ms ease;
+}
+@media (max-width:600px) {
+.is-style-lakehub-partner-logo {
+  flex-basis: 6.875rem;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-partner-logo img {
+  height: 3.75rem;
+}
+}
+@media (max-width:600px) {
+.is-style-lakehub-partners > p {
+  font-size: 0.625rem;
+}
+}
+@media (prefers-reduced-motion:reduce) {
+.is-style-lakehub-partner-logo img {
+  transition: none;
+}
+}
+.wp-site-blocks .is-style-lakehub-partner-logos {
+  max-width: 100% !important;
+  width: 100% !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-block: 1rem;
+  padding-inline: 0 !important;
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff70 transparent;
+}
+.wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img {
+  filter: grayscale(1) brightness(0) invert(1);
+  opacity: .8;
+  transition: filter 200ms ease, opacity 200ms ease, transform 200ms ease;
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .is-style-lakehub-partner-logo:hover img {
+  filter: drop-shadow(0 0.25rem 0.3125rem #002e3280);
+  opacity: 1;
+  transform: scale(1.08);
+}
+}

@@ -1,0 +1,108 @@
+
+/* Recovered final treatments from the pre-modularisation theme. */
+.is-style-lakehub-cta .wp-block-button.is-style-outline .wp-block-button__link {
+  padding: 1rem 2.0625rem;
+}
+.is-style-lakehub-cta .wp-block-button__link {
+  padding: 1rem 2rem;
+}
+.wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link {
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+.wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible {
+  transform: translateY(-0.1875rem) scale(1.03);
+  box-shadow: 0 0.4375rem 1.125rem #003d4133;
+}
+.wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible {
+  background-color: white;
+  color: var(--lakehub-teal);
+  border-color: white;
+}
+.wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible {
+  background-color: white;
+  color: var(--lakehub-teal);
+  border-color: white;
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover {
+  transform: translateY(-0.1875rem) scale(1.03);
+  box-shadow: 0 0.4375rem 1.125rem #003d4133;
+}
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover {
+  transform: translateY(-0.1875rem) scale(1.03);
+  box-shadow: 0 0.4375rem 1.125rem #003d4133;
+}
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover {
+  background-color: white;
+  color: var(--lakehub-teal);
+  border-color: white;
+}
+}
+@media (hover:hover) and (pointer:fine) {
+.wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover {
+  background-color: white;
+  color: var(--lakehub-teal);
+  border-color: white;
+}
+}
+@media (prefers-reduced-motion:reduce) {
+.wp-site-blocks .wp-block-button .wp-block-button__link {
+  transition: none !important;
+  transform: none !important;
+}
+}
+.wp-site-blocks :is(
+  .wp-block-read-more,
+  .is-style-lakehub-optional-action .wp-block-button__link,
+  .is-style-lakehub-community-copy a,
+  .is-style-lakehub-portfolio-copy a,
+  .is-style-lakehub-text-link .wp-block-button__link
+):is(:hover, :focus-visible) {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--lakehub-teal, #00676B) !important;
+}
+@media (prefers-reduced-motion:reduce) {
+.wp-site-blocks :is(
+    .wp-block-read-more,
+    .is-style-lakehub-optional-action .wp-block-button__link,
+    .is-style-lakehub-community-copy a,
+    .is-style-lakehub-portfolio-copy a,
+    .is-style-lakehub-text-link .wp-block-button__link,
+    .is-style-lakehub-footer-links a,
+    .is-style-lakehub-footer-bottom a,
+    .is-style-lakehub-footer .wp-block-navigation a
+  ):is(:hover, :focus-visible) {
+  transform: none !important;
+}
+}
+.wp-site-blocks :is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo) {
+  overflow: hidden;
+}
+.wp-site-blocks :is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo) img {
+  transition: transform 250ms ease;
+}
+.wp-site-blocks :is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible {
+  outline: .125rem solid var(--lakehub-teal);
+  outline-offset: .25rem;
+}
+
+/* Feedback remains visible without animated movement. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .wp-site-blocks .wp-block-button .wp-block-button__link,
+  .wp-site-blocks .is-style-lakehub-milestone > :is(h3,p),
+  .wp-site-blocks .is-style-lakehub-milestone::after,
+  .wp-site-blocks .is-style-lakehub-header .wp-block-navigation a,
+  .wp-site-blocks :is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card) img {
+    transform: none !important;
+    transition: none !important;
+  }
+  .lakehub-text-toggle-btn:focus-visible { outline: 0.125rem solid currentColor !important; outline-offset: 0.25rem; }
+}
+.lakehub-text-toggle-btn:focus-visible { outline: 0.125rem solid currentColor !important; outline-offset: 0.25rem; }
