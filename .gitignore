@@ -48,3 +48,6 @@ Thumbs.db
 !wp-content/plugins/advanced-custom-fields/assets/build/
 !wp-content/plugins/advanced-custom-fields/assets/build/**
 
+
+# Python verification caches
+__pycache__/
