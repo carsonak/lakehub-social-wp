@@ -1,0 +1,4119 @@
+{
+  "missing": [
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links h2",
+      "prop": "margin-bottom",
+      "value": "1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 246,
+      "key": "[[],\".is-style-lakehub-footer-links h2\",\"margin-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links > p:first-child",
+      "prop": "margin-top",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 248,
+      "key": "[[],\".is-style-lakehub-footer-links>p:first-child\",\"margin-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program",
+      "prop": "background",
+      "value": "var(--wp--preset--gradient--program-card)",
+      "important": false,
+      "file": "old",
+      "line": 282,
+      "key": "[[],\".lakehub-program\",\"background\"]",
+      "resolution": "Equivalent: later per-card background-image supplies final gradient; do not reintroduce shorthand reset."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1281px)"
+      ],
+      "sel": ".is-style-lakehub-program-section",
+      "prop": "padding-inline",
+      "value": "max(3.25rem,calc((100% - 73.5rem)/2))",
+      "important": false,
+      "file": "old",
+      "line": 300,
+      "key": "[[\"@media (min-width:1281px)\"],\".is-style-lakehub-program-section\",\"padding-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-partner-logo",
+      "prop": "flex-basis",
+      "value": "6.875rem",
+      "important": false,
+      "file": "old",
+      "line": 367,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-partner-logo\",\"flex-basis\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-partner-logo img",
+      "prop": "height",
+      "value": "3.75rem",
+      "important": false,
+      "file": "old",
+      "line": 368,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-partner-logo img\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-partners > p",
+      "prop": "font-size",
+      "value": "0.625rem",
+      "important": false,
+      "file": "old",
+      "line": 369,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-partners>p\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": "section.is-style-lakehub-insights",
+      "prop": "padding-block",
+      "value": "3rem",
+      "important": false,
+      "file": "old",
+      "line": 370,
+      "key": "[[\"@media (max-width:600px)\"],\"section.is-style-lakehub-insights\",\"padding-block\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": "section.is-style-lakehub-insights",
+      "prop": "min-height",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 370,
+      "key": "[[\"@media (max-width:600px)\"],\"section.is-style-lakehub-insights\",\"min-height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-query.is-style-lakehub-insights",
+      "prop": "margin-top",
+      "value": "2rem",
+      "important": false,
+      "file": "old",
+      "line": 371,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-query.is-style-lakehub-insights\",\"margin-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-query.is-style-lakehub-insights .wp-block-post-template > li",
+      "prop": "flex-basis",
+      "value": "min(17.875rem,100%)",
+      "important": false,
+      "file": "old",
+      "line": 372,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"flex-basis\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "grid-template-columns",
+      "value": "1fr 1fr",
+      "important": false,
+      "file": "old",
+      "line": 1180,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "gap",
+      "value": "1.75rem",
+      "important": false,
+      "file": "old",
+      "line": 374,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-grid\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-brand",
+      "prop": "grid-column",
+      "value": "1/-1",
+      "important": false,
+      "file": "old",
+      "line": 1181,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-brand\",\"grid-column\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-logo img",
+      "prop": "max-width",
+      "value": "100%",
+      "important": false,
+      "file": "old",
+      "line": 376,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-logo img\",\"max-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-logo img",
+      "prop": "height",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 376,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-logo img\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-brand > .wp-block-group",
+      "prop": "padding-left",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 377,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-brand>.wp-block-group\",\"padding-left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer",
+      "prop": "padding-top",
+      "value": "2.5rem",
+      "important": false,
+      "file": "old",
+      "line": 378,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer\",\"padding-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-bottom",
+      "prop": "font-size",
+      "value": "0.625rem",
+      "important": false,
+      "file": "old",
+      "line": 379,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-bottom\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-bottom",
+      "prop": "gap",
+      "value": "0.75rem",
+      "important": false,
+      "file": "old",
+      "line": 379,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-bottom\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-bottom",
+      "prop": "padding-block",
+      "value": "1rem",
+      "important": false,
+      "file": "old",
+      "line": 379,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-bottom\",\"padding-block\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-insight-card",
+      "prop": "transition",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 395,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-insight-card\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-partner-logo img",
+      "prop": "transition",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 395,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-partner-logo img\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".editor-styles-wrapper .wp-block-lakehub-programs",
+      "prop": "display",
+      "value": "block",
+      "important": false,
+      "file": "old",
+      "line": 398,
+      "key": "[[],\".editor-styles-wrapper .wp-block-lakehub-programs\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".editor-styles-wrapper .wp-block-lakehub-programs .wp-block-lakehub-programs",
+      "prop": "display",
+      "value": "grid",
+      "important": false,
+      "file": "old",
+      "line": 399,
+      "key": "[[],\".editor-styles-wrapper .wp-block-lakehub-programs .wp-block-lakehub-programs\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-impact",
+      "prop": "padding-bottom",
+      "value": "2.5rem",
+      "important": false,
+      "file": "old",
+      "line": 434,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-impact-feature",
+      "prop": "padding",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 412,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact-feature\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-impact-wide",
+      "prop": "padding",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 412,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-flagship-heading",
+      "prop": "padding",
+      "value": "1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 413,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-flagship-heading\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-benefit",
+      "prop": "padding",
+      "value": "1.5rem 0.875rem",
+      "important": false,
+      "file": "old",
+      "line": 414,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-benefit\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-impact",
+      "prop": "padding-bottom",
+      "value": "2.875rem",
+      "important": false,
+      "file": "old",
+      "line": 416,
+      "key": "[[],\".wp-block-group.is-style-lakehub-impact\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-impact-wide",
+      "prop": "padding-bottom",
+      "value": "1.0625rem",
+      "important": false,
+      "file": "old",
+      "line": 417,
+      "key": "[[],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": "section.is-style-lakehub-insights .is-style-lakehub-impact-heading p",
+      "prop": "margin-top",
+      "value": "1rem",
+      "important": false,
+      "file": "old",
+      "line": 419,
+      "key": "[[],\"section.is-style-lakehub-insights .is-style-lakehub-impact-heading p\",\"margin-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program:nth-child(4)",
+      "prop": "height",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 443,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(4)\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program:nth-child(4)",
+      "prop": "grid-template-columns",
+      "value": "60% 40%",
+      "important": false,
+      "file": "old",
+      "line": 426,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(4)\",\"grid-template-columns\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program:nth-child(4) :is(h2,h3)",
+      "prop": "margin-bottom",
+      "value": "1.375rem",
+      "important": false,
+      "file": "old",
+      "line": 673,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(4):is(h2,h3)\",\"margin-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-impact-wide",
+      "prop": "padding-bottom",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 435,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-benefit",
+      "prop": "padding-bottom",
+      "value": "0.6875rem",
+      "important": false,
+      "file": "old",
+      "line": 438,
+      "key": "[[\"@media (min-width:1200px)\"],\".wp-block-group.is-style-lakehub-benefit\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".wp-block-lakehub-programs",
+      "prop": "gap",
+      "value": "2.625rem",
+      "important": false,
+      "file": "old",
+      "line": 439,
+      "key": "[[\"@media (min-width:1200px)\"],\".wp-block-lakehub-programs\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links .wp-block-navigation",
+      "prop": "font",
+      "value": "400 1rem/1.5rem var(--wp--preset--font-family--body)",
+      "important": false,
+      "file": "old",
+      "line": 449,
+      "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"font\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links .wp-block-navigation",
+      "prop": "text-transform",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 449,
+      "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"text-transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links .wp-block-navigation",
+      "prop": "letter-spacing",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 449,
+      "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"letter-spacing\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links .wp-block-navigation",
+      "prop": "color",
+      "value": "#e4e2e2cc",
+      "important": false,
+      "file": "old",
+      "line": 449,
+      "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links .wp-block-navigation__container",
+      "prop": "gap",
+      "value": "0.75rem",
+      "important": false,
+      "file": "old",
+      "line": 450,
+      "key": "[[],\".is-style-lakehub-footer-links .wp-block-navigation__container\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "position",
+      "value": "relative",
+      "important": false,
+      "file": "old",
+      "line": 452,
+      "key": "[[],\".wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:901px)"
+      ],
+      "sel": ".is-style-lakehub-flagship-heading h1",
+      "prop": "white-space",
+      "value": "nowrap",
+      "important": false,
+      "file": "old",
+      "line": 454,
+      "key": "[[\"@media (min-width:901px)\"],\".is-style-lakehub-flagship-heading h1\",\"white-space\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:901px)"
+      ],
+      "sel": ".is-style-lakehub-flagship-heading h1",
+      "prop": "font-size",
+      "value": "clamp(2.5rem,4.375vw,3.5rem)",
+      "important": true,
+      "file": "old",
+      "line": 454,
+      "key": "[[\"@media (min-width:901px)\"],\".is-style-lakehub-flagship-heading h1\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:not(:last-child)::after",
+      "prop": "left",
+      "value": "0",
+      "important": true,
+      "file": "old",
+      "line": 527,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:not(:last-child)::after",
+      "prop": "right",
+      "value": "0",
+      "important": true,
+      "file": "old",
+      "line": 527,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"right\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-copy",
+      "prop": "--lakehub-reveal-x",
+      "value": "0rem",
+      "important": false,
+      "file": "old",
+      "line": 553,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-copy\",\"--lakehub-reveal-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-copy",
+      "prop": "--lakehub-reveal-y",
+      "value": "-1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 553,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-copy\",\"--lakehub-reveal-y\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy",
+      "prop": "--lakehub-reveal-x",
+      "value": "0rem",
+      "important": false,
+      "file": "old",
+      "line": 553,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy\",\"--lakehub-reveal-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy",
+      "prop": "--lakehub-reveal-y",
+      "value": "-1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 553,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .is-style-lakehub-metric-copy\",\"--lakehub-reveal-y\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "grid-column",
+      "value": "1",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"grid-column\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "grid-row",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"grid-row\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "justify-self",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"justify-self\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "justify-content",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"justify-content\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "text-align",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"text-align\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "width",
+      "value": "100%",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "height",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "--lakehub-photo-center-shift",
+      "value": "0rem",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"--lakehub-photo-center-shift\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "grid-column",
+      "value": "1",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"grid-column\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "grid-row",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"grid-row\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "justify-self",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"justify-self\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "justify-content",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"justify-content\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "text-align",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"text-align\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "width",
+      "value": "100%",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "height",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "--lakehub-photo-center-shift",
+      "value": "0rem",
+      "important": false,
+      "file": "old",
+      "line": 599,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo\",\"--lakehub-photo-center-shift\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo:hover p",
+      "prop": "font-size",
+      "value": "calc(var(--wp--preset--font-size--metric) * 1.045)",
+      "important": false,
+      "file": "old",
+      "line": 623,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-block-group.is-style-lakehub-metric-photo:hover p\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-copy",
+      "prop": "opacity",
+      "value": "1",
+      "important": true,
+      "file": "old",
+      "line": 633,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"opacity\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-copy",
+      "prop": "transform",
+      "value": "translate3d(var(--lakehub-copy-shift-x), 0, 0)",
+      "important": true,
+      "file": "old",
+      "line": 633,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-copy",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 633,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-copy",
+      "prop": "pointer-events",
+      "value": "auto",
+      "important": true,
+      "file": "old",
+      "line": 633,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-copy\",\"pointer-events\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 639,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 639,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-photo p",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 643,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-photo p\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-photo p",
+      "prop": "font-size",
+      "value": "var(--wp--preset--font-size--metric)",
+      "important": true,
+      "file": "old",
+      "line": 643,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-photo p\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:not(:last-child)::after",
+      "prop": "left",
+      "value": "0",
+      "important": true,
+      "file": "old",
+      "line": 647,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:not(:last-child)::after",
+      "prop": "right",
+      "value": "0",
+      "important": true,
+      "file": "old",
+      "line": 647,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"right\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".is-style-lakehub-metric-row:not(:last-child)::after",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 647,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".is-style-lakehub-metric-row:not(:last-child)::after\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-program-section",
+      "prop": "padding-top",
+      "value": "5rem",
+      "important": false,
+      "file": "old",
+      "line": 660,
+      "key": "[[],\".is-style-lakehub-program-section\",\"padding-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-program-section",
+      "prop": "padding-bottom",
+      "value": "2.9375rem",
+      "important": false,
+      "file": "old",
+      "line": 660,
+      "key": "[[],\".is-style-lakehub-program-section\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program-copy",
+      "prop": "padding",
+      "value": "4.75rem 1.25rem 1.875rem 1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 668,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program-copy\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program:nth-child(3) :is(h2,h3)",
+      "prop": "margin-bottom",
+      "value": "3.125rem",
+      "important": false,
+      "file": "old",
+      "line": 672,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(3):is(h2,h3)\",\"margin-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:1199px)"
+      ],
+      "sel": ".is-style-lakehub-metric-row",
+      "prop": "gap",
+      "value": "1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 677,
+      "key": "[[\"@media (max-width:1199px)\"],\".is-style-lakehub-metric-row\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:1199px)"
+      ],
+      "sel": ".is-style-lakehub-metric-photo p",
+      "prop": "font-size",
+      "value": "clamp(4.5rem,9.75vw,7.97rem)",
+      "important": false,
+      "file": "old",
+      "line": 678,
+      "key": "[[\"@media (max-width:1199px)\"],\".is-style-lakehub-metric-photo p\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (forced-colors:active)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "background",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 703,
+      "key": "[[\"@media (forced-colors:active)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"background\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (forced-colors:active)"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "color",
+      "value": "CanvasText",
+      "important": false,
+      "file": "old",
+      "line": 703,
+      "key": "[[\"@media (forced-colors:active)\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (forced-colors:active)"
+      ],
+      "sel": ".is-style-lakehub-zone-word",
+      "prop": "color",
+      "value": "CanvasText",
+      "important": false,
+      "file": "old",
+      "line": 704,
+      "key": "[[\"@media (forced-colors:active)\"],\".is-style-lakehub-zone-word\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (forced-colors:active)"
+      ],
+      "sel": ".is-style-lakehub-zone-word",
+      "prop": "-webkit-text-stroke",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 704,
+      "key": "[[\"@media (forced-colors:active)\"],\".is-style-lakehub-zone-word\",\"-webkit-text-stroke\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-cta .wp-block-button__link",
+      "prop": "padding",
+      "value": "1rem 2rem",
+      "important": false,
+      "file": "old",
+      "line": 709,
+      "key": "[[],\".is-style-lakehub-cta .wp-block-button__link\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@supports not ((background-clip:text) or (-webkit-background-clip:text))"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "background-image",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 721,
+      "key": "[[\"@supports not ((background-clip:text) or (-webkit-background-clip:text))\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"background-image\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@supports not ((background-clip:text) or (-webkit-background-clip:text))"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "background-color",
+      "value": "transparent",
+      "important": false,
+      "file": "old",
+      "line": 721,
+      "key": "[[\"@supports not ((background-clip:text) or (-webkit-background-clip:text))\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"background-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@supports not ((background-clip:text) or (-webkit-background-clip:text))"
+      ],
+      "sel": ".wp-block-group.is-style-lakehub-metric-photo",
+      "prop": "color",
+      "value": "var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 721,
+      "key": "[[\"@supports not ((background-clip:text) or (-webkit-background-clip:text))\"],\".wp-block-group.is-style-lakehub-metric-photo\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "max-width",
+      "value": "100%",
+      "important": true,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"max-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "width",
+      "value": "100%",
+      "important": true,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "display",
+      "value": "flex",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "flex-wrap",
+      "value": "nowrap",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"flex-wrap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "justify-content",
+      "value": "flex-start",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"justify-content\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "gap",
+      "value": "2rem",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "overflow-x",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"overflow-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "padding-block",
+      "value": "1rem",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"padding-block\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "padding-inline",
+      "value": "0",
+      "important": true,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"padding-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "scroll-behavior",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"scroll-behavior\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "scrollbar-width",
+      "value": "thin",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"scrollbar-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos",
+      "prop": "scrollbar-color",
+      "value": "#ffffff70 transparent",
+      "important": false,
+      "file": "old",
+      "line": 725,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos\",\"scrollbar-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img",
+      "prop": "filter",
+      "value": "grayscale(1) brightness(0) invert(1)",
+      "important": false,
+      "file": "old",
+      "line": 740,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img\",\"filter\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img",
+      "prop": "opacity",
+      "value": ".8",
+      "important": false,
+      "file": "old",
+      "line": 740,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img\",\"opacity\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img",
+      "prop": "transition",
+      "value": "filter 200ms ease, opacity 200ms ease, transform 200ms ease",
+      "important": false,
+      "file": "old",
+      "line": 740,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-partner-logos .is-style-lakehub-partner-logo img\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link",
+      "prop": "transition",
+      "value": "transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease",
+      "important": false,
+      "file": "old",
+      "line": 754,
+      "key": "[[],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a",
+      "prop": "transition",
+      "value": "transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease",
+      "important": false,
+      "file": "old",
+      "line": 754,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible",
+      "prop": "transform",
+      "value": "translateY(-0.1875rem) scale(1.03)",
+      "important": false,
+      "file": "old",
+      "line": 758,
+      "key": "[[],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible",
+      "prop": "box-shadow",
+      "value": "0 0.4375rem 1.125rem #003d4133",
+      "important": false,
+      "file": "old",
+      "line": 758,
+      "key": "[[],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:focus-visible\",\"box-shadow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible",
+      "prop": "background-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 759,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible\",\"background-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible",
+      "prop": "color",
+      "value": "var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 759,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible",
+      "prop": "border-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 759,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:focus-visible\",\"border-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible",
+      "prop": "background-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 759,
+      "key": "[[],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible\",\"background-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible",
+      "prop": "color",
+      "value": "var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 759,
+      "key": "[[],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible",
+      "prop": "border-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 759,
+      "key": "[[],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:focus-visible\",\"border-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a",
+      "prop": "display",
+      "value": "inline-block",
+      "important": false,
+      "file": "old",
+      "line": 761,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible",
+      "prop": "color",
+      "value": "var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 762,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible",
+      "prop": "border-bottom-color",
+      "value": "currentColor",
+      "important": false,
+      "file": "old",
+      "line": 762,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"border-bottom-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible",
+      "prop": "font-weight",
+      "value": "500",
+      "important": false,
+      "file": "old",
+      "line": 762,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"font-weight\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible",
+      "prop": "transform",
+      "value": "translateY(-0.125rem)",
+      "important": false,
+      "file": "old",
+      "line": 762,
+      "key": "[[],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:focus-visible\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logo:hover img",
+      "prop": "filter",
+      "value": "drop-shadow(0 0.25rem 0.3125rem #002e3280)",
+      "important": false,
+      "file": "old",
+      "line": 775,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-partner-logo:hover img\",\"filter\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logo:hover img",
+      "prop": "opacity",
+      "value": "1",
+      "important": false,
+      "file": "old",
+      "line": 775,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-partner-logo:hover img\",\"opacity\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-partner-logo:hover img",
+      "prop": "transform",
+      "value": "scale(1.08)",
+      "important": false,
+      "file": "old",
+      "line": 775,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-partner-logo:hover img\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-milestone:hover > :is(h3,p)",
+      "prop": "transform",
+      "value": "scale(1.05)",
+      "important": false,
+      "file": "old",
+      "line": 776,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-milestone:hover>:is(h3,p)\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-milestone:hover::after",
+      "prop": "transform",
+      "value": "scale(1.2)",
+      "important": false,
+      "file": "old",
+      "line": 777,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-milestone:hover::after\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover",
+      "prop": "transform",
+      "value": "translateY(-0.1875rem) scale(1.03)",
+      "important": false,
+      "file": "old",
+      "line": 778,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover",
+      "prop": "box-shadow",
+      "value": "0 0.4375rem 1.125rem #003d4133",
+      "important": false,
+      "file": "old",
+      "line": 778,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button:not(.is-style-lakehub-text-link) .wp-block-button__link[href]:hover\",\"box-shadow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover",
+      "prop": "transform",
+      "value": "translateY(-0.1875rem) scale(1.03)",
+      "important": false,
+      "file": "old",
+      "line": 779,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover",
+      "prop": "box-shadow",
+      "value": "0 0.4375rem 1.125rem #003d4133",
+      "important": false,
+      "file": "old",
+      "line": 779,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-programs-photo .wp-block-button__link:hover\",\"box-shadow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-newsletter-label:hover",
+      "prop": "background-color",
+      "value": "var(--lakehub-vivid-teal)",
+      "important": false,
+      "file": "old",
+      "line": 780,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-newsletter-label:hover\",\"background-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover",
+      "prop": "background-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 781,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover\",\"background-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover",
+      "prop": "color",
+      "value": "var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 781,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover",
+      "prop": "border-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 781,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link[href]:hover\",\"border-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover",
+      "prop": "background-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 781,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover\",\"background-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover",
+      "prop": "color",
+      "value": "var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 781,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover",
+      "prop": "border-color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 781,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .wp-block-button.is-style-outline .wp-block-button__link.has-white-color[href]:hover\",\"border-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover",
+      "prop": "font-weight",
+      "value": "500",
+      "important": false,
+      "file": "old",
+      "line": 783,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover\",\"font-weight\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover",
+      "prop": "transform",
+      "value": "translateY(-0.125rem)",
+      "important": false,
+      "file": "old",
+      "line": 783,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a:hover\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-milestone > :is(h3,p)",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone>:is(h3,p)\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-milestone > :is(h3,p)",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone>:is(h3,p)\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-milestone::after",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone::after\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-milestone::after",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-milestone::after\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button .wp-block-button__link",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .wp-block-button .wp-block-button__link\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-button .wp-block-button__link",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .wp-block-button .wp-block-button__link\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-newsletter-label",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-newsletter-label\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-newsletter-label",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-newsletter-label\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 793,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-style-lakehub-header .wp-block-navigation a\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .wp-block-read-more,\n  .is-style-lakehub-optional-action .wp-block-button__link,\n  .is-style-lakehub-community-copy a,\n  .is-style-lakehub-portfolio-copy a,\n  .is-style-lakehub-text-link .wp-block-button__link\n):is(:hover, :focus-visible)",
+      "prop": "background",
+      "value": "transparent",
+      "important": true,
+      "file": "old",
+      "line": 827,
+      "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"background\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .wp-block-read-more,\n  .is-style-lakehub-optional-action .wp-block-button__link,\n  .is-style-lakehub-community-copy a,\n  .is-style-lakehub-portfolio-copy a,\n  .is-style-lakehub-text-link .wp-block-button__link\n):is(:hover, :focus-visible)",
+      "prop": "border-color",
+      "value": "transparent",
+      "important": true,
+      "file": "old",
+      "line": 827,
+      "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"border-color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .wp-block-read-more,\n  .is-style-lakehub-optional-action .wp-block-button__link,\n  .is-style-lakehub-community-copy a,\n  .is-style-lakehub-portfolio-copy a,\n  .is-style-lakehub-text-link .wp-block-button__link\n):is(:hover, :focus-visible)",
+      "prop": "box-shadow",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 827,
+      "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"box-shadow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .wp-block-read-more,\n  .is-style-lakehub-optional-action .wp-block-button__link,\n  .is-style-lakehub-community-copy a,\n  .is-style-lakehub-portfolio-copy a,\n  .is-style-lakehub-text-link .wp-block-button__link\n):is(:hover, :focus-visible)",
+      "prop": "color",
+      "value": "var(--lakehub-teal, #00676B)",
+      "important": true,
+      "file": "old",
+      "line": 827,
+      "key": "[[],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link ):is(:hover,:focus-visible)\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n)",
+      "prop": "display",
+      "value": "inline-block",
+      "important": false,
+      "file": "old",
+      "line": 843,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a )\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n)",
+      "prop": "transition",
+      "value": "transform 180ms ease, color 180ms ease, text-decoration-color 180ms ease",
+      "important": true,
+      "file": "old",
+      "line": 843,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a )\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n)",
+      "prop": "text-decoration",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 843,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a )\",\"text-decoration\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n):is(:hover, :focus-visible)",
+      "prop": "background",
+      "value": "transparent",
+      "important": true,
+      "file": "old",
+      "line": 853,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"background\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n):is(:hover, :focus-visible)",
+      "prop": "transform",
+      "value": "translateY(-0.125rem)",
+      "important": true,
+      "file": "old",
+      "line": 853,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n):is(:hover, :focus-visible)",
+      "prop": "text-decoration",
+      "value": "underline",
+      "important": true,
+      "file": "old",
+      "line": 853,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"text-decoration\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n):is(:hover, :focus-visible)",
+      "prop": "text-underline-offset",
+      "value": "0.25rem",
+      "important": true,
+      "file": "old",
+      "line": 853,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"text-underline-offset\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(\n  .is-style-lakehub-footer-links a,\n  .is-style-lakehub-footer-bottom a,\n  .is-style-lakehub-footer .wp-block-navigation a\n):is(:hover, :focus-visible)",
+      "prop": "color",
+      "value": "white",
+      "important": true,
+      "file": "old",
+      "line": 853,
+      "key": "[[],\".wp-site-blocks:is( .is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks :is(\n    .wp-block-read-more,\n    .is-style-lakehub-optional-action .wp-block-button__link,\n    .is-style-lakehub-community-copy a,\n    .is-style-lakehub-portfolio-copy a,\n    .is-style-lakehub-text-link .wp-block-button__link,\n    .is-style-lakehub-footer-links a,\n    .is-style-lakehub-footer-bottom a,\n    .is-style-lakehub-footer .wp-block-navigation a\n  ):is(:hover, :focus-visible)",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 866,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks:is( .wp-block-read-more,.is-style-lakehub-optional-action .wp-block-button__link,.is-style-lakehub-community-copy a,.is-style-lakehub-portfolio-copy a,.is-style-lakehub-text-link .wp-block-button__link,.is-style-lakehub-footer-links a,.is-style-lakehub-footer-bottom a,.is-style-lakehub-footer .wp-block-navigation a ):is(:hover,:focus-visible)\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo)",
+      "prop": "overflow",
+      "value": "hidden",
+      "important": false,
+      "file": "old",
+      "line": 879,
+      "key": "[[],\".wp-site-blocks:is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo)\",\"overflow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo) img",
+      "prop": "transition",
+      "value": "transform 250ms ease",
+      "important": false,
+      "file": "old",
+      "line": 880,
+      "key": "[[],\".wp-site-blocks:is(.lakehub-program-image,.wp-block-post-featured-image,.lakehub-team-photo) img\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".wp-site-blocks :is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card):hover img",
+      "prop": "transform",
+      "value": "scale(1.045)",
+      "important": false,
+      "file": "old",
+      "line": 882,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".wp-site-blocks:is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card):hover img\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card):focus-within img",
+      "prop": "transform",
+      "value": "scale(1.045)",
+      "important": false,
+      "file": "old",
+      "line": 884,
+      "key": "[[],\".wp-site-blocks:is(.lakehub-program,.is-style-lakehub-insight-card,.lakehub-team-card):focus-within img\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-journey",
+      "prop": "padding-inline",
+      "value": "2rem",
+      "important": false,
+      "file": "old",
+      "line": 885,
+      "key": "[[],\".is-style-lakehub-journey\",\"padding-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-journey > .is-style-lakehub-timeline",
+      "prop": "max-width",
+      "value": "76rem",
+      "important": false,
+      "file": "old",
+      "line": 886,
+      "key": "[[],\".is-style-lakehub-journey>.is-style-lakehub-timeline\",\"max-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "display",
+      "value": "flex",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "flex-wrap",
+      "value": "nowrap",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"flex-wrap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "gap",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "overflow-x",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"overflow-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "overflow-y",
+      "value": "hidden",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"overflow-y\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "padding",
+      "value": "0.75rem 0 1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "margin-top",
+      "value": "3.25rem",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"margin-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "scroll-snap-type",
+      "value": "x proximity",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"scroll-snap-type\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline",
+      "prop": "scrollbar-width",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 887,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline\",\"scrollbar-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-timeline::-webkit-scrollbar",
+      "prop": "display",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 891,
+      "key": "[[],\".wp-block-group.is-style-lakehub-timeline::-webkit-scrollbar\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline::before",
+      "prop": "display",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 892,
+      "key": "[[],\".is-style-lakehub-timeline::before\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone",
+      "prop": "flex",
+      "value": "1 0 17.5rem",
+      "important": false,
+      "file": "old",
+      "line": 893,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"flex\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone",
+      "prop": "min-width",
+      "value": "17.5rem",
+      "important": false,
+      "file": "old",
+      "line": 893,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"min-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone",
+      "prop": "min-height",
+      "value": "16.6875rem",
+      "important": false,
+      "file": "old",
+      "line": 893,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"min-height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone",
+      "prop": "padding-inline",
+      "value": "1rem",
+      "important": false,
+      "file": "old",
+      "line": 893,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"padding-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone",
+      "prop": "position",
+      "value": "relative",
+      "important": false,
+      "file": "old",
+      "line": 893,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone",
+      "prop": "scroll-snap-align",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 893,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone\",\"scroll-snap-align\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "content",
+      "value": "''",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"content\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "position",
+      "value": "absolute",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "left",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "right",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"right\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "top",
+      "value": "8.625rem",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "width",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "height",
+      "value": "0.25rem",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::before",
+      "prop": "background",
+      "value": "var(--lakehub-line)",
+      "important": false,
+      "file": "old",
+      "line": 894,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::before\",\"background\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::after",
+      "prop": "top",
+      "value": "8.125rem",
+      "important": false,
+      "file": "old",
+      "line": 895,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::after",
+      "prop": "left",
+      "value": "calc(50% - 0.5625rem)",
+      "important": false,
+      "file": "old",
+      "line": 895,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::after",
+      "prop": "width",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 895,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::after",
+      "prop": "height",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 895,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone::after",
+      "prop": "background",
+      "value": "url('assets/icons/journey-dot.svg') center/contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 895,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone::after\",\"background\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:last-child::after",
+      "prop": "background-image",
+      "value": "url('assets/icons/journey-star.svg')",
+      "important": false,
+      "file": "old",
+      "line": 896,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"background-image\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:last-child::after",
+      "prop": "width",
+      "value": "1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 896,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:last-child::after",
+      "prop": "height",
+      "value": "1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 896,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:last-child::after",
+      "prop": "top",
+      "value": "7.9375rem",
+      "important": false,
+      "file": "old",
+      "line": 896,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:last-child::after",
+      "prop": "left",
+      "value": "calc(50% - 0.75rem)",
+      "important": false,
+      "file": "old",
+      "line": 896,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:last-child::after\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd)",
+      "prop": "padding-top",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 897,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd)\",\"padding-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd)",
+      "prop": "padding-bottom",
+      "value": "3.125rem",
+      "important": false,
+      "file": "old",
+      "line": 897,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd)\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd)",
+      "prop": "text-align",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 897,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd)\",\"text-align\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even)",
+      "prop": "padding-top",
+      "value": "9.75rem",
+      "important": false,
+      "file": "old",
+      "line": 898,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even)\",\"padding-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even)",
+      "prop": "padding-bottom",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 898,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even)\",\"padding-bottom\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even)",
+      "prop": "text-align",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 898,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even)\",\"text-align\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year",
+      "prop": "position",
+      "value": "static",
+      "important": false,
+      "file": "old",
+      "line": 899,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year",
+      "prop": "margin-top",
+      "value": "0.5rem",
+      "important": false,
+      "file": "old",
+      "line": 899,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(odd) .is-style-lakehub-year\",\"margin-top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year",
+      "prop": "position",
+      "value": "absolute",
+      "important": false,
+      "file": "old",
+      "line": 900,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year",
+      "prop": "top",
+      "value": "6.5rem",
+      "important": false,
+      "file": "old",
+      "line": 900,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year",
+      "prop": "left",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 900,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-timeline > .is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year",
+      "prop": "right",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 900,
+      "key": "[[],\".is-style-lakehub-timeline>.is-style-lakehub-milestone:nth-child(even) .is-style-lakehub-year\",\"right\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-query.is-style-lakehub-insights",
+      "prop": "container-type",
+      "value": "inline-size",
+      "important": false,
+      "file": "old",
+      "line": 901,
+      "key": "[[],\".wp-block-query.is-style-lakehub-insights\",\"container-type\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "--lakehub-card-width",
+      "value": "calc((100cqw - 4rem) / 3)",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"--lakehub-card-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "display",
+      "value": "flex",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "gap",
+      "value": "2rem",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"gap\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "overflow-x",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"overflow-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "scroll-snap-type",
+      "value": "x mandatory",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"scroll-snap-type\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "scrollbar-width",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"scrollbar-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "position",
+      "value": "relative",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "padding",
+      "value": "2rem 1.5rem 2.75rem",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "margin-block",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"margin-block\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "margin-inline",
+      "value": "-1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 902,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"margin-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template::-webkit-scrollbar",
+      "prop": "display",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 907,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template::-webkit-scrollbar\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template",
+      "prop": "padding-inline",
+      "value": "max(1.5rem, calc((100cqw - var(--lakehub-card-width)) / 2))",
+      "important": false,
+      "file": "old",
+      "line": 908,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template\",\"padding-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template",
+      "prop": "padding-block",
+      "value": "2rem 2.75rem",
+      "important": false,
+      "file": "old",
+      "line": 908,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template\",\"padding-block\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template",
+      "prop": "margin-inline",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 908,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights.is-enhanced .wp-block-post-template\",\"margin-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template > li",
+      "prop": "flex",
+      "value": "0 0 var(--lakehub-card-width)",
+      "important": false,
+      "file": "old",
+      "line": 909,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"flex\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template > li",
+      "prop": "min-width",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 909,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"min-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template > li",
+      "prop": "scroll-snap-align",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 909,
+      "key": "[[],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template>li\",\"scroll-snap-align\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card",
+      "prop": "height",
+      "value": "100%",
+      "important": false,
+      "file": "old",
+      "line": 910,
+      "key": "[[],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card",
+      "prop": "transform",
+      "value": "scale(.96)",
+      "important": false,
+      "file": "old",
+      "line": 910,
+      "key": "[[],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card",
+      "prop": "transition",
+      "value": "transform 250ms ease, box-shadow 250ms ease",
+      "important": false,
+      "file": "old",
+      "line": 910,
+      "key": "[[],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-enhanced .is-current .is-style-lakehub-insight-card",
+      "prop": "transform",
+      "value": "scale(1.025)",
+      "important": false,
+      "file": "old",
+      "line": 911,
+      "key": "[[],\".wp-site-blocks .is-enhanced .is-current .is-style-lakehub-insight-card\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks .is-enhanced .is-current .is-style-lakehub-insight-card",
+      "prop": "box-shadow",
+      "value": "0 0.75rem 1.5rem #00202130",
+      "important": false,
+      "file": "old",
+      "line": 911,
+      "key": "[[],\".wp-site-blocks .is-enhanced .is-current .is-style-lakehub-insight-card\",\"box-shadow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls",
+      "prop": "align-items",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 912,
+      "key": "[[],\".lakehub-insights-controls\",\"align-items\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls",
+      "prop": "height",
+      "value": "3rem",
+      "important": false,
+      "file": "old",
+      "line": 912,
+      "key": "[[],\".lakehub-insights-controls\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls",
+      "prop": "margin",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 912,
+      "key": "[[],\".lakehub-insights-controls\",\"margin\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "display",
+      "value": "grid",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "place-items",
+      "value": "center",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"place-items\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "width",
+      "value": "2.5rem",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "height",
+      "value": "2.5rem",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "padding",
+      "value": "0 0 0.1875rem",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "border-radius",
+      "value": "50%",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"border-radius\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button:last-child",
+      "prop": "margin-left",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 914,
+      "key": "[[],\".lakehub-insights-controls button:last-child\",\"margin-left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button[hidden]",
+      "prop": "display",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 915,
+      "key": "[[],\".lakehub-insights-controls button[hidden]\",\"display\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button:is(:hover,:focus-visible)",
+      "prop": "background",
+      "value": "rgb(196 199 199 / 30%)",
+      "important": false,
+      "file": "old",
+      "line": 916,
+      "key": "[[],\".lakehub-insights-controls button:is(:hover,:focus-visible)\",\"background\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button:is(:hover,:focus-visible)",
+      "prop": "color",
+      "value": "var(--wp--preset--color--footer)",
+      "important": false,
+      "file": "old",
+      "line": 916,
+      "key": "[[],\".lakehub-insights-controls button:is(:hover,:focus-visible)\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "justify-content",
+      "value": "space-between",
+      "important": false,
+      "file": "old",
+      "line": 917,
+      "key": "[[],\".is-style-lakehub-footer-grid\",\"justify-content\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "align-items",
+      "value": "start",
+      "important": false,
+      "file": "old",
+      "line": 917,
+      "key": "[[],\".is-style-lakehub-footer-grid\",\"align-items\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links > p:first-child + p",
+      "prop": "color",
+      "value": "white",
+      "important": false,
+      "file": "old",
+      "line": 920,
+      "key": "[[],\".is-style-lakehub-footer-links>p:first-child+p\",\"color\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-newsletter p:first-child",
+      "prop": "white-space",
+      "value": "nowrap",
+      "important": false,
+      "file": "old",
+      "line": 922,
+      "key": "[[],\".is-style-lakehub-newsletter p:first-child\",\"white-space\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-newsletter-label",
+      "prop": "font-weight",
+      "value": "400",
+      "important": false,
+      "file": "old",
+      "line": 923,
+      "key": "[[],\".is-style-lakehub-newsletter-label\",\"font-weight\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-newsletter-label",
+      "prop": "line-height",
+      "value": "1.75rem",
+      "important": false,
+      "file": "old",
+      "line": 923,
+      "key": "[[],\".is-style-lakehub-newsletter-label\",\"line-height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".lakehub-collapsible-drawer.is-collapsed",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 1055,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-collapsible-drawer.is-collapsed\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".lakehub-collapsible-drawer.is-expanded",
+      "prop": "transition",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 1055,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-collapsible-drawer.is-expanded\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".lakehub-text-toggle-btn:hover",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 1059,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-text-toggle-btn:hover\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".lakehub-text-toggle-btn:focus-visible",
+      "prop": "transform",
+      "value": "none",
+      "important": true,
+      "file": "old",
+      "line": 1059,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".lakehub-text-toggle-btn:focus-visible\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".lakehub-team-card:hover",
+      "prop": "box-shadow",
+      "value": "0 0.5rem 1.25rem #00414524",
+      "important": false,
+      "file": "old",
+      "line": 1071,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".lakehub-team-card:hover\",\"box-shadow\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (hover:hover) and (pointer:fine)"
+      ],
+      "sel": ".is-style-lakehub-mission-collage figure:hover img",
+      "prop": "transform",
+      "value": "rotate(-45deg) scale(1.045)",
+      "important": false,
+      "file": "old",
+      "line": 1072,
+      "key": "[[\"@media (hover:hover) and (pointer:fine)\"],\".is-style-lakehub-mission-collage figure:hover img\",\"transform\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "background",
+      "value": "url('assets/images/completion/community-dots.svg') left top / contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"background\"]",
+      "resolution": "Equivalent/superseded: halftone-density.css and dynamic generator own these layers; keep later local-asset implementation."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "background",
+      "value": "url('assets/images/completion/portfolio-dots.svg') right bottom / contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"background\"]",
+      "resolution": "Equivalent/superseded: halftone-density.css and dynamic generator own these layers; keep later local-asset implementation."
+    },
+    {
+      "ctx": [],
+      "sel": ".editor-styles-wrapper .is-style-lakehub-optional-action",
+      "prop": "outline",
+      "value": "0.0625rem dashed var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 1133,
+      "key": "[[],\".editor-styles-wrapper .is-style-lakehub-optional-action\",\"outline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "--lakehub-card-width",
+      "value": "min(20rem,calc(100cqw - 2rem))",
+      "important": false,
+      "file": "old",
+      "line": 1143,
+      "key": "[[\"@media (max-width:900px)\"],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"--lakehub-card-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid > :last-child",
+      "prop": "padding",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 1146,
+      "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"padding\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template",
+      "prop": "--lakehub-card-width",
+      "value": "min(17.875rem,calc(100cqw - 1.5rem))",
+      "important": false,
+      "file": "old",
+      "line": 1179,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-site-blocks .wp-block-query.is-style-lakehub-insights .wp-block-post-template\",\"--lakehub-card-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid > :last-child",
+      "prop": "grid-column",
+      "value": "1/-1",
+      "important": false,
+      "file": "old",
+      "line": 1181,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"grid-column\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-newsletter",
+      "prop": "max-width",
+      "value": "21.625rem",
+      "important": false,
+      "file": "old",
+      "line": 1182,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter\",\"max-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-newsletter p:first-child",
+      "prop": "font-size",
+      "value": "1rem",
+      "important": false,
+      "file": "old",
+      "line": 1183,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter p:first-child\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-newsletter-label",
+      "prop": "font-size",
+      "value": "1rem",
+      "important": false,
+      "file": "old",
+      "line": 1184,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter-label\",\"font-size\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-newsletter-label",
+      "prop": "padding-inline",
+      "value": "0.75rem",
+      "important": false,
+      "file": "old",
+      "line": 1184,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-newsletter-label\",\"padding-inline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".is-style-lakehub-portfolio-photo img",
+      "prop": "aspect-ratio",
+      "value": "369/457",
+      "important": false,
+      "file": "old",
+      "line": 1210,
+      "key": "[[\"@media (max-width:600px)\"],\".is-style-lakehub-portfolio-photo img\",\"aspect-ratio\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (prefers-reduced-motion:reduce)"
+      ],
+      "sel": ".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card",
+      "prop": "transition",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 1217,
+      "key": "[[\"@media (prefers-reduced-motion:reduce)\"],\".wp-site-blocks .is-enhanced .is-style-lakehub-insight-card\",\"transition\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".wp-site-blocks .lakehub-program.is-card-ready",
+      "prop": "--lakehub-reveal-x",
+      "value": "1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 1245,
+      "key": "[[\"@media (max-width:900px)\"],\".wp-site-blocks .lakehub-program.is-card-ready\",\"--lakehub-reveal-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [
+        "@media (max-width:600px)"
+      ],
+      "sel": ".wp-site-blocks .lakehub-program.is-card-ready",
+      "prop": "--lakehub-reveal-x",
+      "value": "0",
+      "important": false,
+      "file": "old",
+      "line": 1248,
+      "key": "[[\"@media (max-width:600px)\"],\".wp-site-blocks .lakehub-program.is-card-ready\",\"--lakehub-reveal-x\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop",
+      "prop": "position",
+      "value": "relative",
+      "important": false,
+      "file": "old",
+      "line": 1261,
+      "key": "[[],\".lakehub-team-photo.has-design-crop\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "position",
+      "value": "absolute",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "max-width",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"max-width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "width",
+      "value": "var(--lakehub-crop-width)",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"width\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "height",
+      "value": "var(--lakehub-crop-height)",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"height\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "left",
+      "value": "var(--lakehub-crop-left)",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"left\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "top",
+      "value": "var(--lakehub-crop-top)",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"top\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-team-photo.has-design-crop img",
+      "prop": "object-fit",
+      "value": "fill",
+      "important": false,
+      "file": "old",
+      "line": 1262,
+      "key": "[[],\".lakehub-team-photo.has-design-crop img\",\"object-fit\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-about-hero > .wp-block-cover__image-background",
+      "prop": "object-position",
+      "value": "50% 18%",
+      "important": false,
+      "file": "old",
+      "line": 1263,
+      "key": "[[],\".is-style-lakehub-about-hero>.wp-block-cover__image-background\",\"object-position\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible",
+      "prop": "outline",
+      "value": ".125rem solid var(--lakehub-teal)",
+      "important": false,
+      "file": "old",
+      "line": 1317,
+      "key": "[[],\".wp-site-blocks:is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible\",\"outline\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-site-blocks :is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible",
+      "prop": "outline-offset",
+      "value": ".25rem",
+      "important": false,
+      "file": "old",
+      "line": 1317,
+      "key": "[[],\".wp-site-blocks:is(.is-style-lakehub-timeline,.wp-block-post-template):focus-visible\",\"outline-offset\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-metric-row:last-child .is-style-lakehub-metric-copy h3",
+      "prop": "font-weight",
+      "value": "600",
+      "important": false,
+      "file": "old",
+      "line": 1320,
+      "key": "[[],\".is-style-lakehub-metric-row:last-child .is-style-lakehub-metric-copy h3\",\"font-weight\"]",
+      "resolution": "Restore into owning module; verify responsive/cascade behavior; omit only if equivalent shorthand already supplies value."
+    }
+  ],
+  "changed": [
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-milestone:nth-child(4)::after",
+      "prop": "background",
+      "value": "url('assets/icons/journey-star.svg') center/contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 114,
+      "key": "[[],\".is-style-lakehub-milestone:nth-child(4)::after\",\"background\"]",
+      "current": "url('../icons/journey-star.svg') center/contain no-repeat",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-partner-logo img",
+      "prop": "transition",
+      "value": "opacity 180ms ease",
+      "important": false,
+      "file": "old",
+      "line": 120,
+      "key": "[[],\".is-style-lakehub-partner-logo img\",\"transition\"]",
+      "current": "opacity 180ms ease, transform 180ms ease, filter 180ms ease",
+      "currentFile": "assets/css/partners.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": "section.is-style-lakehub-insights",
+      "prop": "min-height",
+      "value": "42.9375rem",
+      "important": false,
+      "file": "old",
+      "line": 707,
+      "key": "[[],\"section.is-style-lakehub-insights\",\"min-height\"]",
+      "current": "45rem",
+      "currentFile": "assets/css/insights.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": "section.is-style-lakehub-insights .is-style-lakehub-impact-heading",
+      "prop": "display",
+      "value": "block",
+      "important": false,
+      "file": "old",
+      "line": 418,
+      "key": "[[],\"section.is-style-lakehub-insights .is-style-lakehub-impact-heading\",\"display\"]",
+      "current": "flex",
+      "currentFile": "assets/css/insights.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls",
+      "prop": "inset",
+      "value": "44% -3rem auto",
+      "important": false,
+      "file": "old",
+      "line": 912,
+      "key": "[[],\".lakehub-insights-controls\",\"inset\"]",
+      "current": "12.3125rem -2.8125rem auto",
+      "currentFile": "assets/css/insights.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-insights-controls button",
+      "prop": "font",
+      "value": "600 2rem/1 var(--wp--preset--font-family--body)",
+      "important": false,
+      "file": "old",
+      "line": 913,
+      "key": "[[],\".lakehub-insights-controls button\",\"font\"]",
+      "current": "1.5rem var(--wp--preset--font-family--mono)",
+      "currentFile": "assets/css/insights.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-cta .wp-block-button.is-style-outline .wp-block-button__link",
+      "prop": "padding",
+      "value": "1rem 2.0625rem",
+      "important": false,
+      "file": "old",
+      "line": 236,
+      "key": "[[],\".is-style-lakehub-cta .wp-block-button.is-style-outline .wp-block-button__link\",\"padding\"]",
+      "current": "1rem 2rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "grid-template-columns",
+      "value": "18rem 7.5rem 6.375rem minmax(0,21.625rem)",
+      "important": false,
+      "file": "old",
+      "line": 917,
+      "key": "[[],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
+      "current": "20.625rem 11.5rem 9.875rem minmax(0, 1fr)",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "gap",
+      "value": "2rem",
+      "important": false,
+      "file": "old",
+      "line": 917,
+      "key": "[[],\".is-style-lakehub-footer-grid\",\"gap\"]",
+      "current": "2.25rem",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-footer-links > p:first-child",
+      "prop": "font-weight",
+      "value": "500",
+      "important": false,
+      "file": "old",
+      "line": 248,
+      "key": "[[],\".is-style-lakehub-footer-links>p:first-child\",\"font-weight\"]",
+      "current": "600",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-newsletter-label",
+      "prop": "padding",
+      "value": "0.625rem 1rem",
+      "important": false,
+      "file": "old",
+      "line": 923,
+      "key": "[[],\".is-style-lakehub-newsletter-label\",\"padding\"]",
+      "current": "0.6875rem 1rem",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-program-section",
+      "prop": "padding",
+      "value": "2.875rem 3.25rem 4.4375rem",
+      "important": false,
+      "file": "old",
+      "line": 280,
+      "key": "[[],\".is-style-lakehub-program-section\",\"padding\"]",
+      "current": "5rem 3.25rem 2.9375rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent consolidated shorthand / final effective spacing; preserve and verify."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program-copy",
+      "prop": "padding",
+      "value": "4.375rem 1.25rem 1.875rem 1.5rem",
+      "important": false,
+      "file": "old",
+      "line": 285,
+      "key": "[[],\".lakehub-program-copy\",\"padding\"]",
+      "current": "4.75rem 1.25rem 1.875rem 1.125rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent consolidated shorthand / final effective spacing; preserve and verify."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program-copy :is(h2,h3)",
+      "prop": "margin",
+      "value": "0 0 3.25rem",
+      "important": false,
+      "file": "old",
+      "line": 286,
+      "key": "[[],\".lakehub-program-copy:is(h2,h3)\",\"margin\"]",
+      "current": "0 0 2.5rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program:nth-child(even)",
+      "prop": "background-image",
+      "value": "url('assets/gradients/program-2.svg')",
+      "important": false,
+      "file": "old",
+      "line": 462,
+      "key": "[[],\".lakehub-program:nth-child(even)\",\"background-image\"]",
+      "current": "url('../gradients/program-2.svg')",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [
+        "@media (max-width:1199px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "grid-template-columns",
+      "value": "1.1fr .65fr .55fr 1.5fr",
+      "important": false,
+      "file": "old",
+      "line": 1135,
+      "key": "[[\"@media (max-width:1199px)\"],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
+      "current": "1.3fr .8fr .6fr 1.5fr",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".lakehub-insights-controls",
+      "prop": "margin-top",
+      "value": "0.5rem",
+      "important": false,
+      "file": "old",
+      "line": 1144,
+      "key": "[[\"@media (max-width:900px)\"],\".lakehub-insights-controls\",\"margin-top\"]",
+      "current": "0.75rem",
+      "currentFile": "assets/css/insights.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid",
+      "prop": "grid-template-columns",
+      "value": "1fr 1fr",
+      "important": false,
+      "file": "old",
+      "line": 1145,
+      "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid\",\"grid-template-columns\"]",
+      "current": "1.4fr 1fr 1fr",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid > :last-child",
+      "prop": "grid-column",
+      "value": "auto",
+      "important": false,
+      "file": "old",
+      "line": 1146,
+      "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"grid-column\"]",
+      "current": "1 / -1",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [
+        "@media (max-width:900px)"
+      ],
+      "sel": ".is-style-lakehub-footer-grid > :last-child",
+      "prop": "max-width",
+      "value": "none",
+      "important": false,
+      "file": "old",
+      "line": 1146,
+      "key": "[[\"@media (max-width:900px)\"],\".is-style-lakehub-footer-grid>:last-child\",\"max-width\"]",
+      "current": "25rem",
+      "currentFile": "assets/css/footer.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-impact",
+      "prop": "padding",
+      "value": "0 var(--lakehub-gutter) 5rem",
+      "important": false,
+      "file": "old",
+      "line": 405,
+      "key": "[[],\".wp-block-group.is-style-lakehub-impact\",\"padding\"]",
+      "current": "0 var(--lakehub-gutter) 2.875rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent consolidated shorthand / final effective spacing; preserve and verify."
+    },
+    {
+      "ctx": [],
+      "sel": ".wp-block-group.is-style-lakehub-impact-wide",
+      "prop": "padding",
+      "value": "1.625rem",
+      "important": false,
+      "file": "old",
+      "line": 407,
+      "key": "[[],\".wp-block-group.is-style-lakehub-impact-wide\",\"padding\"]",
+      "current": "1.625rem 1.625rem 1.0625rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent consolidated shorthand / final effective spacing; preserve and verify."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-milestone:nth-child(2)::after",
+      "prop": "background",
+      "value": "url('assets/icons/journey-dot.svg') center/contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 421,
+      "key": "[[],\".is-style-lakehub-milestone:nth-child(2)::after\",\"background\"]",
+      "current": "url('../icons/journey-dot.svg') center/contain no-repeat",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program-copy :is(h2,h3)",
+      "prop": "margin-bottom",
+      "value": "2.5rem",
+      "important": false,
+      "file": "old",
+      "line": 669,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program-copy:is(h2,h3)\",\"margin-bottom\"]",
+      "current": "3.25rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program:nth-child(2) .lakehub-program-copy",
+      "prop": "padding-top",
+      "value": "5rem",
+      "important": false,
+      "file": "old",
+      "line": 670,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(2) .lakehub-program-copy\",\"padding-top\"]",
+      "current": "4.5rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [
+        "@media (min-width:1200px)"
+      ],
+      "sel": ".lakehub-program:nth-child(3) .lakehub-program-copy",
+      "prop": "padding-top",
+      "value": "6.75rem",
+      "important": false,
+      "file": "old",
+      "line": 671,
+      "key": "[[\"@media (min-width:1200px)\"],\".lakehub-program:nth-child(3) .lakehub-program-copy\",\"padding-top\"]",
+      "current": "6.125rem",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Restore historical final effective value in owning module; requested Insights responsive layout supersedes old widths."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program",
+      "prop": "background-image",
+      "value": "url('assets/gradients/program-1.svg')",
+      "important": false,
+      "file": "old",
+      "line": 461,
+      "key": "[[],\".lakehub-program\",\"background-image\"]",
+      "current": "url('../gradients/program-1.svg')",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program:nth-child(3)",
+      "prop": "background-image",
+      "value": "url('assets/gradients/program-3.svg')",
+      "important": false,
+      "file": "old",
+      "line": 463,
+      "key": "[[],\".lakehub-program:nth-child(3)\",\"background-image\"]",
+      "current": "url('../gradients/program-3.svg')",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [],
+      "sel": ".lakehub-program:nth-child(4)",
+      "prop": "background-image",
+      "value": "url('assets/gradients/program-4.svg')",
+      "important": false,
+      "file": "old",
+      "line": 464,
+      "key": "[[],\".lakehub-program:nth-child(4)\",\"background-image\"]",
+      "current": "url('../gradients/program-4.svg')",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-story-photo::before",
+      "prop": "background",
+      "value": "url('assets/images/completion/story-dots.svg') left bottom / contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 973,
+      "key": "[[],\".is-style-lakehub-story-photo::before\",\"background\"]",
+      "current": "url('../images/completion/story-dots.svg') left bottom / contain no-repeat",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo img",
+      "prop": "border-radius",
+      "value": "1.125rem",
+      "important": false,
+      "file": "old",
+      "line": 1088,
+      "key": "[[],\".is-style-lakehub-community-photo img\",\"border-radius\"]",
+      "current": "1.125rem",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "content",
+      "value": "''",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"content\"]",
+      "current": "''",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "position",
+      "value": "absolute",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"position\"]",
+      "current": "absolute",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "z-index",
+      "value": "-1",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"z-index\"]",
+      "current": "-1",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "left",
+      "value": "-3.5rem",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"left\"]",
+      "current": "50%",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "top",
+      "value": "-3rem",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"top\"]",
+      "current": "50%",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "width",
+      "value": "37.5rem",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"width\"]",
+      "current": "599px",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-photo::before",
+      "prop": "height",
+      "value": "26.25rem",
+      "important": false,
+      "file": "old",
+      "line": 1089,
+      "key": "[[],\".is-style-lakehub-community-photo::before\",\"height\"]",
+      "current": "362px",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "content",
+      "value": "''",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"content\"]",
+      "current": "''",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "position",
+      "value": "absolute",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"position\"]",
+      "current": "absolute",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "z-index",
+      "value": "-1",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"z-index\"]",
+      "current": "-1",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "right",
+      "value": "-3.375rem",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"right\"]",
+      "current": "auto",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "bottom",
+      "value": "-2.625rem",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"bottom\"]",
+      "current": "auto",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "width",
+      "value": "21.25rem",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"width\"]",
+      "current": "393px",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-photo::before",
+      "prop": "height",
+      "value": "23.75rem",
+      "important": false,
+      "file": "old",
+      "line": 1103,
+      "key": "[[],\".is-style-lakehub-portfolio-photo::before\",\"height\"]",
+      "current": "481px",
+      "currentFile": "assets/css/halftone-density.css",
+      "resolution": "Intentional: existing separate halftone-density.css provides final treatment and crop."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-community-grid::before",
+      "prop": "background",
+      "value": "url('assets/images/completion/community-dots.svg') left top / contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 1268,
+      "key": "[[],\".is-style-lakehub-community-grid::before\",\"background\"]",
+      "current": "url('../images/completion/community-dots.svg') left top / contain no-repeat",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    },
+    {
+      "ctx": [],
+      "sel": ".is-style-lakehub-portfolio-grid::after",
+      "prop": "background",
+      "value": "url('assets/images/completion/portfolio-dots.svg') right bottom / contain no-repeat",
+      "important": false,
+      "file": "old",
+      "line": 1271,
+      "key": "[[],\".is-style-lakehub-portfolio-grid::after\",\"background\"]",
+      "current": "url('../images/completion/portfolio-dots.svg') right bottom / contain no-repeat",
+      "currentFile": "assets/css/sections.css",
+      "resolution": "Equivalent: relative asset paths corrected for assets/css location."
+    }
+  ]
+}
