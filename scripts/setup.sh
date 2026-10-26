@@ -34,6 +34,7 @@ main() {
   require_command rclone
   require_command unzip
   require_command sha256sum
+  require_command python3
   load_env
   require_settings
   check_r2

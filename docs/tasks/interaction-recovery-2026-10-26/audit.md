@@ -15,3 +15,11 @@ Backup before modification: .backups/interaction-recovery-before.zip, full Studi
 ## JavaScript body comparison
 
 Transformation and collapsible modules retain their feature bodies verbatim apart from wrappers/comments. Partner carousel drops only an unused `section` variable. Program cards/halftone/slideshow/social-share wrap the same behavior in standalone guards. Metrics retains measurement, line geometry, font readiness, scroll/resize/focus and motion-change listeners. External-link click-time protection and rel-token preservation were the confirmed behavioral omissions and are restored. Insights browsing deliberately changes from padded center selection to complete 3/2/1-card viewports per the approved plan.
+
+## Completed CSS coverage
+
+A second parser comparison leaves only three absent historical selector/property/context entries: the program background shorthand superseded by per-card local gradients and two static halftone backgrounds superseded by halftone-density and the dynamic generator. All are intentional and documented in the ledger. The original 341 candidates are accounted for: 310 recovered entries and 31 equivalent/superseded entries. Remaining value differences consist of corrected relative asset paths, effective spacing shorthands, the retained separate halftone layer, and the requested complete 3/2/1-card Insights viewport.
+
+Pre-existing Coming Soon has a template page title plus its content heading. It predates this recovery and is not a lost interaction; tests assert the requested content layout/spacing without rewriting saved markup.
+
+Studio inspection tools timed out; direct Chromium verification succeeded with localhost IPv4 resolution and bypassed proxy. No server replacement or database reset was used.

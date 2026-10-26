@@ -1,0 +1,6 @@
+{
+  "source_roots": [
+    "wp-content/themes/lakehub-social",
+    "wp-content/plugins/lakehub-site"
+  ]
+}

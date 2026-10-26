@@ -228,6 +228,9 @@ upload_studio_export() {
     rm -f "${remote_sha_tmp}"
     if [[ -n "${remote_checksum}" && "${local_checksum}" == "${remote_checksum}" ]]; then
       log "Notice: Remote latest.zip already has identical SHA256 (${local_checksum:0:12}). Skipping R2 upload."
+      if [[ -f "${archive}.manifest.json" ]]; then
+        rclone copyto "${archive}.manifest.json" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.manifest.json")" --no-traverse
+      fi
       return 0
     fi
   fi
@@ -236,9 +239,16 @@ upload_studio_export() {
   rclone copyto "${archive}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}")" --no-traverse
   rclone copyto "${checksum_file}" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.sha256")" --no-traverse
 
+  if [[ -f "${archive}.manifest.json" ]]; then
+    rclone copyto "${archive}.manifest.json" "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.manifest.json")" --no-traverse
+  fi
+
   log "Updating latest.zip in R2 via server-side copy..."
   rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}")" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip")"
   rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.sha256")" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.sha256")"
+  if [[ -f "${archive}.manifest.json" ]]; then
+    rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/${remote_name}.manifest.json")" "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.manifest.json")"
+  fi
 }
 
 # Prunes older timestamped Studio export archives in R2 beyond the retention threshold.
@@ -251,6 +261,7 @@ prune_studio_exports() {
     for name in "${names[@]:STUDIO_EXPORT_RETENTION}"; do
       rclone deletefile "$(r2_path "${STUDIO_EXPORT_PREFIX}/${name}")"
       rclone deletefile "$(r2_path "${STUDIO_EXPORT_PREFIX}/${name}.sha256")" || true
+      rclone deletefile "$(r2_path "${STUDIO_EXPORT_PREFIX}/${name}.manifest.json")" 2>/dev/null || true
     done
   fi
 }
@@ -278,6 +289,7 @@ download_latest_studio_export() {
       log "Local latest Studio export is already up to date (${remote_checksum:0:12}). Skipping archive download."
       rm -f "${temp_checksum}"
       validate_studio_export "${destination}"
+      download_studio_manifest "${destination}"
       return 0
     fi
   fi
@@ -287,6 +299,7 @@ download_latest_studio_export() {
   mv "${temp_checksum}" "${checksum_file}"
   verify_checksum "${destination}" "${checksum_file}"
   validate_studio_export "${destination}"
+  download_studio_manifest "${destination}"
 }
 
 # ------------------------------------------------------------------------------
@@ -312,5 +325,18 @@ git_repo() {
     git --git-dir="${RUNTIME_DIR}/git" --work-tree="${ROOT_DIR}" "$@"
   else
     git -C "${ROOT_DIR}" "$@"
+  fi
+}
+
+# Legacy archives remain importable, but cannot claim source/revision verification.
+download_studio_manifest() {
+  local archive="$1" manifest_tmp="${1}.manifest.json.remote"
+  require_command python3
+  if rclone copyto "$(r2_path "${STUDIO_EXPORT_PREFIX}/latest.zip.manifest.json")" "${manifest_tmp}" --no-traverse; then
+    python3 "${ROOT_DIR}/scripts/lib/backup_manifest.py" verify "${archive}" --manifest "${manifest_tmp}"
+    mv "${manifest_tmp}" "${archive}.manifest.json"
+  else
+    rm -f "${manifest_tmp}" "${archive}.manifest.json"
+    warn "No source manifest could be downloaded. This may be a legacy backup or a network error; identify its matching source revision manually."
   fi
 }

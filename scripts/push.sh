@@ -48,6 +48,7 @@ main() {
   require_command rclone
   require_command unzip
   require_command sha256sum
+  require_command python3
   require_git_repository
   validate_studio_export "${archive}"
   check_r2
@@ -62,6 +63,9 @@ main() {
   else
     git_repo commit -m "${commit_message}"
   fi
+
+  log "Verifying exported project source against the committed revision."
+  python3 "${SCRIPT_DIR}/lib/backup_manifest.py" create "${archive}"
 
   timestamp="$(date -u +'%Y%m%dT%H%M%SZ')"
   remote_name="lakehub-social-studio-${timestamp}.zip"

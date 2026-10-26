@@ -35,6 +35,7 @@ main() {
   require_command rclone
   require_command unzip
   require_command sha256sum
+  require_command python3
   require_git_repository
   [[ -z "$(git_repo status --porcelain)" ]] || die "Git worktree is not clean; commit or stash changes before pulling."
   check_r2
