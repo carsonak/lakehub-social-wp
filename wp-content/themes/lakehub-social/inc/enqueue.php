@@ -98,6 +98,8 @@ add_action( 'wp_enqueue_scripts', static function () {
 		'lakehub-halftone-hover'    => 'assets/js/modules/halftone-hover.js',
 		'lakehub-transformation'    => 'assets/js/modules/transformation-grid.js',
 		'lakehub-timeline'          => 'assets/js/modules/timeline.js',
+		'lakehub-navigation-indicator' => 'assets/js/modules/navigation-indicator.js',
+		'lakehub-team-sheen'        => 'assets/js/modules/team-sheen.js',
 	);
 
 	foreach ( $modular_scripts as $handle => $relative_path ) {

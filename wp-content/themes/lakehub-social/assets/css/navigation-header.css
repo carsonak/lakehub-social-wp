@@ -145,3 +145,30 @@
   transform: none !important;
 }
 }
+
+/* A single indicator replaces the individual desktop link borders. */
+.is-style-lakehub-header .wp-block-navigation { position: relative; }
+.lakehub-nav-indicator {
+  position: absolute;
+  left: 0;
+  height: 0.125rem;
+  background: var(--lakehub-teal);
+  pointer-events: none;
+  transition: transform 200ms ease, width 200ms ease;
+}
+.lakehub-nav-indicator[hidden] { display: none; }
+@media (min-width: 600px) {
+  .is-style-lakehub-header .has-moving-indicator a,
+  .is-style-lakehub-header .has-moving-indicator a:hover,
+  .is-style-lakehub-header .has-moving-indicator .current-menu-item > a {
+    border-bottom-color: transparent !important;
+  }
+  .wp-site-blocks .is-style-lakehub-header .has-moving-indicator a.is-nav-highlighted {
+    color: var(--lakehub-teal);
+    font-weight: 500;
+    transform: translateY(-0.125rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lakehub-nav-indicator { transition: none; }
+}

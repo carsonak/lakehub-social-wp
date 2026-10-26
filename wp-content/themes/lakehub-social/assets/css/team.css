@@ -17,3 +17,22 @@
   top: var(--lakehub-crop-top);
   object-fit: fill;
 }
+
+/* Subtle glass highlight sits above the card without blocking content. */
+.wp-site-blocks .lakehub-team-card { position: relative; isolation: isolate; }
+.wp-site-blocks .lakehub-team-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(ellipse at var(--lakehub-sheen-x, 50%) var(--lakehub-sheen-y, 50%), #ffffff40, transparent 65%),
+    linear-gradient(115deg, transparent calc(var(--lakehub-sheen-x, 50%) - 20%), #ffffff24 var(--lakehub-sheen-x, 50%), transparent calc(var(--lakehub-sheen-x, 50%) + 20%));
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+.wp-site-blocks .lakehub-team-card.has-sheen::after { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .wp-site-blocks .lakehub-team-card::after { display: none; transition: none; }
+}
