@@ -1,0 +1,10 @@
+# Preserve upstream distribution bytes so fresh checkouts pass vendor checksums.
+/wp-admin/** -text whitespace=cr-at-eol
+/wp-includes/** -text whitespace=cr-at-eol
+/index.php -text whitespace=cr-at-eol
+/license.txt -text whitespace=cr-at-eol
+/readme.html -text whitespace=cr-at-eol
+/wp-*.php -text whitespace=cr-at-eol
+/xmlrpc.php -text whitespace=cr-at-eol
+/wp-content/plugins/mcp-adapter/** -text whitespace=cr-at-eol
+/wp-content/plugins/wsp-mcp-ai-agents-connector/** -text whitespace=cr-at-eol

@@ -11,8 +11,14 @@ Get exact-version canonical package/checksum inventories into ignored staging. V
 | 01 | Preserve full Studio export plus core/plugin file quarantine; verify exact-version inventories | Complete |
 | 02 | Align tracked core with installed clean 7.1.3 distribution; remove confirmed obsolete core files | Complete |
 | 03 | Reconcile MCP Adapter 0.6.1 and WSP MCP 2.8.0 package inventories | Complete |
-| 04 | Runtime/browser/source checks, final conventional checkpoint and full R2/Git backup | Pending |
+| 04 | Runtime/browser/source checks, final conventional checkpoint and full R2/Git backup | Complete |
 
 ## Verification matrix
 
 Exact-version file digests/checksums and inventory; no project-owned source drift; preserved SQLite/media/content snapshot; Studio core/theme/plugin state; project PHP/JS/CSS/Bash/ShellCheck; existing 33 browser tests; read-only source/export/restore verification; final Git status clean apart from explicitly documented pre-existing unrelated changes. Each phase gets its own conventional commit and full Studio backup through scripts/push.sh.
+
+Final verification additionally covers fresh-checkout byte identity: vendor-only `.gitattributes` disables automatic line-ending conversion for stock core and the two reconciled plugins; project theme/plugin text settings remain unchanged.
+
+## Result
+
+Retained/committed 25 valid core additions and the installed 7.1.3 distribution. Removed 21 tracked truncated core aliases and 235 untracked plugin leftovers. All exact-version distributions are clean. Full browser suite 33/33; backup tests 7/7; source/data preservation and fresh Git-tree checksum verification pass. Final backup uses `.backups/vendor-cleanup-final.zip` through the usual script.
