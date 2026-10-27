@@ -10,7 +10,7 @@ Get exact-version canonical package/checksum inventories into ignored staging. V
 | --- | --- | --- |
 | 01 | Preserve full Studio export plus core/plugin file quarantine; verify exact-version inventories | Complete |
 | 02 | Align tracked core with installed clean 7.1.3 distribution; remove confirmed obsolete core files | Complete |
-| 03 | Reconcile MCP Adapter 0.6.1 and WSP MCP 2.8.0 package inventories | Pending |
+| 03 | Reconcile MCP Adapter 0.6.1 and WSP MCP 2.8.0 package inventories | Complete |
 | 04 | Runtime/browser/source checks, final conventional checkpoint and full R2/Git backup | Pending |
 
 ## Verification matrix

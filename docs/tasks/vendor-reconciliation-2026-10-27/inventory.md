@@ -23,3 +23,5 @@ All 235 untracked plugin files are absent from the exact-version release invento
 Ignored local rollback artifacts: `.backups/vendor-cleanup-before.zip`, `.backups/vendor-cleanup/original-vendor-differences.tar.gz`, `.backups/vendor-cleanup/verified-obsolete-files.tar.gz`, file-hash manifests, official metadata and release ZIPs. Core files are not included in Studio full exports, so the separate quarantine tar preserves them. The obsolete-file archive includes all 256 files selected for removal.
 
 No project-owned theme/plugin source or saved site content is part of this reconciliation.
+
+MCP release archive SHA-256 was independently checked against the GitHub release asset `digest` field: `1c3cd47c32e99b4e7d8690a44a7890256e92a8b96f61776cbe1894e5483cf676`. The WSP archive matches every official per-file SHA-256 checksum.
