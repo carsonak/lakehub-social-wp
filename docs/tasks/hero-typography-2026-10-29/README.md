@@ -9,7 +9,7 @@ Reuse the existing `hero-photo` font-size preset. Centralize the four banner H1s
 | Phase | Description | Status |
 | --- | --- | --- |
 | 01 | Shared hero styles and focused verification | Complete |
-| 02 | Regression checks, full export, conventional commits/R2 backup and Studio preview refresh | Pending |
+| 02 | Regression checks, full export, conventional commits/R2 backup and Studio preview refresh | Preview blocked by approval review |
 
 ## Verification matrix
 
@@ -17,4 +17,4 @@ At 1280, 768 and 390px, compare computed H1 font-size and font-weight across all
 
 ## Baseline
 
-Clean worktree at `49cbe79`. Local Studio was not listening on localhost:8881 during the initial read-only browser inspection. Studio MCP tools are unavailable in this session, so use Studio's native CLI for lifecycle/export/preview commands after confirming repository targeting.
+Clean worktree at `49cbe79`. Local Studio was not listening on localhost:8881 during the initial read-only browser inspection. Studio MCP tools were unavailable before the session restart; they became available afterward and handled the fresh exports. The interrupted pre-change ZIP was invalid and was replaced with a successfully completed export.
