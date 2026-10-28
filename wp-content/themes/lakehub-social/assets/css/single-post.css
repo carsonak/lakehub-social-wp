@@ -18,8 +18,8 @@
   max-width: 76rem;
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 3.5rem;
+  grid-template-columns: minmax(0, 26.25rem) minmax(0, 1fr);
+  gap: 5rem;
   align-items: center;
 }
 
@@ -31,12 +31,12 @@
 
 .lakehub-blog-title {
   font-family: var(--wp--preset--font-family--roboto, 'Roboto', sans-serif);
-  font-size: 2.75rem;
+  font-size: var(--wp--preset--font-size--editorial-title);
   font-weight: 700;
-  line-height: 1.18;
+  line-height: 1.2;
   color: #000000;
   margin: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .lakehub-blog-meta {
@@ -80,24 +80,26 @@
 }
 
 .lakehub-blog-body {
-  max-width: 48rem;
+  max-width: calc(48rem + var(--lakehub-gutter) + var(--lakehub-gutter));
+  width: 100%;
+  box-sizing: border-box;
   margin: 3.5rem auto 5rem;
   padding-inline: var(--lakehub-gutter);
-  font-family: 'Hanken Grotesk', var(--wp--preset--font-family--body);
+  font-family: var(--wp--preset--font-family--roboto);
   font-size: 1rem;
-  line-height: 1.625;
+  line-height: 1.5;
   color: #1e1e1e;
 }
 
 .lakehub-blog-body h2 {
   font-family: var(--wp--preset--font-family--roboto, 'Roboto', sans-serif);
-  font-size: 2.25rem;
+  font-size: var(--wp--preset--font-size--editorial-heading);
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   color: #000000;
   margin-top: 3rem;
   margin-bottom: 1.25rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .lakehub-blog-body h3 {
@@ -113,7 +115,7 @@
 .lakehub-blog-body p {
   margin-bottom: 1.5rem;
   font-size: 1rem;
-  line-height: 1.625;
+  line-height: 1.5;
   color: #1e1e1e;
 }
 
@@ -148,7 +150,7 @@
   font-family: var(--wp--preset--font-family--inter);
   font-style: italic;
   font-size: 1.25rem;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #000000;
 }
 
@@ -213,6 +215,35 @@
     gap: 2rem;
   }
   .lakehub-blog-title {
+    font-size: 2rem;
+  }
+}
+
+/* The reference uses Hanken Grotesk for the introduction, Roboto thereafter.
+   Keep this semantic across any number of client-edited intro paragraphs. */
+.lakehub-blog-body .wp-block-post-content > p {
+  font-family: var(--wp--preset--font-family--body);
+}
+.lakehub-blog-body .wp-block-post-content > h2 ~ h2 ~ p {
+  font-family: var(--wp--preset--font-family--roboto);
+}
+.lakehub-blog-body blockquote p {
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: inherit;
+  line-height: inherit;
+}
+.lakehub-blog-body .lakehub-blog-share-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.lakehub-blog-author-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+@media (max-width: 600px) {
+  .lakehub-blog-body h2 {
     font-size: 2rem;
   }
 }

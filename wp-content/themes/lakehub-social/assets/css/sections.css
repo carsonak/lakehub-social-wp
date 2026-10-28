@@ -64,7 +64,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 
 /* Impact stats and metric rows */
 .wp-block-group.is-style-lakehub-impact-stats { padding: 3.3125rem var(--lakehub-gutter) 0; background: white; }
-.is-style-lakehub-impact-stats > h2 { max-width: 71.375rem; margin: 0 auto 2.5rem; font-size: 1.875rem; line-height: 3.25rem; letter-spacing: -0.06875rem; }
+.is-style-lakehub-impact-stats > h2 { max-width: 71.375rem; margin: 0 auto 2.5rem; font-size: var(--wp--preset--font-size--section); line-height: 3.25rem; letter-spacing: -0.06875rem; }
 .is-style-lakehub-metrics { max-width: 61rem; margin-inline: auto; }
 .is-style-lakehub-metric-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; min-height: 13.375rem; position: relative; border-bottom: 0; }
 .is-style-lakehub-metric-row:not(:last-child)::after {
@@ -94,7 +94,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 }
 .is-style-lakehub-metric-row:nth-child(even) .wp-block-group.is-style-lakehub-metric-photo { grid-column: 2; grid-row: 1; justify-self: start; justify-content: flex-start; text-align: left; --lakehub-photo-center-shift: -2rem; }
 .is-style-lakehub-metric-row.is-revealed .wp-block-group.is-style-lakehub-metric-photo { transform: translateX(var(--lakehub-photo-shift-x, 0rem)); }
-.is-style-lakehub-metric-photo p { margin: 0; font-family: var(--wp--preset--font-family--inter); font-size: var(--wp--preset--font-size--metric); font-weight: 800; line-height: 1.15; letter-spacing: 0; transition: font-size 220ms ease; caret-color: var(--lakehub-teal); }
+.is-style-lakehub-metric-photo p { margin: 0; font-family: var(--wp--preset--font-family--inter); font-size: var(--lakehub-metric-size, var(--wp--preset--font-size--metric)); font-weight: 800; line-height: 1.00005; letter-spacing: 0; transition: font-size 220ms ease; caret-color: var(--lakehub-teal); }
 .is-style-lakehub-metric-row:first-child .is-style-lakehub-metric-photo p { font-family: var(--wp--preset--font-family--body); }
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) {
@@ -155,19 +155,19 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 
 /* Programs Section & Cards */
 .is-style-lakehub-program-section { padding: 5rem 3.25rem 2.9375rem; }
-.is-style-lakehub-program-section > h2 { max-width: 73.5rem; margin: 0 auto 2.9375rem; font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.02rem; color: black; font-family: var(--wp--preset--font-family--inter); font-weight: 400; }
+.is-style-lakehub-program-section > h2 { max-width: 73.5rem; margin: 0 auto 2.9375rem; font-size: 2rem; line-height: 2.5rem; letter-spacing: -0.02rem; color: black; font-family: var(--wp--preset--font-family--inter); font-weight: 600; }
 .wp-block-lakehub-programs { max-width: 73.5rem; margin-inline: auto; display: grid; gap: 2.9375rem; }
 .lakehub-program {
   display: grid; grid-template-columns: 49% 51%; min-height: 26.4375rem; border-radius: 0.75rem; overflow: hidden;
   background-image: url('../gradients/program-1.svg'); background-size: 100% 100%; background-position: center bottom; background-repeat: no-repeat;
-  font-family: var(--wp--preset--font-family--inter); transition: box-shadow 180ms ease;
+  font-family: var(--wp--preset--font-family--body); transition: box-shadow 180ms ease;
 }
 .lakehub-program:hover { box-shadow: 0 0.75rem 1.625rem #00414520; }
 .lakehub-program-image img { display: block; width: 100%; height: 100%; min-height: 26.4375rem; object-fit: cover; }
 .lakehub-program-copy { padding: 4.75rem 1.25rem 1.875rem 1.125rem; display: flex; flex-direction: column; }
-.lakehub-program-copy :is(h2,h3) { margin: 0 0 2.5rem; color: black; font-size: var(--wp--preset--font-size--program); font-weight: 600; line-height: 2.625rem; font-family: var(--wp--preset--font-family--inter); }
-.lakehub-program-description { color: #000; font-size: 1.125rem; line-height: 1.5625rem; }
-.lakehub-program-description p { font-family: var(--wp--preset--font-family--inter); }
+.lakehub-program-copy :is(h2,h3) { margin: 0 0 2.5rem; color: black; font-size: var(--wp--preset--font-size--program); font-weight: 600; line-height: 2.625rem; font-family: var(--wp--preset--font-family--body); }
+.lakehub-program-description { color: #000; font-size: var(--wp--preset--font-size--body); line-height: 1.5625rem; }
+.lakehub-program-description p { font-family: var(--wp--preset--font-family--body); }
 .lakehub-program-description > * { margin-block: 0 0.75rem; }
 .lakehub-program-link { margin-top: auto; padding-top: 0.75rem; color: var(--lakehub-teal); font-size: 1rem; line-height: 1.5625rem; font-weight: 600; text-decoration: none; }
 .lakehub-program:nth-child(even) { grid-template-columns: 55% 45%; background-image: url('../gradients/program-2.svg'); }
@@ -208,14 +208,14 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .is-style-lakehub-about-hero h1 { max-width: 58.75rem; margin: auto; font-family: var(--wp--preset--font-family--body); letter-spacing: -0.06rem; }
 .is-style-lakehub-impact-hero h1 { max-width: 42rem; margin: auto; text-align: center; font-family: var(--wp--preset--font-family--body); letter-spacing: -.06875rem; }
 :is(.is-style-lakehub-about-page, .is-style-lakehub-impact-page) > section:not(.wp-block-cover), .is-style-lakehub-team-page { max-width: 80rem; margin-inline: auto; padding-inline: 4rem; }
-.is-style-lakehub-about-page h2 { font: 400 2rem/2.5rem var(--wp--preset--font-family--inter); letter-spacing: -0.02rem; }
+.is-style-lakehub-about-page h2 { font-family: var(--wp--preset--font-family--inter); font-size: var(--wp--preset--font-size--about-heading); font-weight: 600; line-height: 2.5rem; letter-spacing: -0.02rem; }
 .is-style-lakehub-about-intro { padding-block: 3rem 1.5rem; }
-.is-style-lakehub-about-intro h2 { font-size: 2.25rem; line-height: 2.75rem; letter-spacing: -0.06rem; margin-bottom: 1.5rem; }
+.is-style-lakehub-about-intro h2 { font-size: var(--wp--preset--font-size--about-heading); font-weight: 700; line-height: 3.5rem; letter-spacing: -0.06rem; margin-bottom: 1.5rem; }
 .is-style-lakehub-about-intro p { font: 400 1rem/1.75rem var(--wp--preset--font-family--inter); max-width: 67.625rem; }
 .is-style-lakehub-about-mission { padding-block: 1.5rem 2rem; }
 .is-style-lakehub-mission-card { margin-top: 2.5rem; min-height: 32.0625rem; background: white; border-radius: 1.5rem; box-shadow: 0 0 0.625rem #00000026; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
 .is-style-lakehub-mission-copy { padding: 2.125rem 0 3rem 3.125rem; position: relative; z-index: 2; background: white; }
-.is-style-lakehub-mission-copy h3 { font: 400 2.5rem/3.125rem var(--wp--preset--font-family--inter); color: var(--lakehub-teal); margin-bottom: 2.625rem; }
+.is-style-lakehub-mission-copy h3 { font: 600 2rem/3.125rem var(--wp--preset--font-family--inter); color: var(--lakehub-teal); margin-bottom: 2.625rem; }
 .is-style-lakehub-mission-copy p { font: 400 1rem/1.5rem var(--wp--preset--font-family--inter); }
 .is-style-lakehub-mission-copy h3:not(:first-child) { margin-top: 4rem; }
 .is-style-lakehub-mission-collage { position: relative; min-height: 32.0625rem; overflow: hidden; width: 100%; }
@@ -269,7 +269,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 .lakehub-team-photo { height: 13.5rem; background: #f5f3f3; }
 .lakehub-team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
 .lakehub-team-copy { padding: 0.75rem; min-height: 10.75rem; }
-.lakehub-team-copy h3 { font: 400 1.25rem/1.75rem var(--wp--preset--font-family--inter); margin: 0; }
+.lakehub-team-copy h3 { font: 600 1.25rem/1.75rem var(--wp--preset--font-family--inter); margin: 0; }
 .lakehub-team-role { font-size: 0.75rem; line-height: 1rem; letter-spacing: 0.075rem; text-transform: uppercase; color: #5d5e66; margin-block: 0.25rem 0.75rem !important; }
 .lakehub-team-bio { font-size: 0.875rem; line-height: 1.25rem; color: #444748; }
 .is-style-lakehub-about-team > .wp-block-buttons { max-width: 54.125rem; margin: 3rem auto 0; }
@@ -279,7 +279,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 
 /* Community & Portfolio Sections */
 .is-style-lakehub-impact-community { padding-block: 5rem 4rem; }
-.is-style-lakehub-impact-community h2, .is-style-lakehub-impact-portfolio > h2 { font: 600 2rem/2.5rem var(--wp--preset--font-family--inter); letter-spacing: -0.02rem; }
+.is-style-lakehub-impact-community h2, .is-style-lakehub-impact-portfolio > h2 { font: 700 2rem/2.5rem var(--wp--preset--font-family--inter); letter-spacing: -0.02rem; }
 .is-style-lakehub-community-grid { display: grid; grid-template-columns: 35.9375rem 1fr; gap: 4.75rem; align-items: center; margin-top: 4.25rem; padding-left: 1.375rem; position: relative; isolation: isolate; }
 .is-style-lakehub-community-photo, .is-style-lakehub-portfolio-photo { position: relative; isolation: isolate; }
 .is-style-lakehub-community-photo { aspect-ratio: 575 / 338; overflow: hidden; border-radius: 1.125rem; }
@@ -304,7 +304,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 
 /* Transformation Section */
 .is-style-lakehub-impact-transformation { background: white; padding-block: 2.5rem; }
-.is-style-lakehub-impact-transformation h2 { font: 700 2.75rem/3.25rem var(--wp--preset--font-family--body); color: #002532; letter-spacing: -.06875rem; }
+.is-style-lakehub-impact-transformation h2 { font: 700 2.25rem/3.25rem var(--wp--preset--font-family--body); color: #002532; letter-spacing: -.06875rem; }
 .is-style-lakehub-transformation-grid { display: flex; margin-top: 4.5rem; padding-left: 0; position: relative; }
 .is-style-lakehub-transformation-card {
   flex: 1 0 29%; aspect-ratio: 1 / 1; min-height: 21.5rem; border: 0.5rem solid white; border-radius: 50%;
@@ -315,8 +315,8 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 }
 .is-style-lakehub-transformation-card + .is-style-lakehub-transformation-card { margin-left: -5.33%; }
 .is-style-lakehub-transformation-card :is(h3, p) { width: 78%; max-width: 78%; margin-inline: auto; text-align: center; color: inherit; }
-.is-style-lakehub-transformation-card h3 { font: 700 1.5rem/1.5625rem var(--wp--preset--font-family--body); margin-bottom: 1rem; }
-.is-style-lakehub-transformation-card p { font: 400 1.0625rem/1.3rem var(--wp--preset--font-family--body); }
+.is-style-lakehub-transformation-card h3 { font: 700 1.5rem/1.5rem var(--wp--preset--font-family--body); margin-bottom: 1rem; }
+.is-style-lakehub-transformation-card p { font: 400 1rem/1.25rem var(--wp--preset--font-family--body); }
 
 /* Halftone photograph hover repulsion */
 .is-style-lakehub-story-photo,
@@ -658,7 +658,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 }
 @media (hover:hover) and (pointer:fine) {
 .wp-block-group.is-style-lakehub-metric-photo:hover p {
-  font-size: calc(var(--wp--preset--font-size--metric) * 1.045);
+  font-size: calc(var(--lakehub-metric-size, var(--wp--preset--font-size--metric)) * 1.045);
 }
 }
 @media (prefers-reduced-motion:reduce) {
@@ -678,7 +678,7 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 @media (prefers-reduced-motion:reduce) {
 .is-style-lakehub-metric-photo p {
   transition: none !important;
-  font-size: var(--wp--preset--font-size--metric) !important;
+  font-size: var(--lakehub-metric-size, var(--wp--preset--font-size--metric)) !important;
 }
 }
 @media (prefers-reduced-motion:reduce) {
@@ -729,7 +729,8 @@ html:has(.wp-site-blocks) { font-size: 16px; }
 }
 @media (max-width:1199px) {
 .is-style-lakehub-metric-photo p {
-  font-size: clamp(4.5rem,9.75vw,7.97rem);
+  --lakehub-metric-size: clamp(4.5rem,9.75vw,7.97rem);
+  font-size: var(--lakehub-metric-size);
 }
 }
 @media (forced-colors:active) {

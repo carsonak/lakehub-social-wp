@@ -233,6 +233,22 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "roboto",
+          "name": "Roboto",
+          "fontFamily": "\"Roboto\", sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "100 900",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/roboto.ttf"
+              ]
+            }
+          ]
         }
       ],
       "fontSizes": [
@@ -308,10 +324,31 @@
         {
           "slug": "metric",
           "name": "Impact figure",
-          "size": "7.96875rem",
+          "size": "10.625rem",
           "fluid": {
             "min": "4.5rem",
-            "max": "7.96875rem"
+            "max": "10.625rem"
+          }
+        },
+        {
+          "slug": "editorial-title",
+          "name": "Article title",
+          "size": "3rem",
+          "fluid": false
+        },
+        {
+          "slug": "editorial-heading",
+          "name": "Article section heading",
+          "size": "2.5rem",
+          "fluid": false
+        },
+        {
+          "slug": "about-heading",
+          "name": "About section heading",
+          "size": "2.25rem",
+          "fluid": {
+            "min": "1.75rem",
+            "max": "2.25rem"
           }
         }
       ]
