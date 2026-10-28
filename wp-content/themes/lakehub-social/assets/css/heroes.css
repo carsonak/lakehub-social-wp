@@ -1,9 +1,29 @@
-/* Shared typography for the four photo banner headings, in the site and editor. */
+/* Photo hero typography and geometry from the cached 1280px Figma frames.
+   Keep the Cover/Heading/Button blocks editable in both site and editor. */
 .wp-block-cover:is(.is-style-lakehub-home-photo, .is-style-lakehub-programs-photo, .is-style-lakehub-about-hero, .is-style-lakehub-impact-hero) h1 {
-  font-size: var(--wp--preset--font-size--hero-photo);
-  font-weight: var(--wp--custom--hero--font-weight);
-  line-height: var(--wp--custom--hero--line-height);
+  font-family: var(--wp--preset--font-family--body);
+  font-size: var(--wp--preset--font-size--display);
+  font-weight: var(--wp--custom--hero--heading-weight);
   overflow-wrap: break-word;
+}
+
+.wp-block-cover.is-style-lakehub-home-photo h1 {
+  font-size: var(--wp--preset--font-size--hero-photo);
+  font-weight: var(--wp--custom--hero--strong-weight);
+  line-height: var(--wp--custom--hero--home-line-height);
+}
+
+.wp-block-cover.is-style-lakehub-programs-photo h1 {
+  font-weight: var(--wp--custom--hero--strong-weight);
+  line-height: var(--wp--custom--hero--programs-line-height);
+}
+
+.wp-block-cover.is-style-lakehub-about-hero h1 {
+  line-height: var(--wp--custom--hero--about-line-height);
+}
+
+.wp-block-cover.is-style-lakehub-impact-hero h1 {
+  line-height: var(--wp--custom--hero--impact-line-height);
 }
 
 .is-style-lakehub-about-hero h1 span {
@@ -12,8 +32,93 @@
   line-height: inherit;
 }
 
+@media (min-width: 901px) {
+  .wp-block-cover.is-style-lakehub-home-photo {
+    min-height: 33.625rem !important;
+    padding: 8.75rem var(--lakehub-gutter) 4.375rem;
+  }
+  .is-style-lakehub-home-photo .is-style-lakehub-photo-hero-copy {
+    padding-top: 0;
+  }
+  .is-style-lakehub-home-photo h1 {
+    max-width: 45.25rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .is-style-lakehub-home-photo .wp-block-buttons {
+    max-width: 27.75rem;
+    margin: 4.75rem auto 0;
+    justify-content: flex-start;
+    position: relative;
+    left: 2.9375rem;
+  }
+  .is-style-lakehub-home-photo .wp-block-button__link {
+    padding: 0.8125rem 1.5625rem 0.8125rem 1.75rem;
+  }
+  .is-style-lakehub-home-photo .wp-block-button.is-style-outline .wp-block-button__link {
+    padding: 0.75rem 2.125rem 0.75rem 2.5625rem;
+  }
+
+  .wp-block-cover.is-style-lakehub-programs-photo {
+    min-height: 35.75rem !important;
+    margin-top: 0.125rem;
+    padding: 11.75rem var(--lakehub-gutter) 11.6875rem;
+  }
+  .is-style-lakehub-programs-photo .wp-block-buttons {
+    position: relative;
+    left: -0.5625rem;
+  }
+  .is-style-lakehub-programs-photo .wp-block-button__link {
+    line-height: 1rem;
+    padding-block: 0.8125rem;
+  }
+  .is-style-lakehub-programs-photo .is-style-lakehub-zone-brand {
+    gap: 0.875rem;
+    margin: 0.125rem auto 0.8125rem;
+    position: relative;
+    left: -0.5625rem;
+  }
+  .is-style-lakehub-programs-photo .is-style-lakehub-zone-brand p {
+    font-size: 3.5rem;
+    line-height: 4.375rem;
+  }
+  .is-style-lakehub-programs-photo .is-style-lakehub-zone-brand .is-style-lakehub-zone-word {
+    font-size: 3.9375rem;
+  }
+
+  .wp-block-cover.is-style-lakehub-about-hero {
+    padding-inline: var(--lakehub-gutter);
+  }
+  .is-style-lakehub-about-hero .wp-block-cover__inner-container {
+    max-width: 66.5rem;
+    margin-inline: auto;
+  }
+  .is-style-lakehub-about-hero h1 {
+    max-width: none;
+    text-align: left;
+  }
+
+  .is-style-lakehub-impact-hero .wp-block-cover__inner-container {
+    max-width: 42rem;
+    margin-inline: auto;
+    position: relative;
+    left: -0.3125rem;
+    top: 0.25rem;
+  }
+}
+
 @media (max-width: 900px) {
   .wp-block-cover:is(.is-style-lakehub-home-photo, .is-style-lakehub-programs-photo, .is-style-lakehub-about-hero, .is-style-lakehub-impact-hero) h1 {
+    font-size: clamp(2rem, 4.375vw, 3.5rem);
+    line-height: 1.1;
+  }
+  .wp-block-cover.is-style-lakehub-home-photo h1 {
     font-size: clamp(2.25rem, 6vw, 4rem);
+  }
+  .is-style-lakehub-programs-photo .is-style-lakehub-zone-brand p {
+    font-size: clamp(2rem, 4.375vw, 3.5rem);
+  }
+  .is-style-lakehub-programs-photo .is-style-lakehub-zone-brand .is-style-lakehub-zone-word {
+    font-size: clamp(2rem, 4.921875vw, 3.9375rem);
   }
 }

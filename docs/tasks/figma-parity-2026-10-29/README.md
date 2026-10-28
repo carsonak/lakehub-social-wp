@@ -5,16 +5,17 @@
 | Phase | Scope | Status |
 | --- | --- | --- |
 | 01 | Retrieve and validate durable design evidence | Complete; cached and indexed |
-| 02 | Correct four photo heroes against exact Figma references | Plan ready for review; no site changes |
-| 03 | Audit remaining static differences page by page | Planned; use local evidence before more MCP calls |
+| 02 | Correct four photo heroes against exact Figma references | Implemented and verified; backup checkpoint in progress |
+| 03 | Approved typography corrections across existing pages | Authorized; follows hero checkpoint |
+| 04 | Final regression verification, backup and preview refresh | Pending |
 
 - [x] Cache both canvas inventories and all five page references.
 - [x] Save full-resolution renders, available contexts, source assets, style index and checksums.
 - [x] Measure current heroes and identify concrete alignment/type differences.
 - [x] Record quota gaps and user decision to restore each frame's original size.
-- [ ] Review and approve phase 02 implementation plan.
+- [x] Review and approve phase 02 implementation plan.
 - [ ] Implement and verify phase 02; commit and back up through usual scripts.
-- [ ] Record a separate section-by-section static parity checklist for phase 03 before changes.
+- [x] Record a separate section-by-section static parity checklist for phase 03 before changes.
 
 Evidence: [cache index](../../design-cache/2026-10-29/README.md). No theme code, block content, runtime configuration or database records changed during phase 01. The user explicitly excludes interactivity/animation from design parity work; preserve all existing behavior.
 
@@ -46,3 +47,19 @@ Component/file diffs: `heroes.css` gets shared and per-page geometry/type rules;
 Review Home, Programs, About, Impact and the blog in ordered page-sized phases, with shared header/footer changes isolated when appropriate. Compare static layout, typography, colours, spacing, imagery/crop and component geometry; log each difference with node, screenshot/evidence, current selector and proposed fix. Reconcile separate transformation proposal versus current Impact before changing that section. Use page-local evidence to avoid extra MCP calls. Keep canonical patterns/templates/tokens in Git and preserve editable native blocks and dynamic collections. Do not overwrite content or replace carousel/animation behavior with static Figma arrangements.
 
 Approval is required before phase 02/03 code or database modifications under the repository's task-planning instruction. The inspection/cache itself is already requested and does not modify the site.
+
+## Approved follow-up — typography, 29 October
+
+The user approved the hero plan, chose original per-frame sizes, then authorized sizing/weight/font-family corrections and requested backup plus preview refresh. Preserve the updated centered Malika portrait and real article content. Existing hover, animation, carousel, keyboard and reduced-motion behavior remains required. Decorative dots, other image/crop changes, team grid gaps and Insights spacing are outside this typography follow-up.
+
+### Phase 03 component diffs and verification
+
+- [ ] Home: metric preset 127.5 → 170px at 1280px; number line-height matches 100.005%; Impact Through Precision 30 → 32px. Preserve responsive fit and hover scaling.
+- [ ] Programs: use Hanken Grotesk for cards, titles (36px/600) and descriptions (16/25px); section heading Inter 32/40px at weight 600. Preserve editable collection and current content.
+- [ ] About: section headings 36/40px Inter 600, introduction 36/56px Inter 700; Mission questions 32/50px Inter 600; team names 20/28px Inter 600 and body 14/20px. Keep responsive adaptation and pointer sheen.
+- [ ] Impact: community heading Inter 32/40px 700; transformation heading Hanken Grotesk 36/52px 700; circle titles 24/24px and body 16/20px. Keep existing layout and animation.
+- [ ] Blog: bundle licensed local Roboto normal weights 100–900 from official Google Fonts source; register in theme.json for frontend/editor. Title 48px/1.2, section headings 40px/1.2, body 16/24px, quote 20/28px; use Roboto where the frame specifies it, retain Hanken Grotesk for introductory text and Inter for quotes. Correct reading measure to 768px of usable text with responsive outer gutters; keep current copy/photos/share controls. Loading Roboto also resolves the existing Coming Soon font reference; verify that page.
+- [ ] Use existing modules and presets, adding named reusable tokens only where needed. No block serialization or database migration is planned. No extra Figma reads.
+- [ ] Verify exact desktop typography and font loading, screenshots at 1280px, responsive fit at 320/390/768/1024/1440px, editor styles, and complete interaction regressions. Preserve content/media baseline. Commit and full-export backup this phase separately.
+
+Phase 04: verify final export/source manifest and restore checks, push documentation checkpoint, update the existing approved preview hostname and run hosted typography checks after propagation. Keep runtime artifacts ignored. Pre-change full export: `.backups/figma-parity-before.zip`.
