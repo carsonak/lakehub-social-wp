@@ -1,0 +1,630 @@
+const assetPathPrefix = "./assets/home-context";
+const imgG21 = `${assetPathPrefix}/96d32.png`;
+const imgHeroSection = `${assetPathPrefix}/be71c.png`;
+const img350 = `${assetPathPrefix}/49665.png`;
+const img45 = `${assetPathPrefix}/e220e.png`;
+const img88 = `${assetPathPrefix}/0e0e3.png`;
+const img14 = `${assetPathPrefix}/7f9d2.png`;
+const imgRectangle1 = `${assetPathPrefix}/45e84.png`;
+const img644Bb3A2Cbe59B2A03359Ec9MaskGroup31 = `${assetPathPrefix}/61b20.png`;
+const imgVector2 = `${assetPathPrefix}/69bbd.png`;
+const img643D2605D8Bcb36Bfb646Fc2ImageRemovebgPreview1 = `${assetPathPrefix}/f7a54.png`;
+const imgImage14 = `${assetPathPrefix}/1e989.png`;
+const imgImage15 = `${assetPathPrefix}/a8105.png`;
+const imgImage16 = `${assetPathPrefix}/136e0.png`;
+const imgG31 = `${assetPathPrefix}/2f9b3.png`;
+const imgLine1 = `${assetPathPrefix}/7012d.svg`;
+const imgBackground = `${assetPathPrefix}/2d904.svg`;
+const imgVerticalDivider = `${assetPathPrefix}/031db.svg`;
+const imgBackgroundBorder = `${assetPathPrefix}/a658d.svg`;
+const imgStar2 = `${assetPathPrefix}/4c90d.svg`;
+const imgVector = `${assetPathPrefix}/782ad.svg`;
+const imgVector1 = `${assetPathPrefix}/2b917.svg`;
+const imgVector3 = `${assetPathPrefix}/a9beb.svg`;
+const imgGroup = `${assetPathPrefix}/c1b21.svg`;
+const imgGroup1 = `${assetPathPrefix}/ba02c.svg`;
+const imgVector4 = `${assetPathPrefix}/ea08b.svg`;
+const imgVector5 = `${assetPathPrefix}/0b166.svg`;
+const imgDeviconTwitter = `${assetPathPrefix}/ec3cf.svg`;
+
+export default function Home() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative size-full" data-node-id="615:348" style={{ backgroundImage: "linear-gradient(90deg, rgb(251, 249, 248) 0%, rgb(251, 249, 248) 100%), linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%)" }} data-name="Home">
+      <div className="bg-white content-stretch flex h-[64px] items-start px-[25px] shrink-0 sticky top-0 w-[1280px]" data-node-id="615:349">
+        <div className="h-[64px] relative shrink-0 w-[1230px]" data-node-id="615:350" data-name="Container">
+          <div className="-translate-y-1/2 absolute content-stretch flex gap-[32px] items-center left-[895px] top-1/2 w-[335px]" data-node-id="615:351" data-name="Navigation Links (Desktop)">
+            <div className="border-[#00676b] border-b-2 border-solid content-stretch flex flex-col items-start pb-[6px] relative shrink-0" data-node-id="615:352" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#00676b] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:353">
+                <p className="leading-[16px]">HOME</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="615:354" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:355">
+                <p className="leading-[16px]">ABOUT</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="615:356" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:357">
+                <p className="leading-[16px]">PROGRAMS</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="615:358" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:359">
+                <p className="leading-[16px]">IMPACT</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[55px] left-[7px] top-[6px] w-[186px]" data-node-id="615:360" data-name="g2 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgG21} />
+          </div>
+        </div>
+      </div>
+      <div className="h-[538px] relative shrink-0 w-[1280px]" data-node-id="615:362" data-name="Hero Section">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHeroSection} />
+        <div className="absolute bg-[rgba(0,32,33,0.5)] h-[538px] left-0 right-0 top-0" data-node-id="615:363" data-name="Container">
+          <div className="absolute drop-shadow-[21px_23px_11px_rgba(0,0,0,0.57)] h-[210px] left-[397.5px] top-[184px] w-[501px]" data-node-id="615:365" data-name="Heading 1">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold justify-center leading-[0] left-1/2 text-[0px] text-center text-white top-[61px] tracking-[-1.12px] w-[724px] whitespace-pre-wrap" data-node-id="615:366">
+              <p className="leading-[70px] mb-0 text-[76px]">Empowering the</p>
+              <p className="text-[76px]">
+                <span className="leading-[70px]">{`next generation of `}</span>
+                <span className="leading-[70px] text-[#00676b]">innovators</span>
+                <span className="leading-[70px]">{`  in Africa.`}</span>
+              </p>
+            </div>
+            <div className="absolute h-[70px] left-[40px] top-[139.5px] w-0" data-node-id="615:367" data-name="Container" />
+          </div>
+          <div className="absolute h-[74px] left-[469px] top-[394px] w-[444px]" data-node-id="615:370" data-name="Margin">
+            <div className="absolute content-stretch flex gap-[16px] h-[42px] items-start left-[-4px] right-[4px] top-[32px]" data-node-id="615:371" data-name="Container">
+              <div className="bg-[#00676b] content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center pl-[28px] pr-[25px] py-[13px] relative rounded-[2px] shrink-0" data-node-id="615:372" data-name="Button">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:373">
+                  <p className="leading-[16px]">JOIN THE COMMUNITY</p>
+                </div>
+              </div>
+              <div className="border border-solid border-white content-stretch flex flex-col items-center justify-center pl-[41px] pr-[34px] py-[13px] relative rounded-[2px] shrink-0" data-node-id="615:374" data-name="Button">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:375">
+                  <p className="leading-[16px]">OUR PROGRAMS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="615:361" data-name="Main">
+        <div className="bg-white h-[1002px] overflow-clip relative shrink-0 w-[1280px]" data-node-id="615:377" data-name="Section - Impact Through Precision' Live Stat Strip">
+          <p className="[word-break:break-word] absolute bg-center bg-clip-text bg-cover bg-no-repeat font-['Hanken_Grotesk:ExtraBold'] font-extrabold h-[193px] leading-[100.00499725341797%] left-[290px] text-[170px] text-[transparent] top-[137px] w-[457px]" data-node-id="623:3" style={{ backgroundImage: `url("${img350}")` }}>
+            350+
+          </p>
+          <p className="[word-break:break-word] absolute bg-[0%_50%] bg-clip-text bg-no-repeat bg-size-[105.41%_145.59%] font-['Inter:Extra_Bold'] font-extrabold h-[222px] leading-[100.00499725341797%] left-[622px] not-italic text-[170px] text-[transparent] top-[346px] w-[417px]" data-node-id="623:6" style={{ backgroundImage: `url("${img45}")` }}>
+            45+
+          </p>
+          <p className="[word-break:break-word] absolute bg-[0%_50%] bg-clip-text bg-no-repeat bg-size-[102.18%_137.06%] font-['Inter:Extra_Bold'] font-extrabold h-[222px] leading-[100.00499725341797%] left-[269px] not-italic text-[170px] text-[transparent] top-[552px] w-[457px]" data-node-id="623:16" style={{ backgroundImage: `url("${img88}")` }}>
+            88%
+          </p>
+          <p className="[word-break:break-word] absolute bg-[0%_50%] bg-clip-text bg-no-repeat bg-size-[102.18%_137.06%] font-['Inter:Extra_Bold'] font-extrabold h-[222px] leading-[100.00499725341797%] left-[672px] not-italic text-[170px] text-[transparent] top-[772px] w-[367px]" data-node-id="623:24" style={{ backgroundImage: `url("${img14}")` }}>
+            14
+          </p>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold h-[50px] justify-center leading-[0] left-[758px] text-[#00676b] text-[24px] top-[187px] w-[231px]" data-node-id="623:4">
+            <p className="leading-[26px]">Software Engineers</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[71px] justify-center leading-[0] left-[758px] text-[#1e1e1e] text-[14px] top-[258.5px] tracking-[0.14px] w-[268px]" data-node-id="623:5">
+            <p className="leading-[20px] mb-0">Rigorous full-stack and systems</p>
+            <p className="leading-[20px] mb-0">architects graduated through peer-</p>
+            <p className="leading-[20px]">driven production pipelines.</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold h-[50px] justify-center leading-[0] left-[323px] text-[#00676b] text-[24px] top-[416px] w-[231px]" data-node-id="623:9">
+            <p className="leading-[26px]">Tech Hiring Partners</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold h-[50px] justify-center leading-[0] left-[779px] text-[#00676b] text-[24px] top-[617px] w-[231px]" data-node-id="623:18">
+            <p className="leading-[26px]">Placement Rate</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[71px] justify-center leading-[0] left-[323px] text-[14px] text-[rgba(255,255,255,0.75)] top-[487.5px] tracking-[0.14px] w-[268px]" data-node-id="623:10">
+            <p className="leading-[20px] mb-0 text-black">Active tech companies, regional</p>
+            <p className="leading-[20px] mb-0 text-black">unicorns, and European scaleups</p>
+            <p>
+              <span className="leading-[20px] text-black">employing LakeHub enginee</span>
+              <span className="leading-[20px]">rs.</span>
+            </p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[71px] justify-center leading-[0] left-[778px] text-[14px] text-black top-[683.5px] tracking-[0.14px] w-[268px]" data-node-id="623:20">
+            <p className="leading-[20px] mb-0">Sustained high-income technical</p>
+            <p className="leading-[20px] mb-0">roles secured within 6 months post-</p>
+            <p className="leading-[20px]">cohort graduation.s.</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-semibold h-[50px] justify-center leading-[0] left-[324px] text-[#00676b] text-[24px] top-[857px] w-[231px]" data-node-id="623:28">
+            <p className="leading-[26px]">Startups Incubated</p>
+          </div>
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[71px] justify-center leading-[0] left-[323px] text-[14px] text-black top-[923.5px] tracking-[0.14px] w-[268px]" data-node-id="623:29">
+            <p className="leading-[20px] mb-0">Locally founded fintech, agritech,</p>
+            <p className="leading-[20px] mb-0">and health solutions created by</p>
+            <p className="leading-[20px]">alumni founders in Western Kenya.</p>
+          </div>
+          <div className="absolute content-stretch flex flex-col items-start left-[69px] pt-[6px] top-[53px]" data-node-id="615:382" data-name="Paragraph">
+            <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[0px] text-black tracking-[-1.1px] whitespace-nowrap" data-node-id="615:383">
+              <p className="text-[32px]">
+                <span className="leading-[52px] text-[#00676b]">Impact</span>
+                <span className="leading-[52px]">{` Through Precision`}</span>
+              </p>
+            </div>
+          </div>
+          <div className="absolute h-0 left-[138px] top-[774px] w-[975.012px]" data-node-id="623:8">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine1} />
+            </div>
+          </div>
+          <div className="absolute h-0 left-[145.99px] top-[346.76px] w-[975.012px]" data-node-id="623:14">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine1} />
+            </div>
+          </div>
+          <div className="absolute h-0 left-[145.99px] top-[558.76px] w-[975.012px]" data-node-id="623:22">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine1} />
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#fbf9f8] content-stretch flex flex-col items-start pb-[3px] relative shrink-0 w-[1280px]" data-node-id="615:376" data-name="Section - About & Mission (Bento Grid)">
+          <div className="bg-[#f5f3f3] border-[rgba(188,201,201,0.2)] border-b border-solid border-t content-stretch flex flex-col h-[517px] items-start pb-[53px] pt-[42px] relative shrink-0 w-[1280px]" data-node-id="615:446" data-name="Section - Timeline / Origin">
+            <div className="max-w-[1280px] relative shrink-0 w-full" data-node-id="615:447" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[64px] items-start max-w-[inherit] px-[64px] relative size-full">
+                <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full" data-node-id="615:448" data-name="Container">
+                  <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:449" data-name="Heading 2">
+                    <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[32px] text-center tracking-[-0.32px] whitespace-nowrap" data-node-id="615:450">
+                      <p className="leading-[40px]">Our Journey</p>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-col items-center max-w-[672px] relative shrink-0 w-[672px]" data-node-id="615:451" data-name="Container">
+                    <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[18px] text-center whitespace-nowrap" data-node-id="615:452">
+                      <p className="leading-[28px]">From a small meetup to a driving force for innovation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:453" data-name="Container">
+                  <div className="-translate-y-1/2 absolute bg-[rgba(188,201,201,0.3)] h-[4px] left-0 right-0 top-1/2" data-node-id="615:454" data-name="Track" />
+                  <div className="content-stretch flex gap-[32px] items-start justify-center relative shrink-0 w-full" data-node-id="615:455" data-name="Container">
+                    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px pb-[50px] pt-[18px] relative" data-node-id="615:456" data-name="Timeline Item">
+                      <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:457" data-name="Heading 4">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] text-center whitespace-nowrap" data-node-id="615:458">
+                          <p className="leading-[28px]">The Spark</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="615:459" data-name="Container">
+                        <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:460" data-name="Container">
+                          <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] text-center whitespace-nowrap" data-node-id="615:461">
+                            <p className="leading-[20px] mb-0">First meetups began in Kisumu, gathering</p>
+                            <p className="leading-[20px]">local tech enthusiasts.</p>
+                          </div>
+                        </div>
+                        <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:462" data-name="Container">
+                          <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#00676b] text-[12px] text-center tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:463">
+                            <p className="leading-[16px]">2013</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[16px] top-[calc(50%+60px)]" data-node-id="615:464" data-name="Background">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBackground} />
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px pt-[96px] relative" data-node-id="615:465" data-name="Margin">
+                      <div className="content-stretch flex flex-col items-start pt-[64px] relative shrink-0 w-full" data-node-id="615:466" data-name="Container">
+                        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="615:467" data-name="Container">
+                          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:468" data-name="Container">
+                            <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#00676b] text-[12px] text-center tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:469">
+                              <p className="leading-[16px]">2014</p>
+                            </div>
+                          </div>
+                          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:470" data-name="Heading 4">
+                            <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] text-center whitespace-nowrap" data-node-id="615:471">
+                              <p className="leading-[28px]">Official Hub</p>
+                            </div>
+                          </div>
+                          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:472" data-name="Container">
+                            <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] text-center w-[296px]" data-node-id="615:473">
+                              <p className="leading-[20px]">{` LakeHub officially established its physical footprint along Okore Road in the Milimani neighborhood of Kisumu, Kenya`}</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="-translate-x-1/2 absolute bottom-[79.27%] left-[calc(50%-0.5px)] top-[1.22%] w-0" data-node-id="615:474" data-name="Vertical Divider">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVerticalDivider} />
+                        </div>
+                        <div className="-translate-x-1/2 absolute left-1/2 size-[16px] top-[36px]" data-node-id="615:475" data-name="Background+Border">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBackgroundBorder} />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px pb-[96px] pt-[5px] relative" data-node-id="615:476" data-name="Container">
+                      <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:477" data-name="Heading 4">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] text-center whitespace-nowrap" data-node-id="615:478">
+                          <p className="leading-[28px]">Expansion</p>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="615:479" data-name="Container">
+                        <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:480" data-name="Container">
+                          <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] text-center w-[322px]" data-node-id="615:481">
+                            <p className="leading-[20px]">{` LakeHub launches their core flagships, the LakeHub Academy and their formalized business incubation program`}</p>
+                          </div>
+                        </div>
+                        <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:482" data-name="Container">
+                          <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#00676b] text-[12px] text-center tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:483">
+                            <p className="leading-[16px]">2019</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-[#e4e2e2] border-2 border-[#00676b] border-solid left-1/2 rounded-[12px] size-[16px] top-[calc(50%+33.5px)]" data-node-id="615:484" data-name="Background+Border" />
+                    </div>
+                    <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px pt-[96px] relative" data-node-id="615:485" data-name="Margin">
+                      <div className="content-stretch flex flex-col items-start pt-[64px] relative shrink-0 w-full" data-node-id="615:486" data-name="Container">
+                        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="615:487" data-name="Container">
+                          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:488" data-name="Container">
+                            <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#00676b] text-[12px] text-center tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:489">
+                              <p className="leading-[16px]">PRESENT</p>
+                            </div>
+                          </div>
+                          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:490" data-name="Heading 4">
+                            <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] text-center whitespace-nowrap" data-node-id="615:491">
+                              <p className="leading-[28px]">Global Impact</p>
+                            </div>
+                          </div>
+                          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="615:492" data-name="Container">
+                            <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] text-center w-[310px]" data-node-id="615:493">
+                              <p className="leading-[20px]">LakeHub has grown from a local community into Western Kenya’s major regional center for software, agritech, and digital jobs</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="-translate-x-1/2 absolute left-[calc(50%+3px)] size-[24px] top-[30.33px]" data-node-id="615:494">
+                          <div className="absolute inset-[0_2.45%_9.55%_2.45%]">
+                            <img alt="" className="block max-w-none size-full" src={imgStar2} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#00676b] border-[rgba(188,201,201,0.2)] border-b border-solid border-t content-stretch flex flex-col gap-[24px] h-[245px] items-start px-[22px] py-[51px] relative shrink-0 w-full" data-node-id="615:495" data-name="Section - Social Proof">
+            <div className="h-[16px] relative shrink-0 w-full" data-node-id="615:496" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
+                <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] left-1/2 text-[#98c1c3] text-[12px] text-center top-[-12px] tracking-[1.2px] uppercase whitespace-nowrap" data-node-id="615:497">
+                  <p className="leading-[16px]">TRUSTED BY ORGANIZATIONS GLOBALLY</p>
+                </div>
+              </div>
+            </div>
+            <div className="h-[99px] relative shrink-0 w-full" data-node-id="615:498" data-name="Background">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[60px] items-center relative size-full">
+                <div className="content-stretch flex flex-col h-[47px] items-center relative shrink-0 w-[169px]" data-node-id="615:499" data-name="Container">
+                  <div className="h-[47px] opacity-80 overflow-clip relative shrink-0 w-full" data-node-id="615:500" data-name="644bb3b9993b1d255d25796f_Mask group-6 1">
+                    <div className="absolute contents inset-[0_-0.22%_0_0]" data-node-id="615:501" data-name="Mask group">
+                      <div className="absolute contents inset-[-49.21%_-3.95%_-47.62%_-3.73%]" data-node-id="615:504" data-name="Group">
+                        <div className="absolute inset-[-49.21%_-3.95%_-47.62%_-3.73%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[6.299px_23.127px] mask-size-[169.377px_47px]" data-node-id="615:505" style={{ maskImage: `url("${imgVector}")` }} data-name="Vector">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] opacity-80 place-items-start relative shrink-0" data-node-id="615:506" data-name="Mask group">
+                  <div className="bg-white col-1 h-[62px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[186px_62px] ml-0 mt-0 relative row-1 w-[186px]" data-node-id="615:508" style={{ maskImage: `url("${imgRectangle1}")` }} />
+                </div>
+                <div className="content-stretch flex flex-col h-[77px] items-center relative shrink-0" data-node-id="615:509" data-name="Container">
+                  <div className="h-[75px] overflow-clip relative shrink-0 w-[227px]" data-node-id="615:510" data-name="644bb3a2cbe59b2a03359ec9_Mask group-3 1">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" height="75" src={img644Bb3A2Cbe59B2A03359Ec9MaskGroup31} width="227" />
+                  </div>
+                </div>
+                <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] opacity-80 place-items-start relative shrink-0" data-node-id="615:512" data-name="Mask group">
+                  <div className="col-1 h-[120.519px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[15px_16px] mask-size-[171px_87.65px] ml-[-15px] mt-[-16px] relative row-1 w-[214.396px]" data-node-id="615:514" style={{ maskImage: `url("${imgVector2}")` }} data-name="Vector">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector3} />
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col h-[63px] items-center relative shrink-0" data-node-id="615:515" data-name="Container">
+                  <div className="h-[52px] opacity-80 overflow-clip relative shrink-0 w-[196px]" data-node-id="615:516" data-name="644bb39651b00d48b9fa0297_Mask group-2 2">
+                    <div className="absolute contents inset-0" data-node-id="615:517" data-name="Mask group">
+                      <div className="absolute inset-[-44%_-7.32%_-48%_-3.38%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[6.625px_22.88px] mask-size-[196px_52px]" data-node-id="615:520" style={{ maskImage: `url("${imgGroup}")` }} data-name="Group">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="h-[75px] relative shrink-0 w-[205px]" data-node-id="795:3" data-name="643d2605d8bcb36bfb646fc2_image-removebg-preview 1">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img643D2605D8Bcb36Bfb646Fc2ImageRemovebgPreview1} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[684px] relative shrink-0 w-[1280px]" data-node-id="615:522" style={{ backgroundImage: "linear-gradient(160.8057756208362deg, rgb(251, 249, 248) 35.453%, rgb(129, 244, 250) 105.77%)" }} data-name="Section - Impact Stories (Cards)">
+          <div className="absolute h-[622px] left-0 right-0 top-[35px]" data-node-id="615:523" data-name="Container">
+            <div className="absolute h-[142px] left-[64px] right-[64px] top-0" data-node-id="615:524" data-name="Container">
+              <div className="absolute content-stretch flex flex-col gap-[16px] items-start left-[10px] top-[29px]" data-node-id="615:525" data-name="Container">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-[239px]" data-node-id="615:526" data-name="Heading 2">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[32px] tracking-[-0.32px] whitespace-nowrap" data-node-id="615:527">
+                    <p className="leading-[40px]">Latest Insights</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start max-w-[512px] relative shrink-0 w-full" data-node-id="615:528" data-name="Container">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[18px] whitespace-nowrap" data-node-id="615:529">
+                    <p className="leading-[28px]">Stories of innovation and community progress.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-[29px] left-[1142.67px] size-[9.333px]" data-node-id="615:530" data-name="Link" />
+            </div>
+            <div className="absolute content-stretch flex gap-[32px] h-[399px] items-start justify-center left-[64px] right-[64px] top-[190px]" data-node-id="615:531" data-name="Container">
+              <div className="bg-[#fbf9f8] border border-[rgba(188,201,201,0.3)] border-solid content-stretch flex flex-col isolate items-start overflow-clip p-px relative rounded-[8px] shrink-0 w-[362.66px]" data-node-id="615:532" data-name="Article - Card 1">
+                <div className="h-[192px] relative shrink-0 w-full z-[2]" data-node-id="615:533" data-name="Container">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
+                    <div className="flex items-center justify-center relative shrink-0" data-node-id="615:534">
+                      <div className="-scale-y-100 flex-none rotate-180">
+                        <div className="h-[202px] relative w-[361px]" data-name="image 14">
+                          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage14} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative shrink-0 w-full z-[1]" data-node-id="615:535" data-name="Container">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-end p-[24px] relative size-full">
+                    <div className="h-[57px] relative shrink-0 w-full" data-node-id="615:536" data-name="Heading 3:margin">
+                      <div className="absolute content-stretch flex flex-col items-start left-0 pb-[0.75px] right-0 top-[-0.75px]" data-node-id="615:537" data-name="Heading 3">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] whitespace-nowrap" data-node-id="615:538">
+                          <p className="leading-[22.5px] mb-0">Zone01 Kisumu and Nation.dev Sign</p>
+                          <p className="leading-[22.5px]">MoU</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start pb-[24px] relative shrink-0 w-full" data-node-id="615:539" data-name="Margin">
+                      <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="615:540" data-name="Container">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] w-full" data-node-id="615:541">
+                          <p className="leading-[20px] mb-0">{`Bridging Kisumu's tech talent to the global stage`}</p>
+                          <p className="leading-[20px] mb-0">through strategic partnerships and continuous</p>
+                          <p className="leading-[20px]">skill development.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="h-[16px] relative shrink-0 w-[88px]" data-node-id="615:542" data-name="Link">
+                      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] left-[70.34px] right-[-0.34px] text-[#008186] text-[20px] top-[8px] tracking-[0.6px] uppercase" data-node-id="615:543">
+                        <p className="leading-[16px]">→</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fbf9f8] border border-[rgba(188,201,201,0.3)] border-solid content-stretch flex flex-col isolate items-end overflow-clip p-px relative rounded-[8px] shrink-0 w-[362.67px]" data-node-id="615:544" data-name="Article - Card 2">
+                <div className="bg-[#e4e2e2] h-[192px] relative shrink-0 w-full z-[2]" data-node-id="615:545" data-name="Background">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
+                    <div className="h-[241px] relative shrink-0 w-[360px]" data-node-id="615:546" data-name="image 15">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage15} />
+                    </div>
+                  </div>
+                </div>
+                <div className="relative shrink-0 w-full z-[1]" data-node-id="615:547" data-name="Container">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-end justify-between p-[24px] relative size-full">
+                    <div className="h-[57px] relative shrink-0 w-full" data-node-id="615:548" data-name="Heading 3:margin">
+                      <div className="absolute content-stretch flex flex-col items-start left-0 pb-[0.75px] right-0 top-[-0.75px]" data-node-id="615:549" data-name="Heading 3">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] whitespace-nowrap" data-node-id="615:550">
+                          <p className="leading-[22.5px] mb-0">Closing the Gender Parity in</p>
+                          <p className="leading-[22.5px]">Technology</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start pb-[24px] relative shrink-0 w-full" data-node-id="615:551" data-name="Margin">
+                      <div className="content-stretch flex flex-col items-start overflow-clip pb-[20px] relative shrink-0 w-full" data-node-id="615:552" data-name="Container">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] w-full" data-node-id="615:553">
+                          <p className="leading-[20px] mb-0">LakeHub hosts a 2-day female developers</p>
+                          <p className="leading-[20px]">{`hackathon to mark International Women's Day.`}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-[82px]" data-node-id="615:554" data-name="Link">
+                      <div className="h-[16px] relative shrink-0 w-[88px]" data-node-id="615:555" data-name="Link">
+                        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] left-[70.34px] right-[-0.34px] text-[#008186] text-[20px] top-[8px] tracking-[0.6px] uppercase" data-node-id="615:556">
+                          <p className="leading-[16px]">→</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fbf9f8] border border-[rgba(188,201,201,0.3)] border-solid content-stretch flex flex-col isolate items-start overflow-clip p-px relative rounded-[8px] shrink-0 w-[362.66px]" data-node-id="615:557" data-name="Article - Card 3">
+                <div className="absolute right-[0.01px] size-[32px] top-0 z-[3]" data-node-id="615:558" data-name="Mask Group">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full" />
+                </div>
+                <div className="h-[192px] relative shrink-0 w-[362px] z-[2]" data-node-id="615:561" data-name="image 16">
+                  <div className="absolute bg-clip-padding border-0 border-[transparent] border-solid inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[125.57%] left-[0.09%] max-w-none top-[-0.02%] w-full" src={imgImage16} />
+                  </div>
+                </div>
+                <div className="relative shrink-0 w-full z-[1]" data-node-id="615:562" data-name="Container">
+                  <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-end p-[24px] relative size-full">
+                    <div className="h-[34.5px] relative shrink-0 w-full" data-node-id="615:563" data-name="Heading 3:margin">
+                      <div className="absolute content-stretch flex flex-col items-start left-0 right-0 top-[-1px]" data-node-id="615:564" data-name="Heading 3">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[#1b1c1c] text-[18px] whitespace-nowrap" data-node-id="615:565">
+                          <p className="leading-[22.5px]">iTALANTA HACKATHON 2024</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start pb-[24px] relative shrink-0 w-full" data-node-id="615:566" data-name="Margin">
+                      <div className="content-stretch flex flex-col items-start overflow-clip pb-[22.5px] relative shrink-0 w-full" data-node-id="615:567" data-name="Container">
+                        <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[14px] w-full" data-node-id="615:568">
+                          <p className="leading-[20px] mb-0">Enabling students to fulfill their potential as digital</p>
+                          <p className="leading-[20px] mb-0">enthusiasts through intense collaborative coding</p>
+                          <p className="leading-[20px]">sessions.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-col items-start relative shrink-0 w-[81px]" data-node-id="615:569" data-name="Link">
+                      <div className="h-[16px] relative shrink-0 w-[88px]" data-node-id="615:570" data-name="Link">
+                        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] left-[70.34px] right-[-0.34px] text-[#008186] text-[20px] top-[8px] tracking-[0.6px] uppercase" data-node-id="615:571">
+                          <p className="leading-[16px]">→</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['JetBrains_Mono:Medium'] font-medium h-[20px] justify-center leading-[0] left-[27px] text-[#008186] text-[25px] top-[376px] tracking-[0.6px] uppercase w-[23px]" data-node-id="615:572">
+              <p className="leading-[16px]">←</p>
+            </div>
+            <div className="-translate-y-1/2 absolute flex h-[20px] items-center justify-center left-[1234px] top-[376px] w-[18px]" data-node-id="615:573">
+              <div className="-scale-y-100 flex-none rotate-180">
+                <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium h-[20px] justify-center leading-[0] relative text-[#008186] text-[25px] tracking-[0.6px] uppercase w-[18px]">
+                  <p className="leading-[16px]">←</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col h-[306px] items-start overflow-clip pb-[44px] pt-[60px] relative shrink-0 w-[1280px]" data-node-id="615:575" style={{ backgroundImage: "linear-gradient(99.50346478266796deg, rgb(0, 96, 100) 9.1408%, rgb(0, 185, 193) 95.507%)" }} data-name="CTA Section">
+          <div className="content-stretch flex flex-col gap-[24px] items-center max-w-[1280px] px-[64px] relative shrink-0 w-full" data-node-id="615:576" data-name="Container">
+            <div className="content-stretch flex flex-col h-[48px] items-center relative shrink-0 w-full" data-node-id="615:577" data-name="Heading 2">
+              <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-1/2 text-[32px] text-center text-white top-[34px] whitespace-nowrap" data-node-id="615:578">
+                <p className="leading-[48px]">Ideas no longer have to wait their turn.</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-center max-w-[672px] relative shrink-0 w-[672px]" data-node-id="615:579" data-name="Container">
+              <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(255,255,255,0.8)] text-center whitespace-nowrap" data-node-id="615:580">
+                <p className="leading-[24px]">Join our network of innovators, mentors, and investors to turn your vision into impact.</p>
+              </div>
+            </div>
+            <div className="content-stretch flex items-start justify-center pt-[16px] relative shrink-0 w-full" data-node-id="615:581" data-name="Container">
+              <div className="bg-[#00676b] content-stretch flex flex-col items-center justify-center px-[32px] py-[16px] relative rounded-[2px] shrink-0" data-node-id="615:582" data-name="Button">
+                <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="615:583">
+                  <p className="leading-[16px]">EXPLORE PROGRAMS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#002021] border-[rgba(98,215,222,0.1)] border-solid border-t content-stretch flex flex-col h-[332px] items-start pb-[8px] pt-[96px] relative shrink-0 w-[1280px]" data-node-id="615:584" data-name="Footer from JSON">
+        <div className="h-[196px] max-w-[1280px] relative shrink-0 w-full" data-node-id="615:585" data-name="Container">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid gap-x-[9px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_346px] max-w-[inherit] px-[64px] relative size-full">
+            <div className="col-2 content-stretch flex flex-col gap-[24px] items-start justify-self-start pb-[155px] relative row-1 self-start shrink-0 size-[36px]" data-node-id="615:586" data-name="Brand Column">
+              <div className="content-stretch flex flex-col items-start pt-[16px] relative shrink-0 w-full" data-node-id="615:587" data-name="Margin">
+                <div className="h-[20px] relative shrink-0 w-full" data-node-id="615:588" data-name="Container" />
+              </div>
+              <div className="absolute content-stretch flex flex-col h-[23px] items-start left-[-79.75px] max-w-[320px] right-[-44.25px] top-[71px]" data-node-id="615:589" data-name="Container">
+                <div className="absolute left-[37.25px] size-[22px] top-px" data-node-id="615:590" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+                </div>
+                <div className="relative shrink-0 size-[22px]" data-node-id="615:591" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector5} />
+                </div>
+                <div className="absolute left-[75.25px] size-[22px] top-[-1px]" data-node-id="615:592" data-name="devicon:twitter">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDeviconTwitter} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bg-[rgba(217,217,217,0)] border border-[#e4e4e7] border-solid h-[60px] left-[857px] rounded-[40px] top-[73px] w-[346px]" data-node-id="615:594" />
+            <div className="absolute bg-[#00676b] h-[49px] left-[1084px] rounded-[40px] top-[79px] w-[113px]" data-node-id="615:595" />
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[436px] pb-[162px] right-[724px] top-[-19px]" data-node-id="615:596" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:597" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="615:598">
+                  <p className="leading-[28px]">Quick Links</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="615:599" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:600" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="615:601">
+                    <p className="leading-[24px]">About Us</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:602" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="615:603">
+                    <p className="leading-[24px]">Our Mission</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:604" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="615:605">
+                    <p className="leading-[24px]">Impact Stories</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:606" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="615:607">
+                    <p className="leading-[24px]">History</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[660px] pb-[149px] right-[518px] top-[-20.67px]" data-node-id="615:608" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:609" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="615:610">
+                  <p className="leading-[28px]">Help</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[3px] items-start relative shrink-0 w-full" data-node-id="615:611" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:612" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="615:613">
+                    <p className="leading-[24px]">FAQ</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="615:614" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="615:615">
+                    <p className="leading-[24px]">Support</p>
+                  </div>
+                </div>
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="615:616" data-name="Item" />
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="615:617" data-name="Item" />
+              </div>
+            </div>
+            <div className="absolute h-[82px] left-[51px] top-[-36px] w-[288px]" data-node-id="615:618" data-name="g3 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-0.14%] max-w-none top-0 w-[100.27%]" src={imgG31} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[1100.5px] text-[18px] text-white top-[104px] w-[115px]" data-node-id="615:619">
+              <p className="leading-[28px]">Subscribe</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Light'] font-light h-[38px] justify-center leading-[0] left-[858px] text-[14px] text-white top-[43px] w-[256px]" data-node-id="615:620">
+              <p className="leading-[28px]">Subscribe to our news letter</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[25px] justify-center leading-[0] left-[869px] text-[18px] text-white top-[102.5px] w-[181px]" data-node-id="615:621">
+              <p className="leading-[28px]">example@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Medium'] font-medium h-[38px] justify-center leading-[0] left-[858px] text-[16px] text-white top-[88px] w-[231px]" data-node-id="615:622">
+          <p className="leading-[24px]">Get in touch!</p>
+        </div>
+        <div className="absolute border-[rgba(188,201,201,0.1)] border-solid border-t left-0 max-w-[1280px] top-[296px] w-[1280px]" data-node-id="615:623" data-name="Copyright">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center max-w-[inherit] pl-[430px] pr-[64px] pt-[7px] relative size-full">
+            <div className="relative shrink-0 w-[1574px]" data-node-id="615:624" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[582.17px] items-center relative size-full">
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="615:625" data-name="Container">
+                  <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="615:626">
+                    <p className="leading-[16px]">© 2024 LakeHub Foundation. All rights reserved.</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[16px] items-start relative shrink-0" data-node-id="615:627" data-name="Container">
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="615:628" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="615:629">
+                      <p className="leading-[16px]">Privacy Policy</p>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="615:630" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="615:631">
+                      <p className="leading-[16px]">Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

@@ -1,0 +1,1603 @@
+<frame id="1347:4699" name="Neutral Colors" x="3148" y="0" width="1440" height="3770">
+  <frame id="1347:4700" name="Docs / Page Header" x="0" y="0" width="1440" height="264" />
+  <frame id="1347:4703" name="Container" x="120" y="344" width="1200" height="3164">
+    <frame id="1347:4704" name="Table Wrapper" x="0" y="0" width="1200" height="818">
+      <text id="1347:4705" name="Text" x="0" y="0" width="1200" height="38" />
+      <frame id="1347:4706" name="Docs Table - Text Colors" x="0" y="70" width="1200" height="748">
+        <frame id="1347:4707" name="Table" x="0" y="0" width="1200" height="748">
+          <frame id="1347:4708" name="Header Row" x="0" y="0" width="1200" height="54">
+            <frame id="1347:4709" name="Table Item / Header Item" x="0" y="0" width="244" height="54">
+              <frame id="1347:4710" name="Header" x="0" y="0" width="244" height="54">
+                <frame id="1347:4711" name="Wrapper" x="0" y="16" width="244" height="22">
+                  <text id="1347:4712" name="Variable" x="16" y="0" width="212" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:4713" name="Table Item / Header Item" x="244" y="0" width="136" height="54">
+              <frame id="1347:4714" name="Header" x="0" y="0" width="136" height="54">
+                <frame id="1347:4715" name="Wrapper" x="0" y="16" width="136" height="22">
+                  <text id="1347:4716" name="Group" x="16" y="0" width="104" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:4717" name="Table Item / Header Item" x="380" y="0" width="200" height="54">
+              <frame id="1347:4718" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:4719" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:4720" name="Light Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:4721" name="Table Item / Header Item" x="580" y="0" width="200" height="54">
+              <frame id="1347:4722" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:4723" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:4724" name="Dark Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:4725" name="Table Item / Header Item" x="780" y="0" width="420" height="54">
+              <frame id="1347:4726" name="Header" x="0" y="0" width="420" height="54">
+                <frame id="1347:4727" name="Wrapper" x="0" y="16" width="420" height="22">
+                  <text id="1347:4728" name="Description" x="16" y="0" width="388" height="22" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="1347:4729" name="Row" x="0" y="54" width="1200" height="76">
+            <frame id="1347:4730" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:4731" name="_Docs / Variable Item" x="16" y="16" width="94" height="22">
+                <instance id="1347:4732" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4733" name="colorText" x="26" y="0" width="60" height="22" />
+                <ellipse id="1347:4734" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4735" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4736" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:4737" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4738" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:4739" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4740" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4741" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4742" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4743" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4744" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4745" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:4746" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:4747" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4748" name="#000000 88%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4749" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:4750" name="_Docs / Variable Item" x="16" y="16" width="104" height="22">
+                <rounded-rectangle id="1347:4751" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4752" name="#FFFFFF 85%" x="16" y="0" width="88" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4753" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:4754" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:4755" name="Default text color which comply with W3C standards, and this color is also the darkest neutral color." x="0" y="0" width="388" height="44" />
+                <text id="1347:4756" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4757" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4758" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4759" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4760" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4761" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4762" name="Row" x="0" y="130" width="1200" height="98">
+            <frame id="1347:4763" name="_Docs" x="0" y="22" width="244" height="54">
+              <frame id="1347:4764" name="_Docs / Variable Item" x="16" y="16" width="161" height="22">
+                <instance id="1347:4765" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4766" name="colorTextSecondary" x="26" y="0" width="127" height="22" />
+                <ellipse id="1347:4767" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4768" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4769" name="Size=Default, Bordered=False" x="244" y="22" width="136" height="54">
+              <frame id="1347:4770" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4771" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:4772" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4773" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4774" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4775" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4776" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4777" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4778" name="_Docs" x="380" y="22" width="200" height="54">
+              <frame id="1347:4779" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:4780" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4781" name="#000000 65%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4782" name="_Docs" x="580" y="22" width="200" height="54">
+              <frame id="1347:4783" name="_Docs / Variable Item" x="16" y="16" width="104" height="22">
+                <rounded-rectangle id="1347:4784" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4785" name="#FFFFFF 85%" x="16" y="0" width="88" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4786" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="98">
+              <frame id="1347:4787" name="Text Wrapper" x="16" y="16" width="388" height="66">
+                <text id="1347:4788" name="The second level of text color is generally used in scenarios where text color is not emphasized, such as label text, menu text selection state, etc." x="0" y="0" width="388" height="66" />
+                <text id="1347:4789" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4790" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4791" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4792" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4793" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4794" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4795" name="Row" x="0" y="228" width="1200" height="98">
+            <frame id="1347:4796" name="_Docs" x="0" y="22" width="244" height="54">
+              <frame id="1347:4797" name="_Docs / Variable Item" x="16" y="16" width="142" height="22">
+                <instance id="1347:4798" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4799" name="colorTextTertiary" x="26" y="0" width="108" height="22" />
+                <ellipse id="1347:4800" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4801" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4802" name="Size=Default, Bordered=False" x="244" y="22" width="136" height="54">
+              <frame id="1347:4803" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4804" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:4805" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4806" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4807" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4808" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4809" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4810" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4811" name="_Docs" x="380" y="22" width="200" height="54">
+              <frame id="1347:4812" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:4813" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4814" name="#000000 45%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4815" name="_Docs" x="580" y="22" width="200" height="54">
+              <frame id="1347:4816" name="_Docs / Variable Item" x="16" y="16" width="104" height="22">
+                <rounded-rectangle id="1347:4817" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4818" name="#FFFFFF 45%" x="16" y="0" width="88" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4819" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="98">
+              <frame id="1347:4820" name="Text Wrapper" x="16" y="16" width="388" height="66">
+                <text id="1347:4821" name="The third level of text color is generally used for descriptive text, such as form supplementary explanation text, list descriptive text, etc." x="0" y="0" width="388" height="66" />
+                <text id="1347:4822" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4823" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4824" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4825" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4826" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4827" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4828" name="Row" x="0" y="326" width="1200" height="76">
+            <frame id="1347:4829" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:4830" name="_Docs / Variable Item" x="16" y="16" width="166" height="22">
+                <instance id="1347:4831" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4832" name="colorTextQuaternary" x="26" y="0" width="132" height="22" />
+                <ellipse id="1347:4833" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4834" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4835" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:4836" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4837" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:4838" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4839" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4840" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4841" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4842" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4843" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4844" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:4845" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:4846" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4847" name="#000000 25%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4848" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:4849" name="_Docs / Variable Item" x="16" y="16" width="104" height="22">
+                <rounded-rectangle id="1347:4850" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4851" name="#FFFFFF 25%" x="16" y="0" width="88" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4852" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:4853" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:4854" name="The fourth level of text color is the lightest text color, such as form input prompt text, disabled color text, etc." x="0" y="0" width="388" height="44" />
+                <text id="1347:4855" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4856" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4857" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4858" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4859" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4860" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4861" name="Row" x="0" y="402" width="1200" height="76">
+            <frame id="1347:4862" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:4863" name="_Docs / Variable Item" x="16" y="16" width="154" height="22">
+                <instance id="1347:4864" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4865" name="colorTextLightSolid" x="26" y="0" width="120" height="22" />
+                <ellipse id="1347:4866" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4867" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4868" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:4869" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4870" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:4871" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4872" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4873" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4874" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4875" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4876" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4877" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:4878" name="_Docs / Variable Item" x="16" y="16" width="74" height="22">
+                <rounded-rectangle id="1347:4879" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4880" name="#FFFFFF" x="16" y="0" width="58" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4881" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:4882" name="_Docs / Variable Item" x="16" y="16" width="74" height="22">
+                <rounded-rectangle id="1347:4883" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:4884" name="#FFFFFF" x="16" y="0" width="58" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:4885" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:4886" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:4887" name="Control the highlight color of text with background color, such as the text in Primary Button components." x="0" y="0" width="388" height="44" />
+                <text id="1347:4888" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4889" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4890" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4891" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4892" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4893" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4894" name="Row" x="0" y="478" width="1200" height="54">
+            <frame id="1347:4895" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:4896" name="_Docs / Variable Item" x="16" y="16" width="145" height="22">
+                <instance id="1347:4897" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4898" name="colorTextHeading" x="26" y="0" width="111" height="22" />
+                <ellipse id="1347:4899" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4900" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4901" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:4902" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4903" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:4904" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4905" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4906" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4907" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4908" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4909" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4910" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:4911" name="_Docs / Variable Item" x="16" y="16" width="92" height="22">
+                <rounded-rectangle id="1347:4912" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:4913" name="colorText" x="24" y="0" width="60" height="22" />
+                <ellipse id="1347:4914" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4915" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4916" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:4917" name="_Docs / Variable Item" x="16" y="16" width="92" height="22">
+                <rounded-rectangle id="1347:4918" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:4919" name="colorText" x="24" y="0" width="60" height="22" />
+                <ellipse id="1347:4920" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4921" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4922" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:4923" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:4924" name="Control the font color of heading." x="0" y="0" width="388" height="22" />
+                <text id="1347:4925" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4926" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4927" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4928" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4929" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4930" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4931" name="Row" x="0" y="532" width="1200" height="54">
+            <frame id="1347:4932" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:4933" name="_Docs / Variable Item" x="16" y="16" width="128" height="22">
+                <instance id="1347:4934" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4935" name="colorTextLabel" x="26" y="0" width="94" height="22" />
+                <ellipse id="1347:4936" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4937" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4938" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:4939" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4940" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:4941" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4942" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4943" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4944" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4945" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4946" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4947" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:4948" name="_Docs / Variable Item" x="16" y="16" width="159" height="22">
+                <rounded-rectangle id="1347:4949" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:4950" name="colorTextSecondary" x="24" y="0" width="127" height="22" />
+                <ellipse id="1347:4951" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4952" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4953" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:4954" name="_Docs / Variable Item" x="16" y="16" width="159" height="22">
+                <rounded-rectangle id="1347:4955" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:4956" name="colorTextSecondary" x="24" y="0" width="127" height="22" />
+                <ellipse id="1347:4957" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4958" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4959" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:4960" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:4961" name="Control the font color of text label." x="0" y="0" width="388" height="22" />
+                <text id="1347:4962" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4963" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4964" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4965" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4966" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4967" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:4968" name="Row" x="0" y="586" width="1200" height="54">
+            <frame id="1347:4969" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:4970" name="_Docs / Variable Item" x="16" y="16" width="165" height="22">
+                <instance id="1347:4971" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:4972" name="colorTextDescription" x="26" y="0" width="131" height="22" />
+                <ellipse id="1347:4973" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4974" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4975" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:4976" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:4977" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:4978" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:4979" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:4980" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:4981" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:4982" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:4983" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:4984" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:4985" name="_Docs / Variable Item" x="16" y="16" width="140" height="22">
+                <rounded-rectangle id="1347:4986" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:4987" name="colorTextTertiary" x="24" y="0" width="108" height="22" />
+                <ellipse id="1347:4988" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4989" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4990" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:4991" name="_Docs / Variable Item" x="16" y="16" width="140" height="22">
+                <rounded-rectangle id="1347:4992" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:4993" name="colorTextTertiary" x="24" y="0" width="108" height="22" />
+                <ellipse id="1347:4994" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:4995" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:4996" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:4997" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:4998" name="Control the font color of text description." x="0" y="0" width="388" height="22" />
+                <text id="1347:4999" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5000" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5001" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5002" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5003" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5004" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5005" name="Row" x="0" y="640" width="1200" height="54">
+            <frame id="1347:5006" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5007" name="_Docs / Variable Item" x="16" y="16" width="148" height="22">
+                <instance id="1347:5008" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5009" name="colorTextDisabled" x="26" y="0" width="114" height="22" />
+                <ellipse id="1347:5010" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5011" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5012" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5013" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5014" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5015" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5016" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5017" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5018" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5019" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5020" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5021" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5022" name="_Docs / Variable Item" x="16" y="16" width="164" height="22">
+                <rounded-rectangle id="1347:5023" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5024" name="colorTextQuaternary" x="24" y="0" width="132" height="22" />
+                <ellipse id="1347:5025" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5026" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5027" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5028" name="_Docs / Variable Item" x="16" y="16" width="164" height="22">
+                <rounded-rectangle id="1347:5029" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5030" name="colorTextQuaternary" x="24" y="0" width="132" height="22" />
+                <ellipse id="1347:5031" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5032" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5033" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5034" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5035" name="Control the color of text in disabled state." x="0" y="0" width="388" height="22" />
+                <text id="1347:5036" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5037" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5038" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5039" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5040" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5041" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5042" name="Row" x="0" y="694" width="1200" height="54">
+            <frame id="1347:5043" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5044" name="_Docs / Variable Item" x="16" y="16" width="168" height="22">
+                <instance id="1347:5045" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5046" name="colorTextPlaceholder" x="26" y="0" width="134" height="22" />
+                <ellipse id="1347:5047" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5048" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5049" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5050" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5051" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5052" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5053" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5054" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5055" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5056" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5057" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5058" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5059" name="_Docs / Variable Item" x="16" y="16" width="164" height="22">
+                <rounded-rectangle id="1347:5060" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5061" name="colorTextQuaternary" x="24" y="0" width="132" height="22" />
+                <ellipse id="1347:5062" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5063" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5064" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5065" name="_Docs / Variable Item" x="16" y="16" width="164" height="22">
+                <rounded-rectangle id="1347:5066" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5067" name="colorTextQuaternary" x="24" y="0" width="132" height="22" />
+                <ellipse id="1347:5068" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5069" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5070" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5071" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5072" name="Control the color of placeholder text." x="0" y="0" width="388" height="22" />
+                <text id="1347:5073" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5074" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5075" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5076" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5077" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5078" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1347:5079" name="Table Wrapper" x="0" y="898" width="1200" height="232">
+      <text id="1347:5080" name="Icon" x="0" y="0" width="1200" height="38" />
+      <frame id="1347:5081" name="Docs Table - Icon Colors" x="0" y="70" width="1200" height="162">
+        <frame id="1347:5082" name="Table" x="0" y="0" width="1200" height="162">
+          <frame id="1347:5083" name="Header Row" x="0" y="0" width="1200" height="54">
+            <frame id="1347:5084" name="Table Item / Header Item" x="0" y="0" width="244" height="54">
+              <frame id="1347:5085" name="Header" x="0" y="0" width="244" height="54">
+                <frame id="1347:5086" name="Wrapper" x="0" y="16" width="244" height="22">
+                  <text id="1347:5087" name="Variable" x="16" y="0" width="212" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5088" name="Table Item / Header Item" x="244" y="0" width="136" height="54">
+              <frame id="1347:5089" name="Header" x="0" y="0" width="136" height="54">
+                <frame id="1347:5090" name="Wrapper" x="0" y="16" width="136" height="22">
+                  <text id="1347:5091" name="Group" x="16" y="0" width="104" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5092" name="Table Item / Header Item" x="380" y="0" width="200" height="54">
+              <frame id="1347:5093" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5094" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5095" name="Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5096" name="Table Item / Header Item" x="580" y="0" width="620" height="54">
+              <frame id="1347:5097" name="Header" x="0" y="0" width="620" height="54">
+                <frame id="1347:5098" name="Wrapper" x="0" y="16" width="620" height="22">
+                  <text id="1347:5099" name="Description" x="16" y="0" width="588" height="22" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="1347:5100" name="Row" x="0" y="54" width="1200" height="54">
+            <frame id="1347:5101" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5102" name="_Docs / Variable Item" x="16" y="16" width="94" height="22">
+                <instance id="1347:5103" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5104" name="colorIcon" x="26" y="0" width="60" height="22" />
+                <ellipse id="1347:5105" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5106" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5107" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5108" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5109" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5110" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5111" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5112" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5113" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5114" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5115" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5116" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5117" name="_Docs / Variable Item" x="16" y="16" width="140" height="22">
+                <rounded-rectangle id="1347:5118" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5119" name="colorTextTertiary" x="24" y="0" width="108" height="22" />
+                <ellipse id="1347:5120" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5121" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5122" name="Size=Default, Bordered=False" x="580" y="0" width="620" height="54">
+              <frame id="1347:5123" name="Text Wrapper" x="16" y="16" width="588" height="22">
+                <text id="1347:5124" name="Control the color of the icons." x="0" y="0" width="588" height="22" />
+                <text id="1347:5125" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5126" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5127" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5128" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5129" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5130" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5131" name="Row" x="0" y="108" width="1200" height="54">
+            <frame id="1347:5132" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5133" name="_Docs / Variable Item" x="16" y="16" width="131" height="22">
+                <instance id="1347:5134" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5135" name="colorIconHover" x="26" y="0" width="97" height="22" />
+                <ellipse id="1347:5136" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5137" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5138" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5139" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5140" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5141" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5142" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5143" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5144" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5145" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5146" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5147" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5148" name="_Docs / Variable Item" x="16" y="16" width="92" height="22">
+                <rounded-rectangle id="1347:5149" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5150" name="colorText" x="24" y="0" width="60" height="22" />
+                <ellipse id="1347:5151" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5152" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5153" name="Size=Default, Bordered=False" x="580" y="0" width="620" height="54">
+              <frame id="1347:5154" name="Text Wrapper" x="16" y="16" width="588" height="22">
+                <text id="1347:5155" name="Control the color of the icons when hovering." x="0" y="0" width="588" height="22" />
+                <text id="1347:5156" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5157" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5158" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5159" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5160" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5161" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1347:5162" name="Table Wrapper" x="0" y="1210" width="1200" height="742">
+      <text id="1347:5163" name="Background" x="0" y="0" width="1200" height="38" />
+      <frame id="1347:5164" name="Docs Table - Bg Colors" x="0" y="70" width="1200" height="672">
+        <frame id="1347:5165" name="Table" x="0" y="0" width="1200" height="672">
+          <frame id="1347:5166" name="Header Row" x="0" y="0" width="1200" height="54">
+            <frame id="1347:5167" name="Table Item / Header Item" x="0" y="0" width="244" height="54">
+              <frame id="1347:5168" name="Header" x="0" y="0" width="244" height="54">
+                <frame id="1347:5169" name="Wrapper" x="0" y="16" width="244" height="22">
+                  <text id="1347:5170" name="Variable" x="16" y="0" width="212" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5171" name="Table Item / Header Item" x="244" y="0" width="136" height="54">
+              <frame id="1347:5172" name="Header" x="0" y="0" width="136" height="54">
+                <frame id="1347:5173" name="Wrapper" x="0" y="16" width="136" height="22">
+                  <text id="1347:5174" name="Group" x="16" y="0" width="104" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5175" name="Table Item / Header Item" x="380" y="0" width="200" height="54">
+              <frame id="1347:5176" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5177" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5178" name="Light Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5179" name="Table Item / Header Item" x="580" y="0" width="200" height="54">
+              <frame id="1347:5180" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5181" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5182" name="Dark Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5183" name="Table Item / Header Item" x="780" y="0" width="420" height="54">
+              <frame id="1347:5184" name="Header" x="0" y="0" width="420" height="54">
+                <frame id="1347:5185" name="Wrapper" x="0" y="16" width="420" height="22">
+                  <text id="1347:5186" name="Description" x="16" y="0" width="388" height="22" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="1347:5187" name="Row" x="0" y="54" width="1200" height="76">
+            <frame id="1347:5188" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5189" name="_Docs / Variable Item" x="16" y="16" width="145" height="22">
+                <instance id="1347:5190" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5191" name="colorBgContainer" x="26" y="0" width="111" height="22" />
+                <ellipse id="1347:5192" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5193" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5194" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5195" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5196" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5197" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5198" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5199" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5200" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5201" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5202" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5203" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5204" name="_Docs / Variable Item" x="16" y="16" width="111" height="22">
+                <rounded-rectangle id="1347:5205" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5206" name="colorBgBase" x="24" y="0" width="79" height="22" />
+                <ellipse id="1347:5207" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5208" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5209" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5210" name="_Docs / Variable Item" x="16" y="16" width="73" height="22">
+                <rounded-rectangle id="1347:5211" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5212" name="#141414" x="16" y="0" width="57" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5213" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5214" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5215" name="Container background color, e.g: Section, Default Button, Input, etc." x="0" y="0" width="388" height="44" />
+                <text id="1347:5216" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5217" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5218" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5219" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5220" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5221" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5222" name="Row" x="0" y="130" width="1200" height="76">
+            <frame id="1347:5223" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5224" name="_Docs / Variable Item" x="16" y="16" width="137" height="22">
+                <instance id="1347:5225" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5226" name="colorBgElevated" x="26" y="0" width="103" height="22" />
+                <ellipse id="1347:5227" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5228" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5229" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5230" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5231" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5232" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5233" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5234" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5235" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5236" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5237" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5238" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5239" name="_Docs / Variable Item" x="16" y="16" width="111" height="22">
+                <rounded-rectangle id="1347:5240" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5241" name="colorBgBase" x="24" y="0" width="79" height="22" />
+                <ellipse id="1347:5242" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5243" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5244" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5245" name="_Docs / Variable Item" x="16" y="16" width="74" height="22">
+                <rounded-rectangle id="1347:5246" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5247" name="#1F1F1F" x="16" y="0" width="58" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5248" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5249" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5250" name="Container background color of the popup layer. E.g: Modal, Popup, Menu, etc." x="0" y="0" width="388" height="44" />
+                <text id="1347:5251" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5252" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5253" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5254" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5255" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5256" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5257" name="Row" x="0" y="206" width="1200" height="76">
+            <frame id="1347:5258" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5259" name="_Docs / Variable Item" x="16" y="16" width="125" height="22">
+                <instance id="1347:5260" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5261" name="colorBgLayout" x="26" y="0" width="91" height="22" />
+                <ellipse id="1347:5262" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5263" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5264" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5265" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5266" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5267" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5268" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5269" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5270" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5271" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5272" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5273" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5274" name="_Docs / Variable Item" x="16" y="16" width="74" height="22">
+                <rounded-rectangle id="1347:5275" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5276" name="#F5F5F5" x="16" y="0" width="58" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5277" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5278" name="_Docs / Variable Item" x="16" y="16" width="111" height="22">
+                <rounded-rectangle id="1347:5279" name="Rectangle 2" x="8" y="5" width="12" height="12" />
+                <text id="1347:5280" name="colorBgBase" x="24" y="0" width="79" height="22" />
+                <ellipse id="1347:5281" name="Ellipse 1" x="118" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5282" name="#FFFBE6" x="125" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5283" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5284" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5285" name="This color is used for the low level background color of the overall layout of the page." x="0" y="0" width="388" height="44" />
+                <text id="1347:5286" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5287" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5288" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5289" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5290" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5291" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5292" name="Row" x="0" y="282" width="1200" height="76">
+            <frame id="1347:5293" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5294" name="_Docs / Variable Item" x="16" y="16" width="116" height="22">
+                <instance id="1347:5295" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5296" name="colorBgMask" x="26" y="0" width="82" height="22" />
+                <ellipse id="1347:5297" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5298" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5299" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5300" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5301" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5302" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5303" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5304" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5305" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5306" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5307" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5308" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5309" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:5310" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5311" name="#000000 45%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5312" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5313" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:5314" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5315" name="#000000 45%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5316" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5317" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5318" name="Used to cover the content below the mask in Modal and Drawer components." x="0" y="0" width="388" height="44" />
+                <text id="1347:5319" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5320" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5321" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5322" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5323" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5324" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5325" name="Row" x="0" y="358" width="1200" height="98">
+            <frame id="1347:5326" name="_Docs" x="0" y="22" width="244" height="54">
+              <frame id="1347:5327" name="_Docs / Variable Item" x="16" y="16" width="138" height="22">
+                <instance id="1347:5328" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5329" name="colorBgSpotlight" x="26" y="0" width="104" height="22" />
+                <ellipse id="1347:5330" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5331" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5332" name="Size=Default, Bordered=False" x="244" y="22" width="136" height="54">
+              <frame id="1347:5333" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5334" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5335" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5336" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5337" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5338" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5339" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5340" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5341" name="_Docs" x="380" y="22" width="200" height="54">
+              <frame id="1347:5342" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:5343" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5344" name="#000000 85%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5345" name="_Docs" x="580" y="22" width="200" height="54">
+              <frame id="1347:5346" name="_Docs / Variable Item" x="16" y="16" width="73" height="22">
+                <rounded-rectangle id="1347:5347" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5348" name="#424242" x="16" y="0" width="57" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5349" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="98">
+              <frame id="1347:5350" name="Text Wrapper" x="16" y="16" width="388" height="66">
+                <text id="1347:5351" name="This color is used to draw the user&#39;s strong attention to the background color, and is currently only used in the background color of Tooltip." x="0" y="0" width="388" height="66" />
+                <text id="1347:5352" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5353" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5354" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5355" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5356" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5357" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5358" name="Row" x="0" y="456" width="1200" height="54">
+            <frame id="1347:5359" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5360" name="_Docs / Variable Item" x="16" y="16" width="200" height="22">
+                <instance id="1347:5361" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5362" name="colorBgContainerDisabled" x="26" y="0" width="166" height="22" />
+                <ellipse id="1347:5363" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5364" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5365" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5366" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5367" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5368" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5369" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5370" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5371" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5372" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5373" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5374" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5375" name="_Docs / Variable Item" x="16" y="16" width="117" height="22">
+                <rounded-rectangle id="1347:5376" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5377" name="colorFillTertiary" x="16" y="0" width="101" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5378" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5379" name="_Docs / Variable Item" x="16" y="16" width="117" height="22">
+                <rounded-rectangle id="1347:5380" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5381" name="colorFillTertiary" x="16" y="0" width="101" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5382" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5383" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5384" name="Control the background color of container in disabled state." x="0" y="0" width="388" height="22" />
+                <text id="1347:5385" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5386" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5387" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5388" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5389" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5390" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5391" name="Row" x="0" y="510" width="1200" height="54">
+            <frame id="1347:5392" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5393" name="_Docs / Variable Item" x="16" y="16" width="148" height="22">
+                <instance id="1347:5394" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5395" name="colorBgTextActive" x="26" y="0" width="114" height="22" />
+                <ellipse id="1347:5396" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5397" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5398" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5399" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5400" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5401" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5402" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5403" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5404" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5405" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5406" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5407" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5408" name="_Docs / Variable Item" x="16" y="16" width="68" height="22">
+                <rounded-rectangle id="1347:5409" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5410" name="colorFill" x="16" y="0" width="52" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5411" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5412" name="_Docs / Variable Item" x="16" y="16" width="68" height="22">
+                <rounded-rectangle id="1347:5413" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5414" name="colorFill" x="16" y="0" width="52" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5415" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5416" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5417" name="Control the background color of text in active state." x="0" y="0" width="388" height="22" />
+                <text id="1347:5418" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5419" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5420" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5421" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5422" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5423" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5424" name="Row" x="0" y="564" width="1200" height="54">
+            <frame id="1347:5425" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5426" name="_Docs / Variable Item" x="16" y="16" width="147" height="22">
+                <instance id="1347:5427" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5428" name="colorBgTextHover" x="26" y="0" width="113" height="22" />
+                <ellipse id="1347:5429" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5430" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5431" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5432" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5433" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5434" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5435" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5436" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5437" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5438" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5439" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5440" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5441" name="_Docs / Variable Item" x="16" y="16" width="135" height="22">
+                <rounded-rectangle id="1347:5442" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5443" name="colorFillSecondary" x="16" y="0" width="119" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5444" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5445" name="_Docs / Variable Item" x="16" y="16" width="135" height="22">
+                <rounded-rectangle id="1347:5446" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5447" name="colorFillSecondary" x="16" y="0" width="119" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5448" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5449" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5450" name="Control the background color of text in hover state." x="0" y="0" width="388" height="22" />
+                <text id="1347:5451" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5452" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5453" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5454" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5455" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5456" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5457" name="Row" x="0" y="618" width="1200" height="54">
+            <frame id="1347:5458" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5459" name="_Docs / Variable Item" x="16" y="16" width="126" height="22">
+                <instance id="1347:5460" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5461" name="colorBorderBg" x="26" y="0" width="92" height="22" />
+                <ellipse id="1347:5462" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5463" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5464" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5465" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5466" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5467" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5468" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5469" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5470" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5471" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5472" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5473" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5474" name="_Docs / Variable Item" x="16" y="16" width="127" height="22">
+                <rounded-rectangle id="1347:5475" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5476" name="colorBgContainer" x="16" y="0" width="111" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5477" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5478" name="_Docs / Variable Item" x="16" y="16" width="127" height="22">
+                <rounded-rectangle id="1347:5479" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5480" name="colorBgContainer" x="16" y="0" width="111" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5481" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5482" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5483" name="Control the color of background border of element." x="0" y="0" width="388" height="22" />
+                <text id="1347:5484" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5485" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5486" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5487" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5488" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5489" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1347:5490" name="Table Wrapper" x="0" y="2032" width="1200" height="352">
+      <text id="1347:5491" name="Border" x="0" y="0" width="1200" height="38" />
+      <frame id="1347:5492" name="Docs Table - Borders &amp; Dividers" x="0" y="70" width="1200" height="282">
+        <frame id="1347:5493" name="Table" x="0" y="0" width="1200" height="282">
+          <frame id="1347:5494" name="Header Row" x="0" y="0" width="1200" height="54">
+            <frame id="1347:5495" name="Table Item / Header Item" x="0" y="0" width="244" height="54">
+              <frame id="1347:5496" name="Header" x="0" y="0" width="244" height="54">
+                <frame id="1347:5497" name="Wrapper" x="0" y="16" width="244" height="22">
+                  <text id="1347:5498" name="Variable" x="16" y="0" width="212" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5499" name="Table Item / Header Item" x="244" y="0" width="136" height="54">
+              <frame id="1347:5500" name="Header" x="0" y="0" width="136" height="54">
+                <frame id="1347:5501" name="Wrapper" x="0" y="16" width="136" height="22">
+                  <text id="1347:5502" name="Group" x="16" y="0" width="104" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5503" name="Table Item / Header Item" x="380" y="0" width="200" height="54">
+              <frame id="1347:5504" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5505" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5506" name="Light Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5507" name="Table Item / Header Item" x="580" y="0" width="200" height="54">
+              <frame id="1347:5508" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5509" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5510" name="Dark Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5511" name="Table Item / Header Item" x="780" y="0" width="420" height="54">
+              <frame id="1347:5512" name="Header" x="0" y="0" width="420" height="54">
+                <frame id="1347:5513" name="Wrapper" x="0" y="16" width="420" height="22">
+                  <text id="1347:5514" name="Description" x="16" y="0" width="388" height="22" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="1347:5515" name="Row" x="0" y="54" width="1200" height="76">
+            <frame id="1347:5516" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5517" name="_Docs / Variable Item" x="16" y="16" width="111" height="22">
+                <instance id="1347:5518" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5519" name="colorBorder" x="26" y="0" width="77" height="22" />
+                <ellipse id="1347:5520" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5521" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5522" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5523" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5524" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5525" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5526" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5527" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5528" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5529" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5530" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5531" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5532" name="_Docs / Variable Item" x="16" y="16" width="78" height="22">
+                <rounded-rectangle id="1347:5533" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5534" name="#D9D9D9" x="16" y="0" width="62" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5535" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5536" name="_Docs / Variable Item" x="16" y="16" width="73" height="22">
+                <rounded-rectangle id="1347:5537" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5538" name="#424242" x="16" y="0" width="57" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5539" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5540" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5541" name="Default border color, used to separate different elements, such as: form separator, card separator, etc." x="0" y="0" width="388" height="44" />
+                <text id="1347:5542" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5543" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5544" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5545" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5546" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5547" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5548" name="Row" x="0" y="130" width="1200" height="76">
+            <frame id="1347:5549" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5550" name="_Docs / Variable Item" x="16" y="16" width="178" height="22">
+                <instance id="1347:5551" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5552" name="colorBorderSecondary" x="26" y="0" width="144" height="22" />
+                <ellipse id="1347:5553" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5554" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5555" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5556" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5557" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5558" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5559" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5560" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5561" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5562" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5563" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5564" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5565" name="_Docs / Variable Item" x="16" y="16" width="74" height="22">
+                <rounded-rectangle id="1347:5566" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5567" name="#F0F0F0" x="16" y="0" width="58" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5568" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5569" name="_Docs / Variable Item" x="16" y="16" width="73" height="22">
+                <rounded-rectangle id="1347:5570" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5571" name="#303030" x="16" y="0" width="57" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5572" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5573" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5574" name="Slightly lighter than the default border color, this color is the same as `colorSplit`. Solid color is used." x="0" y="0" width="388" height="44" />
+                <text id="1347:5575" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5576" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5577" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5578" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5579" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5580" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5581" name="Row" x="0" y="206" width="1200" height="76">
+            <frame id="1347:5582" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5583" name="_Docs / Variable Item" x="16" y="16" width="95" height="22">
+                <instance id="1347:5584" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5585" name="colorSplit" x="26" y="0" width="61" height="22" />
+                <ellipse id="1347:5586" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5587" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5588" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5589" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5590" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5591" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5592" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5593" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5594" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5595" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5596" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5597" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5598" name="_Docs / Variable Item" x="16" y="16" width="95" height="22">
+                <rounded-rectangle id="1347:5599" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5600" name="#000000 6%" x="16" y="0" width="79" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5601" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5602" name="_Docs / Variable Item" x="16" y="16" width="96" height="22">
+                <rounded-rectangle id="1347:5603" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5604" name="#FFFFFF 6%" x="16" y="0" width="80" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5605" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5606" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5607" name="Used as the color of separator, this color is the same as colorBorderSecondary but with transparency." x="0" y="0" width="388" height="44" />
+                <text id="1347:5608" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5609" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5610" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5611" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5612" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5613" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1347:5614" name="Table Wrapper" x="0" y="2464" width="1200" height="700">
+      <text id="1347:5615" name="Fill" x="0" y="0" width="1200" height="38" />
+      <frame id="1347:5616" name="Docs Table - Borders &amp; Dividers" x="0" y="70" width="1200" height="630">
+        <frame id="1347:5617" name="Table" x="0" y="0" width="1200" height="630">
+          <frame id="1347:5618" name="Header Row" x="0" y="0" width="1200" height="54">
+            <frame id="1347:5619" name="Table Item / Header Item" x="0" y="0" width="244" height="54">
+              <frame id="1347:5620" name="Header" x="0" y="0" width="244" height="54">
+                <frame id="1347:5621" name="Wrapper" x="0" y="16" width="244" height="22">
+                  <text id="1347:5622" name="Variable" x="16" y="0" width="212" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5623" name="Table Item / Header Item" x="244" y="0" width="136" height="54">
+              <frame id="1347:5624" name="Header" x="0" y="0" width="136" height="54">
+                <frame id="1347:5625" name="Wrapper" x="0" y="16" width="136" height="22">
+                  <text id="1347:5626" name="Group" x="16" y="0" width="104" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5627" name="Table Item / Header Item" x="380" y="0" width="200" height="54">
+              <frame id="1347:5628" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5629" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5630" name="Light Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5631" name="Table Item / Header Item" x="580" y="0" width="200" height="54">
+              <frame id="1347:5632" name="Header" x="0" y="0" width="200" height="54">
+                <frame id="1347:5633" name="Wrapper" x="0" y="16" width="200" height="22">
+                  <text id="1347:5634" name="Dark Theme Value" x="16" y="0" width="168" height="22" />
+                </frame>
+              </frame>
+            </frame>
+            <frame id="1347:5635" name="Table Item / Header Item" x="780" y="0" width="420" height="54">
+              <frame id="1347:5636" name="Header" x="0" y="0" width="420" height="54">
+                <frame id="1347:5637" name="Wrapper" x="0" y="16" width="420" height="22">
+                  <text id="1347:5638" name="Description" x="16" y="0" width="388" height="22" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="1347:5639" name="Row" x="0" y="54" width="1200" height="54">
+            <frame id="1347:5640" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5641" name="_Docs / Variable Item" x="16" y="16" width="86" height="22">
+                <instance id="1347:5642" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5643" name="colorFill" x="26" y="0" width="52" height="22" />
+                <ellipse id="1347:5644" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5645" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5646" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5647" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5648" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5649" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5650" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5651" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5652" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5653" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5654" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5655" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5656" name="_Docs / Variable Item" x="16" y="16" width="103" height="22">
+                <rounded-rectangle id="1347:5657" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5658" name="#000000 15%" x="16" y="0" width="87" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5659" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5660" name="_Docs / Variable Item" x="16" y="16" width="104" height="22">
+                <rounded-rectangle id="1347:5661" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5662" name="#FFFFFF 18%" x="16" y="0" width="88" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5663" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5664" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5665" name="Control the alternative background color of element." x="0" y="0" width="388" height="22" />
+                <text id="1347:5666" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5667" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5668" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5669" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5670" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5671" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5672" name="Row" x="0" y="108" width="1200" height="120">
+            <frame id="1347:5673" name="_Docs" x="0" y="33" width="244" height="54">
+              <frame id="1347:5674" name="_Docs / Variable Item" x="16" y="16" width="153" height="22">
+                <instance id="1347:5675" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5676" name="colorFillSecondary" x="26" y="0" width="119" height="22" />
+                <ellipse id="1347:5677" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5678" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5679" name="Size=Default, Bordered=False" x="244" y="33" width="136" height="54">
+              <frame id="1347:5680" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5681" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5682" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5683" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5684" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5685" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5686" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5687" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5688" name="_Docs" x="380" y="33" width="200" height="54">
+              <frame id="1347:5689" name="_Docs / Variable Item" x="16" y="16" width="95" height="22">
+                <rounded-rectangle id="1347:5690" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5691" name="#000000 6%" x="16" y="0" width="79" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5692" name="_Docs" x="580" y="33" width="200" height="54">
+              <frame id="1347:5693" name="_Docs / Variable Item" x="16" y="16" width="104" height="22">
+                <rounded-rectangle id="1347:5694" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5695" name="#FFFFFF 12%" x="16" y="0" width="88" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5696" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="120">
+              <frame id="1347:5697" name="Text Wrapper" x="16" y="16" width="388" height="88">
+                <text id="1347:5698" name="The second level of fill color can outline the shape of the element more clearly, such as Rate, Skeleton, etc. It can also be used as the Hover state of the third level of fill color, such as Table, etc." x="0" y="0" width="388" height="88" />
+                <text id="1347:5699" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5700" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5701" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5702" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5703" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5704" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5705" name="Row" x="0" y="228" width="1200" height="120">
+            <frame id="1347:5706" name="_Docs" x="0" y="33" width="244" height="54">
+              <frame id="1347:5707" name="_Docs / Variable Item" x="16" y="16" width="135" height="22">
+                <instance id="1347:5708" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5709" name="colorFillTertiary" x="26" y="0" width="101" height="22" />
+                <ellipse id="1347:5710" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5711" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5712" name="Size=Default, Bordered=False" x="244" y="33" width="136" height="54">
+              <frame id="1347:5713" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5714" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5715" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5716" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5717" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5718" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5719" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5720" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5721" name="_Docs" x="380" y="33" width="200" height="54">
+              <frame id="1347:5722" name="_Docs / Variable Item" x="16" y="16" width="95" height="22">
+                <rounded-rectangle id="1347:5723" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5724" name="#000000 4%" x="16" y="0" width="79" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5725" name="_Docs" x="580" y="33" width="200" height="54">
+              <frame id="1347:5726" name="_Docs / Variable Item" x="16" y="16" width="96" height="22">
+                <rounded-rectangle id="1347:5727" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5728" name="#FFFFFF 8%" x="16" y="0" width="80" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5729" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="120">
+              <frame id="1347:5730" name="Text Wrapper" x="16" y="16" width="388" height="88">
+                <text id="1347:5731" name="The third level of fill color is used to outline the shape of the element, such as Slider, Segmented, etc. If there is no emphasis requirement, it is recommended to use the third level of fill color as the default fill color." x="0" y="0" width="388" height="88" />
+                <text id="1347:5732" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5733" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5734" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5735" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5736" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5737" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5738" name="Row" x="0" y="348" width="1200" height="98">
+            <frame id="1347:5739" name="_Docs" x="0" y="22" width="244" height="54">
+              <frame id="1347:5740" name="_Docs / Variable Item" x="16" y="16" width="158" height="22">
+                <instance id="1347:5741" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5742" name="colorFillQuaternary" x="26" y="0" width="124" height="22" />
+                <ellipse id="1347:5743" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5744" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5745" name="Size=Default, Bordered=False" x="244" y="22" width="136" height="54">
+              <frame id="1347:5746" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5747" name="Map" x="0" y="0" width="104" height="22" />
+                <text id="1347:5748" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5749" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5750" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5751" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5752" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5753" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5754" name="_Docs" x="380" y="22" width="200" height="54">
+              <frame id="1347:5755" name="_Docs / Variable Item" x="16" y="16" width="95" height="22">
+                <rounded-rectangle id="1347:5756" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5757" name="#000000 2%" x="16" y="0" width="79" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5758" name="_Docs" x="580" y="22" width="200" height="54">
+              <frame id="1347:5759" name="_Docs / Variable Item" x="16" y="16" width="96" height="22">
+                <rounded-rectangle id="1347:5760" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5761" name="#FFFFFF 4%" x="16" y="0" width="80" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5762" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="98">
+              <frame id="1347:5763" name="Text Wrapper" x="16" y="16" width="388" height="66">
+                <text id="1347:5764" name="The weakest level of fill color is suitable for color blocks that are not easy to attract attention, such as zebra stripes, color blocks that distinguish boundaries, etc." x="0" y="0" width="388" height="66" />
+                <text id="1347:5765" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5766" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5767" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5768" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5769" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5770" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5771" name="Row" x="0" y="446" width="1200" height="54">
+            <frame id="1347:5772" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5773" name="_Docs / Variable Item" x="16" y="16" width="136" height="22">
+                <instance id="1347:5774" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5775" name="colorFillContent" x="26" y="0" width="102" height="22" />
+                <ellipse id="1347:5776" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5777" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5778" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5779" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5780" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5781" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5782" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5783" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5784" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5785" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5786" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5787" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5788" name="_Docs / Variable Item" x="16" y="16" width="135" height="22">
+                <rounded-rectangle id="1347:5789" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5790" name="colorFillSecondary" x="16" y="0" width="119" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5791" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5792" name="_Docs / Variable Item" x="16" y="16" width="135" height="22">
+                <rounded-rectangle id="1347:5793" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5794" name="colorFillSecondary" x="16" y="0" width="119" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5795" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5796" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5797" name="Control the background color of content area." x="0" y="0" width="388" height="22" />
+                <text id="1347:5798" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5799" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5800" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5801" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5802" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5803" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5804" name="Row" x="0" y="500" width="1200" height="76">
+            <frame id="1347:5805" name="_Docs" x="0" y="11" width="244" height="54">
+              <frame id="1347:5806" name="_Docs / Variable Item" x="16" y="16" width="174" height="22">
+                <instance id="1347:5807" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5808" name="colorFillContentHover" x="26" y="0" width="140" height="22" />
+                <ellipse id="1347:5809" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5810" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5811" name="Size=Default, Bordered=False" x="244" y="11" width="136" height="54">
+              <frame id="1347:5812" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5813" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5814" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5815" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5816" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5817" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5818" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5819" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5820" name="_Docs" x="380" y="11" width="200" height="54">
+              <frame id="1347:5821" name="_Docs / Variable Item" x="16" y="16" width="68" height="22">
+                <rounded-rectangle id="1347:5822" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5823" name="colorFill" x="16" y="0" width="52" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5824" name="_Docs" x="580" y="11" width="200" height="54">
+              <frame id="1347:5825" name="_Docs / Variable Item" x="16" y="16" width="68" height="22">
+                <rounded-rectangle id="1347:5826" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5827" name="colorFill" x="16" y="0" width="52" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5828" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="76">
+              <frame id="1347:5829" name="Text Wrapper" x="16" y="16" width="388" height="44">
+                <text id="1347:5830" name="Control the style of background color of content area when mouse hovers over it." x="0" y="0" width="388" height="44" />
+                <text id="1347:5831" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5832" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5833" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5834" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5835" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5836" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+          <frame id="1347:5837" name="Row" x="0" y="576" width="1200" height="54">
+            <frame id="1347:5838" name="_Docs" x="0" y="0" width="244" height="54">
+              <frame id="1347:5839" name="_Docs / Variable Item" x="16" y="16" width="116" height="22">
+                <instance id="1347:5840" name="Icon / BgColorsOutlined" x="8" y="4" width="14" height="14" />
+                <text id="1347:5841" name="colorFillAlter" x="26" y="0" width="82" height="22" />
+                <ellipse id="1347:5842" name="Ellipse 1" x="120" y="9.5" width="3" height="3" hidden="true" />
+                <text id="1347:5843" name="#FFFFFF" x="127" y="0" width="58" height="22" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="1347:5844" name="Size=Default, Bordered=False" x="244" y="0" width="136" height="54">
+              <frame id="1347:5845" name="Text Wrapper" x="16" y="16" width="104" height="22">
+                <text id="1347:5846" name="Alias" x="0" y="0" width="104" height="22" />
+                <text id="1347:5847" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5848" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5849" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5850" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5851" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5852" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+            <frame id="1347:5853" name="_Docs" x="380" y="0" width="200" height="54">
+              <frame id="1347:5854" name="_Docs / Variable Item" x="16" y="16" width="140" height="22">
+                <rounded-rectangle id="1347:5855" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5856" name="colorFillQuaternary" x="16" y="0" width="124" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5857" name="_Docs" x="580" y="0" width="200" height="54">
+              <frame id="1347:5858" name="_Docs / Variable Item" x="16" y="16" width="140" height="22">
+                <rounded-rectangle id="1347:5859" name="Rectangle 2" x="0" y="5" width="12" height="12" />
+                <text id="1347:5860" name="colorFillQuaternary" x="16" y="0" width="124" height="22" />
+              </frame>
+            </frame>
+            <frame id="1347:5861" name="Size=Default, Bordered=False" x="780" y="0" width="420" height="54">
+              <frame id="1347:5862" name="Text Wrapper" x="16" y="16" width="388" height="22">
+                <text id="1347:5863" name="Control the alternative background color of element." x="0" y="0" width="388" height="22" />
+                <text id="1347:5864" name="Table cell text" x="0" y="22" width="417" height="22" hidden="true" />
+              </frame>
+              <instance id="1347:5865" name="*Badge* / Status" x="363" y="16" width="70" height="22" hidden="true" />
+              <instance id="1347:5866" name="*Tag* / Colorful" x="367" y="16" width="66" height="22" hidden="true" />
+              <instance id="1347:5867" name="*Button* " x="348" y="16" width="85" height="32" hidden="true" />
+              <instance id="1347:5868" name="*Button* " x="288" y="16" width="74" height="32" hidden="true" />
+              <instance id="1347:5869" name="Dropdown Basic Inline" x="349" y="16" width="90" height="22" hidden="true" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1347:5870" name="_Docs / Page Footer" x="0" y="3588" width="1440" height="182" />
+</frame>
+
+IMPORTANT: The design was too large to fit into context with get_design_context. Instead you have received a sparse metadata response, you MUST call get_design_context on the IDs of the sublayers to get the full code. Split up the calls to ensure the sublayers do not also exceed the context limit.

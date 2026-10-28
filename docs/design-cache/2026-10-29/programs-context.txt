@@ -1,0 +1,279 @@
+const assetPathPrefix = "./assets/programs-context";
+const imgG31 = `${assetPathPrefix}/2f9b3.png`;
+const imgG21 = `${assetPathPrefix}/96d32.png`;
+const img6437Ecfaac291D3558Dc10AaImage1Min1 = `${assetPathPrefix}/d2658.png`;
+const img6437Ecfa549A696Ead747923Image2Min1 = `${assetPathPrefix}/25195.png`;
+const img6437Ecfaf494Ca28873Adf22Image3Min1 = `${assetPathPrefix}/5987b.png`;
+const img6437Ecfa1371C97B33722Df2Image4Min1 = `${assetPathPrefix}/82fd2.png`;
+const imgFrame12 = `${assetPathPrefix}/c9cf9.png`;
+const img6964Fc0975842E9Ef5233DceZone01KisumuLogoMain1 = `${assetPathPrefix}/4dd23.png`;
+const imgVector = `${assetPathPrefix}/ea08b.svg`;
+const imgVector1 = `${assetPathPrefix}/0b166.svg`;
+const imgDeviconTwitter = `${assetPathPrefix}/ec3cf.svg`;
+
+export default function OurPrograms() {
+  return (
+    <div className="relative size-full" data-node-id="299:174" style={{ backgroundImage: "linear-gradient(90deg, rgb(249, 250, 251) 0%, rgb(249, 250, 251) 100%), linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%)" }} data-name="Our Programs">
+      <div className="absolute bg-[#002021] border-[rgba(98,215,222,0.1)] border-solid border-t content-stretch flex flex-col h-[332px] items-start left-0 pb-[8px] pt-[96px] right-0 top-[2696px]" data-node-id="879:2" data-name="Footer from JSON">
+        <div className="h-[196px] max-w-[1280px] relative shrink-0 w-full" data-node-id="879:3" data-name="Container">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid gap-x-[9px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_346px] max-w-[inherit] px-[64px] relative size-full">
+            <div className="col-2 content-stretch flex flex-col gap-[24px] items-start justify-self-start pb-[155px] relative row-1 self-start shrink-0 size-[36px]" data-node-id="879:4" data-name="Brand Column">
+              <div className="content-stretch flex flex-col items-start pt-[16px] relative shrink-0 w-full" data-node-id="879:5" data-name="Margin">
+                <div className="h-[20px] relative shrink-0 w-full" data-node-id="879:6" data-name="Container" />
+              </div>
+              <div className="absolute content-stretch flex flex-col h-[23px] items-start left-[-79.75px] max-w-[320px] right-[-44.25px] top-[71px]" data-node-id="879:7" data-name="Container">
+                <div className="absolute left-[37.25px] size-[22px] top-px" data-node-id="879:8" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                </div>
+                <div className="relative shrink-0 size-[22px]" data-node-id="879:9" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+                <div className="absolute left-[75.25px] size-[22px] top-[-1px]" data-node-id="879:10" data-name="devicon:twitter">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDeviconTwitter} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bg-[rgba(217,217,217,0)] border border-[#e4e4e7] border-solid h-[60px] left-[857px] rounded-[40px] top-[73px] w-[346px]" data-node-id="879:12" />
+            <div className="absolute bg-[#00676b] h-[49px] left-[1084px] rounded-[40px] top-[79px] w-[113px]" data-node-id="879:13" />
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[436px] pb-[162px] right-[724px] top-[-19px]" data-node-id="879:14" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:15" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="879:16">
+                  <p className="leading-[28px]">Quick Links</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="879:17" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:18" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:19">
+                    <p className="leading-[24px]">About Us</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:20" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:21">
+                    <p className="leading-[24px]">Our Mission</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:22" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:23">
+                    <p className="leading-[24px]">Impact Stories</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:24" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:25">
+                    <p className="leading-[24px]">History</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[660px] pb-[149px] right-[518px] top-[-20.67px]" data-node-id="879:26" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:27" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="879:28">
+                  <p className="leading-[28px]">Help</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[3px] items-start relative shrink-0 w-full" data-node-id="879:29" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:30" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:31">
+                    <p className="leading-[24px]">FAQ</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:32" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:33">
+                    <p className="leading-[24px]">Support</p>
+                  </div>
+                </div>
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="879:34" data-name="Item" />
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="879:35" data-name="Item" />
+              </div>
+            </div>
+            <div className="absolute h-[82px] left-[51px] top-[-36px] w-[288px]" data-node-id="879:36" data-name="g3 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-0.14%] max-w-none top-0 w-[100.27%]" src={imgG31} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[1100.5px] text-[18px] text-white top-[104px] w-[115px]" data-node-id="879:37">
+              <p className="leading-[28px]">Subscribe</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Light'] font-light h-[38px] justify-center leading-[0] left-[858px] text-[14px] text-white top-[43px] w-[256px]" data-node-id="879:38">
+              <p className="leading-[28px]">Subscribe to our news letter</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[25px] justify-center leading-[0] left-[869px] text-[18px] text-white top-[102.5px] w-[181px]" data-node-id="879:39">
+              <p className="leading-[28px]">example@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Medium'] font-medium h-[38px] justify-center leading-[0] left-[858px] text-[16px] text-white top-[88px] w-[231px]" data-node-id="879:40">
+          <p className="leading-[24px]">Get in touch!</p>
+        </div>
+        <div className="absolute border-[rgba(188,201,201,0.1)] border-solid border-t left-0 max-w-[1280px] top-[296px] w-[1280px]" data-node-id="879:41" data-name="Copyright">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center max-w-[inherit] pl-[430px] pr-[64px] pt-[7px] relative size-full">
+            <div className="relative shrink-0 w-[1574px]" data-node-id="879:42" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[582.17px] items-center relative size-full">
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="879:43" data-name="Container">
+                  <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="879:44">
+                    <p className="leading-[16px]">© 2024 LakeHub Foundation. All rights reserved.</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[16px] items-start relative shrink-0" data-node-id="879:45" data-name="Container">
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="879:46" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="879:47">
+                      <p className="leading-[16px]">Privacy Policy</p>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="879:48" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="879:49">
+                      <p className="leading-[16px]">Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-white content-stretch flex h-[64px] items-start left-0 px-[25px] right-0 top-0" data-node-id="299:296">
+        <div className="h-[64px] relative shrink-0 w-[1230px]" data-node-id="299:297" data-name="Container">
+          <div className="-translate-y-1/2 absolute content-stretch flex gap-[32px] items-center left-[895px] top-1/2 w-[335px]" data-node-id="299:298" data-name="Navigation Links (Desktop)">
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="299:299" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[12px] text-black tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="299:300">
+                <p className="leading-[16px]">HOME</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="299:301" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="299:302">
+                <p className="leading-[16px]">ABOUT</p>
+              </div>
+            </div>
+            <div className="border-[#00676b] border-b-2 border-solid content-stretch flex flex-col items-start pb-[6px] relative shrink-0" data-node-id="299:303" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="299:304">
+                <p className="leading-[16px]">PROGRAMS</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="299:305" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="299:306">
+                <p className="leading-[16px]">IMPACT</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[55px] left-[7px] top-[6px] w-[186px]" data-node-id="299:307" data-name="g2 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgG21} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[10px] items-start left-[42px] p-[10px] top-[795px] w-[1196px]" data-node-id="378:2">
+        <div className="h-[423px] relative rounded-[12px] shrink-0 w-[1186px]" data-node-id="299:211" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 1186 423' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(38.928 63.6 -178.32 107.31 609.14 46)'><stop stop-color='rgba(255,254,254,1)' offset='0.0026188'/><stop stop-color='rgba(255,254,254,1)' offset='0.51589'/><stop stop-color='rgba(192,249,252,1)' offset='0.75794'/><stop stop-color='rgba(129,244,250,1)' offset='1'/></radialGradient></defs></svg>\")" }} />
+        <div className="absolute h-[422px] left-[10px] rounded-bl-[12px] rounded-tl-[12px] top-[10px] w-[573px]" data-node-id="299:243" data-name="6437ecfaac291d3558dc10aa_Image1-min 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-bl-[12px] rounded-tl-[12px] size-full" src={img6437Ecfaac291D3558Dc10AaImage1Min1} />
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[74px] justify-center leading-[0] left-[600px] text-[36px] text-black top-[107px] w-[198px]" data-node-id="299:245">
+          <p className="leading-[25px]">FemiDevs</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[106px] justify-center leading-[0] left-[600px] text-[16px] text-black top-[256px] w-[529px]" data-node-id="299:216">
+          <p className="leading-[25px]">The FemiDevs program promotes women in tech through scholarships, mentorship, and creative problem-solving. Our approach empowers both non-programmers and programmers to create softwares without extensive coding. 75% of girls experience positive attitude shifts towards tech, and 64% of new learners gain confidence in pursuing careers in tech. We believe in technology as an enabler, not a barrier.</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[56px] justify-center leading-[0] left-[600px] text-[#00676b] text-[16px] top-[371px] w-[118px]" data-node-id="313:178">
+          <p className="leading-[25px]">Learn More →</p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[10px] items-start left-[52px] p-[10px] top-[1265px] w-[1188px]" data-node-id="378:4">
+        <div className="h-[423px] relative rounded-[12px] shrink-0 w-full" data-node-id="299:212" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 1168 423' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-28.306 54.5 -150.49 -79.234 585.99 205)'><stop stop-color='rgba(255,255,255,1)' offset='0.42921'/><stop stop-color='rgba(192,250,253,1)' offset='0.6342'/><stop stop-color='rgba(129,244,250,1)' offset='0.83918'/></radialGradient></defs></svg>\")" }} />
+        <div className="absolute h-[423px] left-[673px] rounded-br-[12px] rounded-tr-[12px] top-[10px] w-[515px]" data-node-id="299:247" data-name="6437ecfa549a696ead747923_Image2-min 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-br-[12px] rounded-tr-[12px] size-full" src={img6437Ecfa549A696Ead747923Image2Min1} />
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[56px] justify-center leading-[0] left-[60px] text-[#00676b] text-[16px] top-[377px] w-[118px]" data-node-id="313:180">
+          <p className="leading-[25px]">Learn More →</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[74px] justify-center leading-[0] left-[60px] text-[36px] text-black top-[133px] w-[347px]" data-node-id="299:251">
+          <p className="leading-[42px]">Opportunities for Youth in Africa</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[106px] justify-center leading-[0] left-[60px] text-[16px] text-black top-[283px] w-[570px]" data-node-id="299:217">
+          <p className="leading-[28px]">{`The Engendering Mentorship (e-GEM) program supports female students facing challenges leading to high dropout rates. By providing a supportive university environment, e-GEM aims to reduce dropouts. The program also boosts students' confidence in pursuing careers in technology, innovation design, and business.`}</p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[10px] items-start left-[52px] p-[10px] top-[1735px] w-[1196px]" data-node-id="378:3">
+        <div className="h-[423px] relative rounded-[12px] shrink-0 w-full" data-node-id="299:213" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 1176 423' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(41.928 47.081 -130.89 116.57 585 203.5)'><stop stop-color='rgba(255,255,255,1)' offset='0.53075'/><stop stop-color='rgba(192,250,253,1)' offset='0.76537'/><stop stop-color='rgba(129,244,250,1)' offset='1'/></radialGradient></defs></svg>\")" }} />
+        <div className="absolute h-[423px] left-[13px] rounded-bl-[12px] rounded-tl-[12px] top-[10px] w-[576px]" data-node-id="299:254" data-name="6437ecfaf494ca28873adf22_Image3-min 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-bl-[12px] rounded-tl-[12px] size-full" src={img6437Ecfaf494Ca28873Adf22Image3Min1} />
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[74px] justify-center leading-[0] left-[610px] text-[36px] text-black top-[139px] w-[347px]" data-node-id="299:258">
+          <p className="leading-[42px]">Alumni Network</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[119px] justify-center leading-[0] left-[610px] text-[16px] text-black top-[282.5px] w-[546px]" data-node-id="299:256">
+          <p className="leading-[28px]">{` Reducing youth unemployment is the most important factor in building strong economic pillars. Our alumni community now spans in more than 5 counties with more than 1500 youths gaining relevant technology training and entrepreneurial skills as well as job placement in the last 3 years.`}</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[56px] justify-center leading-[0] left-[610px] text-[#00676b] text-[16px] top-[378px] w-[118px]" data-node-id="313:182">
+          <p className="leading-[25px]">Learn More →</p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[10px] items-start left-[42px] p-[10px] top-[2209px] w-[1196px]" data-node-id="378:5">
+        <div className="h-[430px] relative rounded-[12px] shrink-0 w-full" data-node-id="299:214" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 1176 430' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-29.656 53.638 -150.07 -85.096 582 207.38)'><stop stop-color='rgba(255,255,255,1)' offset='0'/><stop stop-color='rgba(254,255,255,1)' offset='0.4235'/><stop stop-color='rgba(192,249,252,1)' offset='0.67182'/><stop stop-color='rgba(129,244,250,1)' offset='0.92015'/></radialGradient></defs></svg>\")" }} />
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[56px] justify-center leading-[0] left-[63px] text-[#00676b] text-[16px] top-[393px] w-[118px]" data-node-id="313:184">
+          <p className="leading-[25px]">Learn More →</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[74px] justify-center leading-[0] left-[63px] text-[36px] text-black top-[88px] w-[347px]" data-node-id="299:265">
+          <p className="leading-[42px]">Issue-Based Collaborative Network (ICON)</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[106px] justify-center leading-[0] left-[63px] text-[16px] text-black top-[268px] w-[570px]" data-node-id="299:263">
+          <p className="leading-[28px]">The Research-to-Change leadership program empowers young leaders to influence policy through research and data-driven approaches. ICON fosters intergenerational learning and dialogue for informed decision-making at various development levels. The program promotes concrete actions, cooperation, and the adoption of R2C principles across sectors for improved work, policy formulation, and decision-making.</p>
+        </div>
+        <div className="absolute h-[429px] left-[723px] rounded-br-[12px] rounded-tr-[12px] top-[11px] w-[474px]" data-node-id="299:261" data-name="6437ecfa1371c97b33722df2_Image4-min 1">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-br-[12px] rounded-tr-[12px] size-full" src={img6437Ecfa1371C97B33722Df2Image4Min1} />
+        </div>
+      </div>
+      <div className="absolute h-[572px] left-0 overflow-clip top-[66px] w-[1280px]" data-node-id="593:626">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[149.32%] left-0 max-w-none top-[-24.66%] w-full" src={imgFrame12} />
+        </div>
+        <div className="absolute bg-[rgba(0,32,33,0.5)] h-[594px] left-0 top-px w-[1280px]" data-node-id="648:506" />
+        <div className="absolute contents left-[363px] top-[188px]" data-node-id="659:544">
+          <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold justify-center leading-[0] left-[calc(50%-277px)] text-[56px] text-white top-[223px] tracking-[-1.12px] whitespace-nowrap" data-node-id="593:673">
+            <p className="leading-[70px]">Our Flagship Program</p>
+          </div>
+          <div className="absolute h-[66px] left-[436px] top-[254px] w-[65px]" data-node-id="593:674" data-name="Container" />
+          <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-[calc(50%-9.5px)] top-[343px] w-[173px]" data-node-id="593:677" data-name="Margin">
+            <div className="content-stretch flex h-[42px] items-start relative shrink-0 w-full" data-node-id="593:678" data-name="Container">
+              <div className="absolute bg-[#00676b] border-2 border-[#00676b] border-solid content-stretch drop-shadow-[0px_1px_1px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center left-0 px-[32px] py-[13px] rounded-[2px] top-0" data-node-id="593:679" data-name="Button">
+                <div className="[word-break:break-word] capitalize flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold justify-center leading-[0] relative shrink-0 text-[16px] text-center text-white tracking-[0.6px] whitespace-nowrap" data-node-id="593:680">
+                  <p className="leading-[16px]">View program</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="-translate-x-1/2 absolute contents left-[calc(50%-9px)] top-[260px]" data-node-id="743:37">
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold justify-center leading-[0] left-[430px] text-[#00676b] text-[0px] top-[295px] tracking-[-1.12px] whitespace-nowrap" data-node-id="593:675">
+              <p className="text-[63px]">
+                <span className="leading-[70px] text-[transparent]">Zone</span>
+                <span className="leading-[70px]">{` `}</span>
+              </p>
+            </div>
+            <div className="absolute h-[51px] left-[577px] top-[270px] w-[50px]" data-node-id="743:34" data-name="6964fc0975842e9ef5233dce_Zone01 Kisumu Logo (Main) 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-167.33%] max-w-none top-0 w-[267.49%]" src={img6964Fc0975842E9Ef5233DceZone01KisumuLogoMain1} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:ExtraBold'] font-extrabold h-[70px] justify-center leading-[0] left-[642px] right-[448px] text-[56px] text-white top-[297.5px] tracking-[-1.12px]" data-node-id="659:538">
+              <p className="leading-[70px]">Kisumu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Regular'] font-semibold justify-center leading-[0] left-[54px] not-italic text-[32px] text-black top-[740px] tracking-[-0.32px] whitespace-nowrap" data-node-id="615:633">
+        <p>
+          <span className="leading-[40px]">{`Our `}</span>
+          <span className="leading-[40px] text-[#00676b]">Programs</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

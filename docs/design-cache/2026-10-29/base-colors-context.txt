@@ -1,0 +1,1082 @@
+const assetPathPrefix = "./assets/base-colors-context";
+const imgDocsPageHeader = `${assetPathPrefix}/d06b4.png`;
+
+export default function BaseColorPalettes() {
+  return (
+    <div className="bg-[var(--colors\/neutral\/bg\/colorbgcontainer,white)] content-stretch flex flex-col items-center relative size-full" data-node-id="1347:4189" data-name="Base Color Palettes">
+      <div className="border-[var(--colors\/neutral\/border\/colorsplit,rgba(0,0,0,0.06))] border-b border-solid content-stretch flex flex-col gap-[80px] h-[264px] items-start pb-[80px] pt-[48px] px-[120px] relative shrink-0 w-[1440px]" data-node-id="1347:4190" data-name="Docs / Page Header">
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(252.78901125416797deg, rgba(255, 255, 255, 0.05) 1.9372%, rgba(255, 255, 255, 0) 59.262%), linear-gradient(90deg, rgb(9, 108, 112) 0%, rgb(9, 108, 112) 100%)" }} />
+          <div className="absolute bg-size-[16px_16px] bg-top-left inset-0 opacity-10" style={{ backgroundImage: `url("${imgDocsPageHeader}")` }} />
+        </div>
+        <div className="content-stretch flex flex-col gap-[20px] h-[164px] items-center justify-center max-w-[640px] relative shrink-0 w-full" data-node-id="1347:4199" data-name="Text Wrapper">
+          <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold h-[68px] justify-center leading-[0] relative shrink-0 text-[56px] text-white w-[760px]" data-node-id="1347:4200">
+            <p className="leading-[46px]">Base Color Palettes</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex gap-[57px] items-center overflow-clip pl-[301px] pr-[202px] relative shrink-0 w-[1440px]" data-node-id="1347:4202">
+        <div className="bg-white content-stretch flex flex-col gap-[16px] h-[816px] items-start overflow-clip p-[32px] relative rounded-[12px] shrink-0 w-[452px]" data-node-id="1347:4203" data-name="Blue">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[40px] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap" data-node-id="1347:4204">
+            Blue
+          </p>
+          <div className="bg-white content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4205" data-name="Swatches">
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4206" data-name="Swatch">
+              <div className="absolute bg-[#f2feff] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4207" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4208">
+                Light
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4209" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4210" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4211">
+                  20.40 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4212">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4213" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4214" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4215">{`1.03 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4216">
+                #f2feff
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4217">
+                rgb(242, 254, 255)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4218" data-name="Swatch">
+              <div className="absolute bg-[#ecfdfe] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4219" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4220">
+                Light :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4221" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4222" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4223">
+                  20.05 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4224">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4225" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4226" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4227">{`1.05 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4228">
+                #ecfdfe
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4229">
+                rgb(236, 253, 254)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4230" data-name="Swatch">
+              <div className="absolute bg-[#d8fcfd] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4231" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4232">
+                Light :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4233" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4234" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4235">
+                  19.26 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4236">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4237" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4238" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4239">{`1.09 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4240">
+                #d8fcfd
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4241">
+                rgb(216, 252, 253)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4242" data-name="Swatch">
+              <div className="absolute bg-[#81f4fa] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4243" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4244">
+                Normal
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4245" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4246" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4247">
+                  16.25 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4248">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4249" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4250" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4251">{`1.29 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4252">
+                #81f4fa
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4253">
+                rgb(129, 244, 250)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4254" data-name="Swatch">
+              <div className="absolute bg-[#74dce1] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4255" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4256">
+                Normal :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4257" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4258" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4259">
+                  13.07 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4260">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4261" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4262" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4263">{`1.61 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4264">
+                #74dce1
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4265">
+                rgb(116, 220, 225)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4266" data-name="Swatch">
+              <div className="absolute bg-[#67c3c8] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4267" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4268">
+                Normal :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4269" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4270" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4271">
+                  10.22 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4272">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4273" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4274" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4275">{`2.06 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4276">
+                #67c3c8
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4277">
+                rgb(103, 195, 200)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4278" data-name="Swatch">
+              <div className="absolute bg-[#61b7bc] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4279" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4280">
+                Dark
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4281" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4282" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4283">
+                  9.01 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4284">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4285" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4286" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4287">{`2.33 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4288">
+                #61b7bc
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4289">
+                rgb(97, 183, 188)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4290" data-name="Swatch">
+              <div className="absolute bg-[#4d9296] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4291" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4292">
+                Dark :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4293" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4294" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4295">
+                  5.87 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4296">
+                  AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4297" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4298" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4299">
+                  3.58 AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4300">
+                #4d9296
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4301">
+                rgb(77, 146, 150)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4302" data-name="Swatch">
+              <div className="absolute bg-[#3a6e70] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4303" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4304">
+                Dark :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4305" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4306" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4307">
+                  3.64 AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4308" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4309" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4310">
+                  5.76 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4311">
+                  AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4312">
+                #3a6e70
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4313">
+                rgb(58, 110, 112)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4314" data-name="Swatch">
+              <div className="absolute bg-[#2d5558] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4315" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4316">
+                Darker
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4317" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4318" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4319">{`2.55 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4320" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4321" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4322">
+                  8.23 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4323">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4324">
+                #2d5558
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4325">
+                rgb(45, 85, 88)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white content-stretch flex flex-col gap-[16px] h-[816px] items-start overflow-clip p-[32px] relative rounded-[12px] shrink-0 w-[414px]" data-node-id="1347:4326" data-name="Green">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[40px] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap" data-node-id="1347:4327">
+            Green
+          </p>
+          <div className="bg-white content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4328" data-name="Swatches">
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4329" data-name="Swatch">
+              <div className="absolute bg-[#e6e9e9] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4330" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4331">
+                Light
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4332" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4333" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4334">
+                  17.20 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4335">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4336" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4337" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4338">{`1.22 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4339">
+                #e6e9e9
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4340">
+                rgb(230, 233, 233)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4341" data-name="Swatch">
+              <div className="absolute bg-[#d9dede] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4342" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4343">
+                Light :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4344" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4345" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4346">
+                  15.45 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4347">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4348" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4349" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4350">{`1.36 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4351">
+                #d9dede
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4352">
+                rgb(217, 222, 222)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4353" data-name="Swatch">
+              <div className="absolute bg-[#b0baba] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4354" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4355">
+                Light :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4356" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4357" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4358">
+                  10.58 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4359">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4360" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4361" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4362">{`1.99 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4363">
+                #b0baba
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4364">
+                rgb(176, 186, 186)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4365" data-name="Swatch">
+              <div className="absolute bg-[#002021] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4366" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4367">
+                Normal
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4368" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4369" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4370">{`1.23 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4371" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4372" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4373">
+                  17.09 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4374">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4375">
+                #002021
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4376">
+                rgb(0, 32, 33)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4377" data-name="Swatch">
+              <div className="absolute bg-[#001d1e] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4378" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4379">
+                Normal :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4380" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4381" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4382">{`1.19 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4383" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4384" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4385">
+                  17.58 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4386">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4387">
+                #001d1e
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4388">
+                rgb(0, 29, 30)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4389" data-name="Swatch">
+              <div className="absolute bg-[#001a1a] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4390" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4391">
+                Normal :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4392" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4393" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4394">{`1.16 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4395" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4396" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4397">
+                  18.06 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4398">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4399">
+                #001a1a
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4400">
+                rgb(0, 26, 26)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4401" data-name="Swatch">
+              <div className="absolute bg-[#001819] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4402" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4403">
+                Dark
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4404" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4405" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4406">{`1.14 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4407" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4408" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4409">
+                  18.35 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4410">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4411">
+                #001819
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4412">
+                rgb(0, 24, 25)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4413" data-name="Swatch">
+              <div className="absolute bg-[#001314] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4414" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4415">
+                Dark :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4416" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4417" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4418">{`1.10 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4419" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4420" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4421">
+                  19.03 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4422">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4423">
+                #001314
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4424">
+                rgb(0, 19, 20)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4425" data-name="Swatch">
+              <div className="absolute bg-[#000e0f] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4426" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4427">
+                Dark :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4428" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4429" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4430">{`1.07 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4431" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4432" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4433">
+                  19.63 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4434">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4435">
+                #000e0f
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4436">
+                rgb(0, 14, 15)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4437" data-name="Swatch">
+              <div className="absolute bg-[#000b0c] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4438" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4439">
+                Darker
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4440" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4441" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4442">{`1.05 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4443" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4444" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4445">
+                  19.94 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4446">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4447">
+                #000b0c
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4448">
+                rgb(0, 11, 12)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-[838px]" data-node-id="1347:4449">
+        <div className="bg-white content-stretch flex flex-col gap-[16px] h-[816px] items-start overflow-clip p-[32px] relative rounded-[12px] shrink-0 w-[508px]" data-node-id="1347:4450" data-name="Green">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[40px] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap" data-node-id="1347:4451">
+            Bright Teal
+          </p>
+          <div className="bg-white content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4452" data-name="Swatches">
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4453" data-name="Swatch">
+              <div className="absolute bg-[#e6f6f6] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4454" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4455">
+                Light
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4456" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4457" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4458">
+                  18.88 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4459">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4460" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4461" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4462">{`1.11 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4463">
+                #e6f6f6
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4464">
+                rgb(230, 246, 246)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4465" data-name="Swatch">
+              <div className="absolute bg-[#d9f1f1] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4466" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4467">
+                Light :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4468" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4469" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4470">
+                  17.80 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4471">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4472" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4473" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4474">{`1.18 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4475">
+                #d9f1f1
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4476">
+                rgb(217, 241, 241)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4477" data-name="Swatch">
+              <div className="absolute bg-[#b0e2e2] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4478" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4479">
+                Light :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4480" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4481" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4482">
+                  14.82 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4483">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4484" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4485" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4486">{`1.42 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4487">
+                #b0e2e2
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4488">
+                rgb(176, 226, 226)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4489" data-name="Swatch">
+              <div className="absolute bg-[#00a3a1] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4490" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4491">
+                Normal
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4492" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4493" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4494">
+                  6.75 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4495">
+                  AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4496" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4497" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4498">
+                  3.11 AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4499">
+                #00a3a1
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4500">
+                rgb(0, 163, 161)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4501" data-name="Swatch">
+              <div className="absolute bg-[#009391] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4502" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4503">
+                Normal :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4504" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4505" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4506">
+                  5.58 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4507">
+                  AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4508" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4509" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4510">
+                  3.76 AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4511">
+                #009391
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4512">
+                rgb(0, 147, 145)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4513" data-name="Swatch">
+              <div className="absolute bg-[#008281] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4514" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4515">
+                Normal :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4516" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4517" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4518">
+                  4.51 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4519">
+                  AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4520" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4521" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4522">
+                  4.66 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4523">
+                  AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4524">
+                #008281
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4525">
+                rgb(0, 130, 129)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4526" data-name="Swatch">
+              <div className="absolute bg-[#007a79] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4527" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4528">
+                Dark
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4529" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4530" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4531">
+                  4.06 AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4532" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4533" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4534">
+                  5.17 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4535">
+                  AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4536">
+                #007a79
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4537">
+                rgb(0, 122, 121)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4538" data-name="Swatch">
+              <div className="absolute bg-[#006261] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4539" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4540">
+                Dark :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4541" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4542" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4543">{`2.92 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4544" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4545" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4546">
+                  7.19 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4547">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4548">
+                #006261
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4549">
+                rgb(0, 98, 97)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4550" data-name="Swatch">
+              <div className="absolute bg-[#004948] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4551" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4552">
+                Dark :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4553" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4554" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4555">{`2.05 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4556" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4557" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4558">
+                  10.26 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4559">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4560">
+                #004948
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4561">
+                rgb(0, 73, 72)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4562" data-name="Swatch">
+              <div className="absolute bg-[#003938] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4563" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4564">
+                Darker
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4565" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4566" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4567">{`1.64 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4568" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4569" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4570">
+                  12.79 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4571">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4572">
+                #003938
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4573">
+                rgb(0, 57, 56)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white content-stretch flex flex-col gap-[16px] h-[826px] items-start overflow-clip p-[32px] relative rounded-[12px] shrink-0 w-[516px]" data-node-id="1347:4574" data-name="Green">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[40px] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap" data-node-id="1347:4575">
+            Deep Teal
+          </p>
+          <div className="bg-white content-stretch flex flex-col gap-[16px] items-start overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4576" data-name="Swatches">
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4577" data-name="Swatch">
+              <div className="absolute bg-[#e6f0f0] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4578" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4579">
+                Light
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4580" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4581" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4582">
+                  18.09 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4583">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4584" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4585" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4586">{`1.16 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4587">
+                #e6f0f0
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4588">
+                rgb(230, 240, 240)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4589" data-name="Swatch">
+              <div className="absolute bg-[#d9e8e9] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4590" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4591">
+                Light :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4592" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4593" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4594">
+                  16.67 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4595">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4596" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4597" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4598">{`1.26 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4599">
+                #d9e8e9
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4600">
+                rgb(217, 232, 233)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4601" data-name="Swatch">
+              <div className="absolute bg-[#b0d0d1] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4602" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4603">
+                Light :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4604" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4605" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4606">
+                  12.79 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4607">
+                  AAA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4608" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4609" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4610">{`1.64 `}</p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4611">
+                #b0d0d1
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4612">
+                rgb(176, 208, 209)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4613" data-name="Swatch">
+              <div className="absolute bg-[#00676b] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4614" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4615">
+                Normal
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4616" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4617" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4618">
+                  3.15 AA
+                </p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4619" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4620" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4621">
+                  6.66 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4622">
+                  AA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4623">
+                #00676b
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4624">
+                rgb(0, 103, 107)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4625" data-name="Swatch">
+              <div className="absolute bg-[#005d60] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4626" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4627">
+                Normal :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4628" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4629" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4630">{`2.73 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4631" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4632" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4633">
+                  7.68 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4634">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4635">
+                #005d60
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4636">
+                rgb(0, 93, 96)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4637" data-name="Swatch">
+              <div className="absolute bg-[#005256] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4638" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4639">
+                Normal :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4640" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4641" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4642">{`2.34 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4643" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4644" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4645">
+                  8.97 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4646">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4647">
+                #005256
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4648">
+                rgb(0, 82, 86)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4649" data-name="Swatch">
+              <div className="absolute bg-[#004d50] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4650" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4651">
+                Dark
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4652" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4653" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4654">{`2.18 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4655" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4656" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4657">
+                  9.64 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4658">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4659">
+                #004d50
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4660">
+                rgb(0, 77, 80)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4661" data-name="Swatch">
+              <div className="absolute bg-[#003e40] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4662" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4663">
+                Dark :hover
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4664" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4665" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4666">{`1.76 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4667" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4668" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4669">
+                  11.91 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4670">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4671">
+                #003e40
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4672">
+                rgb(0, 62, 64)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4673" data-name="Swatch">
+              <div className="absolute bg-[#002e30] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4674" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4675">
+                Dark :active
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4676" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4677" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4678">{`1.43 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4679" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4680" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4681">
+                  14.65 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4682">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4683">
+                #002e30
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4684">
+                rgb(0, 46, 48)
+              </p>
+            </div>
+            <div className="bg-white h-[56px] overflow-clip relative shrink-0 w-[300px]" data-node-id="1347:4685" data-name="Swatch">
+              <div className="absolute bg-[#002425] border border-[#e9ebf8] border-solid h-[56px] left-0 rounded-[12px] top-0 w-[160px]" data-node-id="1347:4686" data-name="Swatch" />
+              <p className="[word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[20px] left-[176px] not-italic text-[14px] text-black top-[2px] whitespace-nowrap" data-node-id="1347:4687">
+                Darker
+              </p>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[8px]" data-node-id="1347:4688" data-name="Dark Ratio">
+                <div className="bg-black border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4689" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4690">{`1.28 `}</p>
+              </div>
+              <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex gap-[2px] h-[14px] items-start left-[8px] overflow-clip px-[4px] py-[2px] rounded-[7px] top-[26px]" data-node-id="1347:4691" data-name="White Ratio">
+                <div className="bg-white border border-[#e9ebf8] border-solid relative rounded-[5px] shrink-0 size-[10px]" data-node-id="1347:4692" data-name="Text Color" />
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[8px] text-black whitespace-nowrap" data-node-id="1347:4693">
+                  16.42 AAA
+                </p>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[10px] not-italic relative shrink-0 text-[6px] text-black whitespace-nowrap" data-node-id="1347:4694">
+                  AAA
+                </p>
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[22px] whitespace-nowrap" data-node-id="1347:4695">
+                #002425
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[16px] left-[176px] not-italic text-[#8e98a8] text-[10px] top-[38px] whitespace-nowrap" data-node-id="1347:4696">
+                rgb(0, 36, 37)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--colors\/neutral\/bg\/colorbglayout,#f5f5f5)] border-[var(--colors\/neutral\/border\/colorsplit,rgba(0,0,0,0.06))] border-solid border-t content-stretch flex flex-col h-[182px] items-start px-[120px] py-[80px] relative shrink-0 w-full" data-node-id="1347:4697" data-name="_Docs / Page Footer" />
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

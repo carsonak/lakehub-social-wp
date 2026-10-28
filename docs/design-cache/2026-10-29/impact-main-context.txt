@@ -1,0 +1,258 @@
+const assetPathPrefix = "./assets/impact-main-context";
+const imgSectionTopImpactHeaderLiveProofRibbon = `${assetPathPrefix}/fdf62.png`;
+const imgSddefault1 = `${assetPathPrefix}/c0c2a.png`;
+const imgG31 = `${assetPathPrefix}/2f9b3.png`;
+const imgContainer = `${assetPathPrefix}/5259b.svg`;
+const imgGroup = `${assetPathPrefix}/2d18d.svg`;
+const imgVector = `${assetPathPrefix}/ea08b.svg`;
+const imgVector1 = `${assetPathPrefix}/0b166.svg`;
+const imgDeviconTwitter = `${assetPathPrefix}/ec3cf.svg`;
+const imgSubtract = `${assetPathPrefix}/d00cf.svg`;
+const imgSubtract1 = `${assetPathPrefix}/4ecca.svg`;
+const imgSubtract2 = `${assetPathPrefix}/fdf8d.svg`;
+const imgEllipse8 = `${assetPathPrefix}/41264.svg`;
+
+export default function MainContent() {
+  return (
+    <div className="relative size-full" data-node-id="409:185" data-name="Main Content">
+      <div className="absolute h-[480px] left-0 overflow-clip right-0 top-[-2px]" data-node-id="587:564" data-name="Section - Top Impact Header & Live Proof Ribbon">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSectionTopImpactHeaderLiveProofRibbon} />
+        <div className="absolute content-stretch flex flex-col gap-[32px] h-[160px] items-start left-0 px-[48px] right-0 top-[64px]" data-node-id="587:567" data-name="Container">
+          <div className="absolute bg-[rgba(0,32,33,0.5)] h-[486px] left-0 top-[-72px] w-[1280px]" data-node-id="668:549" />
+          <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[635px] text-[56px] text-center text-white top-[calc(50%+98px)] tracking-[-1.1px] w-[672px]" data-node-id="587:575">
+            <p className="leading-[52px]">Decentralizing tech training in Kenya and positioning youth for leading tech roles</p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[24px] items-start left-[64px] right-[64px] top-[559px]" data-node-id="409:219" data-name="Section - Community Engagements (Asymmetric Layout)">
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="409:220" data-name="Heading 2">
+          <div className="[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[32px] text-black tracking-[-0.32px] whitespace-nowrap" data-node-id="409:221">
+            <p>
+              <span className="leading-[40px]">{`Community `}</span>
+              <span className="leading-[40px] text-[#00676b]">Projects</span>
+            </p>
+          </div>
+        </div>
+        <div className="h-[400px] relative shrink-0 w-full" data-node-id="409:222" data-name="Container">
+          <div className="absolute content-stretch flex flex-col h-[168px] items-start left-[674px] top-[83px] w-[453px]" data-node-id="409:227" data-name="Container">
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-0 text-[16px] text-black top-[57px] w-[453px]" data-node-id="409:228">
+              <p className="leading-[24px]">In 2022, UNDP Kenya partnered with Lake Hub, a local tech hub, to develop and pilot an e-commerce platform to connect informal women market vendors to the digital economy. The e-commerce platform dubbed Chichwa was launched in June with over 100 vendors successfully onboarded and selling their fresh produce, artisanal goods, and second-hand clothing since then.</p>
+            </div>
+          </div>
+          <div className="absolute content-stretch flex flex-col items-start left-[674px] top-[255px] w-[453px]" data-node-id="409:225" data-name="Heading 3">
+            <div className="[word-break:break-word] flex flex-col font-['Inter:Regular'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[20px] text-black w-full" data-node-id="409:226">
+              <p className="leading-[28px]">Chichwa e-commerce platform</p>
+            </div>
+          </div>
+          <div className="absolute content-stretch flex h-[17.333px] items-center left-[674px] pt-[8px] top-[287px] w-[9.333px]" data-node-id="409:229" data-name="Link">
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Regular'] font-bold justify-center leading-[0] left-0 not-italic text-[#00676b] text-[16px] top-[calc(50%+18.33px)] whitespace-nowrap" data-node-id="409:230">
+              <p className="leading-[24px]">Read more</p>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 absolute left-[765px] size-[9.333px] top-[calc(50%+115.67px)]" data-node-id="409:231" data-name="Container">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContainer} />
+          </div>
+          <div className="absolute left-[-49px] overflow-clip size-[800px] top-[-27px]" data-node-id="760:4223" data-name="Frame">
+            <div className="absolute inset-[-61%_33.59%_62.79%_-36%]" data-node-id="760:4224" data-name="Group">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup} />
+            </div>
+          </div>
+          <div className="absolute aspect-[623/366] left-[22px] right-[555px] rounded-[18px] top-[43px]" data-node-id="610:42" data-name="sddefault 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[18px]">
+              <img alt="" className="absolute h-[141.86%] left-[-5.55%] max-w-none top-[-20.9%] w-[111.13%]" src={imgSddefault1} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#002021] border-[rgba(98,215,222,0.1)] border-solid border-t content-stretch flex flex-col h-[332px] items-start left-0 pb-[8px] pt-[96px] right-0 top-[2275px]" data-node-id="879:100" data-name="Footer from JSON">
+        <div className="h-[196px] max-w-[1280px] relative shrink-0 w-full" data-node-id="879:101" data-name="Container">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid gap-x-[9px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_346px] max-w-[inherit] px-[64px] relative size-full">
+            <div className="col-2 content-stretch flex flex-col gap-[24px] items-start justify-self-start pb-[155px] relative row-1 self-start shrink-0 size-[36px]" data-node-id="879:102" data-name="Brand Column">
+              <div className="content-stretch flex flex-col items-start pt-[16px] relative shrink-0 w-full" data-node-id="879:103" data-name="Margin">
+                <div className="h-[20px] relative shrink-0 w-full" data-node-id="879:104" data-name="Container" />
+              </div>
+              <div className="absolute content-stretch flex flex-col h-[23px] items-start left-[-79.75px] max-w-[320px] right-[-44.25px] top-[71px]" data-node-id="879:105" data-name="Container">
+                <div className="absolute left-[37.25px] size-[22px] top-px" data-node-id="879:106" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                </div>
+                <div className="relative shrink-0 size-[22px]" data-node-id="879:107" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+                <div className="absolute left-[75.25px] size-[22px] top-[-1px]" data-node-id="879:108" data-name="devicon:twitter">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDeviconTwitter} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bg-[rgba(217,217,217,0)] border border-[#e4e4e7] border-solid h-[60px] left-[857px] rounded-[40px] top-[73px] w-[346px]" data-node-id="879:110" />
+            <div className="absolute bg-[#00676b] h-[49px] left-[1084px] rounded-[40px] top-[79px] w-[113px]" data-node-id="879:111" />
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[436px] pb-[162px] right-[724px] top-[-19px]" data-node-id="879:112" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:113" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="879:114">
+                  <p className="leading-[28px]">Quick Links</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="879:115" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:116" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:117">
+                    <p className="leading-[24px]">About Us</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:118" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:119">
+                    <p className="leading-[24px]">Our Mission</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:120" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:121">
+                    <p className="leading-[24px]">Impact Stories</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:122" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:123">
+                    <p className="leading-[24px]">History</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[660px] pb-[149px] right-[518px] top-[-20.67px]" data-node-id="879:124" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:125" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="879:126">
+                  <p className="leading-[28px]">Help</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[3px] items-start relative shrink-0 w-full" data-node-id="879:127" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:128" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:129">
+                    <p className="leading-[24px]">FAQ</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="879:130" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="879:131">
+                    <p className="leading-[24px]">Support</p>
+                  </div>
+                </div>
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="879:132" data-name="Item" />
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="879:133" data-name="Item" />
+              </div>
+            </div>
+            <div className="absolute h-[82px] left-[51px] top-[-36px] w-[288px]" data-node-id="879:134" data-name="g3 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-0.14%] max-w-none top-0 w-[100.27%]" src={imgG31} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[1100.5px] text-[18px] text-white top-[104px] w-[115px]" data-node-id="879:135">
+              <p className="leading-[28px]">Subscribe</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Light'] font-light h-[38px] justify-center leading-[0] left-[858px] text-[14px] text-white top-[43px] w-[256px]" data-node-id="879:136">
+              <p className="leading-[28px]">Subscribe to our news letter</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[25px] justify-center leading-[0] left-[869px] text-[18px] text-white top-[102.5px] w-[181px]" data-node-id="879:137">
+              <p className="leading-[28px]">example@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Medium'] font-medium h-[38px] justify-center leading-[0] left-[858px] text-[16px] text-white top-[88px] w-[231px]" data-node-id="879:138">
+          <p className="leading-[24px]">Get in touch!</p>
+        </div>
+        <div className="absolute border-[rgba(188,201,201,0.1)] border-solid border-t left-0 max-w-[1280px] top-[296px] w-[1280px]" data-node-id="879:139" data-name="Copyright">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center max-w-[inherit] pl-[430px] pr-[64px] pt-[7px] relative size-full">
+            <div className="relative shrink-0 w-[1574px]" data-node-id="879:140" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[582.17px] items-center relative size-full">
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="879:141" data-name="Container">
+                  <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="879:142">
+                    <p className="leading-[16px]">© 2024 LakeHub Foundation. All rights reserved.</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[16px] items-start relative shrink-0" data-node-id="879:143" data-name="Container">
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="879:144" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="879:145">
+                      <p className="leading-[16px]">Privacy Policy</p>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="879:146" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="879:147">
+                      <p className="leading-[16px]">Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-white h-[510px] left-0 overflow-clip right-0 top-[1765px]" data-node-id="603:5" data-name="Section - Our Journey' (2019–2024): Horizontal Scroll Timeline with Lake Horizon Ripple Wave">
+        <div className="absolute content-stretch flex items-end justify-between left-[48px] right-[48px] top-[32px]" data-node-id="603:6" data-name="Container">
+          <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0" data-node-id="603:7" data-name="Container">
+            <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#002532] text-[0px] tracking-[-1.1px] whitespace-nowrap" data-node-id="603:10">
+              <p className="font-['Hanken_Grotesk:Bold'] font-bold text-[36px]">
+                <span className="leading-[52px]">{`Dimensions of `}</span>
+                <span className="leading-[52px] text-[#00676b]">Transformation</span>
+              </p>
+            </div>
+          </div>
+          <div className="h-[48px] max-w-[448px] relative shrink-0 w-[448px]" data-node-id="603:11" data-name="Container" />
+        </div>
+        <div className="absolute contents left-[60px] top-[133px]" data-node-id="669:650">
+          <div className="absolute h-[336.672px] left-[60px] top-[133px] w-[297.954px]" data-node-id="669:651" data-name="Subtract">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract} />
+          </div>
+          <div className="absolute h-[336.672px] left-[329.34px] top-[133px] w-[297.954px]" data-node-id="669:654" data-name="Subtract">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract1} />
+          </div>
+          <div className="absolute h-[336.672px] left-[598.67px] top-[133px] w-[297.953px]" data-node-id="669:657" data-name="Subtract">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract2} />
+          </div>
+          <div className="absolute left-[866px] size-[337px] top-[133px]" data-node-id="669:660">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse8} />
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[96px] text-[#fbf9f8] text-[16px] top-[332px] tracking-[0.14px] w-[214px]" data-node-id="669:613">
+          <p className="leading-[20px]">Building enterprise-ready skills through real-world, production-level engineering projects</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[193.5px] text-[24px] text-center text-white top-[244px] w-[205px]" data-node-id="669:610">
+          <p className="leading-[24px] mb-0">Technical</p>
+          <p className="leading-[24px]">Mastery</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[367px] text-[16px] text-white top-[333px] tracking-[0.14px] w-[219px]" data-node-id="669:623">
+          <p className="leading-[20px]">Gaining continuous career growth through lifelong mentorship from industry experts</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[472.5px] text-[24px] text-center text-white top-[244px] w-[213px] whitespace-pre-wrap" data-node-id="669:620">
+          <p className="leading-[24px] mb-0">{`Structured `}</p>
+          <p className="leading-[24px]">Mentorship</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[741.5px] text-[24px] text-center text-white top-[246px] w-[219px]" data-node-id="669:631">
+          <p className="leading-[24px] mb-0">Employment</p>
+          <p className="leading-[24px]">Pipelines</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[645px] text-[16px] text-white top-[343px] tracking-[0.14px] w-[213px]" data-node-id="669:634">
+          <p className="leading-[20px]">Graduates achieve an 88% tech placement rate within six months through direct matching and interview training</p>
+        </div>
+        <div className="absolute content-stretch flex flex-col h-[49px] items-center left-[903px] top-[222px] w-[252px]" data-node-id="669:641" data-name="Container">
+          <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] relative shrink-0 text-[24px] text-white w-[192px]" data-node-id="669:642">
+            <p className="leading-[24px]">Personal Growth</p>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[908px] text-[16px] text-white top-[333px] tracking-[0.14px] w-[252px]" data-node-id="669:645">
+          <p className="leading-[20px]">Build lifelong confidence and network connections within a collaborative, supportive peer community</p>
+        </div>
+      </div>
+      <div className="absolute border-[#c4c7c7] border-b border-solid content-stretch flex flex-col items-start left-[63px] pb-[5px] right-[65px] top-[1078px]" data-node-id="409:238" data-name="Heading 2">
+        <div className="[word-break:break-word] flex flex-col font-['Inter:Regular'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[32px] text-black tracking-[-0.32px] whitespace-nowrap" data-node-id="409:239">
+          <p className="leading-[40px]">Inspiring Portfolios</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

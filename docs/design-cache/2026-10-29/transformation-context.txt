@@ -1,0 +1,126 @@
+const assetPathPrefix = "./assets/transformation-context";
+const imgEllipse9 = `${assetPathPrefix}/205dd.png`;
+const imgEllipse10 = `${assetPathPrefix}/2e46e.png`;
+const imgEllipse11 = `${assetPathPrefix}/4b84f.png`;
+const imgEllipse12 = `${assetPathPrefix}/d1d13.png`;
+const imgLine9 = `${assetPathPrefix}/a7c42.svg`;
+
+export default function DimentionsOfTransformationSection() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="1274:702" data-name="Dimentions of transformation section">
+      <div className="absolute content-stretch flex h-[54px] items-end justify-between left-[48px] right-[48px] top-[32px]" data-node-id="1274:703" data-name="Container">
+        <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0" data-node-id="1274:704" data-name="Container">
+          <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#002532] text-[44px] tracking-[-1.1px] whitespace-nowrap" data-node-id="1274:705">
+            <p className="font-['Hanken_Grotesk:Bold'] font-bold">
+              <span className="leading-[52px]">{`Dimensions of `}</span>
+              <span className="leading-[52px] text-[#00676b]">Transformation</span>
+            </p>
+          </div>
+        </div>
+        <div className="h-[48px] max-w-[448px] relative shrink-0 w-[448px]" data-node-id="1274:706" data-name="Container" />
+      </div>
+      <div className="absolute contents left-[173.5px] top-[788px]" data-node-id="1274:754">
+        <div className="absolute border-10 border-[#00676b] border-solid h-[205px] left-[352.5px] rounded-br-[24px] rounded-tr-[24px] top-[831px] w-[554px]" data-node-id="1274:755" />
+        <div className="absolute left-[173.5px] size-[291px] top-[788px]" data-node-id="1274:756">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" height="291" src={imgEllipse9} width="291" />
+        </div>
+      </div>
+      <div className="absolute contents left-[371.5px] top-[1119px]" data-node-id="1274:758">
+        <div className="absolute flex h-[205px] items-center justify-center left-[371.5px] top-[1162px] w-[554px]" data-node-id="1274:759">
+          <div className="flex-none rotate-180">
+            <div className="border-10 border-[#00676b] border-solid h-[205px] relative rounded-br-[24px] rounded-tr-[24px] w-[554px]" />
+          </div>
+        </div>
+        <div className="absolute left-[813.5px] size-[291px] top-[1119px]" data-node-id="1274:760">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" height="291" src={imgEllipse10} width="291" />
+        </div>
+      </div>
+      <div className="absolute contents left-[177.5px] top-[126px]" data-node-id="1559:8">
+        <div className="absolute contents left-[177.5px] top-[126px]" data-node-id="1274:749">
+          <div className="absolute border-10 border-[#00676b] border-solid h-[205px] left-[356.5px] rounded-br-[24px] rounded-tr-[24px] top-[169px] w-[554px]" data-node-id="1274:742" />
+          <div className="absolute left-[177.5px] size-[291px] top-[126px]" data-node-id="1274:743">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="291" src={imgEllipse11} width="291" />
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[503px] text-[16px] text-black top-[300px] tracking-[0.14px] w-[315px]" data-node-id="1274:718">
+          <p className="leading-[20px]">Building enterprise-ready skills through real-world, production-level engineering projects</p>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[554.5px] text-[#00676b] text-[24px] text-center top-[234px] w-[205px]" data-node-id="1274:719">
+          <p className="leading-[24px] mb-0">Technical</p>
+          <p className="leading-[24px]">Mastery</p>
+        </div>
+      </div>
+      <div className="absolute contents left-[371.5px] top-[457px]" data-node-id="1559:9">
+        <div className="absolute contents left-[371.5px] top-[457px]" data-node-id="1274:750">
+          <div className="absolute flex h-[205px] items-center justify-center left-[371.5px] top-[500px] w-[554px]" data-node-id="1274:751">
+            <div className="flex-none rotate-180">
+              <div className="border-10 border-[#00676b] border-solid h-[205px] relative rounded-br-[24px] rounded-tr-[24px] w-[554px]" />
+            </div>
+          </div>
+          <div className="absolute left-[813.5px] size-[291px] top-[457px]" data-node-id="1274:752">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="291" src={imgEllipse12} width="291" />
+          </div>
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[498px] text-[#00676b] text-[24px] text-center top-[563px] w-[213px] whitespace-pre-wrap" data-node-id="1274:721">
+          <p className="leading-[24px] mb-0">{`Structured `}</p>
+          <p className="leading-[24px]">Mentorship</p>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[438px] text-[16px] text-black top-[623px] tracking-[0.14px] w-[315px]" data-node-id="1274:720">
+          <p className="leading-[20px]">Gaining continuous career growth through lifelong mentorship from industry experts</p>
+        </div>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[416px] text-[16px] text-black top-[1295px] tracking-[0.14px] w-[341px]" data-node-id="1274:726">
+        <p className="leading-[20px]">Build lifelong confidence and network connections within a collaborative, supportive peer community</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[416px] text-[#00676b] text-[24px] top-[1227px] w-[259px]" data-node-id="1274:725">
+        <p className="leading-[24px]">Personal Growth</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Bold'] font-bold justify-center leading-[0] left-[495px] text-[#00676b] text-[24px] top-[895px] w-[219px]" data-node-id="1274:722">
+        <p className="leading-[24px] mb-0">Employment</p>
+        <p className="leading-[24px]">Pipelines</p>
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[495px] text-[16px] text-black top-[969px] tracking-[0.14px] w-[317px]" data-node-id="1274:723">
+        <p className="leading-[20px]">Graduates achieve an 88% tech placement rate within six months through direct matching and interview training</p>
+      </div>
+      <div className="absolute flex h-[135.555px] items-center justify-center left-[653px] top-[697px] w-0" data-node-id="1274:771">
+        <div className="-rotate-90 flex-none">
+          <div className="h-0 relative w-[135.555px]">
+            <div className="absolute inset-[-10px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine9} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-[135.555px] items-center justify-center left-[653px] top-[1031px] w-0" data-node-id="1274:773">
+        <div className="-rotate-90 flex-none">
+          <div className="h-0 relative w-[135.555px]">
+            <div className="absolute inset-[-10px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine9} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-[135.555px] items-center justify-center left-[653px] top-[369px] w-0" data-node-id="1274:769">
+        <div className="-rotate-90 flex-none">
+          <div className="h-0 relative w-[135.555px]">
+            <div className="absolute inset-[-10px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine9} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

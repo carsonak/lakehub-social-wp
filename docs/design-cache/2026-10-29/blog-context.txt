@@ -1,0 +1,369 @@
+const assetPathPrefix = "./assets/blog-context";
+const imgLink = `${assetPathPrefix}/a066e.svg`;
+const imgG21 = `${assetPathPrefix}/96d32.png`;
+const imgPlaceholderImage = `${assetPathPrefix}/ed3d5.png`;
+const imgPlaceholderImage1 = `${assetPathPrefix}/9ff3a.png`;
+const imgG31 = `${assetPathPrefix}/2f9b3.png`;
+const imgChevronRight = `${assetPathPrefix}/bb0cc.svg`;
+const imgLinkedIn = `${assetPathPrefix}/a74fe.svg`;
+const imgX = `${assetPathPrefix}/1591b.svg`;
+const imgFacebook = `${assetPathPrefix}/98028.svg`;
+const imgVector1 = `${assetPathPrefix}/ad3b2.svg`;
+const imgVector = `${assetPathPrefix}/ea08b.svg`;
+const imgVector2 = `${assetPathPrefix}/0b166.svg`;
+const imgDeviconTwitter = `${assetPathPrefix}/ec3cf.svg`;
+
+function Link({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="1272:266" data-name="link">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLink} />
+    </div>
+  );
+}
+
+export default function BlogTemplate() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative size-full" data-node-id="1272:5" style={{ backgroundImage: "linear-gradient(90deg, rgb(251, 249, 248) 0%, rgb(251, 249, 248) 100%), linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%)" }} data-name="blog-template">
+      <div className="bg-white content-stretch flex h-[64px] items-start px-[25px] relative shrink-0 w-[1280px]" data-node-id="1272:6">
+        <div className="h-[64px] relative shrink-0 w-[1230px]" data-node-id="1272:7" data-name="Container">
+          <div className="-translate-y-1/2 absolute content-stretch flex gap-[32px] items-center left-[895px] top-1/2 w-[335px]" data-node-id="1272:8" data-name="Navigation Links (Desktop)">
+            <div className="border-[#00676b] border-b-2 border-solid content-stretch flex flex-col items-start pb-[6px] relative shrink-0" data-node-id="1272:9" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#00676b] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="1272:10">
+                <p className="leading-[16px]">HOME</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="1272:11" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="1272:12">
+                <p className="leading-[16px]">ABOUT</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="1272:13" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="1272:14">
+                <p className="leading-[16px]">PROGRAMS</p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="1272:15" data-name="Link">
+              <div className="[word-break:break-word] flex flex-col font-['Montserrat:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[#3d494a] text-[12px] tracking-[0.6px] uppercase whitespace-nowrap" data-node-id="1272:16">
+                <p className="leading-[16px]">IMPACT</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[55px] left-[7px] top-[6px] w-[186px]" data-node-id="1272:17" data-name="g2 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgG21} />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color-scheme-1\/background,white)] border-[#dbdbdb] border-b border-solid content-stretch flex flex-col h-[581px] items-center overflow-clip px-[var(--page-padding\/padding-global,64px)] py-[60px] relative shrink-0 w-full" data-node-id="1272:600" data-name="Blog Post Header / 3 /">
+        <div className="content-stretch flex flex-col items-start max-w-[1280px] relative shrink-0 w-full" data-node-id="1272:601" data-name="Container">
+          <div className="content-stretch flex gap-[80px] items-start relative shrink-0 w-full" data-node-id="1272:602" data-name="Content">
+            <div className="content-stretch flex flex-col items-start justify-between relative self-stretch shrink-0 w-[420px]" data-node-id="1272:603" data-name="Section Title">
+              <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-full" data-node-id="1272:604" data-name="Content Top">
+                <div className="content-stretch flex items-center relative shrink-0" data-node-id="1272:605" data-name="Content">
+                  <div className="relative shrink-0 size-[16px]" data-node-id="1272:607" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <p className="[word-break:break-word] font-['Roboto:Bold'] font-bold leading-[1.2] min-w-full relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/heading-2,48px)] w-[min-content]" data-node-id="1272:609" style={{ fontVariationSettings: '"wdth" 100' }}>{`From Learning to Shipping: Kisumu's Tech Talent Steps Into the Global Market`}</p>
+              </div>
+              <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-full" data-node-id="1272:610" data-name="Content Bottom">
+                <div className="[word-break:break-word] content-stretch flex flex-col items-start leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] w-full whitespace-nowrap" data-node-id="1272:611" data-name="Content">
+                  <div className="content-stretch flex gap-[4px] items-start relative shrink-0 text-[length:var(--text-sizes\/text-small,14px)]" data-node-id="1272:612" data-name="Content">
+                    <p className="font-['Roboto:Regular'] font-normal relative shrink-0" data-node-id="1272:613" style={{ fontVariationSettings: '"wdth" 100' }}>
+                      By
+                    </p>
+                    <p className="font-['Roboto:SemiBold'] font-semibold relative shrink-0" data-node-id="1272:614" style={{ fontVariationSettings: '"wdth" 100' }}>
+                      Full name
+                    </p>
+                  </div>
+                  <div className="content-stretch flex font-['Roboto:Regular'] font-normal gap-[8px] items-center relative shrink-0" data-node-id="1272:615" data-name="Time">
+                    <p className="relative shrink-0 text-[length:var(--text-sizes\/text-small,14px)]" data-node-id="1272:616" style={{ fontVariationSettings: '"wdth" 100' }}>
+                      13 Sept 2026
+                    </p>
+                    <p className="relative shrink-0 text-[length:var(--text-sizes\/text-medium,18px)]" data-node-id="1272:617" style={{ fontVariationSettings: '"wdth" 100' }}>
+                      •
+                    </p>
+                    <p className="relative shrink-0 text-[length:var(--text-sizes\/text-small,14px)]" data-node-id="1272:618" style={{ fontVariationSettings: '"wdth" 100' }}>
+                      5 min read
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex-[1_0_0] h-[450px] min-w-px relative" data-node-id="1272:630" data-name="Placeholder Image">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholderImage} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[var(--color-scheme-1\/background,white)] content-stretch flex flex-col items-center overflow-clip pb-[70px] pt-[45px] px-[var(--page-padding\/padding-global,64px)] relative shrink-0 w-full" data-node-id="1272:636" data-name="Content / 29 /">
+        <div className="content-stretch flex flex-col items-center max-w-[1280px] relative shrink-0 w-full" data-node-id="1272:637" data-name="Container">
+          <div className="content-stretch flex flex-col gap-[48px] items-center max-w-[768px] relative shrink-0 w-full" data-node-id="1272:638" data-name="Content">
+            <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-[768px]" data-node-id="1272:639" data-name="Content">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:640" data-name="Rich Text">
+                <div className="content-stretch flex flex-col items-start py-[24px] relative shrink-0 w-full" data-node-id="1272:641" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Bold'] font-bold leading-[1.2] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/heading-3,40px)] w-full" data-node-id="1272:642" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Introduction
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] relative shrink-0 w-full" data-node-id="1272:643" data-name="Content">
+                  <p className="[word-break:break-word] font-['Hanken_Grotesk:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:644">
+                    In 2026, 96 developers from the first Zone01 Kisumu cohort reached a major milestone after two years of intensive, peer-driven software development training. Their graduation was celebrated through the Build From Here Conference, bringing together developers, employers, technology leaders and the wider innovation community.
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] relative shrink-0 w-full" data-node-id="1272:645" data-name="Content">
+                  <p className="[word-break:break-word] font-['Hanken_Grotesk:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:646">
+                    The story goes beyond graduation. It is about what becomes possible when young people have access to high-quality technology education, community and opportunities without the barrier of tuition fees.
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col gap-[8px] items-start py-[48px] relative shrink-0 w-full" data-node-id="1272:647" data-name="Content">
+                  <div className="aspect-[768/400] relative shrink-0 w-full" data-node-id="1272:648" data-name="Placeholder Image">
+                    <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaceholderImage1} />
+                  </div>
+                  <div className="content-stretch flex gap-[8px] items-start relative shrink-0 w-full" data-node-id="1272:649" data-name="Caption Figure">
+                    <div className="bg-[var(--color-scheme-1\/border,black)] relative self-stretch shrink-0 w-[2px]" data-node-id="1272:650" />
+                    <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[1.5] min-w-px relative text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-small,14px)]" data-node-id="1272:651" style={{ fontVariationSettings: '"wdth" 100' }}>
+                      Image caption goes here
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] pt-[20px] relative shrink-0 w-full" data-node-id="1272:652" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Bold'] font-bold leading-[1.4] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/heading-6,20px)] w-full" data-node-id="1272:653" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] relative shrink-0 w-full" data-node-id="1272:654" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:655" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.
+                  </p>
+                </div>
+                <div className="content-stretch flex items-start overflow-clip py-[36px] relative shrink-0 w-full" data-node-id="1272:656" data-name="Content">
+                  <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-[1_0_0] gap-[20px] items-start min-w-px overflow-clip pr-[20px] relative" data-node-id="1272:657" data-name="Figure">
+                    <div className="bg-[var(--color-scheme-1\/border,black)] relative self-stretch shrink-0 w-[2px]" data-node-id="1272:658" data-name="Divider" />
+                    <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Italic'] font-normal italic leading-[28px] min-w-px relative text-[20px] text-[color:var(--color-scheme-1\/text,black)]" data-node-id="1272:659">{`"Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pllentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus."`}</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] relative shrink-0 w-full" data-node-id="1272:660" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:661" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] relative shrink-0 w-full" data-node-id="1272:664" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:665" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start pb-[16px] relative shrink-0 w-full" data-node-id="1272:666" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:667" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:668" data-name="Content">
+                  <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-regular,16px)] w-full" data-node-id="1272:669" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque et, nunc tortor.Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex items-end justify-between relative shrink-0 w-full" data-node-id="1272:670" data-name="Content">
+                <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0" data-node-id="1272:671" data-name="Share">
+                  <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[1.5] min-w-full relative shrink-0 text-[color:var(--color-scheme-1\/text,black)] text-[length:var(--text-sizes\/text-medium,18px)] w-[min-content]" data-node-id="1272:672" style={{ fontVariationSettings: '"wdth" 100' }}>
+                    Share this post
+                  </p>
+                  <div className="content-stretch flex gap-[8px] items-start relative shrink-0" data-node-id="1272:673" data-name="Share Buttons">
+                    <div className="bg-[var(--color-scheme-1\/foreground,white)] content-stretch flex flex-col items-center justify-center overflow-clip p-[4px] relative rounded-[64px] shrink-0" data-node-id="1272:674" data-name="Share Button">
+                      <Link className="relative shrink-0 size-[24px]" />
+                    </div>
+                    <div className="bg-[var(--color-scheme-1\/foreground,white)] content-stretch flex flex-col items-center justify-center overflow-clip p-[4px] relative rounded-[64px] shrink-0" data-node-id="1272:676" data-name="Share Button">
+                      <div className="relative shrink-0 size-[24px]" data-node-id="1272:677" data-name="LinkedIn">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLinkedIn} />
+                      </div>
+                    </div>
+                    <div className="bg-[var(--color-scheme-1\/foreground,white)] content-stretch flex flex-col items-center justify-center overflow-clip p-[4px] relative rounded-[64px] shrink-0" data-node-id="1272:678" data-name="Share Button">
+                      <div className="relative shrink-0 size-[24px]" data-node-id="1272:679" data-name="X">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgX} />
+                      </div>
+                    </div>
+                    <div className="bg-[var(--color-scheme-1\/foreground,white)] content-stretch flex flex-col items-center justify-center overflow-clip p-[4px] relative rounded-[64px] shrink-0" data-node-id="1272:680" data-name="Share Button">
+                      <div className="relative shrink-0 size-[24px]" data-node-id="1272:681" data-name="Facebook">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFacebook} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[8px] h-[29px] items-start relative shrink-0 w-[301px]" data-node-id="1272:682" data-name="Tags" />
+              </div>
+            </div>
+            <div className="h-0 relative shrink-0 w-full" data-node-id="1272:687">
+              <div className="absolute inset-[-0.5px_0]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#002021] border-[rgba(98,215,222,0.1)] border-solid border-t content-stretch flex flex-col h-[332px] items-start pb-[8px] pt-[96px] relative shrink-0 w-[1280px]" data-node-id="1272:187" data-name="Footer from JSON">
+        <div className="h-[196px] max-w-[1280px] relative shrink-0 w-full" data-node-id="1272:188" data-name="Container">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid gap-x-[9px] gap-y-[24px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[_346px] max-w-[inherit] px-[64px] relative size-full">
+            <div className="col-2 content-stretch flex flex-col gap-[24px] items-start justify-self-start pb-[155px] relative row-1 self-start shrink-0 size-[36px]" data-node-id="1272:189" data-name="Brand Column">
+              <div className="content-stretch flex flex-col items-start pt-[16px] relative shrink-0 w-full" data-node-id="1272:190" data-name="Margin">
+                <div className="h-[20px] relative shrink-0 w-full" data-node-id="1272:191" data-name="Container" />
+              </div>
+              <div className="absolute content-stretch flex flex-col h-[23px] items-start left-[-79.75px] max-w-[320px] right-[-44.25px] top-[71px]" data-node-id="1272:192" data-name="Container">
+                <div className="absolute left-[37.25px] size-[22px] top-px" data-node-id="1272:193" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                </div>
+                <div className="relative shrink-0 size-[22px]" data-node-id="1272:194" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                </div>
+                <div className="absolute left-[75.25px] size-[22px] top-[-1px]" data-node-id="1272:195" data-name="devicon:twitter">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDeviconTwitter} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bg-[rgba(217,217,217,0)] border border-[#e4e4e7] border-solid h-[60px] left-[857px] rounded-[40px] top-[73px] w-[346px]" data-node-id="1272:197" />
+            <div className="absolute bg-[#00676b] h-[49px] left-[1084px] rounded-[40px] top-[79px] w-[113px]" data-node-id="1272:198" />
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[436px] pb-[162px] right-[724px] top-[-19px]" data-node-id="1272:199" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:200" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="1272:201">
+                  <p className="leading-[28px]">Quick Links</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="1272:202" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:203" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="1272:204">
+                    <p className="leading-[24px]">About Us</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:205" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="1272:206">
+                    <p className="leading-[24px]">Our Mission</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:207" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="1272:208">
+                    <p className="leading-[24px]">Impact Stories</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:209" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="1272:210">
+                    <p className="leading-[24px]">History</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute content-stretch flex flex-col gap-[24px] h-[184px] items-start left-[660px] pb-[149px] right-[518px] top-[-20.67px]" data-node-id="1272:211" data-name="Links Column">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:212" data-name="Heading 4">
+                <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:SemiBold'] font-semibold justify-center leading-[0] relative shrink-0 text-[18px] text-white w-full" data-node-id="1272:213">
+                  <p className="leading-[28px]">Help</p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[3px] items-start relative shrink-0 w-full" data-node-id="1272:214" data-name="List">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:215" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="1272:216">
+                    <p className="leading-[24px]">FAQ</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1272:217" data-name="Item">
+                  <div className="[word-break:break-word] flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-[rgba(228,226,226,0.8)] w-full" data-node-id="1272:218">
+                    <p className="leading-[24px]">Support</p>
+                  </div>
+                </div>
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="1272:219" data-name="Item" />
+                <div className="h-[24px] relative shrink-0 w-full" data-node-id="1272:220" data-name="Item" />
+              </div>
+            </div>
+            <div className="absolute h-[82px] left-[51px] top-[-36px] w-[288px]" data-node-id="1272:221" data-name="g3 1">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-full left-[-0.14%] max-w-none top-0 w-[100.27%]" src={imgG31} />
+              </div>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal justify-center leading-[0] left-[1100.5px] text-[18px] text-white top-[104px] w-[115px]" data-node-id="1272:222">
+              <p className="leading-[28px]">Subscribe</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Light'] font-light h-[38px] justify-center leading-[0] left-[858px] text-[14px] text-white top-[43px] w-[256px]" data-node-id="1272:223">
+              <p className="leading-[28px]">Subscribe to our news letter</p>
+            </div>
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Regular'] font-normal h-[25px] justify-center leading-[0] left-[869px] text-[18px] text-white top-[102.5px] w-[181px]" data-node-id="1272:224">
+              <p className="leading-[28px]">example@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Hanken_Grotesk:Medium'] font-medium h-[38px] justify-center leading-[0] left-[858px] text-[16px] text-white top-[88px] w-[231px]" data-node-id="1272:225">
+          <p className="leading-[24px]">Get in touch!</p>
+        </div>
+        <div className="absolute border-[rgba(188,201,201,0.1)] border-solid border-t left-0 max-w-[1280px] top-[296px] w-[1280px]" data-node-id="1272:226" data-name="Copyright">
+          <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center max-w-[inherit] pl-[430px] pr-[64px] pt-[7px] relative size-full">
+            <div className="relative shrink-0 w-[1574px]" data-node-id="1272:227" data-name="Container">
+              <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[582.17px] items-center relative size-full">
+                <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="1272:228" data-name="Container">
+                  <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="1272:229">
+                    <p className="leading-[16px]">© 2024 LakeHub Foundation. All rights reserved.</p>
+                  </div>
+                </div>
+                <div className="content-stretch flex gap-[16px] items-start relative shrink-0" data-node-id="1272:230" data-name="Container">
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="1272:231" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="1272:232">
+                      <p className="leading-[16px]">Privacy Policy</p>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-col items-center relative self-stretch shrink-0" data-node-id="1272:233" data-name="Link">
+                    <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-[rgba(228,226,226,0.5)] text-center tracking-[0.6px] whitespace-nowrap" data-node-id="1272:234">
+                      <p className="leading-[16px]">Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Heading/H2: Font(family: "Roboto", style: Bold, size: Text Sizes/Heading 2, weight: 700, lineHeight: 1.2000000476837158, letterSpacing: 0), Text/Small/Normal: Font(family: "Roboto", style: Regular, size: Text Sizes/Text Small, weight: 400, lineHeight: 1.5, letterSpacing: 0), Text/Small/Semi Bold: Font(family: "Roboto", style: SemiBold, size: Text Sizes/Text Small, weight: 600, lineHeight: 1.5, letterSpacing: 0), Text/Medium/Normal: Font(family: "Roboto", style: Regular, size: Text Sizes/Text Medium, weight: 400, lineHeight: 1.5, letterSpacing: 0), Heading/H3: Font(family: "Roboto", style: Bold, size: Text Sizes/Heading 3, weight: 700, lineHeight: 1.2000000476837158, letterSpacing: 0), Heading/H6: Font(family: "Roboto", style: Bold, size: Text Sizes/Heading 6, weight: 700, lineHeight: 1.399999976158142, letterSpacing: 0), Text/Regular/Normal: Font(family: "Roboto", style: Regular, size: Text Sizes/Text Regular, weight: 400, lineHeight: 1.5, letterSpacing: 0), Other/Quote: Font(family: "Inter", style: Italic, size: 20, weight: 400, lineHeight: 28, letterSpacing: 0), Text/Medium/Semi Bold: Font(family: "Roboto", style: SemiBold, size: Text Sizes/Text Medium, weight: 600, lineHeight: 1.5, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## LinkedIn
+**Node ID:** 1272:268
+
+1.  Logo
+2.  Brands
+3.  Social media
+4.  Networking
+5.  Career development
+6.  Online resume
+7.  Networking community
+8.  B2B networking
+9.  Business connections
+
+## X
+**Node ID:** 1272:270
+
+1.  Twitter
+2.  Tweet
+3.  Logo
+4.  Social media
+5.  Brands
+
+## Facebook
+**Node ID:** 1272:272
+
+1.  Facebook
+2.  Social media
+3.  Logo
+4.  Brands
+5.  Digital communication
+6.  Online friends
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

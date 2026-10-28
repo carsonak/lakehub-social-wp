@@ -1,0 +1,114 @@
+[
+  {
+    "path": "/",
+    "text": "Empowering the\nnext generation of\ninnovators in Africa.",
+    "rect": {
+      "x": 250,
+      "y": 180,
+      "width": 780,
+      "height": 250.78125
+    },
+    "hero": {
+      "x": 0,
+      "y": 64,
+      "width": 1280,
+      "height": 542.78125
+    },
+    "font": {
+      "family": "\"Hanken Grotesk\", sans-serif",
+      "size": "76px",
+      "weight": "800",
+      "lineHeight": "83.6px",
+      "align": "center",
+      "tracking": "-1.12px"
+    },
+    "offset": {
+      "x": 250,
+      "y": 116
+    }
+  },
+  {
+    "path": "/programs/",
+    "text": "Our Flagship Program",
+    "rect": {
+      "x": 64,
+      "y": 243.703125,
+      "width": 1152,
+      "height": 83.59375
+    },
+    "hero": {
+      "x": 0,
+      "y": 64,
+      "width": 1280,
+      "height": 573
+    },
+    "font": {
+      "family": "\"Hanken Grotesk\", sans-serif",
+      "size": "76px",
+      "weight": "800",
+      "lineHeight": "83.6px",
+      "align": "center",
+      "tracking": "-1.12px"
+    },
+    "offset": {
+      "x": 64,
+      "y": 179.703125
+    }
+  },
+  {
+    "path": "/about/",
+    "text": "From humble beginnings to bold decisions",
+    "rect": {
+      "x": 170,
+      "y": 194.90625,
+      "width": 940,
+      "height": 167.1875
+    },
+    "hero": {
+      "x": 0,
+      "y": 64,
+      "width": 1280,
+      "height": 429
+    },
+    "font": {
+      "family": "\"Hanken Grotesk\", sans-serif",
+      "size": "76px",
+      "weight": "800",
+      "lineHeight": "83.6px",
+      "align": "start",
+      "tracking": "-0.96px"
+    },
+    "offset": {
+      "x": 170,
+      "y": 130.90625
+    }
+  },
+  {
+    "path": "/impact/",
+    "text": "Decentralizing tech training in Kenya and positioning youth for leading tech roles",
+    "rect": {
+      "x": 304,
+      "y": 112,
+      "width": 672,
+      "height": 417.96875
+    },
+    "hero": {
+      "x": 0,
+      "y": 64,
+      "width": 1280,
+      "height": 513.96875
+    },
+    "font": {
+      "family": "\"Hanken Grotesk\", sans-serif",
+      "size": "76px",
+      "weight": "800",
+      "lineHeight": "83.6px",
+      "align": "center",
+      "tracking": "-1.1px"
+    },
+    "offset": {
+      "x": 304,
+      "y": 48
+    }
+  }
+]

@@ -1,0 +1,497 @@
+[
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/0b166.svg",
+    "bytes": 1610,
+    "sha256": "fc1bec8f75b3c9ed5c54f574870529151972fb2510813e2ad5867f126e34de5a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/2d18d.svg",
+    "bytes": 89384,
+    "sha256": "88f63a18d8d545feb30a3d10fd90dcea870bc79c10e9ad600ba43f389f7ae93c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/2f9b3.png",
+    "bytes": 9061,
+    "sha256": "863061c67bd2bd05db628d74a54a19c5f0c519b025c2992b3c7a24c2f20052fe"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/41264.svg",
+    "bytes": 249,
+    "sha256": "3de3ab013254b3a59f9b250621280e4510d91730f466dbb358438bfb8b5b06bf"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/4ecca.svg",
+    "bytes": 518,
+    "sha256": "6aae23dd9eecc6296e6923b0f6829ac134d7b9e489f0fb2aef3cedebf2891165"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/5259b.svg",
+    "bytes": 375,
+    "sha256": "af773d59b142f927237a17bf2281a366c4db114878f1bdff3bfcf320a6a49499"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/c0c2a.png",
+    "bytes": 40007,
+    "sha256": "5cd3ca218e46e9ee8118e427d9d8e0dd4ca5886f7f4c5b38d1edfa6922284e54"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/d00cf.svg",
+    "bytes": 518,
+    "sha256": "0f584e289440171ff6fbaa51c6148b4399bfd66c269c0da1350858d7983e25e1"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/ea08b.svg",
+    "bytes": 689,
+    "sha256": "8ebb3ee321e56477c39fc6a2721fbe7fa1a79ed4837f1c0da0f879c98a54ae10"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/ec3cf.svg",
+    "bytes": 668,
+    "sha256": "0f1d04361daf5256ca0f5b1fe9e3cafb13e02d0dd153e90d6697b2ae21217316"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/fdf62.png",
+    "bytes": 466272,
+    "sha256": "36220c4ef838c737b878a162f8666a71ed8ae157fa3734c97dc27f58e92b188c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/impact-main-context/fdf8d.svg",
+    "bytes": 518,
+    "sha256": "7bbcf21535a56a316f7b2a4c57925d124190f2288caaf5c43ba2d7742c3df506"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/0b166.svg",
+    "bytes": 1610,
+    "sha256": "fc1bec8f75b3c9ed5c54f574870529151972fb2510813e2ad5867f126e34de5a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/25195.png",
+    "bytes": 142295,
+    "sha256": "17190375bd5c355970064ce966add9dcf8dbbfa6cab351decd7572280f19f59a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/2f9b3.png",
+    "bytes": 9061,
+    "sha256": "863061c67bd2bd05db628d74a54a19c5f0c519b025c2992b3c7a24c2f20052fe"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/4dd23.png",
+    "bytes": 7537,
+    "sha256": "3a865468cd1c765dae7dd47e627ede344bbc6917eac334532036e8ce1911efbe"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/5987b.png",
+    "bytes": 117154,
+    "sha256": "e384e7e7b7c228d64ed75300983b90f6fa36a8c02da260bae4bfcf2797167b22"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/82fd2.png",
+    "bytes": 165923,
+    "sha256": "7a4fa26eb2e631de7f408a6564f6dcb76c6bc3f2f86384f3f0665a81cb62bc34"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/96d32.png",
+    "bytes": 23383,
+    "sha256": "67d11e00a1a62951f5548506c2ac584ab2c2516154133f0c939b40f068d77907"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/c9cf9.png",
+    "bytes": 10538503,
+    "sha256": "47a8aee4146eda5ab6d849b7bd9ad1da9db287c4109e0be4d2f4263c30695c8d"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/d2658.png",
+    "bytes": 100385,
+    "sha256": "6af46e5a37b56c10d575bd795b3e7e025d63bbf3b4e3db2227eb9e599072c5eb"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/ea08b.svg",
+    "bytes": 689,
+    "sha256": "8ebb3ee321e56477c39fc6a2721fbe7fa1a79ed4837f1c0da0f879c98a54ae10"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/programs-context/ec3cf.svg",
+    "bytes": 668,
+    "sha256": "0f1d04361daf5256ca0f5b1fe9e3cafb13e02d0dd153e90d6697b2ae21217316"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/0b166.svg",
+    "bytes": 1610,
+    "sha256": "fc1bec8f75b3c9ed5c54f574870529151972fb2510813e2ad5867f126e34de5a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/1591b.svg",
+    "bytes": 456,
+    "sha256": "bee166c54244cc0112aeed69341437abb0174fa722d930e05a795798d0b5e43c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/2f9b3.png",
+    "bytes": 9061,
+    "sha256": "863061c67bd2bd05db628d74a54a19c5f0c519b025c2992b3c7a24c2f20052fe"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/96d32.png",
+    "bytes": 23383,
+    "sha256": "67d11e00a1a62951f5548506c2ac584ab2c2516154133f0c939b40f068d77907"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/98028.svg",
+    "bytes": 642,
+    "sha256": "a9ec127530776a23e7337a2569df767abe07ef7da070fa6d983a5fea312ce328"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/9ff3a.png",
+    "bytes": 9157,
+    "sha256": "b2bfd1afec5c89d556916eb5cd90a4f8e49cd28bf42714685eb61e9617d229c8"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/a066e.svg",
+    "bytes": 2181,
+    "sha256": "69ab19a794a5a32b956bd53199554e88f672942d574b8f6b296d4a6db22b61d7"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/a74fe.svg",
+    "bytes": 1626,
+    "sha256": "5cd98422d74477f0be45ddf806b6fc71ddf164754136a12f7949eedb62874261"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/ad3b2.svg",
+    "bytes": 225,
+    "sha256": "c92e4dd9b2883647d8f9e9017b3941c2bcf77f086d923e6b27a5b6ba068f632a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/bb0cc.svg",
+    "bytes": 201,
+    "sha256": "fd8ca521df68d5b09aa6a9cfbf1f0fcd5a5eb8274aebb423495a515f3cc3388c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/ea08b.svg",
+    "bytes": 689,
+    "sha256": "8ebb3ee321e56477c39fc6a2721fbe7fa1a79ed4837f1c0da0f879c98a54ae10"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/ec3cf.svg",
+    "bytes": 670,
+    "sha256": "e1e12b9a1613749acb1dae1f275e39226c6432647b1f2006716c0f40c787d196"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/blog-context/ed3d5.png",
+    "bytes": 9911,
+    "sha256": "6b456ed65a85491f5100c4a54ea3b4f99152c0335e90e4050e2be36dcf36c2aa"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/031db.svg",
+    "bytes": 204,
+    "sha256": "45d49d1b8cddd49fbc8b560c152505140ee42fe5c34496a859db948b0bcf0552"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/0b166.svg",
+    "bytes": 1610,
+    "sha256": "fc1bec8f75b3c9ed5c54f574870529151972fb2510813e2ad5867f126e34de5a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/0e0e3.png",
+    "bytes": 44804,
+    "sha256": "7dce551965c0abeb75c7fb83e989438a2e4143b0aaebbb34f669dcc360344afb"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/136e0.png",
+    "bytes": 265640,
+    "sha256": "b014220358f2dd660bb1ffdf71d5b4935efa4257a4aa3034723d2ef6fbe09826"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/1e989.png",
+    "bytes": 12226332,
+    "sha256": "2038f55b1419394c380401da95fbafc911a5f766fb7bc2c785f945ed0c4a1ffc"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/2b917.svg",
+    "bytes": 264,
+    "sha256": "0834c6e6d2461d434ba551e024365b759cde4c41b5f3df4cf551a2c69e14b635"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/2d904.svg",
+    "bytes": 324,
+    "sha256": "7202d163f78e5a46712375a19630d1701315bde64f2c92bef6dc926cb191fbd4"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/2f9b3.png",
+    "bytes": 9061,
+    "sha256": "863061c67bd2bd05db628d74a54a19c5f0c519b025c2992b3c7a24c2f20052fe"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/45e84.png",
+    "bytes": 42450,
+    "sha256": "e8de6c9ba6e0b4284471f30fa045df15183f8308e5842880038e1cbb4f958f5a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/49665.png",
+    "bytes": 52585,
+    "sha256": "7aeb1d0fd024202882197c17413ea03d19285acd26435f8bbd626c049f262388"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/4c90d.svg",
+    "bytes": 374,
+    "sha256": "ecbd09da05d2517e716974b725899f40ba243351e87f2c599eed197055089546"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/61b20.png",
+    "bytes": 38312,
+    "sha256": "5f083f1ab00faa839cef4356b62dc1f5ed4a5c84efde81baa2cab741187d50c8"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/69bbd.png",
+    "bytes": 45096,
+    "sha256": "968492c5656ab3c09c9782d9e464718290ffe9764331572bc15f27c795faaa52"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/7012d.svg",
+    "bytes": 257,
+    "sha256": "28c9eaa578645ffc697c9d1bd8a9382fd6338e89272d68a34ac391c9840c304f"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/782ad.svg",
+    "bytes": 91080,
+    "sha256": "03e2ad8c2cbe31198979ea17f632cfba09f8fea8db9ccf138695a34e92a275e7"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/7f9d2.png",
+    "bytes": 63340,
+    "sha256": "42f9984fb7a27814fa7f8c4d737ca16f6fa38962aa4e6e48d153fe25d91284c4"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/96d32.png",
+    "bytes": 23383,
+    "sha256": "67d11e00a1a62951f5548506c2ac584ab2c2516154133f0c939b40f068d77907"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/a658d.svg",
+    "bytes": 687,
+    "sha256": "23574f163bb65c3ba1da0c9b409e0478f1172ef5474848e10ebd2f7bc1df75ed"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/a8105.png",
+    "bytes": 284317,
+    "sha256": "2ceb66d66799c853a4754a05685e7dcf50964a2c03b17c09e45a020b79f87a6d"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/a9beb.svg",
+    "bytes": 264,
+    "sha256": "9c291ff9cab751aba413425a9a8af406d12cb17c81b2f6546400db0b3a8d2cd4"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/ba02c.svg",
+    "bytes": 274,
+    "sha256": "4810d57dd9660b12aceca2d027d6053cbc5865e14aae7c137a1c4881a4d8eec7"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/be71c.png",
+    "bytes": 66218,
+    "sha256": "b12330d1e6c4321f3b4117c2dc7ba7d022461c742a768204a9441b85858005a7"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/c1b21.svg",
+    "bytes": 166671,
+    "sha256": "b7ea828db44f6374e0de87922bf1b68e66c22accfe47e08cd106de91debe264b"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/e220e.png",
+    "bytes": 45467,
+    "sha256": "9d0c517fd776bc5856f17034d94ae0f9154a0a6c4b8ccd07e21cb41258667060"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/ea08b.svg",
+    "bytes": 689,
+    "sha256": "8ebb3ee321e56477c39fc6a2721fbe7fa1a79ed4837f1c0da0f879c98a54ae10"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/ec3cf.svg",
+    "bytes": 670,
+    "sha256": "dceb47c02a62d8913ad0676b8742bfc1eeac77e6147f1c0c3811b13bb5f42496"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/home-context/f7a54.png",
+    "bytes": 68913,
+    "sha256": "46acd746694b6d77bfd893200322bbb89252a629967f165a2fca098bacbcbc05"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/impact-context.png",
+    "bytes": 1714091,
+    "sha256": "9b58f2fd4d0576c9513044f8184bba73c05b2c9db318132d63c7e123575f1f1e"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/0494a.png",
+    "bytes": 813173,
+    "sha256": "d8a988893fe519da45e0968e575748d10ddc0ea84dbcfb457ebf41483dc79f34"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/0b166.svg",
+    "bytes": 1610,
+    "sha256": "fc1bec8f75b3c9ed5c54f574870529151972fb2510813e2ad5867f126e34de5a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/1377e.png",
+    "bytes": 396343,
+    "sha256": "dc54ea6a2554ce9e97f7f0167f3cffe7754d078f81bbb19185c90189a13b960e"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/1a0e9.png",
+    "bytes": 37736,
+    "sha256": "cf8f10a5b64f5987aca2d591a2a2add3b8d421bbdf846364a33c1450936f9095"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/1aa6f.png",
+    "bytes": 2214823,
+    "sha256": "a70be8486fac61d5dcfceb3a51e50e98e4d7ea71d98f046ad43be4b2efcd584a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/2d18d.svg",
+    "bytes": 89384,
+    "sha256": "88f63a18d8d545feb30a3d10fd90dcea870bc79c10e9ad600ba43f389f7ae93c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/2f5da.png",
+    "bytes": 301452,
+    "sha256": "0765e09b90a13da7648155ea8bfeee658fbcc3d1638bc95307d74bef4a036804"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/2f9b3.png",
+    "bytes": 9061,
+    "sha256": "863061c67bd2bd05db628d74a54a19c5f0c519b025c2992b3c7a24c2f20052fe"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/36938.png",
+    "bytes": 338301,
+    "sha256": "583b6ff7b60772d5487e7059151dd3053a4bb58e276cf391e15910c376a7354c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/531be.png",
+    "bytes": 191303,
+    "sha256": "cc2764281b0a8efcc0428121c79eedf2c9be288547f188eb68709d25d84a284c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/56873.png",
+    "bytes": 14662,
+    "sha256": "06fbd90a31cb6acc3e6579ef7dcc0edfd7fee631ac27bad6350ab6d0c94872e2"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/57723.png",
+    "bytes": 565206,
+    "sha256": "9bfa7f1042882d5553ec5db63765a494e1b313e4c09fad2b76f0a8092eff735a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/5edf1.png",
+    "bytes": 57528,
+    "sha256": "35e89bff5806a1451d861465406112195f80abcd112657908ea49b80ace41252"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/72dd7.png",
+    "bytes": 40816,
+    "sha256": "a9965bd69bae4c398533a41d42734b28666f760e11f1c81655f20e5a946a259c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/74a9a.png",
+    "bytes": 225457,
+    "sha256": "3d833f44f337c59abdb6f32e98f85be94872bc542a2bd64d57edd0b8d7d8e8c3"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/80fb4.png",
+    "bytes": 893997,
+    "sha256": "a94c5f0414f6d806e5b48df98924e1603d8e6fca3ab39365540d40d88a2ecec6"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/8843b.png",
+    "bytes": 1240683,
+    "sha256": "c7617e5fa2e47c47d1701676416dbab02978b22c857c3ab837443b2893dc022b"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/8be03.png",
+    "bytes": 40831,
+    "sha256": "e3749d345b44156b738c77df94805ca097d42e8018a2e19e6567d2bb20d69ae2"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/96d32.png",
+    "bytes": 23383,
+    "sha256": "67d11e00a1a62951f5548506c2ac584ab2c2516154133f0c939b40f068d77907"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/9bb5d.png",
+    "bytes": 980712,
+    "sha256": "81684f6feed0b5586c6c043f093ba1c9668b2b107b021f93b7d79d3c67f473e4"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/c44c1.png",
+    "bytes": 153702,
+    "sha256": "c521d48342acbdc06a18ef5e57a4a0242668a49aa7c5b252d2dd43c392eaad78"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/d2de4.png",
+    "bytes": 60295,
+    "sha256": "9e3a2bf5591ae500e94b59ff5537bf3835d05278c443727bab6c0580715c0287"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/ea08b.svg",
+    "bytes": 689,
+    "sha256": "8ebb3ee321e56477c39fc6a2721fbe7fa1a79ed4837f1c0da0f879c98a54ae10"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/about-context/ec3cf.svg",
+    "bytes": 672,
+    "sha256": "bbdfd4994d17960827d5057d2c8ec4d2b1c2c4831db2309b43d4f8d9a69386f0"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/transformation-context/205dd.png",
+    "bytes": 539414,
+    "sha256": "91498c5bf28819632cdbcdda7d8d7307d27d8e3c2b94f14fe28a21508a452daa"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/transformation-context/2e46e.png",
+    "bytes": 526107,
+    "sha256": "936a34b9c99195ecced48d7b6e2a12e8530a9236e6b0d2efc4067eb4d7d03191"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/transformation-context/4b84f.png",
+    "bytes": 498894,
+    "sha256": "da9b7b379add727c7e1eee7524ffbc9b3d0a819e6b0abcf9c5a76d5a6142e7df"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/transformation-context/a7c42.svg",
+    "bytes": 255,
+    "sha256": "f3151a338fe90cfcd574706b621d3d7b3d6396290e5ced31c0b3f45775d019ee"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/transformation-context/d1d13.png",
+    "bytes": 549712,
+    "sha256": "2dff952a319ea632b3784a1a8048bfa9dc56dd4ffd26d17d7611d849f5267bdf"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/assets/base-colors-context/d06b4.png",
+    "bytes": 192,
+    "sha256": "a79f41ff5428821b4886388cced169c39004779c8ed444e4c4358347a0585c6d"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/about-render.png",
+    "bytes": 2989609,
+    "sha256": "a1c2836b71021f882007f4fe6a14c285640e4789037e282f64d42eea40145a06"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/blog-render.png",
+    "bytes": 237577,
+    "sha256": "c68662ed45a635b658fb2657332a5c474e58102abfc2eac5da79da0e16d2c27a"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/home-render.png",
+    "bytes": 2144624,
+    "sha256": "1780865ac77f530cfba7f654732b51bd2df9e9a0273704bb53824ac96123cd2c"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/programs-render.png",
+    "bytes": 3486024,
+    "sha256": "0fd55d7f24b54455b3605d1d708bb577d4884d7ba367463d783ca4847d4bc47f"
+  },
+  {
+    "path": "docs/design-cache/2026-10-29/transformation-render.png",
+    "bytes": 709192,
+    "sha256": "8d61c2e6de49a69e540050a42cc7f197118b5821829bdc62ca0dceb6aa79aa7d"
+  }
+]
