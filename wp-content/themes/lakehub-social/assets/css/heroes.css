@@ -1,0 +1,19 @@
+/* Shared typography for the four photo banner headings, in the site and editor. */
+.wp-block-cover:is(.is-style-lakehub-home-photo, .is-style-lakehub-programs-photo, .is-style-lakehub-about-hero, .is-style-lakehub-impact-hero) h1 {
+  font-size: var(--wp--preset--font-size--hero-photo);
+  font-weight: var(--wp--custom--hero--font-weight);
+  line-height: var(--wp--custom--hero--line-height);
+  overflow-wrap: break-word;
+}
+
+.is-style-lakehub-about-hero h1 span {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+@media (max-width: 900px) {
+  .wp-block-cover:is(.is-style-lakehub-home-photo, .is-style-lakehub-programs-photo, .is-style-lakehub-about-hero, .is-style-lakehub-impact-hero) h1 {
+    font-size: clamp(2.25rem, 6vw, 4rem);
+  }
+}
