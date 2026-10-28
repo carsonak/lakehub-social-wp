@@ -22,7 +22,7 @@ The cache has 99 successful downloads (82 unique file hashes), including source 
 | Programs | 299:174 | Full context, layer inventory, native-resolution render, assets | Footer extends beyond frame bounds |
 | About | 380:71 | Full context, layer inventory, native-resolution render, assets | Contains off-frame team placeholders; distinguish from approved visible cards |
 | Impact | 409:150 | Full inventory and native-resolution render | Full context returned sparse metadata because of size |
-| Impact main | 409:185 | Full context, screenshot and assets for hero/community projects | Story and large halftone frame outside this subtree have geometry/render evidence, not complete styling context |
+| Impact main | 409:185 | Full context, screenshot and assets for hero/community projects and overflowing transformation/footer layers | Story and large halftone frame outside this subtree have geometry/render evidence, not complete styling context |
 | Blog template | 1272:5 | Full context, layer inventory, native-resolution render, assets | Some returned implementation notes need interpretation for WordPress |
 | Separate transformation proposal | 1274:702 | Full context, inventory, native-resolution render, assets | Separate proposal; do not silently replace current design without choosing the intended version |
 | Design system | 1347:7 | Complete layer inventory | Canvas itself cannot return context without a selected layer |

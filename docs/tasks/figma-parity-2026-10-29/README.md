@@ -6,8 +6,8 @@
 | --- | --- | --- |
 | 01 | Retrieve and validate durable design evidence | Complete; cached and indexed |
 | 02 | Correct four photo heroes against exact Figma references | Complete; d459a08 and full export backed up |
-| 03 | Approved typography corrections across existing pages | Implemented and verified; backup checkpoint in progress |
-| 04 | Final regression verification, backup and preview refresh | Pending |
+| 03 | Approved typography corrections across existing pages | Complete; be742af and full export backed up |
+| 04 | Final regression verification, backup and preview refresh | Complete; existing preview refreshed and all 14 hosted checks passed |
 
 - [x] Cache both canvas inventories and all five page references.
 - [x] Save full-resolution renders, available contexts, source assets, style index and checksums.
@@ -42,11 +42,11 @@ Component/file diffs: `heroes.css` gets shared and per-page geometry/type rules;
 4. Run theme static checks, project PHP lint and relevant browser checks; run all existing interaction regressions to protect behavior. Run backup script syntax/ShellCheck and backup unit checks when the backup workflow changes.
 5. Review worktree/index, make one conventional implementation commit, make a full Studio export and run the usual push/backup workflow. Update this phase checklist immediately. Refresh the already-approved existing preview if requested for the implementation, then verify hosted rendering after propagation.
 
-## Phase 03 strategy
+## Future static-parity backlog (outside this typography pass)
 
 Review Home, Programs, About, Impact and the blog in ordered page-sized phases, with shared header/footer changes isolated when appropriate. Compare static layout, typography, colours, spacing, imagery/crop and component geometry; log each difference with node, screenshot/evidence, current selector and proposed fix. Reconcile separate transformation proposal versus current Impact before changing that section. Use page-local evidence to avoid extra MCP calls. Keep canonical patterns/templates/tokens in Git and preserve editable native blocks and dynamic collections. Do not overwrite content or replace carousel/animation behavior with static Figma arrangements.
 
-Approval is required before phase 02/03 code or database modifications under the repository's task-planning instruction. The inspection/cache itself is already requested and does not modify the site.
+The user approved phase 02, then authorized the typography follow-up and backup/preview refresh. Future changes outside this approved scope need their own reviewable plan.
 
 ## Approved follow-up — typography, 29 October
 
@@ -63,3 +63,7 @@ The user approved the hero plan, chose original per-frame sizes, then authorized
 - [x] Verify exact desktop typography and font loading, screenshots at 1280px, responsive fit at 320/390/768/1024/1440px, editor styles, and complete interaction regressions. Preserve content/media baseline. Commit and full-export backup this phase separately.
 
 Phase 04: verify final export/source manifest and restore checks, push documentation checkpoint, update the existing approved preview hostname and run hosted typography checks after propagation. Keep runtime artifacts ignored. Pre-change full export: `.backups/figma-parity-before.zip`.
+
+## Completion
+
+Approved hero and typography changes are complete, with current editorial content, Malika portrait and interactions preserved. All 47 distinct local browser cases and 14 hosted cases passed; editor validation/styles, published-content/media preservation and full-export restore verification passed. The updated preview is https://carsoniskihara-grykm-studio.wp.build. Source checkpoints: d459a08 and be742af; final task documentation is checkpointed separately through the usual script.
