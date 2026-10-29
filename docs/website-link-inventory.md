@@ -76,7 +76,7 @@ Defined in `patterns/site-footer.php` and embedded via `parts/footer.html`.
 | :--- | :--- | :--- | :--- | :--- |
 | **LakeHub Footer Logo** | Footer brand column (left) | `/` | LakeHub homepage | Same tab (`_self`). |
 | **LinkedIn Icon** | Footer brand column, social icons | `https://www.linkedin.com/company/lakehub/` | Official LakeHub LinkedIn page | Opens in new tab (`target="_blank" rel="noopener noreferrer"`). |
-| **Facebook Icon** | Footer brand column, social icons | `https://www.facebook.com/LakeHubKisumu/` | Official LakeHub Facebook page | Opens in new tab (`target="_blank" rel="noopener noreferrer"`). |
+| **Facebook Icon** | Footer brand column, social icons | `https://web.facebook.com/LakeHub` | Official LakeHub Facebook page | Opens in new tab (`target="_blank" rel="noopener noreferrer"`). |
 | **X (Twitter) Icon** | Footer brand column, social icons | `https://x.com/lakehub` | Official LakeHub X profile | Opens in new tab (`target="_blank" rel="noopener noreferrer"`). |
 | **About Us** | "Quick Links" column | `/about/` | About page | Same tab (`_self`). |
 | **Our Mission** | "Quick Links" column | `/about/#mission` | Mission & Vision section on About page | Anchor scroll on `/about/`; cross-page navigation from other pages. |

@@ -20,7 +20,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"custom","className":"is-style-lakehub-social-icon"} -->
-<figure class="wp-block-image size-full is-style-lakehub-social-icon"><a href="https://www.facebook.com/LakeHubKisumu/" target="_blank" rel="noopener noreferrer"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/facebook.svg' ) ); ?>" alt="Facebook"/></a></figure>
+<figure class="wp-block-image size-full is-style-lakehub-social-icon"><a href="https://web.facebook.com/LakeHub" target="_blank" rel="noopener noreferrer"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/facebook.svg' ) ); ?>" alt="Facebook"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"custom","className":"is-style-lakehub-social-icon"} -->
